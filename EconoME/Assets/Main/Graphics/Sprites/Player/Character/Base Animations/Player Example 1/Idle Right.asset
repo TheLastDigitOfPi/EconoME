@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Idle Right
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: 126ec85ef526f214f8e098da80eb77cb, type: 2}
+  _hair: {fileID: 11400000, guid: a0eb6bcf7eee63e4f976e0ca34913809, type: 2}
+  _shirt: {fileID: 11400000, guid: 002fb62f99c41964aa5f75fac1b4ba4e, type: 2}
+  _pants: {fileID: 11400000, guid: 309d399388ef9c142bb5fdda94b93251, type: 2}
+  _shoes: {fileID: 11400000, guid: 9fc095bf61f48474bbbb880d73b196a3, type: 2}
+  _secondsPerFrame: 0.3

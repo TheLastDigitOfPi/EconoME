@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Walk Right
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: acacb00132111464a8ff8173a1a0de72, type: 2}
+  _hair: {fileID: 11400000, guid: 81fa49340e657e245a46b5cafa206992, type: 2}
+  _shirt: {fileID: 11400000, guid: a1228eba44e970c46ac473c2bf9ee0ce, type: 2}
+  _pants: {fileID: 11400000, guid: f3331ddbbb3229f4eb629c47890b83d7, type: 2}
+  _shoes: {fileID: 11400000, guid: 95ddc4eb3516c704697756578be0761d, type: 2}
+  _secondsPerFrame: 0.2

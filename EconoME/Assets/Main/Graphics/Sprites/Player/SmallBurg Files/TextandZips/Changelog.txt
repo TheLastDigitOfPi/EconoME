@@ -1,0 +1,26 @@
+Change log
+========================
+
+V1.3 [19-03-2022]
+-----------------
+* Added Calf
+
+V1.2 [04-03-2022]
+-----------------
+* Added color for pigs
+* Added piglet
+* Added wallowing animations
+
+
+V1.1 [25-02-2022]
+-----------------
+* Added color for chickens
+* Added chick
+* Added peck animations
+
+
+
+
+V1.0 [15-02-2022]
+-----------------
+* Released v1.0

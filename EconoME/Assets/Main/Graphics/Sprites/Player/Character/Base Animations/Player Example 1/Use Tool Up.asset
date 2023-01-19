@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Use Tool Up
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: 6dbb0c27fcd5fd84481fa32eea15cd41, type: 2}
+  _hair: {fileID: 11400000, guid: 9a3c742a74befcd449ee9f5c5b192a32, type: 2}
+  _shirt: {fileID: 11400000, guid: 46551b30706cba8468e8ab2c476b54b4, type: 2}
+  _pants: {fileID: 11400000, guid: 21fb5e7f6226bd54b8660304c3f360f5, type: 2}
+  _shoes: {fileID: 11400000, guid: 5f169aea616d6b34f89c4fa06eda8a25, type: 2}
+  _secondsPerFrame: 0.2
+  _direction: 2

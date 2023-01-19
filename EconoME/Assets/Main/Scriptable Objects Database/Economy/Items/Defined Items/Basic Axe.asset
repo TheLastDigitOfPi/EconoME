@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3db3af81fdc5c4fb987d44a525fc4e, type: 3}
+  m_Name: Basic Axe
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: a419d88daffb323499d458b180c8a716, type: 2}
+  stacksize: 1

@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 761fda364debb5e47ab4b9b9912afc32
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: House Fixes_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1474
+        width: 239
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8c167d055ea574182b5af15ee7fedd
+      internalID: -877166169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_1
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1460
+        width: 303
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168a2e2e118592c48bfbdf33bd782979
+      internalID: -1582845761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1094
+        width: 173
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4986cf01b8856064484e636d4fa3b444
+      internalID: 121408111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_4
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1094
+        width: 173
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06847008e4154b44877f6bc56654794
+      internalID: -1641796656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_5
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1103
+        width: 237
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31435df32a7a4314eb0f75a5a84ce75c
+      internalID: 963747369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_6
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1104
+        width: 173
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4859e2a17f56e24281693ab94422b04
+      internalID: -1653071813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_7
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1110
+        width: 237
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793917645b961a24f989e66333b07467
+      internalID: -1237064330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_8
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1112
+        width: 205
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5890959fffec1764c9c694b0cf56a482
+      internalID: 848217358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_9
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 1115
+        width: 205
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97b77dcd36517f499ffae9c55ecfee7
+      internalID: 1611869148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_10
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1115
+        width: 175
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ffb5a63b9d82c4c87cef6c05caa8f5
+      internalID: -1304785919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_11
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 1413
+        width: 653
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf682a0277ba1da4a9c2c0cb8840a35c
+      internalID: 1525676034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_13
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 1152
+        width: 207
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e6bbb387815ff4897482cd4acf63f2
+      internalID: 208733136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 714
+        width: 448
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0.28
+      bones: []
+      spriteID: ba6e59195f31e3f4b96196df96337d3f
+      internalID: -263129316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_16
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 724
+        width: 160
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 121}
+        - {x: -80, y: 42}
+        - {x: -80, y: -121}
+        - {x: 80, y: -121}
+        - {x: 80, y: 42}
+        - {x: 80, y: 121}
+      physicsShape:
+      - - {x: 17, y: -119}
+        - {x: 16, y: -89}
+        - {x: -17, y: -89}
+        - {x: -17, y: -119}
+        - {x: -75, y: -118}
+        - {x: -74, y: -67}
+        - {x: 74, y: -67}
+        - {x: 75, y: -119}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a9309cb8977964ba3c2bfe865de7fc
+      internalID: 440506173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_18
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 740
+        width: 175
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -51.5, y: 80}
+        - {x: -87.5, y: 48}
+        - {x: -87.5, y: -64}
+        - {x: -86.5, y: -80}
+        - {x: 81.5, y: -80}
+        - {x: 87.5, y: -32}
+        - {x: 87.5, y: 43}
+        - {x: 50.5, y: 80}
+      tessellationDetail: 0.5
+      bones: []
+      spriteID: 8185d073dadfeb24ebf7db9576bd6665
+      internalID: -2066105340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_19
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 697
+        width: 175
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -55.5, y: 112}
+        - {x: -87.5, y: 102}
+        - {x: -87.5, y: -112}
+        - {x: 84.5, y: -112}
+        - {x: 87.5, y: -54}
+        - {x: 87.5, y: 90}
+        - {x: 77.5, y: 112}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6141c97b523bfd04680b12bf8db9aa7e
+      internalID: 1005729277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_20
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 710
+        width: 303
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 119.5, y: 96}
+        - {x: -145.5, y: 96}
+        - {x: -151.5, y: 71}
+        - {x: -151.5, y: -96}
+        - {x: 148.5, y: -96}
+        - {x: 151.5, y: -86}
+        - {x: 151.5, y: 90}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeec7554ef877b40b0f14b7fd169d87
+      internalID: 529091096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_21
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 716
+        width: 207
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -67.5, y: 80}
+        - {x: -103.5, y: 49}
+        - {x: -103.5, y: -54}
+        - {x: -102.5, y: -80}
+        - {x: 97.5, y: -80}
+        - {x: 103.5, y: -47}
+        - {x: 103.5, y: 43}
+        - {x: 66.5, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e43dd72cb3a524e9c21481c37a02fb
+      internalID: 1692692052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_22
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 516
+        width: 207
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -67.5, y: 80}
+        - {x: -103.5, y: 49}
+        - {x: -103.5, y: -54}
+        - {x: -102.5, y: -80}
+        - {x: 97.5, y: -80}
+        - {x: 103.5, y: -47}
+        - {x: 103.5, y: 43}
+        - {x: 66.5, y: 80}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06818ebcdbcfa1d4bb5c04a29e69e5a7
+      internalID: 1561255027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_23
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 387
+        width: 224
+        height: 306
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -50, y: 99}
+        - {x: -112, y: 44}
+        - {x: -112, y: -153}
+        - {x: 112, y: -153}
+        - {x: 112, y: 43}
+        - {x: 5, y: 153}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597d0f7f31e38c240af09d44f4fa6f73
+      internalID: 2051833661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_24
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 387
+        width: 207
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -72.5, y: 96}
+        - {x: -103.5, y: 88}
+        - {x: -103.5, y: -96}
+        - {x: 101.5, y: -96}
+        - {x: 103.5, y: -60}
+        - {x: 103.5, y: 77}
+        - {x: 95.5, y: 96}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0b417aaed289748a7b8fffd0dfcb85
+      internalID: 1988192233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_25
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 386
+        width: 320
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -99, y: 112}
+        - {x: -160, y: 51}
+        - {x: -160, y: -112}
+        - {x: 160, y: -112}
+        - {x: 160, y: 83}
+        - {x: 131, y: 112}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b98ee7d117c5b47b6e0b40f21c6dfe
+      internalID: 877827468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_2
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1449
+        width: 207
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bf6ac5cb4d89e4f8074f9cb7422cb5
+      internalID: 973583387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_12
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 1186
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d14a265bbd5b0a46b14f607a92d7faf
+      internalID: -1146414498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_14
+      rect:
+        serializedVersion: 2
+        x: 2784
+        y: 1216
+        width: 7
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5a578925de6fd4a9cee910e63e2628
+      internalID: 1824750075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_17
+      rect:
+        serializedVersion: 2
+        x: 2785
+        y: 1152
+        width: 197
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82957620c36c0074d931e1eb1773caf2
+      internalID: -1626466500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House Fixes_26
+      rect:
+        serializedVersion: 2
+        x: 2546
+        y: 922
+        width: 160
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8105c29da59b0df4d8c442d8cb56d648
+      internalID: -434090441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      House Fixes_10: -1304785919
+      House Fixes_11: 1525676034
+      House Fixes_6: -1653071813
+      House Fixes_5: 963747369
+      House Fixes_12: -1146414498
+      House Fixes_17: -1626466500
+      House Fixes_18: -2066105340
+      House Fixes_1: -1582845761
+      House Fixes_20: 529091096
+      House Fixes_2: 973583387
+      House Fixes_19: 1005729277
+      House Fixes_25: 877827468
+      House Fixes_13: 208733136
+      House Fixes_3: 121408111
+      House Fixes_8: 848217358
+      House Fixes_0: -877166169
+      House Fixes_21: 1692692052
+      House Fixes_22: 1561255027
+      House Fixes_26: -434090441
+      House Fixes_14: 1824750075
+      House Fixes_9: 1611869148
+      House Fixes_4: -1641796656
+      House Fixes_15: -263129316
+      House Fixes_7: -1237064330
+      House Fixes_16: 440506173
+      House Fixes_23: 2051833661
+      House Fixes_24: 1988192233
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dd6222db9deb24d99755a2ab1f7aa4, type: 3}
+  m_Name: Forest Tile
+  m_EditorClassIdentifier: 
+  _type: {fileID: 11400000, guid: 21614d595314656489801429229e3f20, type: 2}
+  _tier: 0
+  _baseTile: {fileID: 11400000, guid: 2bf3003859ed63644820fdaadb8aef02, type: 2}
+  _dirtBaseTile: {fileID: 11400000, guid: 39a64cb2665c12c4cacdf15428665f0e, type: 2}
+  _waterTile: {fileID: 11400000, guid: c876d66dca15e5a4c9c928bdcefc20fa, type: 2}
+  _detailTiles:
+  - {fileID: 11400000, guid: 11590cd4b2cd4a04dbf29a179044d1f5, type: 2}
+  - {fileID: 11400000, guid: 53c2f54fca526e14589ffdd19206f7d2, type: 2}
+  - {fileID: 11400000, guid: dc47122c5ab7b92439340693f3fa7940, type: 2}
+  - {fileID: 11400000, guid: 6f5a904422702d5429f0a9aba0b15301, type: 2}
+  - {fileID: 11400000, guid: 2772a1b9a5610d04f849026ef68ca844, type: 2}
+  - {fileID: 11400000, guid: 36e6be76746f7dd4484225451e56764f, type: 2}
+  ResourceNodes:
+  - {fileID: 11400000, guid: 678ca9460bd849d48b8d2b94f20fca9f, type: 2}

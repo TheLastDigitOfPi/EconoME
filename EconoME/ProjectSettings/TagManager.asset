@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Interactable
+  - Pickup
+  - Inventory
+  - UIController
+  - BackpackSlots
+  - HotBarSlots
+  - ArmorSlots
+  - ResourceSlots
+  - MainHotBar
+  - InventoryBackground
+  - BankSlots
+  - MapGenerator
+  - TileMaker
+  - PlacedTile
+  - Tile
+  - ChestUI
+  - Chest
+  - PlaceTile
+  - Door
+  - PlaceTileParent
+  - Creature
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Interactable
+  - Minimap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Ground
+    uniqueID: 1048674455
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Minimap
+    uniqueID: 660914067
+    locked: 0
+  - name: Player
+    uniqueID: 254674417
+    locked: 0

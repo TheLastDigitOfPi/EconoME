@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d815103da3970694092a6b10dfd353f5, type: 3}
+  m_Name: Default Generator
+  m_EditorClassIdentifier: 
+  Size: {x: 32, y: 32}
+  NewTilePrefab: {fileID: 2836681122061067407, guid: 3cfc0f9ea9cb73b4cab352ab6196dbb5, type: 3}
+  SaveNum: 5
+  TilePresets: {fileID: 11400000, guid: 8a0a43e31827bde47ab9bbb159c68e9a, type: 2}
+  _nodeDatabase: {fileID: 11400000, guid: 5024991dc686fb24988eb196f399fba3, type: 2}
+  _interactablesDatabase: {fileID: 11400000, guid: 27e36ba0ad92530479eaf85d14e63aa7, type: 2}
+  NodeSettingsDatabase: {fileID: 11400000, guid: 60aa1027c6af38f46b6a021a9338f854, type: 2}
+  _tileDatabase: {fileID: 11400000, guid: b5cd7a42c91aada47aca8e6a55e400cb, type: 2}
+  BlankTileObject: {fileID: 11400000, guid: 90a16b75db35f544484a7f1fb4cbc897, type: 2}

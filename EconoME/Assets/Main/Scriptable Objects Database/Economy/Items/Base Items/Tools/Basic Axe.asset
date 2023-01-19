@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b07e44dd09dfd11468ead7d36e69baa5, type: 3}
+  m_Name: Basic Axe
+  m_EditorClassIdentifier: 
+  _itemName: Basic Axe
+  Icon: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+  _iconPath: 
+  _weight: -1
+  EconomyData:
+    BasePrice: 0
+    Threshold: 1
+    RemainingThreshold: 100
+    DailyInflationHits: 0
+    DailyItemsSold: 0
+    InflationPerHit: 0.02
+    TotalInflationHits: 0
+    MaxInflationHits: 25
+    TotalItemsSold: 0
+    multiplier: {fileID: 0}
+  _toolTier: 0
+  _damage: 50
+  _toolSwingAnimations:
+  - {fileID: 11400000, guid: 159fa61be8d25944faec4fd53e6c2d45, type: 2}
+  - {fileID: 11400000, guid: 71db539f91449fb4dba7edfbb90c23b3, type: 2}
+  - {fileID: 11400000, guid: 84bf9ee7f5b53134b968cf4215795482, type: 2}
+  - {fileID: 11400000, guid: fbe79472d7050d2478aedf026852832a, type: 2}
+  _toolType: {fileID: 11400000, guid: 868b3f8b3519cfd44ad5795b38cbfa0e, type: 2}

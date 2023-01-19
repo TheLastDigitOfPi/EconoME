@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d30dff740be6e7438cd8af5a28c447d, type: 3}
+  m_Name: Default Tile Placer
+  m_EditorClassIdentifier: 
+  map: {fileID: 11400000, guid: 2b5727f3ae719fa44a6802b9d5ac8273, type: 2}
+  _worldTiles:
+    keys:
+    - {x: 0, y: 0}
+    - {x: 0, y: -1}
+    - {x: -1, y: 0}
+    - {x: -1, y: -1}
+    values:
+    - ItemBase: {fileID: 0}
+      Stacksize: 1
+      size: {x: 0, y: 0}
+      Shrink: 0
+      automated: 0
+      mapPosx: 0
+      mapPosy: 0
+      TileName: Spawn
+      Tier: 0
+      _baseMaxNodes: 30
+      NodeGenSpeed: 0
+      BaseLayerTiles: 
+      InteractableLayerTiles: 
+      DetailsLayerTiles: 
+      Interactables: []
+      resourceNodes: []
+      doorConnectors:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - ItemBase: {fileID: 0}
+      Stacksize: 1
+      size: {x: 0, y: 0}
+      Shrink: 0
+      automated: 0
+      mapPosx: 0
+      mapPosy: 0
+      TileName: Spawn
+      Tier: 0
+      _baseMaxNodes: 30
+      NodeGenSpeed: 0
+      BaseLayerTiles: 
+      InteractableLayerTiles: 
+      DetailsLayerTiles: 
+      Interactables: []
+      resourceNodes: []
+      doorConnectors:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - ItemBase: {fileID: 0}
+      Stacksize: 1
+      size: {x: 0, y: 0}
+      Shrink: 0
+      automated: 0
+      mapPosx: 0
+      mapPosy: 0
+      TileName: Spawn
+      Tier: 0
+      _baseMaxNodes: 30
+      NodeGenSpeed: 0
+      BaseLayerTiles: 
+      InteractableLayerTiles: 
+      DetailsLayerTiles: 
+      Interactables: []
+      resourceNodes: []
+      doorConnectors:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+    - ItemBase: {fileID: 0}
+      Stacksize: 1
+      size: {x: 0, y: 0}
+      Shrink: 0
+      automated: 0
+      mapPosx: 0
+      mapPosy: 0
+      TileName: Spawn
+      Tier: 0
+      _baseMaxNodes: 30
+      NodeGenSpeed: 0
+      BaseLayerTiles: 
+      InteractableLayerTiles: 
+      DetailsLayerTiles: 
+      Interactables: []
+      resourceNodes: []
+      doorConnectors:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  WorldItemPrefab: {fileID: 2465635416768552085, guid: 505d21ba72a588d438a1fca37c671914, type: 3}
+  BlankTilePrefab: {fileID: 2549206847438745396, guid: 3cfc0f9ea9cb73b4cab352ab6196dbb5, type: 3}
+  TileSprite: {fileID: 515383271269154451, guid: 130ad731acad5c840b357186cab70b8b, type: 3}
+  SpawnTileType: {fileID: 0}
+  TileTypeToSpawn: {fileID: 0}
+  TileGenerator: {fileID: 11400000, guid: 3a2f5972295d1984c8986ea5a205793b, type: 2}
+  PresetToGenerate: {fileID: 0}

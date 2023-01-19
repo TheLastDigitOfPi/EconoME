@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706e9728c6d19c7419c81be96996df4e, type: 3}
+  m_Name: Pants 1 Swing Left
+  m_EditorClassIdentifier: 
+  _textures:
+  - {fileID: -1693114976, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: -2125315443, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: 1709800641, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: -1155416141, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: -1987047061, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: -777662014, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  - {fileID: 980650938, guid: 3b0014e1c59e691498d01cea1ac979bf, type: 3}
+  nextSpriteNum: 0

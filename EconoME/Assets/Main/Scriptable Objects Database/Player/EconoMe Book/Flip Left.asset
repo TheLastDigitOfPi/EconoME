@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f081a6e6966070e4b918717c1cd51352, type: 3}
+  m_Name: Flip Left
+  m_EditorClassIdentifier: 
+  _textures:
+  - {fileID: -1679861668, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: -919668466, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: 465913955, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: -1547861947, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: -1984068117, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: -1919162279, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  - {fileID: -1679861668, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  _timePerFrame: 0.08

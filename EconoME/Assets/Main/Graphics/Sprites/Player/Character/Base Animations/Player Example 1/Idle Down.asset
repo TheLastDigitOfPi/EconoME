@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Idle Down
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: 53215eb63fe550b4992c9bf8f02c9d77, type: 2}
+  _hair: {fileID: 11400000, guid: 9b136a8d79a86c94f9f5b11d5c6eb8dc, type: 2}
+  _shirt: {fileID: 11400000, guid: 1b817612493bdf641ae8737297f91881, type: 2}
+  _pants: {fileID: 11400000, guid: e89c346dbdd144d4ca3b41368799b152, type: 2}
+  _shoes: {fileID: 11400000, guid: 3501fad1f44221d46aa6bb004a7911db, type: 2}
+  _secondsPerFrame: 0.3

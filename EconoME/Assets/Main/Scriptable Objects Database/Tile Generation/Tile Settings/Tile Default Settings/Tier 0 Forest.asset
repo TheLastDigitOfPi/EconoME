@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3357c445ea747459cc02c17fe84646, type: 3}
+  m_Name: Tier 0 Forest
+  m_EditorClassIdentifier: 
+  tileGenerationSettings:
+    TileType: {fileID: 11400000, guid: 21614d595314656489801429229e3f20, type: 2}
+    Tier: 0
+    BaseMaxNodes: 29
+    NodesCanGenerate:
+      m_Keys:
+      - {fileID: 11400000, guid: 678ca9460bd849d48b8d2b94f20fca9f, type: 2}
+      m_Values:
+      - OddsOfSpawning: 1
+        MinMaxHealth: {x: 200, y: 300}
+        MinMaxThreshold: {x: 50, y: 50}
+        MinMaxItemsPerPop: {x: 10, y: 15}
+    AddKeyToDictionary: {fileID: 11400000, guid: 678ca9460bd849d48b8d2b94f20fca9f, type: 2}
+    AddValueToDictionary:
+      OddsOfSpawning: 1
+      MinMaxHealth: {x: 200, y: 300}
+      MinMaxThreshold: {x: 50, y: 50}
+      MinMaxItemsPerPop: {x: 10, y: 15}

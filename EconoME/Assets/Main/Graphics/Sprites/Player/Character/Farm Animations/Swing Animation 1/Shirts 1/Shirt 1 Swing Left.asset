@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706e9728c6d19c7419c81be96996df4e, type: 3}
+  m_Name: Shirt 1 Swing Left
+  m_EditorClassIdentifier: 
+  _textures:
+  - {fileID: 1268533688, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: -1725555616, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: -2136471152, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: 559139503, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: 1036738231, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: -387266375, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  - {fileID: -898973787, guid: 1eebd83852abadb42a14d719a8e04fd5, type: 3}
+  nextSpriteNum: 6

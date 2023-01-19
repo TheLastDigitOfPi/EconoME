@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549a045c8d0daa840a480b9c2f685ddc, type: 3}
+  m_Name: Fred
+  m_EditorClassIdentifier: 
+  ID: 0
+  Name: Fred
+  Description: He's Just Fred
+  _interactionSet: {fileID: 11400000, guid: 44612f9d17f885e4291ae5f83f7feb6e, type: 2}
+  _defaultStatus: {fileID: 11400000, guid: 5a5dac4ead147bb4d9e7b0d7923a1217, type: 2}
+  AvailableStatus:
+  - {fileID: 11400000, guid: 5a5dac4ead147bb4d9e7b0d7923a1217, type: 2}

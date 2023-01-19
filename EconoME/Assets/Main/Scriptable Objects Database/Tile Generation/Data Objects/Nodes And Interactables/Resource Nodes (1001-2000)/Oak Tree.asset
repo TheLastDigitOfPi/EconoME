@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8f56e62d171e84d9ac030c836b2583, type: 3}
+  m_Name: Oak Tree
+  m_EditorClassIdentifier: 
+  NodeDatabaseID: 1001
+  prefab: {fileID: 9122176025326040219, guid: b0b94e1da03f5bb4180ab04124ba20b4, type: 3}
+  NodeType: {fileID: 11400000, guid: e59f3707c0ed1944988caf73d00df4e2, type: 2}
+  RequiredTool: {fileID: 11400000, guid: 868b3f8b3519cfd44ad5795b38cbfa0e, type: 2}

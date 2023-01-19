@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEditor;
+using UnityEngine;
+
+[CustomEditor(typeof(Interaction), true), CanEditMultipleObjects]
+public class InteractionObjectEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+        Interaction _interaction = (Interaction)target;
+        if (GUILayout.Button("Refresh GUID"))
+        {
+            _interaction.resetGUID();
+        }
+    }
+}
+

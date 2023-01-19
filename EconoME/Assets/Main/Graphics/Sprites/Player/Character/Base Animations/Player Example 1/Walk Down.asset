@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Walk Down
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: d77f354edc905484ab845fa6683b72e4, type: 2}
+  _hair: {fileID: 11400000, guid: 03243aebfcdc99c4596663ff44f4971e, type: 2}
+  _shirt: {fileID: 11400000, guid: be9d4fc62b673dc44b14ad764f58c246, type: 2}
+  _pants: {fileID: 11400000, guid: 7dd254417d1cc954ba9f2e01a64d0f9a, type: 2}
+  _shoes: {fileID: 11400000, guid: 20429ab7009dae246b9199bb24634397, type: 2}
+  _secondsPerFrame: 0.2

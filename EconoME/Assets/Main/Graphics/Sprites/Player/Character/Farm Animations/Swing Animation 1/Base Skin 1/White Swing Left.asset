@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 706e9728c6d19c7419c81be96996df4e, type: 3}
+  m_Name: White Swing Left
+  m_EditorClassIdentifier: 
+  _textures:
+  - {fileID: 134578774, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: -890249184, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: 2091694155, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: -1287968412, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: 1047259435, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: -1895479310, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  - {fileID: -1406395650, guid: b8df5d374e5614342a4ed1ba7c7dc5b0, type: 3}
+  nextSpriteNum: 6

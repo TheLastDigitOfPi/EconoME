@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7daefeb4375ae48a1d665b19b90fec, type: 3}
+  m_Name: Run Up
+  m_EditorClassIdentifier: 
+  _baseLayer: {fileID: 11400000, guid: 934d27c4c700d774495085ecbf472f95, type: 2}
+  _hair: {fileID: 11400000, guid: 72c51407b8dfca841899ff97f6b4b25b, type: 2}
+  _shirt: {fileID: 11400000, guid: 79f1d84aec00cd24f888eb87a8a10df0, type: 2}
+  _pants: {fileID: 11400000, guid: 9694be772c753be46933d640471a7ec0, type: 2}
+  _shoes: {fileID: 11400000, guid: c4f10f6f299e34c4c94c1a401e4a3280, type: 2}
+  _secondsPerFrame: 0.2

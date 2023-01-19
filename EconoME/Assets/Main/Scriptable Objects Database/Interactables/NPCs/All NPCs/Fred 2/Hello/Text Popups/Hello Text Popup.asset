@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d182ec664a354fc4284ab8b5592c7e69, type: 3}
+  m_Name: Hello Text Popup
+  m_EditorClassIdentifier: 
+  _id: 242d07d6-7db9-4847-96bc-3cc4551366ea
+  Text: Hello there, my name is Fred!
+  _icon: {fileID: 0}
+  TimePerCharacter: 0.02

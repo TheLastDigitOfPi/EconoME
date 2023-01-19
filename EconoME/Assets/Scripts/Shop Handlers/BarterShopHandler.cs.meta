@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 40839956f9aba6848be61d930f63456d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Toggler: {instanceID: 0}
+  - MoneyPopup: {fileID: 3350914239450265758, guid: d6816ad0828363843bf0bdb44843b764, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

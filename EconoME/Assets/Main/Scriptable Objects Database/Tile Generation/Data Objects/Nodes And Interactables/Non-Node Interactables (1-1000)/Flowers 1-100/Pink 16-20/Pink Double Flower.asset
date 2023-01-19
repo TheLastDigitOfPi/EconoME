@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f974071504469514e9c0f08ddcdab579, type: 3}
+  m_Name: Pink Double Flower
+  m_EditorClassIdentifier: 
+  InteractableID: 17
+  prefab: {fileID: 7763455452944748120, guid: 567dd419b431b4c4eb0fa82540149d34, type: 3}
