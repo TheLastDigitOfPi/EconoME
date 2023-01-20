@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e570ba94e919dd45ad7a67a12525c5a, type: 3}
   m_Name: Basic Attack AI
   m_EditorClassIdentifier: 
-  <TransitionFrom>k__BackingField: {fileID: 0}
-  AICondition: {fileID: 11400000, guid: 1f68e40755f5d8e4cbd7eec532b33409, type: 2}
-  _walkAnimationName: Walk
-  playerPosition: {fileID: 11400000, guid: ee513706182c49346850608db9d1dc8b, type: 2}
-  _circleRadius: 1.99
-  _rotationSpeed: 1.16
+  data:
+    rid: 5133679614272995414
+  references:
+    version: 2
+    RefIds:
+    - rid: 5133679614272995414
+      type: {class: BasicAttackAI, ns: , asm: Assembly-CSharp}
+      data:
+        AICondition: {fileID: 11400000, guid: 1f68e40755f5d8e4cbd7eec532b33409, type: 2}
+        _walkAnimationName: Walk
+        _playerPosition: {fileID: 11400000, guid: ee513706182c49346850608db9d1dc8b, type: 2}
+        _circleRadius: 1
+        _rotationSpeed: 1

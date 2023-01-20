@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a286795569e4d43831176368758fbc, type: 3}
   m_Name: Basic Mob Wander
   m_EditorClassIdentifier: 
-  <TransitionFrom>k__BackingField: {fileID: 0}
-  AICondition: {fileID: 11400000, guid: 810262970c476aa43b002a51a9e2fd9b, type: 2}
-  _walkAnimationName: Walk
-  _idleAnimationName: Idle
+  data:
+    rid: 5133679614272995417
+  references:
+    version: 2
+    RefIds:
+    - rid: 5133679614272995417
+      type: {class: WanderAI, ns: , asm: Assembly-CSharp}
+      data:
+        AICondition: {fileID: 11400000, guid: 810262970c476aa43b002a51a9e2fd9b, type: 2}
+        _walkAnimationName: Walk
+        _idleAnimationName: Idle

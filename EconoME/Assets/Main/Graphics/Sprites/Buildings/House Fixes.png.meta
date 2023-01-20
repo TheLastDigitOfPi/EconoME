@@ -753,6 +753,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Smallest House
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 348
+        width: 113
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d1646333e212a4284b4bedf6ff5810
+      internalID: -1850958726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium House
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 293
+        width: 176
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7440e4289c834b747991b8b015b81907
+      internalID: -1357078584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -784,12 +826,14 @@ TextureImporter:
       House Fixes_22: 1561255027
       House Fixes_26: -434090441
       House Fixes_14: 1824750075
+      Medium House: -1357078584
       House Fixes_9: 1611869148
       House Fixes_4: -1641796656
       House Fixes_15: -263129316
       House Fixes_7: -1237064330
       House Fixes_16: 440506173
       House Fixes_23: 2051833661
+      Smallest House: -1850958726
       House Fixes_24: 1988192233
   spritePackingTag: 
   pSDRemoveMatte: 0

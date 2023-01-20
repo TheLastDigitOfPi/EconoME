@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310bae4237026c74d93cb72c9f8a1ed8, type: 3}
   m_Name: Squirrel Death
   m_EditorClassIdentifier: 
-  <TransitionFrom>k__BackingField: {fileID: 0}
-  AICondition: {fileID: 11400000, guid: 6a7d7d953f9dcfa4c9e30ffbcec89116, type: 2}
-  _animationName: Die
-  _timeTillDestroy: -19.406185
+  data:
+    rid: 5133679614272995415
+  references:
+    version: 2
+    RefIds:
+    - rid: 5133679614272995415
+      type: {class: MobDeath, ns: , asm: Assembly-CSharp}
+      data:
+        AICondition: {fileID: 11400000, guid: 6a7d7d953f9dcfa4c9e30ffbcec89116, type: 2}
+        _animationName: Death
+        _timeTillDestroy: 4

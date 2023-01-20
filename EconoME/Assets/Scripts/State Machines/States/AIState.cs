@@ -1,40 +1,37 @@
 ﻿using UnityEngine;
 using System;
 
-public abstract class AIState : ScriptableObject, IState
+public abstract class AIStateSO : ScriptableObject
 {
-    public Func<bool> condition { get { return AICondition.Condition; } }
+    public abstract bool GetAIState(AIController controller, out AIState state);
+}
 
-    [field: SerializeField] public AIState TransitionFrom { get; private set; }
-
-    [SerializeField] protected AIStateCondition AICondition;
+[System.Serializable]
+public abstract class AIState : IState
+{
+    public bool PassedValidation { get; protected set; } = true;
+    public Func<bool> Condition { get{return _condition.Condition;}}
+    private AIStateCondition _condition;
+    [SerializeField] protected AIStateConditionSO AICondition;
     protected AIController Controller;
-
-    protected Mob MobData;
-
-    public void OnStart(AIController controller)
+    public AIState(){ }
+    public AIState(AIController controller, AIStateConditionSO conditionSO)
     {
-        //Set Controller and Mob data
         Controller = controller;
-
-        if (!Controller.TryGetComponent<Mob>(out MobData))
+        AICondition = conditionSO;
+        _condition = AICondition.GetCondition();
+        if (!_condition.CheckIfValid(controller, out string Error))
         {
-            Controller.FailedStateRequirements(this, "No Mob Data Found");
+            Debug.LogWarning("Condition '" + AICondition.GetType().Name + "' failed to meet requirements: " + Error, Controller.gameObject);
+            PassedValidation = false;
         }
-
-
-        //Check Func Conditions are met
-        string conditionValidationMessage = AICondition.CheckIfValid(MobData);
-        if (conditionValidationMessage != default)
-        {
-            Controller.FailedStateRequirements(this, conditionValidationMessage);
-        }
-
-
-        OnStart();
     }
 
-    protected abstract void OnStart();
+    public void FailedStateRequirements(AIState failedState, string message)
+    {
+        Debug.LogWarning("State '" + failedState.GetType().Name + "' failed to meet requirements: " + message, Controller.gameObject);
+        PassedValidation = false;
+    }
 
     public abstract void OnEnter();
 

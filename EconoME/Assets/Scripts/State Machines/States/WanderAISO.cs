@@ -1,52 +1,65 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Mob Wander", menuName = "ScriptableObjects/AI/States/Mob Wander")]
+public class WanderAISO : AIStateSO
+{
+    [SerializeReference] WanderAI data = new();
+    public override bool GetAIState(AIController controller, out AIState state)
+    {
+        state = new WanderAI(controller, data);
+        return state.PassedValidation;
+    }
+}
+[System.Serializable]
 public class WanderAI : AIState
 {
-    private Animator _animator;
+    //Settings
     [SerializeField] string _walkAnimationName = "Walk";
     [SerializeField] string _idleAnimationName = "Idle";
+
+    private Animator _animator;
     private SpriteRenderer _renderer;
-    protected override void OnStart()
-    {
-        //Check that all requirements are met
-        if (!Controller.TryGetComponent(out _animator))
-        {
-            Controller.FailedStateRequirements(this, "No Animator Found");
-            return;
-        }
-
-        if (!Controller.TryGetComponent(out _renderer))
-        {
-            Controller.FailedStateRequirements(this, "No Sprite Renderer Found");
-            return;
-        }
-
-        if (!Controller.TryGetComponent(out _rigidBody))
-        {
-            Controller.FailedStateRequirements(this, "No RigidBody2D Found");
-            return;
-        }
-
-        TimeStuck = 0f;
-        WaitTime = 0f;
-        Waiting = false;
-    }
-
     private Rigidbody2D _rigidBody;
     private Vector2 movePos;
     Vector2 _lastPosition = Vector2.zero;
     private float TimeStuck;
     private float WaitTime = 0f;
-    float TimeToWait = UnityEngine.Random.Range(2f, 5f);
+    float TimeToWait = 3f;
     bool Waiting = false;
+
+    public WanderAI() { }
+   
+    public WanderAI(AIController controller, WanderAI other) : base(controller, other.AICondition)
+    {
+        //Implement Settings
+        _walkAnimationName = other._walkAnimationName;
+        _idleAnimationName = other._idleAnimationName; 
+        //Check that all requirements are met
+        if (!Controller.TryGetComponent(out _animator))
+        {
+            FailedStateRequirements(this, "No Animator Found");
+            return;
+        }
+
+        if (!Controller.TryGetComponent(out _renderer))
+        {
+            FailedStateRequirements(this, "No Sprite Renderer Found");
+            return;
+        }
+
+        if (!Controller.TryGetComponent(out _rigidBody))
+        {
+            FailedStateRequirements(this, "No RigidBody2D Found");
+            return;
+        }
+    }
 
     public override void OnEnter()
     {
         _animator.CrossFade(_idleAnimationName, 0);
 
         Waiting = true;
-        WaitTime = 0;
+        TimeStuck = 0f;
     }
 
     public override void OnExit()

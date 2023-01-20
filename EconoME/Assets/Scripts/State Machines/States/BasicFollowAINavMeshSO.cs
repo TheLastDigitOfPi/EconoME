@@ -3,49 +3,70 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [CreateAssetMenu(fileName = "New Basic Follow AI NavMesh", menuName = "ScriptableObjects/AI/States/Mob Basic Follow AI NavMesh")]
+
+public class BasicFollowAINavMeshSO : AIStateSO
+{
+    [SerializeReference] BasicFollowAINavMesh data = new();
+    public override bool GetAIState(AIController controller, out AIState state)
+    {
+        state = new BasicFollowAINavMesh(controller, data);
+        return state.PassedValidation;
+    }
+}
+
+[System.Serializable]
 public class BasicFollowAINavMesh : AIState
 {
-    private Animator _animator;
+    //Settings
     [SerializeField] string _walkAnimationName = "Walk";
     [SerializeField] string _idleAnimationName = "Idle";
-    [SerializeField] Vector3Variable playerPosition;
+    [SerializeField] Vector3Variable _playerPosition;
     [SerializeField] float _circleRadius = 1;
     [SerializeField] float _circleRadiusMax = 2;
 
+    private Animator _animator;
     private Vector2 _currentPathPosition;
     private float angle;
     private SpriteRenderer _renderer;
+    Mob _mobData;
 
-    protected override void OnStart()
+    public BasicFollowAINavMesh() { }
+    
+
+    public BasicFollowAINavMesh(AIController controller, BasicFollowAINavMesh other) : base(controller, other.AICondition)
     {
-        //Check that all requirements are met
+        //Set Settings
+        _walkAnimationName = other._walkAnimationName;
+        _idleAnimationName = other._idleAnimationName;
+        _circleRadius = other._circleRadius;
+        _playerPosition = other._playerPosition;
+        _circleRadiusMax = other._circleRadiusMax;
+
         if (!Controller.TryGetComponent(out _animator))
         {
-            Controller.FailedStateRequirements(this, "No Animator Found");
+            FailedStateRequirements(this, "No Animator Found");
             return;
         }
 
         if (!Controller.TryGetComponent(out _renderer))
         {
-            Controller.FailedStateRequirements(this, "No Sprite Renderer Found");
+            FailedStateRequirements(this, "No Sprite Renderer Found");
             return;
         }
-        /*
-        if (!Controller.TryGetComponent(out _rigidBody))
+
+        if (!Controller.TryGetComponent(out _mobData))
         {
-            Controller.FailedStateRequirements(this, "No RigidBody2D Found");
+            FailedStateRequirements(this, "No Mob Class Found");
             return;
         }
-        */
     }
 
-    //private Rigidbody2D _rigidBody;
 
     public override void OnEnter()
     {
-        Controller.NavMeshAgent.SetDestination(playerPosition.Value);
+        Controller.NavMeshAgent.SetDestination(_playerPosition.Value);
         _animator.CrossFade(_walkAnimationName, 0);
-        angle = Vector3.Angle(playerPosition.Value, Controller.transform.position);
+        angle = Vector3.Angle(_playerPosition.Value, Controller.transform.position);
     }
 
     public override void OnExit()
@@ -57,14 +78,14 @@ public class BasicFollowAINavMesh : AIState
     {
 
         //Circle around player if near them
-        if (Vector3.Distance(Controller.transform.position, playerPosition.Value) <= _circleRadiusMax)
+        if (Vector3.Distance(Controller.transform.position, _playerPosition.Value) <= _circleRadiusMax)
         {
             CircleAroundPlayer();
             return;
         }
 
         //Otherwise move towards the player
-        if (Controller.NavMeshAgent.SetDestination(playerPosition.Value))
+        if (Controller.NavMeshAgent.SetDestination(_playerPosition.Value))
         {
             MoveTowardsPlayer();
         }
@@ -75,9 +96,9 @@ public class BasicFollowAINavMesh : AIState
             //Get the position of the circle we want to rotate around
             Vector3 positionOffset = new();
             positionOffset.Set(Mathf.Cos(angle) * _circleRadius, Mathf.Sin(angle) * _circleRadius, 0);
-            var movePosition = playerPosition.Value + positionOffset;
+            var movePosition = _playerPosition.Value + positionOffset;
             //Update angle
-            angle += Time.deltaTime * MobData.Speed;
+            angle += Time.deltaTime * _mobData.Speed;
             //Move to destination
             Controller.NavMeshAgent.SetDestination(movePosition);
             _currentPathPosition = movePosition;
@@ -86,7 +107,7 @@ public class BasicFollowAINavMesh : AIState
 
         void MoveTowardsPlayer()
         {
-            _currentPathPosition = playerPosition.Value;
+            _currentPathPosition = _playerPosition.Value;
             _renderer.flipX = _currentPathPosition.x <= Controller.transform.position.x;
         }
     }

@@ -5,28 +5,30 @@ using UnityEngine.AI;
 public class AIController : MonoBehaviour
 {
     StateMachine _stateMachine = new();
-    [SerializeField] List<AIState> _aIStates = new();
-    [field: SerializeField] public NavMeshAgent NavMeshAgent {get; private set;}
-
+    [SerializeField] List<AIStateSO> _aIStates = new();
+    [SerializeReference] List<AIState> _activeStates = new();
+    public NavMeshAgent NavMeshAgent {get { return _navMeshAgent;}}
+    NavMeshAgent _navMeshAgent;
     public bool isRunning = true;
 
     private void Start()
     {
-        NavMeshAgent = GetComponent<NavMeshAgent>();
-
-        if(NavMeshAgent== null){Debug.LogWarning("No Nav Mesh agent found", this); isRunning = false; return;}
+        if(!TryGetComponent<NavMeshAgent>(out _navMeshAgent)) {Debug.LogWarning("No Nav Mesh agent found", this); isRunning = false; return;}
 
         NavMeshAgent.updateRotation = false;
 		NavMeshAgent.updateUpAxis = false;
 
         //Validate all AI States meet requirements
-        foreach (var state in _aIStates)
+        foreach (var stateSO in _aIStates)
         {
-            state.OnStart(this);
+            if(stateSO.GetAIState(this, out AIState state))
+            {
+                _activeStates.Add(state);
+            }
         }
 
         //If no states remaining, whoops
-        if (_aIStates.Count == 0)
+        if (_activeStates.Count == 0)
         {
             Debug.LogWarning("AI Controller not able to load any states. Commensing Self Destruct!");
             Destroy(this);
@@ -34,14 +36,9 @@ public class AIController : MonoBehaviour
         }
 
         //Add valid states to the state machine
-        foreach (var state in _aIStates)
+        foreach (var state in _activeStates)
         {
-            if (state.TransitionFrom != null)
-            {
-                _stateMachine.AddTransition(state.TransitionFrom, state, state.condition);
-                continue;
-            }
-            _stateMachine.AddAnyTransition(state, state.condition);
+            _stateMachine.AddAnyTransition(state, state.Condition);
         }
     }
 
@@ -52,9 +49,5 @@ public class AIController : MonoBehaviour
 
     }
 
-    public void FailedStateRequirements(AIState failedState, string message)
-    {
-        Debug.LogWarning("State failed to meet requirements: " + message);
-        _aIStates.Remove(failedState);
-    }
+    
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System;
 
 public class BookToggleTest : IChangeableState
 {
@@ -42,8 +43,7 @@ public class BookToggleTest : IChangeableState
         Hotbar = hotbar;
         _handler = handler;
     }
-
-
+    
     public void OnEnter()
     {
         #region Thoughts
@@ -176,7 +176,7 @@ public class BookToggleTest : IChangeableState
     public void Tick()
     {
         //If book is not moving, don't animate
-        if (!isMovingX)
+        if (!isMovingX && (animation.CurrentSpriteNum == 0 || animation.CurrentSpriteNum == animation.Textures.Length - 1))
             return;
 
         //Animate book based off its time per frame
@@ -201,8 +201,6 @@ public class BookToggleTest : IChangeableState
                 {
                     case 0:
                         BookCoverText.SetActive(true);
-                        _rightPage.SetActive(false);
-                        _leftPage.SetActive(false);
                         return;
                     case 1:
                         BookCoverText.SetActive(false);
