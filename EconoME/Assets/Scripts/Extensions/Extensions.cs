@@ -30,6 +30,11 @@ public static class Extensions
         return (num > min && num < max);
     }
 
+    public static bool isBetween(this float num, float min, float max)
+    {
+        return (num > min && num < max);
+    }
+
     public static bool isBetweenInclusive(this int num, int min, int max)
     {
         return (num >= min && num <= max);
