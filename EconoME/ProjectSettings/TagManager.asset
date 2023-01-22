@@ -25,6 +25,7 @@ TagManager:
   - Door
   - PlaceTileParent
   - Creature
+  - Obstacle
   layers:
   - Default
   - TransparentFX

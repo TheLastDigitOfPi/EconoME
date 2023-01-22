@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.AI;
+using System;
 
 public class AIController : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class AIController : MonoBehaviour
     public NavMeshAgent NavMeshAgent {get { return _navMeshAgent;}}
     NavMeshAgent _navMeshAgent;
     public bool isRunning = true;
+    public event Action onDrawGizmos;
+    private void OnDrawGizmos()
+    {
+        onDrawGizmos?.Invoke();
+    }
 
     private void Start()
     {

@@ -3623,7 +3623,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_167
+      name: Elevation Extra 2
       rect:
         serializedVersion: 2
         x: 128
@@ -3644,7 +3644,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_168
+      name: Elevation Extra 3
       rect:
         serializedVersion: 2
         x: 160
@@ -3665,7 +3665,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_169
+      name: Elevation 1
       rect:
         serializedVersion: 2
         x: 192
@@ -3686,7 +3686,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_170
+      name: Elevation 2
       rect:
         serializedVersion: 2
         x: 224
@@ -3707,7 +3707,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_171
+      name: Elevation 3
       rect:
         serializedVersion: 2
         x: 256
@@ -3833,7 +3833,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_177
+      name: Elevation 26
       rect:
         serializedVersion: 2
         x: 32
@@ -3854,7 +3854,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_178
+      name: Forest-Prairie Tileset extra
       rect:
         serializedVersion: 2
         x: 64
@@ -3875,7 +3875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_179
+      name: Elevation 27
       rect:
         serializedVersion: 2
         x: 96
@@ -3938,7 +3938,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_182
+      name: Elevation 4
       rect:
         serializedVersion: 2
         x: 192
@@ -3959,7 +3959,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_183
+      name: Elevation 5
       rect:
         serializedVersion: 2
         x: 224
@@ -3980,7 +3980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_184
+      name: Elevation 6
       rect:
         serializedVersion: 2
         x: 256
@@ -4001,7 +4001,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_185
+      name: Elevation 16
       rect:
         serializedVersion: 2
         x: 288
@@ -4022,7 +4022,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_186
+      name: Elevation 17
       rect:
         serializedVersion: 2
         x: 320
@@ -4190,7 +4190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_194
+      name: Elevation 23
       rect:
         serializedVersion: 2
         x: 32
@@ -4211,7 +4211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_195
+      name: Elevation 24
       rect:
         serializedVersion: 2
         x: 64
@@ -4232,7 +4232,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_196
+      name: Elevation 25
       rect:
         serializedVersion: 2
         x: 96
@@ -4253,7 +4253,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_197
+      name: Elevation Extra 11
       rect:
         serializedVersion: 2
         x: 128
@@ -4295,7 +4295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_199
+      name: Elevation 7
       rect:
         serializedVersion: 2
         x: 192
@@ -4316,7 +4316,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_200
+      name: Elevation 8
       rect:
         serializedVersion: 2
         x: 224
@@ -4337,7 +4337,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_201
+      name: Elevation 9
       rect:
         serializedVersion: 2
         x: 256
@@ -4358,7 +4358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_202
+      name: Elevation 18
       rect:
         serializedVersion: 2
         x: 288
@@ -4379,7 +4379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_203
+      name: Elevation 19
       rect:
         serializedVersion: 2
         x: 320
@@ -4547,7 +4547,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_211
+      name: Elevation 10
       rect:
         serializedVersion: 2
         x: 192
@@ -4568,7 +4568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_212
+      name: Elevation 11
       rect:
         serializedVersion: 2
         x: 224
@@ -4589,7 +4589,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_213
+      name: Elevation 12
       rect:
         serializedVersion: 2
         x: 256
@@ -4610,7 +4610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_214
+      name: Elevation 20
       rect:
         serializedVersion: 2
         x: 288
@@ -4631,7 +4631,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_215
+      name: Elevation Extra 1
       rect:
         serializedVersion: 2
         x: 320
@@ -4841,7 +4841,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_225
+      name: Elevation 13
       rect:
         serializedVersion: 2
         x: 192
@@ -4862,7 +4862,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_226
+      name: Elevation 14
       rect:
         serializedVersion: 2
         x: 224
@@ -4883,7 +4883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_227
+      name: Elevation 15
       rect:
         serializedVersion: 2
         x: 256
@@ -4904,7 +4904,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_228
+      name: Elevation 21
       rect:
         serializedVersion: 2
         x: 288
@@ -4925,7 +4925,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_229
+      name: Elevation 22
       rect:
         serializedVersion: 2
         x: 320
@@ -5009,7 +5009,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_233
+      name: Elevation Extra 9
       rect:
         serializedVersion: 2
         x: 448
@@ -5324,7 +5324,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_248
+      name: Elevation Extra 10
       rect:
         serializedVersion: 2
         x: 448
@@ -5545,7 +5545,31 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 11, y: -16.5}
+        - {x: 14, y: -15.5}
+        - {x: 18, y: -12.5}
+        - {x: 23, y: -10.5}
+        - {x: 23, y: -1.5}
+        - {x: 19, y: 7.5}
+        - {x: 19, y: 10.5}
+        - {x: 14, y: 16.5}
+        - {x: 12, y: 21.5}
+        - {x: 4, y: 29.5}
+        - {x: -4, y: 29.5}
+        - {x: -12, y: 21.5}
+        - {x: -14, y: 16.5}
+        - {x: -19, y: 10.5}
+        - {x: -19, y: 7.5}
+        - {x: -23, y: -2.5}
+        - {x: -23, y: -10.5}
+        - {x: -19, y: -11.5}
+        - {x: -15, y: -13.5}
+        - {x: -12, y: -14.5}
+        - {x: -8, y: -16.5}
+        - {x: -5, y: -16.5}
+        - {x: 1, y: -17.5}
+        - {x: 6, y: -16.5}
       tessellationDetail: 0
       bones: []
       spriteID: 992257b7ac441a643ada11b59cf7b8ec
@@ -5870,7 +5894,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_281
+      name: Elevation Extra 5
       rect:
         serializedVersion: 2
         x: 32
@@ -5891,7 +5915,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_282
+      name: Elevation Extra 6
       rect:
         serializedVersion: 2
         x: 64
@@ -6167,7 +6191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_300
+      name: Elevation Extra 7
       rect:
         serializedVersion: 2
         x: 32
@@ -6188,7 +6212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Forest-Prairie Tileset v1_301
+      name: Elevation Extra 8
       rect:
         serializedVersion: 2
         x: 64
@@ -8070,14 +8094,12 @@ TextureImporter:
       Forest-Prairie Tileset v1_86: -1096380733
       Forest-Prairie Tileset v1_79: -582045607
       Forest-Prairie Tileset v1_137: 42883102
-      Forest-Prairie Tileset v1_186: 373415033
-      Forest-Prairie Tileset v1_213: -359120778
+      Elevation 10: 1364636567
       Forest-Prairie Tileset v1_188: -1521847351
       Forest-Prairie Tileset v1_206: 1302476957
-      Forest-Prairie Tileset v1_196: -1488679978
       Forest-Prairie Tileset v1_157: 327390487
-      Forest-Prairie Tileset v1_183: 1764639070
       Forest-Prairie Tileset v1_416: 1016637040
+      Elevation Extra 9: 269490727
       Dirt Details 2: 889933461
       Forest-Prairie Tileset v1_103: 2139788780
       Forest-Prairie Tileset v1_413: -839631375
@@ -8101,14 +8123,13 @@ TextureImporter:
       Forest-Prairie Tileset v1_362: -1947626197
       Forest-Prairie Tileset v1_348: 1288989931
       Forest-Prairie Tileset v1_231: 921567252
-      Forest-Prairie Tileset v1_300: -1572736097
       Forest-Prairie Tileset v1_335: 1143189982
       Forest-Prairie Tileset v1_340: 1633779231
       Forest-Prairie Tileset v1_154: -223378626
       Forest-Prairie Tileset v1_370: 1816370450
+      Elevation 25: -1488679978
       Forest-Prairie Tileset v1_290: 1269929856
       Forest-Prairie Tileset v1_114: -1905398978
-      Forest-Prairie Tileset v1_229: 491750760
       Forest-Prairie Tileset v1_376: -2066151630
       Forest-Prairie Tileset v1_2: 514574891
       Forest-Prairie Tileset v1_338: 1422148042
@@ -8119,17 +8140,16 @@ TextureImporter:
       Forest-Prairie Tileset v1_151: 1014456148
       Forest-Prairie Tileset v1_96: 694649765
       Forest-Prairie Tileset v1_57: -768293331
-      Forest-Prairie Tileset v1_327: -1243969843
       Forest-Prairie Tileset v1_401: -1195662913
+      Forest-Prairie Tileset v1_327: -1243969843
       Forest-Prairie Tileset v1_343: 1922013266
       Forest-Prairie Tileset v1_73: 366299439
       Forest-Prairie Tileset v1_342: 1843236393
       Forest-Prairie Tileset v1_118: 1307343399
-      Forest-Prairie Tileset v1_215: -1826484644
       Forest-Prairie Tileset v1_386: -608300848
       Forest-Prairie Tileset v1_295: -1521217148
+      Elevation 11: 980046515
       Forest-Prairie Tileset v1_132: -2061399502
-      Forest-Prairie Tileset v1_227: 199837252
       Forest-Prairie Tileset v1_272: 2098457251
       Forest-Prairie Tileset v1_245: 275437827
       Forest-Prairie Tileset v1_68: -1371895127
@@ -8139,40 +8159,46 @@ TextureImporter:
       Grass Fine Details 4: 1573994670
       Forest-Prairie Tileset v1_19: -247703906
       Forest-Prairie Tileset v1_274: 549424618
+      Elevation 13: -1273886257
       Forest-Prairie Tileset v1_381: 340831420
       Forest-Prairie Tileset v1_6: -1388368170
       Forest-Prairie Tileset v1_94: 746107565
       Forest-Prairie Tileset v1_314: -1570392081
-      Forest-Prairie Tileset v1_177: 1814362357
+      Elevation 1: -703717119
       Forest-Prairie Tileset v1_368: -1624534972
       Forest-Prairie Tileset v1_106: 1235540560
+      Elevation Extra 5: 485479137
       Forest-Prairie Tileset v1_21: 1827959784
       Forest-Prairie Tileset v1_158: 1521188344
       Forest-Prairie Tileset v1_219: 1602372808
       Forest-Prairie Tileset v1_330: 921572799
       Forest-Prairie Tileset v1_84: 1592839419
-      Forest-Prairie Tileset v1_13: -1363390149
       Forest-Prairie Tileset v1_387: -808948400
-      Forest-Prairie Tileset v1_168: -1736057941
+      Forest-Prairie Tileset v1_13: -1363390149
       Forest-Prairie Tileset v1_76: -337503192
       Forest-Prairie Tileset v1_209: 1380188619
       Forest-Prairie Tileset v1_42: 2120768741
       Forest-Prairie Tileset v1_334: -1872345407
       Forest-Prairie Tileset v1_52: -1949506063
       Forest-Prairie Tileset v1_359: -1557627164
+      Elevation 14: -1046256610
+      Elevation 7: 1926691500
       Forest-Prairie Tileset v1_140: -673326805
       Forest-Prairie Tileset v1_357: 1559112189
       Forest-Prairie Tileset v1_312: 414762974
+      Elevation Extra 10: 782383633
       Forest-Prairie Tileset v1_382: -130515960
       Forest-Prairie Tileset v1_189: -1094789878
       Forest-Prairie Tileset v1_372: 145109794
       Forest-Prairie Tileset v1_144: 1586870202
       Forest-Prairie Tileset v1_174: 2008465525
-      Forest-Prairie Tileset v1_199: 1926691500
       Forest-Prairie Tileset v1_221: 58213731
       Forest-Prairie Tileset v1_380: 800976217
+      Elevation 3: 1396936686
       Forest-Prairie Tileset v1_70: 711467902
       Forest-Prairie Tileset v1_43: 1522460204
+      Elevation Extra 7: -1572736097
+      Elevation Extra 8: 1645127768
       Forest-Prairie Tileset v1_107: 1741574458
       Forest-Prairie Tileset v1_266: -1813617294
       Forest-Prairie Tileset v1_40: 533598269
@@ -8186,17 +8212,16 @@ TextureImporter:
       Forest-Prairie Tileset v1_147: -1411461269
       Forest-Prairie Tileset v1_156: -378105950
       Forest-Prairie Tileset v1_393: -379129745
+      Forest-Prairie Tileset extra: 730851315
       Forest-Prairie Tileset v1_39: -293748043
       Forest-Prairie Tileset v1_78: 2027734277
       Forest-Prairie Tileset v1_123: -1522245079
       Forest-Prairie Tileset v1_23: -486558905
       Forest-Prairie Tileset v1_165: 315860276
       Forest-Prairie Tileset v1_365: 2094633698
-      Forest-Prairie Tileset v1_301: 1645127768
       Forest-Prairie Tileset v1_134: 639856438
-      Forest-Prairie Tileset v1_167: -578257600
       Forest-Prairie Tileset v1_51: 462052440
-      Forest-Prairie Tileset v1_171: 1396936686
+      Elevation 26: 1814362357
       Forest-Prairie Tileset v1_412: -1016568881
       Forest-Prairie Tileset v1_121: -198337129
       Forest-Prairie Tileset v1_207: -266709769
@@ -8207,7 +8232,6 @@ TextureImporter:
       Forest-Prairie Tileset v1_130: -1043100994
       Forest-Prairie Tileset v1_350: -1983074058
       Forest-Prairie Tileset v1_117: -1257620034
-      Forest-Prairie Tileset v1_211: 1364636567
       Forest-Prairie Tileset v1_216: 1438208740
       Forest-Prairie Tileset v1_16: 1822424313
       Forest-Prairie Tileset v1_125: -1615317619
@@ -8217,57 +8241,59 @@ TextureImporter:
       Forest-Prairie Tileset v1_414: -1753599179
       Forest-Prairie Tileset v1_85: -132726990
       Forest-Prairie Tileset v1_108: 1166982004
-      Forest-Prairie Tileset v1_400: -1500194153
       Forest-Prairie Tileset v1_336: 1643325533
+      Elevation 19: -1106988624
+      Forest-Prairie Tileset v1_400: -1500194153
       Grass Fine Details 6: 307768232
       Forest-Prairie Tileset v1_127: -2129340745
-      Forest-Prairie Tileset v1_162: 583963343
       Forest-Prairie Tileset v1_363: -547647572
+      Forest-Prairie Tileset v1_162: 583963343
       Forest-Prairie Tileset v1_288: -2087018762
       Forest-Prairie Tileset v1_28: -250244353
       Forest-Prairie Tileset v1_304: 1141567031
       Forest-Prairie Tileset v1_97: 1533233328
       Tree_Dead_1: 686233134
+      Elevation 20: 1677893967
       Forest-Prairie Tileset v1_56: 8198751
+      Elevation Extra 6: -40163979
       Forest-Prairie Tileset v1_101: 1293345101
       Forest-Prairie Tileset v1_415: 726226680
       Forest-Prairie Tileset v1_119: 2090878727
-      Forest-Prairie Tileset v1_248: 782383633
-      Forest-Prairie Tileset v1_212: 980046515
       Forest-Prairie Tileset v1_163: -1869603332
       Forest-Prairie Tileset v1_273: -1713873095
-      Forest-Prairie Tileset v1_169: -703717119
       Forest-Prairie Tileset v1_190: -182364017
       Forest-Prairie Tileset v1_116: -1514549708
       Forest-Prairie Tileset v1_161: -1826115301
       Forest-Prairie Tileset v1_310: 351750520
+      Elevation Extra 1: -1826484644
       Forest-Prairie Tileset v1_208: 1352134874
       Forest-Prairie Tileset v1_391: -862086250
+      Elevation 8: 1322534392
       Forest-Prairie Tileset v1_332: 1466802798
-      Forest-Prairie Tileset v1_185: 178107446
+      Forest-Prairie Tileset v1_347: -1150483858
       Forest-Prairie Tileset v1_98: 2071192528
       Forest-Prairie Tileset v1_20: 1301465289
       Forest-Prairie Tileset v1_87: -639351802
+      Elevation 27: -127735752
       Forest-Prairie Tileset v1_58: 1976937961
-      Forest-Prairie Tileset v1_347: -1150483858
       Forest-Prairie Tileset v1_419: 2034017809
       Forest-Prairie Tileset v1_142: 821591096
       Forest-Prairie Tileset v1_102: 1749956191
       Forest-Prairie Tileset v1_71: -1794948546
-      Forest-Prairie Tileset v1_184: 816903168
       Forest-Prairie Tileset v1_191: 1872715289
       Forest-Prairie Tileset v1_319: -432254622
       Forest-Prairie Tileset v1_88: -1819718385
-      Forest-Prairie Tileset v1_226: -1046256610
       Forest-Prairie Tileset v1_403: 629230728
+      Elevation 23: 1877915726
+      Elevation Extra 3: -1736057941
       Forest-Prairie Tileset v1_104: 72209206
+      Elevation 24: -1911417181
       Forest-Prairie Tileset v1_252: -1043569225
       Forest-Prairie Tileset v1_303: -156292569
       Forest-Prairie Tileset v1_92: 1713890261
       Tree_Pine_Light: -792597862
       Forest-Prairie Tileset v1_275: 163575942
       Forest-Prairie Tileset v1_122: 1767374024
-      Forest-Prairie Tileset v1_182: 2086646264
       Forest-Prairie Tileset v1_81: -1552256068
       Forest-Prairie Tileset v1_404: -1775436474
       Forest-Prairie Tileset v1_270: -1816286176
@@ -8276,16 +8302,13 @@ TextureImporter:
       Forest-Prairie Tileset v1_89: 1645216424
       Forest-Prairie Tileset v1_187: 412465997
       Forest-Prairie Tileset v1_9: 913423861
-      Forest-Prairie Tileset v1_201: -996941933
       Forest-Prairie Tileset v1_389: -102217852
-      Forest-Prairie Tileset v1_200: 1322534392
       Forest-Prairie Tileset v1_48: -361978998
       Forest-Prairie Tileset v1_374: -143016606
       Forest-Prairie Tileset v1_198: -1303091396
       Forest-Prairie Tileset v1_11: 1605700599
       Forest-Prairie Tileset v1_210: 1074170840
       Forest-Prairie Tileset v1_113: -554811451
-      Forest-Prairie Tileset v1_178: 730851315
       Grass Fine Details 2: -641056280
       Forest-Prairie Tileset v1_38: 666226611
       Forest-Prairie Tileset v1_65: -1803883248
@@ -8302,13 +8325,13 @@ TextureImporter:
       Forest-Prairie Tileset v1_152: -610177669
       Forest-Prairie Tileset v1_124: -1636145805
       Forest-Prairie Tileset v1_397: -321330954
-      Forest-Prairie Tileset v1_179: -127735752
       Grass Fine Details 1: 2126495153
       Forest-Prairie Tileset v1_297: 601285351
       Forest-Prairie Tileset v1_218: -1344889206
       Forest-Prairie Tileset v1_139: 23338056
       Forest-Prairie Tileset v1_143: 2064878001
       Forest-Prairie Tileset v1_280: -1596426698
+      Elevation Extra 11: 1969576561
       Forest-Prairie Tileset v1_322: 1881459192
       Forest-Prairie Tileset v1_246: -96047796
       Forest-Prairie Tileset v1_220: -289097769
@@ -8316,11 +8339,14 @@ TextureImporter:
       Forest-Prairie Tileset v1_148: 298203173
       Forest-Prairie Tileset v1_36: 42657
       Forest-Prairie Tileset v1_75: 568570697
+      Elevation 17: 373415033
       Forest-Prairie Tileset v1_192: 2114349714
       Forest-Prairie Tileset v1_371: -1556638758
       Forest-Prairie Tileset v1_159: 752985178
+      Elevation 22: 491750760
       Forest-Prairie Tileset v1_109: -1903574905
       Dirt Details 3: 1061877426
+      Elevation 9: -996941933
       Forest-Prairie Tileset v1_238: -1367845259
       Forest-Prairie Tileset v1_83: 1323259907
       Forest-Prairie Tileset v1_285: 526288845
@@ -8329,7 +8355,6 @@ TextureImporter:
       Grass Fine Details 3: 426510141
       Forest-Prairie Tileset v1_115: 312637304
       Forest-Prairie Tileset v1_325: -1886338208
-      Forest-Prairie Tileset v1_194: 1877915726
       Forest-Prairie Tileset v1_141: 1532553904
       Forest-Prairie Tileset v1_261: -84214642
       Forest-Prairie Tileset v1_262: 1086171305
@@ -8351,6 +8376,7 @@ TextureImporter:
       Forest-Prairie Tileset v1_30: -40663182
       Forest-Prairie Tileset v1_258: 1450873348
       Forest-Prairie Tileset v1_360: -254379482
+      Elevation 2: 428781592
       Forest-Prairie Tileset v1_77: -1067423479
       Forest-Prairie Tileset v1_315: 1729714237
       Forest-Prairie Tileset v1_8: -1923142929
@@ -8358,8 +8384,8 @@ TextureImporter:
       Forest-Prairie Tileset v1_353: 1212239183
       Forest-Prairie Tileset v1_232: -15494232
       Forest-Prairie Tileset v1_286: -660661991
-      Forest-Prairie Tileset v1_197: 1969576561
       Forest-Prairie Tileset v1_35: 945982603
+      Elevation 21: -1986392856
       Forest-Prairie Tileset v1_31: 701985992
       Tree_Birch_Dark: -1673498783
       Forest-Prairie Tileset v1_394: -1067613344
@@ -8370,27 +8396,26 @@ TextureImporter:
       Forest-Prairie Tileset v1_24: -1434895769
       Forest-Prairie Tileset v1_260: -1437275571
       Forest-Prairie Tileset v1_150: 669042778
-      Forest-Prairie Tileset v1_153: -2048064079
-      Forest-Prairie Tileset v1_283: 1255361315
       Forest-Prairie Tileset v1_321: -1414822500
+      Forest-Prairie Tileset v1_153: -2048064079
       Forest-Prairie Tileset v1_377: -683067389
       Forest-Prairie Tileset v1_47: -1335143919
       Forest-Prairie Tileset v1_307: -605482047
+      Forest-Prairie Tileset v1_283: 1255361315
       Forest-Prairie Tileset v1_0: 661353388
       Forest-Prairie Tileset v1_326: -1327052466
       Forest-Prairie Tileset v1_293: 499708037
       Forest-Prairie Tileset v1_14: 1159343015
-      Forest-Prairie Tileset v1_195: -1911417181
+      Forest-Prairie Tileset v1_299: 1760068419
       Forest-Prairie Tileset v1_155: 1196611698
       Forest-Prairie Tileset v1_100: -563295142
       Forest-Prairie Tileset v1_324: -1554549797
       Forest-Prairie Tileset v1_112: -1607401641
-      Forest-Prairie Tileset v1_299: 1760068419
       Forest-Prairie Tileset v1_257: 1627292117
       Forest-Prairie Tileset v1_25: -2100051587
       Forest-Prairie Tileset v1_62: -1149022682
       Tree_Large: 1294548207
-      Forest-Prairie Tileset v1_228: -1986392856
+      Elevation 18: 42979142
       Forest-Prairie Tileset v1_240: -677193224
       Forest-Prairie Tileset v1_367: -355117981
       Forest-Prairie Tileset v1_29: -2016523109
@@ -8416,12 +8441,12 @@ TextureImporter:
       Forest-Prairie Tileset v1_146: 594961218
       Forest-Prairie Tileset v1_265: 901508150
       Forest-Prairie Tileset v1_135: -1149877418
-      Forest-Prairie Tileset v1_281: 485479137
       Forest-Prairie Tileset v1_379: -1874727951
       Forest-Prairie Tileset v1_344: 630272333
       Forest-Prairie Tileset v1_390: -490959565
       Forest-Prairie Tileset v1_302: -1249579323
       Forest-Prairie Tileset v1_311: 363132426
+      Elevation 4: 2086646264
       Forest-Prairie Tileset v1_267: -655962854
       Forest-Prairie Tileset v1_99: 1653947562
       Forest-Prairie Tileset v1_17: 881307734
@@ -8434,18 +8459,15 @@ TextureImporter:
       Forest-Prairie Tileset v1_193: 545381918
       Forest-Prairie Tileset v1_329: -1661363611
       Forest-Prairie Tileset v1_375: 1532124828
-      Forest-Prairie Tileset v1_282: -40163979
-      Forest-Prairie Tileset v1_225: -1273886257
+      Elevation 12: -359120778
+      Forest-Prairie Tileset v1_256: 396676288
       Forest-Prairie Tileset v1_59: -1853406396
       Forest-Prairie Tileset v1_176: 748336815
-      Forest-Prairie Tileset v1_256: 396676288
       Forest-Prairie Tileset v1_341: 1247210841
       Forest-Prairie Tileset v1_34: -1684443686
-      Forest-Prairie Tileset v1_170: 428781592
-      Forest-Prairie Tileset v1_233: 269490727
+      Elevation 6: 816903168
       Forest-Prairie Tileset v1_80: -1450504834
-      Forest-Prairie Tileset v1_202: 42979142
-      Forest-Prairie Tileset v1_214: 1677893967
+      Elevation 15: 199837252
       Forest-Prairie Tileset v1_277: -644102698
       Forest-Prairie Tileset v1_383: 1179486935
       Forest-Prairie Tileset v1_378: 1600949774
@@ -8459,6 +8481,7 @@ TextureImporter:
       Forest-Prairie Tileset v1_7: -257468082
       Forest-Prairie Tileset v1_217: -559618192
       Forest-Prairie Tileset v1_313: -1200775724
+      Elevation 5: 1764639070
       Forest-Prairie Tileset v1_133: 1656680183
       Forest-Prairie Tileset v1_120: 435870803
       Forest-Prairie Tileset v1_91: -207149483
@@ -8467,7 +8490,6 @@ TextureImporter:
       Forest-Prairie Tileset v1_180: -1375451767
       Forest-Prairie Tileset v1_60: -119635620
       Tree_Pine_Dark: -468142551
-      Forest-Prairie Tileset v1_203: -1106988624
       Forest-Prairie Tileset v1_32: -362876699
       Forest-Prairie Tileset v1_45: -1598924327
       Forest-Prairie Tileset v1_251: -346877396
@@ -8475,6 +8497,8 @@ TextureImporter:
       Forest-Prairie Tileset v1_418: 2119955391
       Forest-Prairie Tileset v1_149: 615147726
       Forest-Prairie Tileset v1_63: -2021644150
+      Elevation 16: 178107446
+      Elevation Extra 2: -578257600
       Forest-Prairie Tileset v1_234: -1306500220
       Forest-Prairie Tileset v1_385: -1416165653
       Forest-Prairie Tileset v1_110: 1674913087
@@ -8483,10 +8507,10 @@ TextureImporter:
       Forest-Prairie Tileset v1_247: -595432705
       Forest-Prairie Tileset v1_237: 395163505
       Forest-Prairie Tileset v1_373: 940140637
-      Tree_Pine_Small: 698039379
+      Forest-Prairie Tileset v1_236: 85532253
       Forest-Prairie Tileset v1_61: -1352356296
       Forest-Prairie Tileset v1_392: 2135098861
-      Forest-Prairie Tileset v1_236: 85532253
+      Tree_Pine_Small: 698039379
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
