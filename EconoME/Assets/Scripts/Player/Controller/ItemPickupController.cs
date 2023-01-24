@@ -31,6 +31,18 @@ public class ItemPickupController : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Pickup"))
+        {
+            PickupInteraction PI = collision.gameObject.GetComponent<PickupInteraction>();
+            if (PI.CanBePickedUp)
+            {
+                PI.startMovetoPlayer();
+            }
+        }
+    }
     //setter
     public void setSize(float s)
     {

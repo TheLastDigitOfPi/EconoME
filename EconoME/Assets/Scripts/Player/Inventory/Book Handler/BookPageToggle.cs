@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class BookPageToggle : IChangeableState
 {
     //Toggles the book pages as they flip between another
-    public bool isCompleted { get; private set; }
 
     private readonly Image BookBackground;
     private readonly GameObject LeftPageMask;
@@ -19,8 +19,8 @@ public class BookPageToggle : IChangeableState
     private readonly Image LeftPageIcon;
     private readonly Image RightPageIcon;
 
-    private BookPage ActiveLeftPage;
-    private BookPage ActiveRightPage;
+    public BookPage ActiveLeftPage { get; set; }
+    public BookPage ActiveRightPage { get; set; }
     private BookPage NewLeftPage;
     private BookPage NewRightPage;
 
@@ -30,22 +30,22 @@ public class BookPageToggle : IChangeableState
     private float _currentTime;
     private bool FlipRight = false;
     private float _flipSpeedMultiplier = 1;
+    PlayerBookHandler _handler;
 
-    public BookPageToggle(Image bookBackground, GameObject leftPageMask, GameObject rightPageMask, SingleTextureGroup flipRightAnimation, SingleTextureGroup flipLeftAnimation, BookPage originalActiveLeftPage, BookPage originalActiveRightPage, TextMeshProUGUI leftPageTitle, TextMeshProUGUI rightPageTitle, Image leftPageIcon, Image rightPageIcon)
+    public BookPageToggle(PlayerBookHandler handler)
     {
-        BookBackground = bookBackground;
-        LeftPageMask = leftPageMask;
-        RightPageMask = rightPageMask;
-        FlipRightAnimation = flipRightAnimation;
-        FlipLeftAnimation = flipLeftAnimation;
-        ActiveLeftPage = originalActiveLeftPage;
-        ActiveRightPage = originalActiveRightPage;
-        LeftPageHolder = leftPageMask.transform.GetChild(0);
-        RightPageHolder = rightPageMask.transform.GetChild(0);
-        LeftPageTitle = leftPageTitle;
-        RightPageTitle = rightPageTitle;
-        LeftPageIcon = leftPageIcon;
-        RightPageIcon = rightPageIcon;
+        BookBackground = handler.BookBackground;
+        LeftPageMask = handler.LeftPage;
+        RightPageMask = handler.RightPage;
+        FlipRightAnimation = handler.BookFlipRightAnimation;
+        FlipLeftAnimation = handler.BookFlipLeftAnimation;
+        LeftPageHolder = LeftPageMask.transform.GetChild(0);
+        RightPageHolder = RightPageMask.transform.GetChild(0);
+        LeftPageTitle = handler.LeftPageTitle;
+        RightPageTitle = handler.RightPageTitle;
+        LeftPageIcon = handler.LeftPageImage;
+        RightPageIcon = handler.RightPageImage;
+        _handler = handler;
     }
 
     private SingleTextureGroup CurrentAnimation { get { return FlipRight ? FlipRightAnimation : FlipLeftAnimation; } }
@@ -55,11 +55,6 @@ public class BookPageToggle : IChangeableState
         FlipRight = flipRight;
         NewLeftPage = LeftPage;
         NewRightPage = RightPage;
-
-        if (NewLeftPage == null)
-            NewLeftPage = ActiveLeftPage;
-        if (NewRightPage == null)
-            NewRightPage = ActiveRightPage;
 
         _totalPageFlips = pageFlips;
         _currentPageFlips = 0;
@@ -75,7 +70,7 @@ public class BookPageToggle : IChangeableState
 
     public void OnEnter()
     {
-        isCompleted = false;
+
         FlipRightAnimation.resetToDefault();
         FlipLeftAnimation.resetToDefault();
         _currentPageFlips = 0;
@@ -86,106 +81,108 @@ public class BookPageToggle : IChangeableState
 
     public void OnExit()
     {
-
+        CurrentAnimation.resetToDefault();
     }
 
     public void Tick()
     {
+        //Update page visibility and book animation
         _currentTime += Time.deltaTime;
-        if (_currentTime > CurrentAnimation.TimePerFrame / _flipSpeedMultiplier)
+        if (_currentTime < CurrentAnimation.TimePerFrame / _flipSpeedMultiplier)
+            return;
+
+        _currentTime = 0;
+        BookBackground.sprite = CurrentAnimation.NextTexture();
+
+        //Only update the page visability if we are on the final flip
+        if (_currentPageFlips == _totalPageFlips - 1)
+            UpdatePageVisability();
+
+        //If at final animation we are done with a flip
+        if (BookBackground.sprite == CurrentAnimation.Textures.Last())
         {
-            _currentTime = 0;
-
-            BookBackground.sprite = CurrentAnimation.NextTexture();
-            if (_currentPageFlips + 1 >= _totalPageFlips)
+            _currentPageFlips++;
+            if (_currentPageFlips >= _totalPageFlips)
             {
-                UpdatePageVisability();
+                _handler.CurrentStateFinished(this);
+                return;
             }
-            //If we are  the book and it is fully open, we are done
-            if (BookBackground.sprite == CurrentAnimation.Textures.Last())
+            CurrentAnimation.resetToDefault();
+
+        }
+
+        void UpdatePageVisability()
+        {
+            if (FlipRight)
             {
-                _currentPageFlips++;
-                if (_currentPageFlips >= _totalPageFlips)
-                {
-                    isCompleted = true;
-                    CurrentAnimation.resetToDefault();
-                    return;
-                }
-                CurrentAnimation.resetToDefault();
-
-            }
-
-            void UpdatePageVisability()
-            {
-                if (FlipRight)
-                {
-                    switch (CurrentAnimation.CurrentSpriteNum)
-                    {
-                        case 1:
-                            //set Left pages invisible
-                            LeftPageMask.SetActive(false);
-                            //Swap pages while invisible
-                            ActiveLeftPage.gameObject.SetActive(false);
-                            NewLeftPage.SetPage(LeftPageHolder, LeftPageIcon, LeftPageTitle);
-                            ActiveLeftPage = NewLeftPage;
-                            NewLeftPage = null;
-                            return;
-                        case 2:
-                            LeftPageMask.SetActive(true);
-                            (RightPageMask.transform as RectTransform).sizeDelta = new Vector2(483, 0);
-                            return;
-                        case 3:
-                            //Set Right pages invisible
-                            RightPageMask.SetActive(false);
-                            //Swap pages while invisible
-                            ActiveRightPage.gameObject.SetActive(false);
-                            NewRightPage.SetPage(RightPageHolder, RightPageIcon, RightPageTitle);
-                            ActiveRightPage = NewRightPage;
-                            NewRightPage = null;
-                            return;
-                        case 5:
-                            RightPageMask.SetActive(true);
-                            (RightPageMask.transform as RectTransform).sizeDelta = new Vector2(540, 0);
-                            return;
-                        default:
-                            return;
-                    }
-                }
-
                 switch (CurrentAnimation.CurrentSpriteNum)
                 {
                     case 1:
-                        //Set Right pages invisible
-                        RightPageMask.SetActive(false);
-                        //Swap pages while invisible
-                        ActiveRightPage.gameObject.SetActive(false);
-                        NewRightPage.SetPage(RightPageHolder, RightPageIcon, RightPageTitle);
-                        ActiveRightPage = NewRightPage;
-                        NewRightPage = null;
-                        return;
-                    case 2:
-                        RightPageMask.SetActive(true);
-                        (LeftPageMask.transform as RectTransform).sizeDelta = new Vector2(494, 0);
-                        return;
-                    case 3:
-                        //Set Left pages invisible
+                        //set Left pages invisible
                         LeftPageMask.SetActive(false);
                         //Swap pages while invisible
-                        ActiveLeftPage.gameObject.SetActive(false);
-                        NewLeftPage.SetPage(LeftPageHolder, LeftPageIcon, LeftPageTitle);
+                        ActiveLeftPage?.gameObject.SetActive(false);
+                        NewLeftPage?.SetPage(LeftPageHolder, LeftPageIcon, LeftPageTitle);
                         ActiveLeftPage = NewLeftPage;
                         NewLeftPage = null;
                         return;
+                    case 2:
+                        //Left Page Visible Now
+                        LeftPageMask.SetActive(ActiveLeftPage != null);
+                        (RightPageMask.transform as RectTransform).sizeDelta = new Vector2(483, 0);
+                        return;
+                    case 3:
+                        //Set Right pages invisible
+                        RightPageMask.SetActive(false);
+                        //Swap pages while invisible
+                        ActiveRightPage?.gameObject.SetActive(false);
+                        NewRightPage?.SetPage(RightPageHolder, RightPageIcon, RightPageTitle);
+                        ActiveRightPage = NewRightPage;
+                        NewRightPage = null;
+                        return;
                     case 5:
-                        LeftPageMask.SetActive(true);
-                        (LeftPageMask.transform as RectTransform).sizeDelta = new Vector2(540, 0);
+                        RightPageMask.SetActive(ActiveRightPage != null);
+                        (RightPageMask.transform as RectTransform).sizeDelta = new Vector2(540, 0);
                         return;
                     default:
                         return;
                 }
-
             }
+
+            switch (CurrentAnimation.CurrentSpriteNum)
+            {
+                case 1:
+                    //Set Right pages invisible
+                    RightPageMask.SetActive(false);
+                    //Swap pages while invisible
+                    ActiveRightPage?.gameObject.SetActive(false);
+                    NewRightPage?.SetPage(RightPageHolder, RightPageIcon, RightPageTitle);
+                    ActiveRightPage = NewRightPage;
+                    NewRightPage = null;
+                    return;
+                case 2:
+                    RightPageMask.SetActive(ActiveRightPage != null);
+                    (LeftPageMask.transform as RectTransform).sizeDelta = new Vector2(494, 0);
+                    return;
+                case 3:
+                    //Set Left pages invisible
+                    LeftPageMask.SetActive(false);
+                    //Swap pages while invisible
+                    ActiveLeftPage?.gameObject.SetActive(false);
+                    NewLeftPage?.SetPage(LeftPageHolder, LeftPageIcon, LeftPageTitle);
+                    ActiveLeftPage = NewLeftPage;
+                    NewLeftPage = null;
+                    return;
+                case 5:
+                    LeftPageMask.SetActive(ActiveLeftPage != null);
+                    (LeftPageMask.transform as RectTransform).sizeDelta = new Vector2(540, 0);
+                    return;
+                default:
+                    return;
+            }
+
         }
     }
+
 }
 

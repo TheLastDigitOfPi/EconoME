@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67601344576c7d24d842c87e5a7bfe3c, type: 3}
   m_Name: Coal
   m_EditorClassIdentifier: 
-  _itemName: Coal
-  Icon: {fileID: 21300000, guid: 9c5f75faa4c63d4499e6694da108de76, type: 3}
-  _iconPath: 
-  _weight: 1
+  <ItemName>k__BackingField: Coal
+  <Icon>k__BackingField: {fileID: 21300000, guid: 9c5f75faa4c63d4499e6694da108de76, type: 3}
+  <IconPath>k__BackingField: 
+  <Weight>k__BackingField: 1
+  <ItemType>k__BackingField: 2
   EconomyData:
     BasePrice: 0
     Threshold: 1
@@ -27,4 +28,5 @@ MonoBehaviour:
     MaxInflationHits: 25
     TotalItemsSold: 0
     multiplier: {fileID: 0}
-  _resourceType: {fileID: 11400000, guid: 026feaee66c7e4942ae00d0dbb38b134, type: 2}
+  _resourceType: 1
+  _tier: 0

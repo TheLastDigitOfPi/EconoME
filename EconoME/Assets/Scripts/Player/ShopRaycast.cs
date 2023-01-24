@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class ShopRaycast : Raycastable
+public class ShopRaycast : MonoBehaviour, IAmInteractable
 {
     [SerializeField] BoolVariable ShopUI;
 
-    public override bool OnRaycastHit(PlayerController owner, Collider2D collider)
+    public bool OnRaycastHit(PlayerMovementController owner, Collider2D collider)
     {
         ShopUI.Value = !ShopUI.Value;
         return true;

@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
-public partial class ArmorSriptableObject : ItemScriptableObject
+public partial class ArmorSriptableObject : ItemBase
 {
     [SerializeField] ArmorType armorType;
-    public override ItemType ItemType => armorType;
+}
+public enum ArmorType
+{
+
 }
 

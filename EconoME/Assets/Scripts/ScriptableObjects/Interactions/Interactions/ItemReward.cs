@@ -5,6 +5,9 @@ using UnityEngine;
 public class ItemReward : Interaction
 {
     [SerializeField] DefinedScriptableItem[] rewards;
+
+    public override event Action OnInteractionEnd;
+
     public override void Activate(InteractionHandler handler)
     {
         throw new NotImplementedException();

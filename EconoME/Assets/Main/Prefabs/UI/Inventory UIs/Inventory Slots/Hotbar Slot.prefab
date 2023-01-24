@@ -281,7 +281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -8.17784, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -379,25 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1b39daaeaf77648b7f313f3c6eaf11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotData:
-    rid: 4832654363212120064
-  text: {fileID: 4354910735631911783}
+  Inventory: {fileID: 11400000, guid: 608e75eed7e6c5840b2a4b1d6167c6c3, type: 2}
+  <SlotNumber>k__BackingField: 0
+  itemCountText: {fileID: 4354910735631911783}
   image: {fileID: 4354910735172537772}
-  BorderImage: {fileID: 4354910735486470606}
+  <BorderImage>k__BackingField: {fileID: 4354910736611929140}
   TileInspect: {fileID: 8874746881941912924, guid: 91a612e48f845c547bade235950ccaa4, type: 3}
-  forceSlotItem: {fileID: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: 4832654363212120064
-      type: {class: HotBarInventorySlot, ns: , asm: Assembly-CSharp}
-      data:
-        isEmpty: 1
-        itemRequirement: {fileID: 0}
-        InventoryGroup: {fileID: 11400000, guid: 608e75eed7e6c5840b2a4b1d6167c6c3, type: 2}
-        slotIndex: 0
-        Active: 1
-        OriginalImage: {fileID: 0}
-        slotType: 1
-        InventoryMaxSlotWeight: {fileID: 11400000, guid: 58292d45459c42e449f826399ebd4be0, type: 2}
-        EquivalantHotBarSlot: {fileID: 0}
+  <ForceSlotItem>k__BackingField: {fileID: 0}

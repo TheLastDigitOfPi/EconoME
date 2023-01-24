@@ -9,11 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 8ff6b929930b6514ea9af26692f61ec5
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Town/Town.unity
+    guid: 424f7512c1057af4db7694738e276903
+  - enabled: 1
+    path: Assets/Scenes/Town/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Bank.unity
+    path: Assets/Scenes/Town/Bank.unity
     guid: ce398e2481569b24e9875cf9663fbb47
+  - enabled: 1
+    path: Assets/Scenes/Town/Smith House Interior.unity
+    guid: e9d1fd3af36a4344d9686866dd3d498e
+  - enabled: 1
+    path: Assets/Scenes/Persistant/Eternal Scene.unity
+    guid: bdb46d9bf2920d141b7be060dcf24f2a
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b5ecb2ed9e7bcc0489d149c753651f89, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: ee7102850628d3b48b1f9c3d9d3573dc, type: 2}

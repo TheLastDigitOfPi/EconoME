@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: adeb369f24dcb8942ad0405eefe90007
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerPosition: {fileID: 11400000, guid: ee513706182c49346850608db9d1dc8b, type: 2}
+  - UIOpen: {fileID: 11400000, guid: e0b77945ca2cb1f41928fba6aa56e0e7, type: 2}
+  - <InventoryManager>k__BackingField: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

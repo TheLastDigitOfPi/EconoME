@@ -18,9 +18,9 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] SpriteRenderer _toolRenderer;
 
 
-    bool _isRunning => _playerController._isRunning;
-    bool _isWalking => _playerController._isWalking;
-    PlayerController.MoveDirection direction => _playerController.Direction;
+    bool _isRunning => _playerController.PlayerSprinting;
+    bool _isWalking => _playerController.IsWalking;
+    MoveDirection direction => _playerController.CurrentDirection;
 
     float constantEmission;
 
@@ -45,7 +45,7 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] CharacterAnimationSet UseToolDownSet;
 
     StateMachine _stateMachine;
-    PlayerController _playerController;
+    PlayerMovementController _playerController;
 
     private void Awake()
     {
@@ -59,7 +59,7 @@ public class PlayerAnimationController : MonoBehaviour
         AllRenderers[4] = _shoesRenderer;
 
         _stateMachine = new();
-        _playerController = GetComponentInParent<PlayerController>();
+        _playerController = GetComponentInParent<PlayerMovementController>();
 
         var WalkLeft = new AnimateSprite(WalkLeftSet, AllRenderers);
         var WalkRight = new AnimateSprite(WalkRightSet, AllRenderers);
@@ -104,26 +104,26 @@ public class PlayerAnimationController : MonoBehaviour
 
         _stateMachine.SetState(IdleRight);
 
-        Func<bool> IsRunningRight() => () => _isRunning && !_isWalking && direction == PlayerController.MoveDirection.Right;
-        Func<bool> IsRunningLeft() => () => _isRunning && !_isWalking && direction == PlayerController.MoveDirection.Left;
-        Func<bool> IsRunningUp() => () => _isRunning && !_isWalking && direction == PlayerController.MoveDirection.Up;
-        Func<bool> IsRunningDown() => () => _isRunning && !_isWalking && direction == PlayerController.MoveDirection.Down;
+        Func<bool> IsRunningRight() => () => _isRunning && !_isWalking && direction == MoveDirection.Right;
+        Func<bool> IsRunningLeft() => () => _isRunning && !_isWalking && direction == MoveDirection.Left;
+        Func<bool> IsRunningUp() => () => _isRunning && !_isWalking && direction == MoveDirection.Up;
+        Func<bool> IsRunningDown() => () => _isRunning && !_isWalking && direction == MoveDirection.Down;
 
-        Func<bool> IsWalkingRight() => () => _isWalking && !_isRunning && direction == PlayerController.MoveDirection.Right;
-        Func<bool> IsWalkingLeft() => () => _isWalking && !_isRunning && direction == PlayerController.MoveDirection.Left;
-        Func<bool> IsWalkingUp() => () => _isWalking && !_isRunning && direction == PlayerController.MoveDirection.Up;
-        Func<bool> IsWalkingDown() => () => _isWalking && !_isRunning && direction == PlayerController.MoveDirection.Down;
+        Func<bool> IsWalkingRight() => () => _isWalking && !_isRunning && direction == MoveDirection.Right;
+        Func<bool> IsWalkingLeft() => () => _isWalking && !_isRunning && direction == MoveDirection.Left;
+        Func<bool> IsWalkingUp() => () => _isWalking && !_isRunning && direction == MoveDirection.Up;
+        Func<bool> IsWalkingDown() => () => _isWalking && !_isRunning && direction == MoveDirection.Down;
 
 
-        Func<bool> IsIdleRight() => () => !_isWalking && !_isRunning && direction == PlayerController.MoveDirection.Right;
-        Func<bool> IsIdleLeft() => () => !_isWalking && !_isRunning && direction == PlayerController.MoveDirection.Left;
-        Func<bool> IsIdleUp() => () => !_isWalking && !_isRunning && direction == PlayerController.MoveDirection.Up;
-        Func<bool> IsIdleDown() => () => !_isWalking && !_isRunning && direction == PlayerController.MoveDirection.Down;
+        Func<bool> IsIdleRight() => () => !_isWalking && !_isRunning && direction == MoveDirection.Right;
+        Func<bool> IsIdleLeft() => () => !_isWalking && !_isRunning && direction == MoveDirection.Left;
+        Func<bool> IsIdleUp() => () => !_isWalking && !_isRunning && direction == MoveDirection.Up;
+        Func<bool> IsIdleDown() => () => !_isWalking && !_isRunning && direction == MoveDirection.Down;
 
-        Func<bool> IsUsingToolRight() => () => _playerController.UsingTool && direction == PlayerController.MoveDirection.Right;
-        Func<bool> IsUsingToolLeft() => () => _playerController.UsingTool && direction == PlayerController.MoveDirection.Left;
-        Func<bool> IsUsingToolUp() => () => _playerController.UsingTool && direction == PlayerController.MoveDirection.Up;
-        Func<bool> IsUsingToolDown() => () => _playerController.UsingTool && direction == PlayerController.MoveDirection.Down;
+        Func<bool> IsUsingToolRight() => () => _playerController.UsingTool && direction == MoveDirection.Right;
+        Func<bool> IsUsingToolLeft() => () => _playerController.UsingTool && direction == MoveDirection.Left;
+        Func<bool> IsUsingToolUp() => () => _playerController.UsingTool && direction == MoveDirection.Up;
+        Func<bool> IsUsingToolDown() => () => _playerController.UsingTool && direction == MoveDirection.Down;
 
     }
     void Start()
@@ -196,11 +196,11 @@ public class UseTool : AnimateSprite
 {
 
     float TotalFrameTime = 0f;
-    private readonly PlayerController _controller;
+    private readonly PlayerMovementController _controller;
     private readonly SpriteRenderer ToolRenderer;
     private TextureGroup ToolGroup;
 
-    public UseTool(CharacterAnimationSet animationSet, SpriteRenderer[] renderers, PlayerController controller, SpriteRenderer toolRenderer) : base(animationSet, renderers)
+    public UseTool(CharacterAnimationSet animationSet, SpriteRenderer[] renderers, PlayerMovementController controller, SpriteRenderer toolRenderer) : base(animationSet, renderers)
     {
         _controller = controller;
         ToolRenderer = toolRenderer;
@@ -209,7 +209,7 @@ public class UseTool : AnimateSprite
     public override void OnEnter()
     {
         base.OnEnter();
-        ToolGroup = _controller.InventoryManager.HotBarHandler.SelectedHotbarAnimationSet.FirstOrDefault(a => a.Direction == animationSet.Direction);
+        //ToolGroup = HotBarHandler.Instance.SelectedHotbarAnimationSet.FirstOrDefault(a => a.Direction == animationSet.Direction);
         ToolGroup.nextSpriteNum = 0;
         TotalFrameTime = 0f;
     }

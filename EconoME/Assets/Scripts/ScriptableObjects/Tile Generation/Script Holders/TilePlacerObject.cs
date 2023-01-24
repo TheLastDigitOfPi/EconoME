@@ -184,7 +184,7 @@ public class TilePlacerObject : ScriptableObject
             }
         }
     }
-
+    /*
     public void PlaceWorld()
     {
         ClearWorld(resetMap:false);
@@ -194,7 +194,7 @@ public class TilePlacerObject : ScriptableObject
             PlaceTile(item.Key, item.Value, isInstant:true);
         }
     }
-
+    */
     internal void ClearWorld(bool resetMap = true)
     {
 

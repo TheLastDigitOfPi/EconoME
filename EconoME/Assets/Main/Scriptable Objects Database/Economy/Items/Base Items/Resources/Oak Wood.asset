@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67601344576c7d24d842c87e5a7bfe3c, type: 3}
   m_Name: Oak Wood
   m_EditorClassIdentifier: 
-  _itemName: Oak Wood
-  Icon: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}
-  _iconPath: 
-  _weight: 1
+  <ItemName>k__BackingField: Oak Wood
+  <Icon>k__BackingField: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}
+  <IconPath>k__BackingField: 
+  <Weight>k__BackingField: 1
+  <ItemType>k__BackingField: 2
   EconomyData:
     BasePrice: 0
     Threshold: 1
@@ -27,4 +28,5 @@ MonoBehaviour:
     MaxInflationHits: 25
     TotalItemsSold: 0
     multiplier: {fileID: 0}
-  _resourceType: {fileID: 11400000, guid: fe12b23736dd01c4e823000355ad6e60, type: 2}
+  _resourceType: 0
+  _tier: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Defined Item ", menuName = "ScriptableObjects/Economy/Items/Defined Item")]
 public class DefinedScriptableItem : ScriptableObject
 {
-    public ItemScriptableObject item;
+    public ItemBase item;
     public int stacksize;
 
     public Item CreateItem()

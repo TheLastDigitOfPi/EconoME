@@ -4,111 +4,98 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerInventoryManager))]
 public class HotBarHandler : MonoBehaviour
 {
-    [SerializeField] InventoryObject HotBar;
-    public int SelectedHotBarSlot { get; private set; } = -1;
-    [SerializeField] SpriteRenderer ItemInHand;
+    //Static
+    public static HotBarHandler Instance { get; private set; }
 
-    PlayerInventoryManager _inventoryManager;
+    //Events
+    public event Action OnItemSelect;
+    public event Action OnItemDeselect;
+
+    //Public
+    public int SelectedHotBarSlot { get; private set; } = -1;
+
+    //Local
+    [SerializeField] InventoryObject HotBar;
+    int _previouslySelectedSlot = -1;
+
     Color HighlightedColor = new Color(138, 255, 0);
+
+
     private void Awake()
     {
-        _inventoryManager = GetComponent<PlayerInventoryManager>();
-    }
-
-    public bool SelectedHotBarTypeEquals(ItemType type)
-    {
-        if (SelectedHotBarSlot < 0) { return false; }
-        if (HotBar.data.items[SelectedHotBarSlot] == null) { return false; }
-        return HotBar.data.items[SelectedHotBarSlot].itemType == type;
-    }
-
-    public Item GetSelectedHotBarItem()
-    {
-        if (SelectedHotBarSlot < 0) { return null; }
-        return HotBar.data.items[SelectedHotBarSlot];
-    }
-
-    public TextureGroup[] SelectedHotbarAnimationSet
-    {
-        get
+        if (Instance != null)
         {
-            Item currentItem = GetSelectedHotBarItem();
-            if(currentItem is Tool)
-            {
-                return (currentItem as Tool).ToolSwingAnimations;
-            }
-            return null;
+            Debug.LogWarning("More than 1 Hot bar handler found!");
+            Destroy(this);
+            return;
         }
+        Instance = this;
+        OnItemDeselect += DeselectItem;
+        OnItemSelect += SelectItem;
+    }
+    private void OnDestroy()
+    {
+        OnItemDeselect -= DeselectItem;
+        OnItemSelect -= SelectItem;
+    }
+
+    private void SelectItem()
+    {
+        //Try deselect previous slot 
+        if (_previouslySelectedSlot > -1)
+        {
+            ToggleHotBarHighlight(_previouslySelectedSlot, ToggleOn: false);
+        }
+        //Select New Hotbar Slot
+        ToggleHotBarHighlight(SelectedHotBarSlot);
+    }
+
+    void DeselectItem()
+    {
+        ToggleHotBarHighlight(SelectedHotBarSlot, ToggleOn: false);
+        SelectedHotBarSlot = -1;
+        _previouslySelectedSlot = -1;
+    }
+    public static bool GetCurrentSelectedItem(out Item foundItem)
+    {
+        foundItem = null;
+        if (Instance.SelectedHotBarSlot == -1)
+            return false;
+        if (Instance.HotBar.Data.ItemSlots[Instance.SelectedHotBarSlot].HasItem)
+        {
+            foundItem = Instance.HotBar.Data.ItemSlots[Instance.SelectedHotBarSlot].ItemCopy;
+            return true;
+        }
+        return false;
     }
 
     void SelectHotBarSlot(int i)
     {
-        int PrevSelected = SelectedHotBarSlot;
+        _previouslySelectedSlot = SelectedHotBarSlot;
         SelectedHotBarSlot = i;
 
-        if (i > HotBar.data.items.Length)
+        //Return If we try to select a slot outside of the hotbar range
+        if (i > HotBar.Data.ItemSlots.Length)
         {
             SelectedHotBarSlot = -1;
             return;
         }
 
-        //Deselect Hotbar slot
-        if (SelectedHotBarSlot == PrevSelected)
+        //If selected current slot, deselect it
+        if (SelectedHotBarSlot == _previouslySelectedSlot)
         {
-            ToggleHotBarHighlight(SelectedHotBarSlot);
-            SelectedHotBarSlot = -1;
-            ItemInHand.sprite = null;
-            ItemInHand.color = Color.clear;
+            OnItemDeselect?.Invoke();
             return;
         }
-        if (PrevSelected > -1)
-        {
-            //Deselct Previous Hotbar slot
-            ToggleHotBarHighlight(PrevSelected);
-        }
-        //Select New Hotbar Slot
-        ToggleHotBarHighlight(SelectedHotBarSlot);
-        //Add Item to player hands
-        UpdateHotBarSlot();
+
+        OnItemSelect?.Invoke();
         return;
     }
-    void ToggleHotBarHighlight(int i)
-    {
-        if (i > _inventoryManager.HotBarSlotsHandlers.Length) { return; }
-        if (_inventoryManager.HotBarSlotsHandlers[i].BorderImage.color == Color.white)
-        {
-            _inventoryManager.HotBarSlotsHandlers[i].BorderImage.color = HighlightedColor;
-            return;
-        }
-        _inventoryManager.HotBarSlotsHandlers[i].BorderImage.color = Color.white;
-    }
 
-    public void UpdateHotBarSlot()
+    void ToggleHotBarHighlight(int slotNum, bool ToggleOn = true)
     {
-        Sprite ItemImage = null;
-        if (HotBar.data.items[SelectedHotBarSlot] != null)
-        {
-            ItemImage = HotBar.data.items[SelectedHotBarSlot].Icon;
-        }
-        if (ItemImage != null)
-        {
-            if (ItemImage.texture.width > 16)
-            {
-                float Newsize = 1f / (ItemImage.texture.width / 16);
-                ItemInHand.transform.localScale = new Vector3(Newsize, Newsize, 1);
-            }
-            else
-            {
-                ItemInHand.transform.localScale = new Vector3(1f, 1f, 1);
-            }
-            ItemInHand.color = Color.white;
-            ItemInHand.sprite = ItemImage;
-        }
-        else
-        {
-            ItemInHand.color = Color.clear;
-            ItemInHand.sprite = null;
-        }
+        PlayerInventoryManager.Instance.BackpackHotBarSlotsHandlers[slotNum].BorderImage.color = ToggleOn ? HighlightedColor : Color.white;
+        PlayerInventoryManager.Instance.HotBarSlotsHandlers[slotNum].BorderImage.color = ToggleOn ? HighlightedColor : Color.white;
     }
 
     private void Update()
@@ -146,21 +133,6 @@ public class HotBarHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             SelectHotBarSlot(6);
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            SelectHotBarSlot(7);
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            SelectHotBarSlot(8);
-            return;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            SelectHotBarSlot(9);
             return;
         }
     }

@@ -9,7 +9,7 @@ namespace Assets.Scripts.Admin
 {
     internal class Admin : MonoBehaviour
     {
-        [SerializeField] ItemScriptableObject ItemToSpawn;
+        [SerializeField] ItemBase ItemToSpawn;
         [SerializeField] int ItemToSpawnStacksize;
         [SerializeField] Vector3Variable PlayerPosition;
 
@@ -29,7 +29,7 @@ namespace Assets.Scripts.Admin
         public void SpawnItem()
         {
             if (ItemToSpawn == null) { return; }
-            ItemSpawner.Instance.SpawnItem(new Item(ItemToSpawn, ItemToSpawnStacksize), PlayerPosition.Value);
+            GroundItemManager.Instance.SpawnItem(ItemToSpawn.CreateItem(ItemToSpawnStacksize), PlayerPosition.Value, out _);
         }
 
     }

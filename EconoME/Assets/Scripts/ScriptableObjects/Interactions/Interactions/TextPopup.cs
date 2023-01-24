@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,40 +12,24 @@ public class TextPopup : Interaction
     public float TimePerCharacter = 0.02f;
     public string titleName;
 
+    [field: SerializeField] public bool Skippable { get; private set; }
+
     public Interaction[] onClose;
+
+    public override event Action OnInteractionEnd;
 
     public override void Activate(InteractionHandler handler)
     {
-
-        handler.DisableOldUI();
-        SplitUpTextToFitUI(handler);
-        SetHandlerToThisPopup(handler);
-        void SplitUpTextToFitUI(InteractionHandler handler)
+        if (ChatBoxManager.Instance.PlayText(this))
         {
-            int CurrentCharacterIndex = 0;
-            while (Text.Length - CurrentCharacterIndex > handler.MaxCharPerPopup)
-            {
-                StringBuilder sb = new();
-                sb.Append(Text.Substring(CurrentCharacterIndex, handler.MaxCharPerPopup - 1));
-                while (sb[sb.Length - 1] != ' ' && sb.Length <= Text.Length - 1)
-                {
-                    sb.Append(Text[sb.Length + CurrentCharacterIndex]);
-                }
-                handler.RemainingTexts.Add(sb.ToString());
-                CurrentCharacterIndex += sb.Length;
-            }
-
-            handler.RemainingTexts.Add(Text.Substring(CurrentCharacterIndex));
+            ChatBoxManager.Instance.OnTextPopupEnd += EndInteraction;
         }
-        void SetHandlerToThisPopup(InteractionHandler handler)
-        {
-            handler.CurrentStringToWrite = handler.RemainingTexts[0];
-            handler.nameTitleText.text = titleName;
-            handler.RemainingTexts.RemoveAt(0);
-            if (handler.RemainingTexts.Count == 0) { handler.onFinalText?.Invoke(); handler.onFinalText = null; }
-            handler.CurrentTimePerCharacter = TimePerCharacter;
-        }
+    }
 
+    void EndInteraction()
+    {
+        OnInteractionEnd?.Invoke();
+        ChatBoxManager.Instance.OnTextPopupEnd -= EndInteraction;
     }
 
 

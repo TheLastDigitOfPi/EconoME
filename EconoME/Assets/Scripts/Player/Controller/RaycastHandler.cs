@@ -3,71 +3,124 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class RaycastHandler : MonoBehaviour
 {
+    //Static
+
+    //Events
+
+    //Public fields
+
+    //Local Serialized fields
 
     [SerializeField] BoolListVariable UIOpen;
     [SerializeField] Vector3Variable playerPos;
+    [SerializeField] float _raycastLength = 1f;
 
-    PlayerController owner;
+    //Local Private fields
+    Vector3 raycastOffSet = new Vector3(0, 0.4f);
+    PlayerMovementController owner;
+    private PlayerInput playerInput;
+    private InputAction _interactAction;
+    bool _playerTryingToRaycast;
+
+    //Helpers
+    bool CanRayCast { get { return !UIOpen.TrueValueExists() && !owner.UsingTool; } }
+
     private void Awake()
     {
-        owner = GetComponent<PlayerController>();
+        playerInput = GetComponent<PlayerInput>();
+        _interactAction = playerInput.actions["Interact"];
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (!UIOpen.TrueValueExists())
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                DealWtihRayCastResult();
-            }
-        }
+        owner = PlayerMovementController.Instance;
     }
-    public void DealWtihRayCastResult()
+
+    private void OnEnable()
+    {
+        _interactAction.performed += StartAttemptRaycast;
+        _interactAction.canceled += StopTryRaycast;
+    }
+
+    private void StopTryRaycast(InputAction.CallbackContext obj)
+    {
+        _playerTryingToRaycast = false;
+        StopAllCoroutines();
+    }
+
+    private void OnDisable()
+    {
+        _interactAction.performed -= StartAttemptRaycast;
+        _interactAction.canceled -= StopTryRaycast;
+    }
+    void StartAttemptRaycast(InputAction.CallbackContext obj)
+    {
+        _playerTryingToRaycast = true;
+
+        StartCoroutine(RaycastInterval());
+
+        IEnumerator RaycastInterval()
+        {
+            while (_playerTryingToRaycast)
+            {
+                if (CanRayCast)
+                {
+                    RaycastAndNotfiyPotentialHits();
+                }
+                yield return new WaitForSeconds(0.1f);
+            }
+
+        }
+
+    }
+
+
+    public void RaycastAndNotfiyPotentialHits()
     {
         RaycastHit2D[] raycastData = getHit();
         if (raycastData == null) { return; }
 
         for (int i = 0; i < raycastData.Length; i++)
         {
-            if (raycastData[i].collider.TryGetComponent(out Raycastable target))
+            if (raycastData[i].collider.TryGetComponent(out IAmInteractable target))
             {
                 if (target.OnRaycastHit(owner, raycastData[i].collider))
                     return;
             }
         }
-
-
     }
 
     RaycastHit2D[] getHit()
     {
         Vector2 direction = owner.MoveVec;
         if (direction == Vector2.zero)
-            switch (owner.Direction)
+            switch (owner.CurrentRaycastDirection)
             {
-                case PlayerController.MoveDirection.Up:
+                case MoveDirection.Up:
                     direction = Vector2.up;
                     break;
-                case PlayerController.MoveDirection.Down:
+                case MoveDirection.Down:
                     direction = Vector2.down;
                     break;
-                case PlayerController.MoveDirection.Right:
+                case MoveDirection.Right:
                     direction = Vector2.right;
                     break;
-                case PlayerController.MoveDirection.Left:
+                case MoveDirection.Left:
                     direction = Vector2.left;
                     break;
                 default:
                     direction = Vector2.zero;
                     break;
             }
-        Debug.DrawRay(playerPos.Value, direction.normalized * 3f, Color.red, 3f);
-        return Physics2D.RaycastAll(playerPos.Value, direction, 3f);
 
+        var dirLength = _raycastLength;
+        if(owner.CurrentRaycastDirection == MoveDirection.Up || owner.CurrentRaycastDirection == MoveDirection.Down)
+            dirLength /=2;
+        Debug.DrawRay(playerPos.Value + raycastOffSet, direction.normalized * dirLength, Color.red, 3f);
+        return Physics2D.RaycastAll(playerPos.Value + raycastOffSet, direction, dirLength);
     }
 }

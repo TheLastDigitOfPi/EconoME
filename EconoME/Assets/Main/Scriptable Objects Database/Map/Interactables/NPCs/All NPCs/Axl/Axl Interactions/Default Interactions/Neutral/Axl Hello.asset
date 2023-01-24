@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d182ec664a354fc4284ab8b5592c7e69, type: 3}
+  m_Name: Axl Hello
+  m_EditorClassIdentifier: 
+  _id: 81357f2a-fe91-4044-9237-7e3aca7b5064
+  Text: Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi
+    Hi Hi Hi Hi Hi Hi 1Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi
+    Hi 2Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi 3Hi Hi Hi Hi Hi Hi Hi Hi
+    Hi Hi Hi Hi Hi Hi Hi Hi Hi 4Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi
+    6Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi Hi 7
+  _icon: {fileID: 0}
+  TimePerCharacter: 0.02
+  titleName: 
+  <Skippable>k__BackingField: 0
+  onClose: []

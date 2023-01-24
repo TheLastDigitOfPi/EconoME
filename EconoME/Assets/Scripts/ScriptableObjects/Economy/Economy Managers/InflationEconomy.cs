@@ -12,7 +12,7 @@ public class InflationEconomy : EconomyManager
     int SellPrice(Item itemSold, bool SellItem)
     {
         //Find item
-        ItemScriptableObject foundItem = EconomyItems.FirstOrDefault(item => item.ItemName == itemSold.ItemName);
+        ItemBase foundItem = EconomyItems.FirstOrDefault(item => item.ItemName == itemSold.ItemName);
         if (foundItem == null) { return -1; }
 
         //Get inflation price

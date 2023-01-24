@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f58d5fd4492d8e41885d3f31cc4839b, type: 3}
+  m_Name: Player Backpack Inventory
+  m_EditorClassIdentifier: 
+  <Data>k__BackingField:
+    <InventoryName>k__BackingField: Backpack
+    ItemSlots:
+    - rid: 975289009302929514
+    - rid: 975289009302929515
+    - rid: 975289009302929516
+    - rid: 975289009302929517
+    - rid: 975289009302929518
+    - rid: 975289009302929519
+    - rid: 975289009302929520
+    - rid: 975289009302929521
+    - rid: 975289009302929522
+    - rid: 975289009302929523
+    - rid: 975289009302929524
+    - rid: 975289009302929525
+    - rid: 975289009302929526
+    - rid: 975289009302929527
+    - rid: 975289009302929528
+    - rid: 975289009302929529
+    - rid: 975289009302929530
+    - rid: 975289009302929531
+    - rid: 975289009302929532
+    - rid: 975289009302929533
+    - rid: 975289009302929534
+    - rid: 975289009302929535
+    - rid: 975289009302929536
+    - rid: 975289009302929537
+  <MaxSlots>k__BackingField: {fileID: 11400000, guid: 027525050fecfb941a88146149c4ea5e, type: 2}
+  <ItemRequirement>k__BackingField:
+    ItemName: 
+    _requiredItemCount: 0
+    _requiredItemType: 0
+    _invalidItemTypes: 02000000
+  <MaxInventorySlotWeight>k__BackingField: {fileID: 11400000, guid: 58292d45459c42e449f826399ebd4be0, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 975289009302929514
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 0
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: 1
+    - rid: 975289009302929515
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 1
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929516
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 2
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929517
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 3
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: 1
+    - rid: 975289009302929518
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 4
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: 1
+    - rid: 975289009302929519
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 5
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929520
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 6
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929521
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 7
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929522
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 8
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929523
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 9
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929524
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 10
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929525
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 11
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929526
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 12
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929527
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 13
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929528
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 14
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929529
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 15
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929530
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 16
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929531
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 17
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929532
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 18
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929533
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 19
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929534
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 20
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929535
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 21
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929536
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 22
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975289009302929537
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 23
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1

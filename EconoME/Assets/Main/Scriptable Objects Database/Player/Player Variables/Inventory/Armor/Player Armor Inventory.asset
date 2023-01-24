@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f58d5fd4492d8e41885d3f31cc4839b, type: 3}
+  m_Name: Player Armor Inventory
+  m_EditorClassIdentifier: 
+  <Data>k__BackingField:
+    <InventoryName>k__BackingField: 
+    ItemSlots:
+    - rid: 975288833843921089
+    - rid: 975288833843921090
+    - rid: 975288833843921091
+    - rid: 975288833843921092
+  <MaxSlots>k__BackingField: {fileID: 11400000, guid: d304c65da47a42f4a93ba8b87f91f0fb, type: 2}
+  <ItemRequirement>k__BackingField:
+    ItemName: 
+    _requiredItemCount: 0
+    _requiredItemType: 3
+    _invalidItemTypes: 
+  <MaxInventorySlotWeight>k__BackingField: {fileID: 11400000, guid: 49a325efcc444f54fbc1f8b2381d5096, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 975288833843921089
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 0
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975288833843921090
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 1
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975288833843921091
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 2
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1
+    - rid: 975288833843921092
+      type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
+      data:
+        SlotNum: 3
+        _inventoryGroup: {fileID: 11400000}
+        _item:
+          ItemBase: {fileID: 0}
+          Stacksize: -1

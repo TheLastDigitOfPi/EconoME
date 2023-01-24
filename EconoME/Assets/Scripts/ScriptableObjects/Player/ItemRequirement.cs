@@ -4,58 +4,33 @@ using UnityEngine;
 [Serializable]
 public class ItemRequirement
 {
-    public string ItemName;
-    public int ItemCount;
-    public ItemType itemType;
-    public ItemType[] InvalidItemTypes = new ItemType[0];
-    public ItemTypeContainer[] InvalidItemGroups = new ItemTypeContainer[0];
-
-    public ItemRequirement(ItemType itemType, string itemName = "", int itemCount = 1)
-    {
-        ItemName = itemName;
-        ItemCount = itemCount;
-        this.itemType = itemType;
-    }
-
-    public ItemRequirement(ItemType itemType, string itemName, int itemCount, ItemType[] invalidItemTypes, ItemTypeContainer[] invalidItemGroups)
-    {
-        ItemName = itemName;
-        ItemCount = itemCount;
-        this.itemType = itemType;
-        InvalidItemTypes = invalidItemTypes;
-        InvalidItemGroups = invalidItemGroups;
-    }
+    [SerializeField] private string ItemName;
+    [SerializeField] private int _requiredItemCount;
+    [SerializeField] private ItemType _requiredItemType;
+    [SerializeField] private ItemType[] _invalidItemTypes = new ItemType[0];
 
     public bool isValidItem(Item other)
     {
-        if (other == null || other.Weight == 0)
-        {
-            return false;
-        }
+        if (other == null || other.IndividualItemWeight == 0) { return false; }
 
-        for (int i = 0; i < InvalidItemTypes.Length; i++)
+        for (int i = 0; i < _invalidItemTypes.Length; i++)
         {
-            if (itemType == InvalidItemTypes[i])
+            if (_requiredItemType == _invalidItemTypes[i])
             {
                 return false;
             }
         }
 
-        for (int i = 0; i < InvalidItemGroups.Length; i++)
+        if(_requiredItemType != ItemType.Any)
+            if (other.ItemBase.ItemType != _requiredItemType) { return false; }
+        
+        foreach (var invalidType in _invalidItemTypes)
         {
-            for (int j = 0; j < InvalidItemGroups[i].Types.Length; j++)
-            {
-                if (itemType == InvalidItemGroups[i].Types[j])
-                {
-                    return false;
-                }
-            }
+            if(other.ItemBase.ItemType == invalidType)
+                return false;
         }
 
-        if (ItemCount > 1)
-        {
-            if (other.Stacksize < ItemCount) { return false; }
-        }
+        if (_requiredItemCount > 1) { if (other.Stacksize < _requiredItemCount) { return false; } }
         if (ItemName != null && ItemName != "")
         {
             if (other.ItemName != ItemName) { return false; }
@@ -67,6 +42,14 @@ public class ItemRequirement
     public void Reset()
     {
         ItemName = "";
-        ItemCount = 0;
+        _requiredItemCount = 0;
     }
+}
+
+public enum ItemType
+{
+    Any,
+    Tool,
+    Resource,
+    Armor
 }

@@ -7,7 +7,7 @@ public class NPCInteractionSet : ScriptableObject
 {
     public NPCStatusInteraction[] AllNPCInteractions;
 
-    internal Interaction[] GetCurrentInteraction(NPCStatusObject status, NPCStatusObject NormalStatus)
+    internal Interaction[] GetCurrentInteraction(NPCRelationshipStatus status, NPCRelationshipStatus NormalStatus)
     {
         var foundInteraction = AllNPCInteractions.FirstOrDefault(i => i.StatusForInteraction == status);
         if (foundInteraction == null)
@@ -23,6 +23,15 @@ public class NPCInteractionSet : ScriptableObject
 }
 
 /* NPC Dialog Determiner
+ * 
+ * 
+ * Maybe:
+ * All NPCs derive off the same set of interactions (i.e. all angry will have the same set to choose from)
+ * Then, each NPC will be able to override, add on, etc to the existing database to become more unique
+ * 
+ * 
+ * 
+ * 
  * No Recent Chat Base - "Hey, how's it going?"
  * Recent Chat Base - "What the frick you already talked to me"
  * 

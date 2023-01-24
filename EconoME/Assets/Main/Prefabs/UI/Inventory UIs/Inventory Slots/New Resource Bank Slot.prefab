@@ -281,7 +281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -8.171125, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -379,33 +379,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1b39daaeaf77648b7f313f3c6eaf11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotData:
-    rid: 5428058233452625920
-  text: {fileID: 4354910735631911783}
+  Inventory: {fileID: 0}
+  <SlotNumber>k__BackingField: 0
+  itemCountText: {fileID: 0}
   image: {fileID: 4354910735172537772}
-  BorderImage: {fileID: 4354910735486470606}
+  <BorderImage>k__BackingField: {fileID: 0}
   TileInspect: {fileID: 8874746881941912924, guid: 91a612e48f845c547bade235950ccaa4, type: 3}
-  forceSlotItem: {fileID: 0}
-  owner: {fileID: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: 5428058233452625920
-      type: {class: BankInventorySlot, ns: , asm: Assembly-CSharp}
-      data:
-        itemRequirement:
-          ItemName: 
-          ItemCount: 0
-          itemType: {fileID: 0}
-          InvalidItemTypes:
-          - {fileID: 0}
-          InvalidItemGroups: []
-        InventoryGroup: {fileID: 0}
-        slotIndex: 0
-        Active: 1
-        OriginalImage: {fileID: 0}
-        slotType: 4
-        InventoryMaxSlotWeight: {fileID: 11400000, guid: c294f456c371abf4096920ad700d1e36, type: 2}
-        Unlocked: 0
-        SlotNumber: 0
-        BankLockedItemCover: {fileID: 0}
+  <ForceSlotItem>k__BackingField: {fileID: 0}

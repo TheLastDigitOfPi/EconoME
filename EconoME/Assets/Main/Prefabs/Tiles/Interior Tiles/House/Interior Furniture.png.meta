@@ -1,0 +1,2431 @@
+fileFormatVersion: 2
+guid: f796fa9109ea84744b57c24b77cac909
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Interior Window 1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 645
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ea05cb06349dd4490485e8d25912dd
+      internalID: -778691506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Window 2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 645
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0747d0f5c87d5a54b87df6dc9bbd2ce2
+      internalID: 2131625698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Window 3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 645
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a783179645b9d42b7d38ae04e9b963
+      internalID: -445085897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Window 4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 647
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f70fe0f0e2c7664fa680d2f960711ea
+      internalID: 873571196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 646
+        width: 10
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5380722, y: 0.31871977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2d7e0fb51e027469116d80923364ef
+      internalID: 2096792427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 642
+        width: 13
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5146449, y: 0.22950825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4894bacd3b8da0742bff6ce9e75a3f02
+      internalID: -1050609749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 646
+        width: 10
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5380722, y: 0.3005894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51713376a6f7db4499e5091578470050
+      internalID: -1551402775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Table 1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 637
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e140fe2924f56f840ad37404746dba2b
+      internalID: -624515837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stool 1
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 649
+        width: 9
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0.39858732}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84673121c992cb46bd6eaf355e30c2f
+      internalID: 83342412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 610
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8957ed63ecc445f4b952724792fdaafe
+      internalID: 1180810376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 610
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e55b6044c60f543941f503066021f8
+      internalID: -1208287950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 610
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f706ddb263bc54a8f46f90c4fdfb59
+      internalID: -1996549163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Window 5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 626
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ff15910de2c3d4bbaed62963e7b7cc
+      internalID: -1632826469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 5
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 614
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5713825, y: 0.31871977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2925fed9a24338944a0a113461e089a9
+      internalID: -343421310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 4
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 626
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41c3a587f345c147adc9889f05a3ba0
+      internalID: 164353954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair 6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 614
+        width: 16
+        height: 21
+      alignment: 9
+      pivot: {x: 0.4524145, y: 0.32778203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d214554ef4cae469ab6e61ea3b05a1
+      internalID: 1367811317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Furniture_19
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 610
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e19075ef022d9d4cad34c4ab3ebc897
+      internalID: -728999985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 4
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 578
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fee9b87a7037da43a9a36c5a3a84be1
+      internalID: 66847501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 578
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027cb2237aef2fc48bdc43df443e2200
+      internalID: 129138115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 578
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5e0c714fe6b4a489a6bd90f049b898
+      internalID: -894262896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor 3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 590
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8039d49d68deee547b097525fa7ab661
+      internalID: -925826302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor 2
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 590
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: febb482089923e04c80dfe6cdc92fd45
+      internalID: 1689400858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 6
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 593
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4dc79cc6b52bb4d90624774209002d
+      internalID: -430489687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor Large Meal
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 578
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3bf513452bcc40a6b73d4e97405ab
+      internalID: 1857252922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor Small Meal
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 587
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62eb4a41e024b464b90e9f943ece9181
+      internalID: 749673180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor 1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 581
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1433806a8c1dc3f4da4018a9506f0e0f
+      internalID: -346618247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 546
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c222131edd571d4b850cf1d12d46ea0
+      internalID: 1567927149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 8
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 546
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bd18d73ee92fa418d41911358fb723
+      internalID: -82546447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 546
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152628a49790f0d4c97746d9e45f3b1b
+      internalID: -406451930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 553
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd1933016dd4a44daf9ce9264f28ab0
+      internalID: 945430520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 553
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec421d2b4086354aa6d24a00c8e15fd
+      internalID: 2030390785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 3
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 556
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d3b3a2a6d7bea47aeac163fe6eddae
+      internalID: -1658073449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 554
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3bf74d1294edd4cbe5150d36bbfef7
+      internalID: -983239842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 554
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa18429af6636a94ea1ea50b01eb9e8f
+      internalID: -590269941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 551
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a94dc2bd36f64cb3caf4cfdede598
+      internalID: 1298367144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 554
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d10d9e4e5891a74c845b8a33202cf8e
+      internalID: 372740075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 558
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953dfbaa446672c4d9fe12a8522b1a1e
+      internalID: -1112809931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Decor 9
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 558
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccda0189322e8d43966f26e660146da
+      internalID: -1410820425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 514
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f549a0f1f30d18f4388ef0cdac1c2417
+      internalID: -1341592391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 514
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c50bed7eaa23048b806fb2b1d37995
+      internalID: 497283940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 514
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9eb22f805e18c4ea073c68897d57bc
+      internalID: -119417884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Desk 1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 499
+        width: 100
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d422923f6a9fdf479699ae4f5a9dfeb
+      internalID: 2105698712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 516
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5707f85ba8a3d4aaf0102bdf18a6c8
+      internalID: -470296792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 516
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9185e205ef00164681d90797e310b37
+      internalID: 863688325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 3
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 519
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954f918f2ed06684f95c4f4b39820833
+      internalID: 1307553479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 4
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 519
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806cb0b99540f3d409b2725f9e6db6c3
+      internalID: -1907388960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 482
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc896f6f5b7224646afbb78d8d66279c
+      internalID: -560796401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 482
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fd1b6cb7e4e294884e575f95affa03
+      internalID: 2012361053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Blinds 15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 482
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74abd2f3b08308d45989412aa9a26892
+      internalID: -2067433061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 484
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6f6dc91c18ac44c8f38584de0d9222
+      internalID: -2000316277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kitchen decor 6
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 484
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9025928701d76a04a8eab3cf5a717e23
+      internalID: 1765707658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs 1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 374
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f82dde135d7d0347bd82df1d551eb0e
+      internalID: -2026881723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 434
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5e6c09d611c4c46bcd9ef6860c4455
+      internalID: 1101020090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 434
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2ff5799e19ace45bfd4fce66060834
+      internalID: -88863746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 3
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 434
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ac0591edf5eff46af0c10cf1005014
+      internalID: -1496790186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 434
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c3d1096803ea348a6f5f91ffb2e406
+      internalID: 917895775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 8
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 434
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6954bf7045995e0488be0701befcf9cf
+      internalID: -1890673495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closet 1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 339
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6f1c3b3eeac7f40b8feeaada0ab5d9
+      internalID: 1536594036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closet 2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 339
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7ce30cbcfe104418982a3e259877c8
+      internalID: -1853979925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closet 3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 340
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cb21b1d82d4124cbd869313440b9b7
+      internalID: 449413481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closet 4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 339
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aca46242db0f114bbf99e9a20f81341
+      internalID: 916497854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Closet 5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 339
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50806311fa394104f8ee2434f5f700a0
+      internalID: 716087706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pot
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 368
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.4999983, y: 0.12592824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595506fdb9eb63248b01a9825ef0baa5
+      internalID: -645084265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pot Plant 1
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 368
+        width: 19
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5299988, y: 0.1068751}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9f4d45afef2ac439ec3d2af9402075
+      internalID: 1658495245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pot Plant 2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 368
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.50791425, y: 0.13186519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5a2cc9805c15d43b7bd618d98af8d5
+      internalID: -27365286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pot Plant 3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 336
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.52374774, y: 0.13780339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51911ba08f931449b60f9730c27d369
+      internalID: -1403762037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pot Plant 4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 336
+        width: 18
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5237495, y: 0.13780339}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92c5efb4d0c4364e8e0fbe0ebe42e90
+      internalID: 1116748512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest 1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 277
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b0ac2d22b1b3c4bb5d3ea6b36884e6
+      internalID: 1999968044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest 2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 277
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c7dbb6617bcf144b10004074d05adb
+      internalID: -937818494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest 1 open
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 277
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b8885c275e3a1438519047cc657100
+      internalID: -131147833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest 2 open
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 277
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ceabbc7cede74887b6d33bb6458be
+      internalID: -1631640873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest 1 open full
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 277
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af2fd9593193e43afcd9cb27449e2a
+      internalID: 1175816971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest 2 open full
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 277
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f107b753ade861c4f9ae07bd30a6fd88
+      internalID: -27601375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box Closed
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 289
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f896385ae3fc468a8d236450eaae1
+      internalID: 990123032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barel closed
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 291
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b22c0bd9c59fbb408fa1152272a40e0
+      internalID: 1624978771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keg
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 291
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da5b90fa710e3445b8c4c206fae8a7e
+      internalID: 965559317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Furniture_83
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 251
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77192c63910fa144693cb2c43a83320e
+      internalID: 334691951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Furniture_84
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 251
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8feb3591e55461a458c46f704501ea5f
+      internalID: -1563605541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Furniture_85
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 232
+        width: 50
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cdf2da4d7b1e84383ff11157c004f4
+      internalID: 465295597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Box Open
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 257
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6d305e47b95d84483041187e64c2c0
+      internalID: 1817917620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Barel open
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 259
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332560671470b9f4ab88b04b7b8a0570
+      internalID: 351027235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kegs
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 227
+        width: 53
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79fe175615443b49830d82e145aa0cc
+      internalID: 560349251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 186
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687689f929de8cc4a98f2f45fc81f0cf
+      internalID: -1037842319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed Frame
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 218
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b8ab12d4122524db6593a920df5e6e
+      internalID: 1406606937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rug 1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 192
+        width: 64
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd04b31091539244d8f17c5474f4dd92
+      internalID: 1202940996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed Cover 1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 186
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f58c61461dfcf4f974f33d85d5464f
+      internalID: -456968690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bed Cover 2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 186
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c365133503ae024bb917f96bb452cc2
+      internalID: -500337546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Bed
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 122
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af99276547cf5e944840a71444ac66fe
+      internalID: 656328518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large bed frame
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 155
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce6f12a05819054ead7995ad5e2edb9
+      internalID: -1699544708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large bed covers
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 121
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b45f72036c8f5548a7fcdb83387fa28
+      internalID: 549793903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireplace 1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 23
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b2760a4fd68044c841a8e73918e4c5
+      internalID: 903205668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fireplace 2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 23
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4336e1f212def649a10348751c2c9dd
+      internalID: -745849589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bear Rug
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 47
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35129ad0163ab7f48b6f092b5e79cb52
+      internalID: -2070331701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rug 3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4067302c6cebc44b703afd0b4725e6
+      internalID: -488076671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rug 2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 128
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8be34c3afe16944be9838d35c1c61a
+      internalID: 1198282713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rug 4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242c2209355daa848a950f6ac1a5bd5a
+      internalID: 911601957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior Table 2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 637
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21db90d66b62e04a8dd11add68b6da0
+      internalID: 642256213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor Empty Large Meal
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 578
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca97659f0d9581e499436df747fab6bc
+      internalID: -1065717931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor Medium  Meal
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 578
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e792224c2e415044faa6f7d20f12cedc
+      internalID: -970513873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table Decor Medium Meal 2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 578
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdadca1437d11d48815b55cbc709c99
+      internalID: 1493362743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 5
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 434
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d398d93b9af2124c9e4baea920e1246
+      internalID: 85261691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 434
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ccb292509854049af10e01feacfbff
+      internalID: 1749727133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bookshelf 7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 434
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e0c36dc0b9cbf4f818126f7bfed1d2
+      internalID: 1045133107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stairs 2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 416
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b2cfeb3435a4458663c09f52bd84b
+      internalID: -1461142641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Chair 2: -1050609749
+      Rug 3: -488076671
+      Interior Desk 2: -1450880824
+      Interior Window 5: -1632826469
+      Stool 3: -334080118
+      Pot Plant 3: -1403762037
+      Pot Plant 4: 1116748512
+      Bookshelf 2: -88863746
+      Rug 1: 1202940996
+      Bear Rug: -2070331701
+      Interior Blinds 12: -119417884
+      Table Decor Empty Large Meal: -1065717931
+      Wall Decor: 1298367144
+      Stairs 2: -1461142641
+      Pot Plant 1: 1658495245
+      Interior Blinds 14: 2012361053
+      Chair 6: 1367811317
+      Closet 5: 716087706
+      Stairs 1: -2026881723
+      Chest 2: -937818494
+      Bookshelf 1: 1101020090
+      Interior Window 1: -778691506
+      Interior Blinds 1: 1180810376
+      Table Decor Medium Meal 2: 1493362743
+      Table Decor 1: -346618247
+      Interior Blinds 11: 497283940
+      Closet 1: 1536594036
+      Barel closed: 1624978771
+      Chair 4: 164353954
+      Chest 1 open: -131147833
+      Kitchen decor 4: -1907388960
+      Kitchen decor 5: -2000316277
+      Interior Furniture_69: 2057578453
+      Interior Furniture_42: 735694768
+      Kitchen decor 3: 1307553479
+      Kitchen decor 1: -470296792
+      Wall Decor 2: 2030390785
+      Wall Decor 5: -590269941
+      Interior Furniture_85: 465295597
+      chest 1 open full: 1175816971
+      Interior Furniture_19: -728999985
+      Interior Blinds 7: 1567927149
+      Interior Desk 3: -1500042707
+      Large Bed: 656328518
+      Large bed frame: -1699544708
+      Interior Table 1: -624515837
+      Interior Blinds 5: 129138115
+      Interior Blinds 8: -82546447
+      Pot Plant 2: -27365286
+      Interior Blinds 10: -1341592391
+      Bed Cover 2: -500337546
+      Stool 1: 83342412
+      Table Decor 3: -925826302
+      Table Decor Medium  Meal: -970513873
+      Kitchen decor 2: 863688325
+      Bed Frame: 1406606937
+      chest 2 open: -1631640873
+      Table Decor Large Meal: 1857252922
+      Chair 1: 2096792427
+      Stool 4: 804645853
+      Bed: -1037842319
+      Interior Blinds 9: -406451930
+      Interior Window 3: -445085897
+      Stool 2: 1388901516
+      chest 2 open full: -27601375
+      Interior Furniture_33: 906297554
+      Wall Decor 3: -1658073449
+      Chair 3: -1551402775
+      Fireplace 2: -745849589
+      Interior Blinds 2: -1208287950
+      Interior Desk 1: 2105698712
+      Large bed covers: 549793903
+      Bed Cover 1: -456968690
+      Interior Blinds 6: -894262896
+      Bookshelf 8: -1890673495
+      Interior Blinds 3: -1996549163
+      Chair 5: -343421310
+      Interior Window 4: 873571196
+      Wall Decor 7: 372740075
+      Wall Decor 8: -1112809931
+      Bookshelf 5: 85261691
+      Wall Decor 4: -983239842
+      Table Decor 2: 1689400858
+      Bookshelf 3: -1496790186
+      Table Decor Small Meal: 749673180
+      Bookshelf 4: 917895775
+      Rug 4: 911601957
+      Closet 4: 916497854
+      Keg: 965559317
+      Fireplace 1: 903205668
+      Barel open: 351027235
+      Interior Table 2: 642256213
+      Chest 1: 1999968044
+      Closet 2: -1853979925
+      Kegs: 560349251
+      Box Open: 1817917620
+      Wall Decor 1: 945430520
+      Closet 3: 449413481
+      Bookshelf 7: 1045133107
+      Interior Furniture_49: -189877719
+      Box Closed: 990123032
+      Interior Blinds 15: -2067433061
+      Pot: -645084265
+      Wall Decor 9: -1410820425
+      Bookshelf 6: 1749727133
+      Kitchen decor 6: 1765707658
+      Rug 2: 1198282713
+      Interior Furniture_83: 334691951
+      Wall Decor 6: -430489687
+      Interior Window 2: 2131625698
+      Interior Blinds 13: -560796401
+      Interior Furniture_84: -1563605541
+      Interior Blinds 4: 66847501
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

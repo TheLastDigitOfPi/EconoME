@@ -26,11 +26,12 @@ TagManager:
   - PlaceTileParent
   - Creature
   - Obstacle
+  - Player Parent
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Housing
   - Water
   - UI
   - Interactable

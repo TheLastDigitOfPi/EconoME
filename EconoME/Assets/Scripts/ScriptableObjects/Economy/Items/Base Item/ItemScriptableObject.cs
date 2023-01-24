@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 
-public abstract class ItemScriptableObject : ScriptableObject
+public abstract class ItemBase : ScriptableObject
 {
-    [SerializeField] string _itemName;
-    [SerializeField] public Sprite Icon;
-    [SerializeField] string _iconPath;
-    [SerializeField] int _weight;
-    public abstract ItemType ItemType { get; }
-    public string ItemName { get { return _itemName; } }
-    public string IconPath { get { return _iconPath; } }
-    public int Weight { get { return _weight; } }
-
+    [field: SerializeField] public string ItemName { get; private set; }
+    [field: SerializeField] public Sprite Icon { get; private set; }
+    [field: SerializeField] public string IconPath { get; private set; }
+    [field: SerializeField] public int Weight { get; private set; }
+    [field: SerializeField] public ItemType ItemType { get; protected set; }
     [SerializeField] EconomyStatus EconomyData = new();
 
     public int GetInflationPrice(int amountSold, bool sellItems)
@@ -37,6 +33,7 @@ public abstract class ItemScriptableObject : ScriptableObject
             return EconomyData.multiplier.Multiplier;
         }
     }
+
 
 }
 
@@ -124,10 +121,6 @@ public class EconomyStatus
 
         return TotalBasePrice;
     }
-
-
-
-
 
 }
 

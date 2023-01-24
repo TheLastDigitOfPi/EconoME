@@ -208,9 +208,11 @@ public class SimpleTileGenerator : TileGeneratorObject
                             {
                                 if (TileData.InteractableLayerTiles[FlatCoords] != 0)
                                 {
+                                    /* DEPRECATED UNTIL NEW TILE GENERATING SYSTEM
                                     TileData.resourceNodes.Add(new ResourceNode(
                                         current, nodeSettings, FlatCoords));
                                     placedNodes++;
+                                    */
                                     return;
                                 }
                             }
@@ -221,7 +223,9 @@ public class SimpleTileGenerator : TileGeneratorObject
                     }
 
                 }
-                TileData.resourceNodes.Add(new ResourceNode(current, nodeSettings, FlatCoords));
+                /*DEPRECATED UNTIL NEW TILE GENERATING SYSTEM
+                 * TileData.resourceNodes.Add(new ResourceNode(current, nodeSettings, FlatCoords));
+                */
                 placedNodes++;
                 return;
             }

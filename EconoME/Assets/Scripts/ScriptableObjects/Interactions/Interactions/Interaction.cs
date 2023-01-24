@@ -9,12 +9,12 @@ public abstract class Interaction : ScriptableObject
 {
     public abstract void Activate(InteractionHandler handler);
     public Guid ID = Guid.NewGuid();
-    public string _id;
-    public bool IsEqualTo(object other)
+
+    public abstract event Action OnInteractionEnd;
+    [SerializeField] string _id;
+    public bool IsEqualTo(Interaction other)
     {
-        if (other is not TextPopup) return false;
-        TextPopup otherPopup = (TextPopup)other;
-        return ID.Equals(otherPopup.ID);
+        return ID.Equals(other.ID);
     }
 
     public Interaction()
