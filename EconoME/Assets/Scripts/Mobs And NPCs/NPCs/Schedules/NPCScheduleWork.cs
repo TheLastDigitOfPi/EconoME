@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[CreateAssetMenu(fileName = "New NPC Schedule - Work", menuName = "ScriptableObjects/NPCs/Schedules/Schedule Items/Work")]
 public class NPCScheduleWork : NPCScheduleLocation
 {
     //Settings

@@ -35,6 +35,17 @@ public class WorldTimeManager : MonoBehaviour
         return (int)(Instance.WorldTime.MaxTicksInDay * humanTimeTickPercent);
     }
 
+    public static string CurrentGameTimeToHumanTime
+    {
+        get
+        {
+            var percent = (float)CurrentTime.TimeOfDayTick / CurrentTime.MaxTicksInDay;
+
+            var currentClockTicks = percent * 1440f;
+            return $"{(int)(percent * 24)} : {(int)currentClockTicks % 60}";
+        }
+    }
+
     [SerializeField] TimeObject WorldTime;
 
     //Public events
@@ -46,7 +57,7 @@ public class WorldTimeManager : MonoBehaviour
 
 
     //Public fields
-    public bool ClockRunning { get { return Application.isPlaying; } }
+    public bool ClockRunning { get { return Application.isPlaying && !TimePaused; } }
 
     //Local helpers
     int Day { get { return WorldTime.Day; } set { WorldTime.Day = value; } }
@@ -62,7 +73,6 @@ public class WorldTimeManager : MonoBehaviour
 
     public bool TimePaused;
 
-    WaitForSeconds TickWaitTime;
     Coroutine currentRunningClock;
 
     private void Awake()
@@ -75,7 +85,6 @@ public class WorldTimeManager : MonoBehaviour
         Instance = this;
         watch = new Stopwatch();
 
-        TickWaitTime = new WaitForSeconds(1f / TicksPerSecond);
 
     }
 
@@ -112,6 +121,8 @@ public class WorldTimeManager : MonoBehaviour
             NewWeek();
     }
 
+    WaitForFixedUpdate waitForFixedUpdate = new();
+    float timeHolder = 0;
     IEnumerator ClockTick()
     {
         do
@@ -121,17 +132,25 @@ public class WorldTimeManager : MonoBehaviour
                 yield return new WaitUntil(() => ClockRunning);
             }
 
-            //Wait for the next tick
-            yield return TickWaitTime;
-            UpdateClock();
+            timeHolder += Time.deltaTime;
 
+            int secondsThisFrame = (int)timeHolder;
+            int ticksThisFrame = (int)(timeHolder * WorldTime.TicksPerSecond);
+            float ticksPerSec = 1f/WorldTime.TicksPerSecond;
+            if(ticksThisFrame >= 1)
+            {
+                timeHolder -= ticksPerSec * ticksThisFrame;
+                WorldTime.TimeOfDayTick += (ticksThisFrame);
+                UpdateClock();
+            }
+            //Wait for the next tick
+            yield return waitForFixedUpdate;
         } while (true);
 
     }
 
     void UpdateClock()
     {
-        WorldTime.TimeOfDayTick++;
         OnGameTick?.Invoke();
         if (WorldTime.TimeOfDayTick >= MaxTicksInDay)
         {

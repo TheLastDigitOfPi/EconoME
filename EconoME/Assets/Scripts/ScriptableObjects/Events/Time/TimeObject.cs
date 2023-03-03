@@ -14,11 +14,8 @@ public class TimeObject : ScriptableObject
     [field: SerializeField] public int WeeksInMonth { get; private set; } = 4;
 
     [SerializeField] int TotalSecondsPerDay;
-
-    
-
     public int TicksPerDay { get { return MaxTicksInDay / TicksPerSecond; } }
-    public int TimeOfDayTick { get; set; }
+    [field: SerializeField] public int TimeOfDayTick { get; set; }
 
     public void UpdateTotalSecondsPerDay()
     {

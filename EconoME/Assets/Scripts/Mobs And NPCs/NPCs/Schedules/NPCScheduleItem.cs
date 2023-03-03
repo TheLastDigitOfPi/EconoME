@@ -28,6 +28,7 @@ For example
 NPC entered "Free Time" (Npc random schedule). They may choose to either go Home, go to the Store, the park, etc.
  
  */
+
 public abstract class NPCScheduleItem : ScriptableObject
 {
     public virtual int StartTime { get { return _startTime.StandardizedTime; } }

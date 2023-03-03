@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+
+[CreateAssetMenu(fileName = "New NPC Scheduler", menuName = "ScriptableObjects/NPCs/Schedules/Scheduler")]
 public class NPCSchedule : ScriptableObject
 {
     [field: SerializeReference] public List<NPCScheduleItem> SundaySchedule { get; private set; }
@@ -45,11 +47,13 @@ public class NPCSchedule : ScriptableObject
             }
 
             //Go through each item for the day
-            foreach (var item in ItemsForDay)
+
+            for (int i = 0; i < ItemsForDay.Count; i++)
             {
-                //Check all the other items with this one
-                foreach (var otherItem in ItemsForDay)
+                var item = ItemsForDay[i];
+                for (int j = 0; j < ItemsForDay.Count; j++)
                 {
+                    var otherItem = ItemsForDay[j];
                     //Don't check the same item
                     if (otherItem == item)
                         continue;
@@ -73,13 +77,24 @@ public class NPCSchedule : ScriptableObject
                     {
                         Debug.LogWarning("Scheudle conflic of " + item.name + " and " + otherItem.name + " removing " + otherItem.name + " from schedule");
                         InvalidScheduleItems.Add(otherItem);
-                        ItemsForDay.Remove(otherItem);
+                        ItemsForDay.RemoveAt(j);
                         Schedule.Remove(otherItem);
+                        j--;
                     }
-
                 }
-
-                ItemsForDay.Remove(item);
+                ItemsForDay.RemoveAt(i);
+                i--;
+            }
+            foreach (var item in ItemsForDay)
+            {
+                bool itemValid = true;
+                //Check all the other items with this one
+                foreach (var otherItem in ItemsForDay)
+                {
+                    
+                }
+                
+                
             }
         }
 

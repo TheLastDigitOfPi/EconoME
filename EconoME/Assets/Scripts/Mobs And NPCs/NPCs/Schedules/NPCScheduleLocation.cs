@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+
+[CreateAssetMenu(fileName = "New NPC Schedule - Location", menuName = "ScriptableObjects/NPCs/Schedules/Schedule Items/Location")]
 public class NPCScheduleLocation : NPCScheduleItem
 {
     [field: SerializeField] public WorldLocationData Location { get; private set; }
