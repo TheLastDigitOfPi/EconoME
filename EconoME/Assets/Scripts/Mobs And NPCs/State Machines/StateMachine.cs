@@ -4,7 +4,7 @@ using System;
 [Serializable]
 public class StateMachine
 {
-    private IState _currentState;
+    public IState _currentState {get; private set;}
 
     private Dictionary<Type, List<Transition>> _transitions = new Dictionary<Type, List<Transition>>();
     private List<Transition> _currentTransitions = new List<Transition>();

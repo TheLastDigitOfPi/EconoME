@@ -21,19 +21,30 @@ public class ResourceBankHandler : MonoBehaviour
     [SerializeField] ResourceType Lumber;
     [SerializeField] ResourceType FarmItem;
     [SerializeField] ResourceType MonsterDrop;
-
+    [SerializeField] InventoryObject _bankInventoryData;
 
     public static ResourceBankHandler Instance;
 
     void Awake()
     {
         ActiveBankSlots = AllBankSlots.ToList();
-        if(Instance != null)
+        if (Instance != null)
         {
             Debug.LogWarning("Attempted to create more than 1 instance of ResoureBankHandler");
-            Destroy(this.gameObject);
+            Destroy(this);
         }
         Instance = this;
+        _bankInventoryData.InitializeData();
+
+        if (_bankInventoryData.Data.ItemSlots.Length > AllBankSlots.Length)
+            Debug.LogWarning("Not Enough Item Slots to Represent the Data for the Items");
+
+        //Initialize the UI slots to update on events
+        for (int i = 0; i < AllBankSlots.Length; i++)
+        {
+            AllBankSlots[i].Initialize(i, _bankInventoryData);
+        }
+
 
     }
     /*
@@ -173,7 +184,7 @@ public class ResourceBankHandler : MonoBehaviour
     */
     public void ToggleSearchTab()
     {
-        SearchUI.alpha = SearchUI.alpha == 1? 0:1;
+        SearchUI.alpha = SearchUI.alpha == 1 ? 0 : 1;
         SearchUI.interactable = !SearchUI.interactable;
         SearchUI.blocksRaycasts = !SearchUI.blocksRaycasts;
     }
@@ -181,14 +192,5 @@ public class ResourceBankHandler : MonoBehaviour
     public void ToggleUI()
     {
         BankCanvasGroup.ToggleCanvas();
-    }
-    private void Start()
-    {
-        BankOpen.onValueChange += ToggleUI;
-    }
-
-    private void OnDisable()
-    {
-        BankOpen.onValueChange -= ToggleUI;
     }
 }

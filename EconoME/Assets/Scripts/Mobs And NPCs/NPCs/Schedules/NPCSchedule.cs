@@ -91,14 +91,68 @@ public class NPCSchedule : ScriptableObject
                 //Check all the other items with this one
                 foreach (var otherItem in ItemsForDay)
                 {
-                    
+
                 }
-                
-                
+
+
             }
         }
 
 
+    }
+
+    public List<NPCScheduleItem> TodaysOverrideItems
+    {
+        get
+        {
+            int day = WorldTimeManager.CurrentTime.Day % 7;
+            List<NPCScheduleItem> items = new();
+            foreach (var item in ScheduleOverrides)
+            {
+                if (item.DayOfWeek == day)
+                {
+                    items.Add(item);
+                }
+            }
+            return items;
+        }
+    }
+
+    public List<NPCScheduleItem> TodaysScheduleItems
+    {
+        get
+        {
+            int day = WorldTimeManager.CurrentTime.Day % 7;
+            List<NPCScheduleItem> items;
+            switch (day)
+            {
+                case 0:
+                    items = SundaySchedule;
+                    break;
+                case 1:
+                    items = MondaySchedule;
+                    break;
+                case 2:
+                    items = TuesdaySchedule;
+                    break;
+                case 3:
+                    items = WednesdaySchedule;
+                    break;
+                case 4:
+                    items = ThursdaySchedule;
+                    break;
+                case 5:
+                    items = FridaySchedule;
+                    break;
+                case 6:
+                    items = SaturdaySchedule;
+                    break;
+                default:
+                    items = new();
+                    break;
+            }
+            return items;
+        }
     }
 
     public bool GetTravelLocation(out WorldLocationData location)

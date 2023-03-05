@@ -8,7 +8,8 @@ public class AIController : MonoBehaviour
 {
     StateMachine _stateMachine = new();
     [SerializeField] List<AIStateSO> _aIStates = new();
-    [SerializeReference] List<AIState> _activeStates = new();
+    [SerializeReference] IState _currentState;
+    [field:SerializeReference] public List<AIState> _activeStates {get; private set;} = new();
     public NavMeshAgent NavMeshAgent { get { return _navMeshAgent; } }
     NavMeshAgent _navMeshAgent;
     public bool isRunning = true;
@@ -51,12 +52,15 @@ public class AIController : MonoBehaviour
         {
             _stateMachine.AddAnyTransition(state, state.Condition);
         }
+
+        _stateMachine.SetState(_activeStates[0]);
     }
 
     private void Update()
     {
         if (isRunning)
             _stateMachine.Tick();
+        _currentState = _stateMachine._currentState;
 
     }
 

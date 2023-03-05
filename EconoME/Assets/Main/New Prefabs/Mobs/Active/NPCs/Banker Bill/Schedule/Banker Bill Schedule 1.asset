@@ -12,22 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d46428dae6b57042a6e8697c74757fb, type: 3}
   m_Name: Banker Bill Schedule 1
   m_EditorClassIdentifier: 
-  <SundaySchedule>k__BackingField: []
+  <SundaySchedule>k__BackingField:
+  - {fileID: 11400000, guid: 281d893246d457a47aa029e24c81ddc2, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   <MondaySchedule>k__BackingField:
-  - {fileID: 11400000, guid: 97c7ed758c8a2584680e068afee24878, type: 2}
+  - {fileID: 11400000, guid: 281d893246d457a47aa029e24c81ddc2, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   - {fileID: 11400000, guid: 387521133abd0ba4aa1d03837a965bc5, type: 2}
   <TuesdaySchedule>k__BackingField:
   - {fileID: 11400000, guid: 97c7ed758c8a2584680e068afee24878, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   - {fileID: 11400000, guid: 387521133abd0ba4aa1d03837a965bc5, type: 2}
   <WednesdaySchedule>k__BackingField:
   - {fileID: 11400000, guid: 97c7ed758c8a2584680e068afee24878, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   - {fileID: 11400000, guid: 387521133abd0ba4aa1d03837a965bc5, type: 2}
   <ThursdaySchedule>k__BackingField:
   - {fileID: 11400000, guid: 97c7ed758c8a2584680e068afee24878, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   - {fileID: 11400000, guid: 387521133abd0ba4aa1d03837a965bc5, type: 2}
   <FridaySchedule>k__BackingField:
   - {fileID: 11400000, guid: 97c7ed758c8a2584680e068afee24878, type: 2}
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   - {fileID: 11400000, guid: 387521133abd0ba4aa1d03837a965bc5, type: 2}
-  <SaturdaySchedule>k__BackingField: []
+  <SaturdaySchedule>k__BackingField:
+  - {fileID: 11400000, guid: d0a6746c48d979e4cbffc2cb985181f6, type: 2}
   <ScheduleOverrides>k__BackingField: []
   InvalidScheduleItems: []

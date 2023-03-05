@@ -23,4 +23,10 @@ public class WorldWayPointData
         Bounds = waypoint.WayPointCollider.bounds;
         WayPointWorldPosition = waypoint.transform.position;
     }
+
+    public WorldWayPointData(WorldLocationData location, Vector3 Pos)
+    {
+        Location = location;
+        WayPointWorldPosition = Pos;
+    }
 }

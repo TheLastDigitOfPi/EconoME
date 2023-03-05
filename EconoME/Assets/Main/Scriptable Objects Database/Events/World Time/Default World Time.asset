@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8cd3f1a0c02d94e8f758ad1970a4fd, type: 3}
   m_Name: Default World Time
   m_EditorClassIdentifier: 
-  Day: 119
-  Week: 114
-  Month: 111
+  Day: 0
+  Week: 0
+  Month: 0
   Year: 0
   <MaxTicksInDay>k__BackingField: 2400
-  <TicksPerSecond>k__BackingField: 100
+  <TicksPerSecond>k__BackingField: 30
   <WeeksInMonth>k__BackingField: 4
-  TotalSecondsPerDay: 24
-  <TimeOfDayTick>k__BackingField: 222
+  TotalSecondsPerDay: 80
+  <TimeOfDayTick>k__BackingField: 1577

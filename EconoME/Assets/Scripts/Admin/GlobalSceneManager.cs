@@ -120,7 +120,7 @@ public class GlobalSceneManager : MonoBehaviour
 
     public void TransitionPlayerToLocation(WorldLocationData location)
     {
-        if (location == null || location.LocationScene == null)
+        if (location == null)
             return;
 
         LoadScene(location);

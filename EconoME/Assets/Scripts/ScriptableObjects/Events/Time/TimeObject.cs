@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [CreateAssetMenu(fileName = "New World Time", menuName = "ScriptableObjects/Events/Time/World Time")]
 public class TimeObject : ScriptableObject
@@ -20,6 +21,15 @@ public class TimeObject : ScriptableObject
     public void UpdateTotalSecondsPerDay()
     {
         TotalSecondsPerDay = MaxTicksInDay / TicksPerSecond;
+    }
+
+    internal void Reset()
+    {
+        Day = 0;
+        Week = 0;
+        Month = 0;
+        Year = 0;
+        TimeOfDayTick = 0;
     }
 }
 

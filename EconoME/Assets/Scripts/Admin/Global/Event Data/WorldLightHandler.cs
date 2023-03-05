@@ -30,6 +30,7 @@ public class WorldLightHandler : MonoBehaviour
 
     bool _sunHasRisen;
     bool _sunHasSet;
+    [SerializeField] bool _isRunning = true;
 
     private void Awake()
     {
@@ -57,6 +58,8 @@ public class WorldLightHandler : MonoBehaviour
 
     private void CheckTime()
     {
+        if(!_isRunning)
+            return;
         if (!_sunHasRisen && !_sunTransitioning)
         {
             if (WorldTimeManager.CurrentTime.TimeOfDayTick >= SunRiseTime.StandardizedTime)

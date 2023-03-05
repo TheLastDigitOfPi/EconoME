@@ -162,7 +162,7 @@ public class InventoryObject : ScriptableObject
 
     public void InitializeData()
     {
-        if (!MaxSlots) { Debug.Log("Set the Max Slots Amount"); return; }
+        if (!MaxSlots) { Debug.LogWarning("Set the Max Slots Amount for inventory: " + name); return; }
 
         if (Data.ItemSlots == null)
             Data.ItemSlots = new ItemSlot[MaxSlots.Value];

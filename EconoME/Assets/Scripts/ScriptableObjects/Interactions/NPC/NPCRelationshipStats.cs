@@ -1,27 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New NPC Object", menuName = "ScriptableObjects/Interactions/NPCs/NPC Data")]
 [Serializable]
-public class NPCBase : ScriptableObject
-{
-    [field: SerializeField] public int NPCID { get; private set; }
-    [field: SerializeField] public string NPCName { get; private set; }
-
-    [field: SerializeField][field: Multiline] public string Description { get; private set; }
-
-    public NPCRelationshipStatus CurrentStatus { get { return _relationshipDeterminer.CalculateStatus(); } }
-
-    [SerializeField] NPCRelationshipStats _relationshipDeterminer;
-    [field: SerializeField] public NPCInteractionSet InteractionSet { get; private set; }
-
-
-
-    [Serializable]
     public class NPCRelationshipStats
     {
         [SerializeField] List<RelationshipOption> RelationshipOptions = new();
@@ -104,47 +85,4 @@ public class NPCBase : ScriptableObject
             return !foundInvalidOption;
         }
     }
-
-    public class RelationshipOption
-    {
-        [field: SerializeField] public NPCRelationshipStatus Status { get; private set; }
-        [Tooltip("The range in percent decimal that this status will be a part of. X represnets min value and Y represents max value Set No Start/End Value to true if on one of the ends (min status, max status)")]
-        [field: SerializeField] public Vector2 percentRange { get; private set; }
-        [field: SerializeField] public bool NoMaxValue { get; private set; }
-        [field: SerializeField] public bool NoMinValue { get; private set; }
-
-    }
-
-}
-
-public enum NPCRelationshipStatus
-{
-    MortalEnemies,
-    Enemies,
-    Annoyed,
-    Neutral,
-    Friends,
-    BestFriends,
-    Lovers
-}
-
-public enum NPCRealtionshipOperation
-{
-    SamllDislike,
-    SmallRequestFail,
-    SmallRequestSuccess,
-    MediumRequestFail,
-    MediumRequestSuccess,
-    LargeRequestFail,
-    LargeRequestSuccess,
-}
-
-
-/// <summary>
-/// The NPC Dialog Atlas will contain all the possible Dialogs that the NPC will be able to speak. It will also be able to take in the NPC's status and determine what
-/// </summary>
-public class NPCDialogAtlas : ScriptableObject
-{
-
-}
 

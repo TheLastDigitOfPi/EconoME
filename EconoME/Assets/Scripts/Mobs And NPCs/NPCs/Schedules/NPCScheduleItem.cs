@@ -36,6 +36,8 @@ public abstract class NPCScheduleItem : ScriptableObject
     [field: SerializeField] public int DayOfWeek { get; private set; }
     [SerializeField] GameTime _startTime;
     [SerializeField] GameTime _endTime;
-    public abstract bool OnScheduleStart(NPCScheduleManager manager);
-    public abstract bool OnScheduleInterrupt(NPCScheduleManager manager);
+    public abstract bool OnScheduleStart(NPCScheduleHandler manager);
+    public abstract bool OnScheduleStop(NPCScheduleHandler manager);
+    public abstract bool OnScheduleInterrupt(NPCScheduleHandler manager);
+    public abstract bool OnScheduleTick(NPCScheduleHandler manager);
 }

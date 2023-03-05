@@ -381,8 +381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Inventory: {fileID: 0}
   <SlotNumber>k__BackingField: 0
-  itemCountText: {fileID: 0}
+  itemCountText: {fileID: 4354910735631911783}
   image: {fileID: 4354910735172537772}
-  <BorderImage>k__BackingField: {fileID: 0}
+  <BorderImage>k__BackingField: {fileID: 4354910736611929140}
   TileInspect: {fileID: 8874746881941912924, guid: 91a612e48f845c547bade235950ccaa4, type: 3}
   <ForceSlotItem>k__BackingField: {fileID: 0}

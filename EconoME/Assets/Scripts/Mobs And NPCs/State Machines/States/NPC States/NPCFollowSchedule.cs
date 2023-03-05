@@ -4,18 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
-
-
-public class NPCTravelSO : AIStateSO
-{
-    [SerializeReference] NPCTravel TravelSettings = new();
-    public override bool GetAIState(AIController controller, out AIState state)
-    {
-        state = new NPCTravel(controller, TravelSettings);
-        return state.PassedValidation;
-    }
-}
-
 /*
 This will be the pathing that the NPCs will attempt to follow
 
@@ -55,34 +43,34 @@ Either way, the NPC should go back to it's schedule state when none of these oth
  
 */
 
-[CreateAssetMenu(fileName = "NPC Schedule", menuName ="ScriptableObjects/AI/States/NPCs/NPCTravel")]
-public class NPCTravel : AIState
+public class NPCFollowSchedule : AIState
 {
-    NPCTravelingManager _nPCTravelingManager;
+    
+    NPCScheduleHandler _scheduleHandler;
     NPC _npc;
-    public NPCTravel(){ }
-    public NPCTravel(AIController controller, NPCTravel other) : base(controller, other.AICondition)
+    public NPCFollowSchedule(){ }
+    public NPCFollowSchedule(AIController controller, NPCFollowSchedule other) : base(controller, other.AICondition)
     {
         if(!controller.TryGetComponent(out _npc))
         {
             FailedStateRequirements(this, "Unable to find NPC Component");
         }
-        _nPCTravelingManager = _npc.TravelingManager;
+        _scheduleHandler = _npc.NPCScheduler;
     }
 
     public override void OnEnter()
     {
-        _nPCTravelingManager.FindDesiredLocation();
+        _scheduleHandler.ResumeSchedule();
     }
 
     public override void OnExit()
     {
-        
+        _scheduleHandler.StopSchedule();
     }
 
     public override void Tick()
     {
-        
+        _scheduleHandler.ScheduleTick();
     }
 }
 

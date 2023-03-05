@@ -5,25 +5,28 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider2D))]
-[RequireComponent(typeof(NPCScheduleManager))]
+[RequireComponent(typeof(NPCScheduleHandler))]
 [RequireComponent(typeof(NPCTravelingManager))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NPCDialogHandler))]
 [RequireComponent(typeof(AIController))]
 public class NPC : MonoBehaviour, IAmInteractable
 {
-    [field: SerializeField] public NPCBase NPCData { get; private set; }
 
-    public NPCScheduleManager NPCScheduler { get; private set; }
+    //Events
+    public event Action OnStartTalkToPlayer;
+    public event Action OnEndTalkToPlayer;
+    //Public fields
+    [field: SerializeField] public NPCBase NPCData { get; private set; }
+    public NPCScheduleHandler NPCScheduler { get; private set; }
     public NPCTravelingManager TravelingManager { get; private set; }
     public Animator Animator { get; private set; }
     public NPCDialogHandler DialogHandler { get; private set; }
+    //Local fields
 
     Guid[] currentActiveInteractions;
     [field: SerializeField] Collider2D RaycastCollider { get; set; }
 
-    public event Action OnStartTalkToPlayer;
-    public event Action OnEndTalkToPlayer;
 
     public bool OnRaycastHit(PlayerMovementController owner, Collider2D collider)
     {
@@ -47,7 +50,7 @@ public class NPC : MonoBehaviour, IAmInteractable
 
     private void Awake()
     {
-        NPCScheduler = GetComponent<NPCScheduleManager>();
+        NPCScheduler = GetComponent<NPCScheduleHandler>();
         TravelingManager = GetComponent<NPCTravelingManager>();
         Animator = GetComponent<Animator>();
         DialogHandler = GetComponent<NPCDialogHandler>();

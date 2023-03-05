@@ -7,24 +7,25 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "New World Location", menuName = "ScriptableObjects/Map/Location")]
 public class WorldLocationData : ScriptableObject
 {
-    public Scene LocationScene { get { return _scene != null ? _scene : SceneManager.GetActiveScene(); } set { _scene = value; } }
-    Scene _scene;
-
+    /// <summary>
+    /// The scene this transitioner transition to
+    /// </summary>
+    public WorldLocationData LocationConnectedTo { get; private set; }
     [field: SerializeField] public int SceneIndex { get; private set; } = 0;
     List<NPC> NpcsAtLocation { get; set; } = new();
     [field: SerializeField] public List<WorldWayPointData> LocationWayPoints { get; private set; } = new();
-    WorldWayPointData _transitionWaypoint;
+    SceneTransitionerData _transitionWaypoint;
+
 
     public void Initialize(WorldLocation location, WorldWayPointData[] waypoints)
     {
         LocationWayPoints.Clear();
         LocationWayPoints.AddRange(waypoints);
-        LocationScene = location.gameObject.scene;
-        SceneIndex = LocationScene.buildIndex;
-        SceneTransitioner sceneTransitioner = location.Optional_transitioner;
-        if (sceneTransitioner != null)
+        SceneIndex = location.gameObject.scene.buildIndex;
+        if (location.Optional_Transitioner != null)
         {
-            _transitionWaypoint = sceneTransitioner.TransitionerEntrance.WaypointData(this);
+            LocationConnectedTo = location.Optional_Transitioner.LocationToTransitionTo;
+            _transitionWaypoint = location.Optional_Transitioner.Initialize(this);
         }
     }
     public WorldWayPointData GetWayPoint()
@@ -34,9 +35,7 @@ public class WorldLocationData : ScriptableObject
 
     public bool TryGetTransitionWaypoint(out WorldWayPointData waypoint)
     {
-        waypoint = _transitionWaypoint;
-        if (_transitionWaypoint == null)
-            return false;
-        return true;
+        waypoint = _transitionWaypoint?.TransitionerEntrance;
+        return _transitionWaypoint != null;
     }
 }

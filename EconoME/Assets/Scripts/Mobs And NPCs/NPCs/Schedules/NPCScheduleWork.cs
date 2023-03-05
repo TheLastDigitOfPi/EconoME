@@ -11,7 +11,7 @@ public class NPCScheduleWork : NPCScheduleLocation
     NPC _npc;
     NPCTravelingManager _travelingManger;
     Animator _animator;
-    public override bool OnScheduleStart(NPCScheduleManager manager)
+    public override bool OnScheduleStart(NPCScheduleHandler manager)
     {
         _npc = manager.Npc;
         _travelingManger = manager.Npc.TravelingManager;

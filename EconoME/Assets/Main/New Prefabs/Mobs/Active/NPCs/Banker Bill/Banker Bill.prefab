@@ -11,6 +11,13 @@ GameObject:
   - component: {fileID: 8088445419273444065}
   - component: {fileID: -3722447136506553468}
   - component: {fileID: 3740460229830777821}
+  - component: {fileID: 7370114270232096888}
+  - component: {fileID: 7452642209603012135}
+  - component: {fileID: 8526264883945842046}
+  - component: {fileID: 1062968745562509287}
+  - component: {fileID: 6567197173530968135}
+  - component: {fileID: 8360371496944692937}
+  - component: {fileID: 93385988}
   m_Layer: 0
   m_Name: Banker Bill
   m_TagString: Untagged
@@ -105,3 +112,138 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &7370114270232096888
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.326128}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.43862915, y: 0.652256}
+  m_EdgeRadius: 0
+--- !u!114 &7452642209603012135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee182ad7f8003f944b3f4490f88ff862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <NPCData>k__BackingField: {fileID: 11400000, guid: ec6347b2878066449bd73fd54a7c25d9, type: 2}
+  <RaycastCollider>k__BackingField: {fileID: 7370114270232096888}
+--- !u!114 &8526264883945842046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d38b1e4f9fddb43b7c70963b7f1457, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleAnimationName: Idle
+  _moveAnimationName: Walk
+  Waypoints: []
+--- !u!195 &1062968745562509287
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.2
+  m_Speed: 2
+  m_Acceleration: 1
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 0.65
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 3
+--- !u!114 &6567197173530968135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f9741436dc8fa41be6c6c70a3afa3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _aIStates:
+  - {fileID: 11400000, guid: 27d05c2313d105a40bed3afe8556eed8, type: 2}
+  - {fileID: 11400000, guid: cb2dd1fdd48cf3c42b5fee2ac999db7d, type: 2}
+  _currentState:
+    rid: -2
+  <_activeStates>k__BackingField: []
+  isRunning: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+--- !u!114 &8360371496944692937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9da140fbcf2f3140bcd8ae411064fee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <CheckingSchedule>k__BackingField: 1
+  <InFreeTime>k__BackingField: 0
+  schedule: {fileID: 11400000, guid: de752f397e132cb4281b418dd5ef03d3, type: 2}
+  currentAction: {fileID: 0}
+--- !u!114 &93385988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a229884b668e2634d8d238aeb8fab61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Health>k__BackingField: -1
+  <IsScared>k__BackingField: 0
+  <IsHappy>k__BackingField: 0
+  <IsAngry>k__BackingField: 0
+  <IsNeutral>k__BackingField: 0
+  <Speed>k__BackingField: 2

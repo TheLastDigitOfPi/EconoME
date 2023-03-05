@@ -30,7 +30,7 @@ MonoBehaviour:
     multiplier: {fileID: 0}
   <ToolTier>k__BackingField: 0
   <Damage>k__BackingField: 50
-  <Speed>k__BackingField: 1
+  <Speed>k__BackingField: 23.45
   _toolSwingAnimations:
   - {fileID: 11400000, guid: 159fa61be8d25944faec4fd53e6c2d45, type: 2}
   - {fileID: 11400000, guid: 71db539f91449fb4dba7edfbb90c23b3, type: 2}
