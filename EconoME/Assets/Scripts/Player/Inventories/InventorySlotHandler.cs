@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Newtonsoft.Json;
 using UnityEditor;
 using System.IO;
 using UnityEngine.EventSystems;

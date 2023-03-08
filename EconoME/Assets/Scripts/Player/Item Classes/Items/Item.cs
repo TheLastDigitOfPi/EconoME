@@ -4,8 +4,6 @@ using UnityEngine;
 using TMPro;
 using System;
 using UnityEngine.UI;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 [Serializable]
 public class Item
