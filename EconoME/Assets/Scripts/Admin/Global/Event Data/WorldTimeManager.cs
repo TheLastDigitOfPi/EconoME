@@ -71,6 +71,7 @@ public class WorldTimeManager : MonoBehaviour
     //Local fields
     Stopwatch watch;
     [SerializeField] bool ResetTimeOnStart;
+    [SerializeField] GameTime ResetTime;
     public bool TimePaused;
 
     Coroutine currentRunningClock;
@@ -86,7 +87,7 @@ public class WorldTimeManager : MonoBehaviour
         
         if(ResetTimeOnStart)
         {
-            CurrentTime.Reset();
+            CurrentTime.ResetTime(ResetTime);
         }
 
     }

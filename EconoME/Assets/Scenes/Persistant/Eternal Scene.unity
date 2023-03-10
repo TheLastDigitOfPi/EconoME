@@ -384,6 +384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorldTime: {fileID: 11400000, guid: b2a6e32b84580594f9e12243becbef27, type: 2}
   ResetTimeOnStart: 1
+  ResetTime:
+    humanTime: {x: 9, y: 30}
   TimePaused: 0
 --- !u!1 &886092113
 GameObject:

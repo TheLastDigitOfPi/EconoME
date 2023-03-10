@@ -3,7 +3,7 @@ guid: f796fa9109ea84744b57c24b77cac909
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2141,7 +2154,7 @@ TextureImporter:
         height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 3, y: 9, z: 4, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2287,7 +2300,7 @@ TextureImporter:
         width: 42
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2310,119 +2323,119 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chair 2: -1050609749
-      Rug 3: -488076671
-      Interior Desk 2: -1450880824
-      Interior Window 5: -1632826469
-      Stool 3: -334080118
-      Pot Plant 3: -1403762037
-      Pot Plant 4: 1116748512
-      Bookshelf 2: -88863746
-      Rug 1: 1202940996
-      Bear Rug: -2070331701
-      Interior Blinds 12: -119417884
-      Table Decor Empty Large Meal: -1065717931
-      Wall Decor: 1298367144
-      Stairs 2: -1461142641
-      Pot Plant 1: 1658495245
-      Interior Blinds 14: 2012361053
-      Chair 6: 1367811317
-      Closet 5: 716087706
-      Stairs 1: -2026881723
-      Chest 2: -937818494
-      Bookshelf 1: 1101020090
-      Interior Window 1: -778691506
-      Interior Blinds 1: 1180810376
-      Table Decor Medium Meal 2: 1493362743
-      Table Decor 1: -346618247
-      Interior Blinds 11: 497283940
-      Closet 1: 1536594036
       Barel closed: 1624978771
+      Barel open: 351027235
+      Bear Rug: -2070331701
+      Bed: -1037842319
+      Bed Cover 1: -456968690
+      Bed Cover 2: -500337546
+      Bed Frame: 1406606937
+      Bookshelf 1: 1101020090
+      Bookshelf 2: -88863746
+      Bookshelf 3: -1496790186
+      Bookshelf 4: 917895775
+      Bookshelf 5: 85261691
+      Bookshelf 6: 1749727133
+      Bookshelf 7: 1045133107
+      Bookshelf 8: -1890673495
+      Box Closed: 990123032
+      Box Open: 1817917620
+      Chair 1: 2096792427
+      Chair 2: -1050609749
+      Chair 3: -1551402775
       Chair 4: 164353954
+      Chair 5: -343421310
+      Chair 6: 1367811317
+      Chest 1: 1999968044
       Chest 1 open: -131147833
+      Chest 2: -937818494
+      Closet 1: 1536594036
+      Closet 2: -1853979925
+      Closet 3: 449413481
+      Closet 4: 916497854
+      Closet 5: 716087706
+      Fireplace 1: 903205668
+      Fireplace 2: -745849589
+      Interior Blinds 1: 1180810376
+      Interior Blinds 10: -1341592391
+      Interior Blinds 11: 497283940
+      Interior Blinds 12: -119417884
+      Interior Blinds 13: -560796401
+      Interior Blinds 14: 2012361053
+      Interior Blinds 15: -2067433061
+      Interior Blinds 2: -1208287950
+      Interior Blinds 3: -1996549163
+      Interior Blinds 4: 66847501
+      Interior Blinds 5: 129138115
+      Interior Blinds 6: -894262896
+      Interior Blinds 7: 1567927149
+      Interior Blinds 8: -82546447
+      Interior Blinds 9: -406451930
+      Interior Desk 1: 2105698712
+      Interior Desk 2: -1450880824
+      Interior Desk 3: -1500042707
+      Interior Furniture_19: -728999985
+      Interior Furniture_33: 906297554
+      Interior Furniture_42: 735694768
+      Interior Furniture_49: -189877719
+      Interior Furniture_69: 2057578453
+      Interior Furniture_83: 334691951
+      Interior Furniture_84: -1563605541
+      Interior Furniture_85: 465295597
+      Interior Table 1: -624515837
+      Interior Table 2: 642256213
+      Interior Window 1: -778691506
+      Interior Window 2: 2131625698
+      Interior Window 3: -445085897
+      Interior Window 4: 873571196
+      Interior Window 5: -1632826469
+      Keg: 965559317
+      Kegs: 560349251
+      Kitchen decor 1: -470296792
+      Kitchen decor 2: 863688325
+      Kitchen decor 3: 1307553479
       Kitchen decor 4: -1907388960
       Kitchen decor 5: -2000316277
-      Interior Furniture_69: 2057578453
-      Interior Furniture_42: 735694768
-      Kitchen decor 3: 1307553479
-      Kitchen decor 1: -470296792
-      Wall Decor 2: 2030390785
-      Wall Decor 5: -590269941
-      Interior Furniture_85: 465295597
-      chest 1 open full: 1175816971
-      Interior Furniture_19: -728999985
-      Interior Blinds 7: 1567927149
-      Interior Desk 3: -1500042707
+      Kitchen decor 6: 1765707658
       Large Bed: 656328518
-      Large bed frame: -1699544708
-      Interior Table 1: -624515837
-      Interior Blinds 5: 129138115
-      Interior Blinds 8: -82546447
-      Pot Plant 2: -27365286
-      Interior Blinds 10: -1341592391
-      Bed Cover 2: -500337546
-      Stool 1: 83342412
-      Table Decor 3: -925826302
-      Table Decor Medium  Meal: -970513873
-      Kitchen decor 2: 863688325
-      Bed Frame: 1406606937
-      chest 2 open: -1631640873
-      Table Decor Large Meal: 1857252922
-      Chair 1: 2096792427
-      Stool 4: 804645853
-      Bed: -1037842319
-      Interior Blinds 9: -406451930
-      Interior Window 3: -445085897
-      Stool 2: 1388901516
-      chest 2 open full: -27601375
-      Interior Furniture_33: 906297554
-      Wall Decor 3: -1658073449
-      Chair 3: -1551402775
-      Fireplace 2: -745849589
-      Interior Blinds 2: -1208287950
-      Interior Desk 1: 2105698712
       Large bed covers: 549793903
-      Bed Cover 1: -456968690
-      Interior Blinds 6: -894262896
-      Bookshelf 8: -1890673495
-      Interior Blinds 3: -1996549163
-      Chair 5: -343421310
-      Interior Window 4: 873571196
+      Large bed frame: -1699544708
+      Pot: -645084265
+      Pot Plant 1: 1658495245
+      Pot Plant 2: -27365286
+      Pot Plant 3: -1403762037
+      Pot Plant 4: 1116748512
+      Rug 1: 1202940996
+      Rug 2: 1198282713
+      Rug 3: -488076671
+      Rug 4: 911601957
+      Stairs 1: -2026881723
+      Stairs 2: -1461142641
+      Stool 1: 83342412
+      Stool 2: 1388901516
+      Stool 3: -334080118
+      Stool 4: 804645853
+      Table Decor 1: -346618247
+      Table Decor 2: 1689400858
+      Table Decor 3: -925826302
+      Table Decor Empty Large Meal: -1065717931
+      Table Decor Large Meal: 1857252922
+      Table Decor Medium  Meal: -970513873
+      Table Decor Medium Meal 2: 1493362743
+      Table Decor Small Meal: 749673180
+      Wall Decor: 1298367144
+      Wall Decor 1: 945430520
+      Wall Decor 2: 2030390785
+      Wall Decor 3: -1658073449
+      Wall Decor 4: -983239842
+      Wall Decor 5: -590269941
+      Wall Decor 6: -430489687
       Wall Decor 7: 372740075
       Wall Decor 8: -1112809931
-      Bookshelf 5: 85261691
-      Wall Decor 4: -983239842
-      Table Decor 2: 1689400858
-      Bookshelf 3: -1496790186
-      Table Decor Small Meal: 749673180
-      Bookshelf 4: 917895775
-      Rug 4: 911601957
-      Closet 4: 916497854
-      Keg: 965559317
-      Fireplace 1: 903205668
-      Barel open: 351027235
-      Interior Table 2: 642256213
-      Chest 1: 1999968044
-      Closet 2: -1853979925
-      Kegs: 560349251
-      Box Open: 1817917620
-      Wall Decor 1: 945430520
-      Closet 3: 449413481
-      Bookshelf 7: 1045133107
-      Interior Furniture_49: -189877719
-      Box Closed: 990123032
-      Interior Blinds 15: -2067433061
-      Pot: -645084265
       Wall Decor 9: -1410820425
-      Bookshelf 6: 1749727133
-      Kitchen decor 6: 1765707658
-      Rug 2: 1198282713
-      Interior Furniture_83: 334691951
-      Wall Decor 6: -430489687
-      Interior Window 2: 2131625698
-      Interior Blinds 13: -560796401
-      Interior Furniture_84: -1563605541
-      Interior Blinds 4: 66847501
+      chest 1 open full: 1175816971
+      chest 2 open: -1631640873
+      chest 2 open full: -27601375
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

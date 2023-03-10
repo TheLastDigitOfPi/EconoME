@@ -23,13 +23,21 @@ public class TimeObject : ScriptableObject
         TotalSecondsPerDay = MaxTicksInDay / TicksPerSecond;
     }
 
-    internal void Reset()
+    internal void ResetTime()
     {
         Day = 0;
         Week = 0;
         Month = 0;
         Year = 0;
         TimeOfDayTick = 0;
+    }
+    internal void ResetTime(GameTime time)
+    {
+        TimeOfDayTick = time.StandardizedTime;
+        Day = 0;
+        Week = 0;
+        Month = 0;
+        Year = 0;
     }
 }
 

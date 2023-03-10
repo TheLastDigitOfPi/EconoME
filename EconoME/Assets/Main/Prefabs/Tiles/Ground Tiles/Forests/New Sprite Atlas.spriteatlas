@@ -573,7 +573,6 @@ SpriteAtlas:
   - {fileID: 815768198, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: 475315083, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: -229362385, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
-  - {fileID: -1237595963, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: -790199560, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: 1727336823, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: 1461439460, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
@@ -592,6 +591,7 @@ SpriteAtlas:
   - {fileID: 570627713, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: 1888218658, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: 422940279, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
+  - {fileID: -1237595963, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: -2146736579, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: -40275688, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
   - {fileID: -1880844925, guid: 4ae8fe77fad02cc4dba3ddc8c871c37d, type: 3}
@@ -1961,7 +1961,6 @@ SpriteAtlas:
   - Shop Tileset_28
   - Shop Tileset_29
   - Shop Tileset_48
-  - Shop Tileset_49
   - Shop Tileset_46
   - Shop Tileset_47
   - Shop Tileset_44
@@ -1980,6 +1979,7 @@ SpriteAtlas:
   - Shop Tileset_3
   - Shop Tileset_0
   - Shop Tileset_1
+  - Shop Door
   - Shop Tileset_37
   - Shop Tileset_36
   - Shop Tileset_35

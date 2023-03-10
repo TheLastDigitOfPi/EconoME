@@ -3,7 +3,7 @@ guid: cfc7b2beba373d6438d5e68a7dce8694
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1154,7 +1167,7 @@ TextureImporter:
         height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 2}
+      border: {x: 0, y: 8, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -3118,6 +3131,39 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Full Desk
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 301
+        width: 84
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 27, z: 20, w: 25}
+      outline: []
+      physicsShape:
+      - - {x: -30, y: 44.5}
+        - {x: -42, y: 32.5}
+        - {x: -41, y: -33.5}
+        - {x: -30, y: -44.5}
+        - {x: 30, y: -44.5}
+        - {x: 41, y: -33.5}
+        - {x: 42, y: 32.5}
+        - {x: 30, y: 44.5}
+      - - {x: -19, y: 16.5}
+        - {x: 19, y: 16.5}
+        - {x: 19, y: -16.5}
+        - {x: -19, y: -16.5}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 78ff5f26844186f448b725a67af48e4b
+      internalID: 1043437936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -3129,153 +3175,154 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Shop Objects_100: -1980718562
-      Shop Objects_90: 1062462751
-      Shop Objects_102: -1618835435
+      Counter 1: 350012930
+      Counter 2: 84579790
+      Counter 3: 1194628462
+      Counter 4: 174763523
+      Counter 5: -727103594
+      Full Desk: 1043437936
       Shop Objects_0: -288721929
-      Shop Objects_43: 1133957035
-      Shop Objects_59: 879967
-      Shop Objects_9: -1139426905
-      Shop Objects_5: 1999353476
-      Shop Objects_21: 513121390
-      Shop Objects_108: -715400654
-      Shop Objects_62: -310713871
-      Shop Objects_83: 934156079
+      Shop Objects_1: -2116621722
+      Shop Objects_10: 1872831694
+      Shop Objects_100: -1980718562
+      Shop Objects_101: 432525958
+      Shop Objects_102: -1618835435
+      Shop Objects_103: -848641626
       Shop Objects_104: 852361828
-      Shop Objects_96: -2007841914
+      Shop Objects_105: -319715811
+      Shop Objects_106: 974743168
+      Shop Objects_107: 363114975
+      Shop Objects_108: -715400654
+      Shop Objects_109: -1564460831
+      Shop Objects_11: -589780119
+      Shop Objects_110: -1446082670
+      Shop Objects_111: 1521381269
+      Shop Objects_112: -250985774
+      Shop Objects_113: -489856271
+      Shop Objects_114: -678055473
+      Shop Objects_115: 1325045989
+      Shop Objects_116: -450585988
+      Shop Objects_117: -2101508761
+      Shop Objects_118: 1042406864
+      Shop Objects_119: -1307669197
+      Shop Objects_12: -1473771128
+      Shop Objects_120: 614499296
+      Shop Objects_121: -1749701419
+      Shop Objects_122: -1632977156
+      Shop Objects_123: 1543201984
+      Shop Objects_124: 525600113
+      Shop Objects_125: -257961117
+      Shop Objects_126: -797273309
+      Shop Objects_127: -978832802
+      Shop Objects_128: 688744874
+      Shop Objects_129: -998388434
+      Shop Objects_13: 119877781
+      Shop Objects_130: -1308952329
+      Shop Objects_131: -472230891
+      Shop Objects_132: 60615360
+      Shop Objects_133: 407523091
+      Shop Objects_134: 873740200
+      Shop Objects_135: 102344953
+      Shop Objects_136: 652229001
+      Shop Objects_137: -205672238
+      Shop Objects_138: -63179168
+      Shop Objects_139: -1105028522
+      Shop Objects_14: 515923093
+      Shop Objects_140: 458802725
+      Shop Objects_142: -1247067189
+      Shop Objects_143: 1625712658
+      Shop Objects_15: -773813986
+      Shop Objects_16: -1473967836
+      Shop Objects_17: 1405327621
+      Shop Objects_18: -1632040498
+      Shop Objects_2: -195369622
+      Shop Objects_20: 859318508
+      Shop Objects_21: 513121390
+      Shop Objects_22: -588704367
+      Shop Objects_23: 99657123
+      Shop Objects_24: -207043411
+      Shop Objects_25: 354723574
+      Shop Objects_3: -1079411705
+      Shop Objects_31: 1086505340
+      Shop Objects_32: -960468530
+      Shop Objects_33: 1336191740
+      Shop Objects_34: -500300822
+      Shop Objects_35: 759239676
+      Shop Objects_36: 1926503804
+      Shop Objects_4: -1107945488
+      Shop Objects_40: -1537976679
+      Shop Objects_41: 957972236
+      Shop Objects_42: -1149672198
+      Shop Objects_43: 1133957035
+      Shop Objects_44: -1431315373
+      Shop Objects_45: 350186861
+      Shop Objects_46: 1322110728
+      Shop Objects_47: 928002064
       Shop Objects_48: 1487649874
       Shop Objects_49: -1589149084
-      Shop Objects_64: -1686667604
-      Shop Objects_4: -1107945488
-      Shop Objects_24: -207043411
-      Shop Objects_109: -1564460831
-      Shop Objects_89: 649242289
-      Shop Objects_23: 99657123
-      Counter 2: 84579790
-      Shop Objects_131: -472230891
-      Shop Objects_117: -2101508761
-      Shop Objects_122: -1632977156
-      Shop Objects_25: 354723574
-      Shop Objects_85: -2123531845
-      Shop Objects_18: -1632040498
+      Shop Objects_5: 1999353476
+      Shop Objects_50: 1908757429
       Shop Objects_51: 1334257686
-      Shop Objects_81: -7446999
-      Table 2: -2078457767
-      Shop Objects_33: 1336191740
-      Shop Objects_137: -205672238
-      Shop Objects_130: -1308952329
-      Shop Objects_35: 759239676
-      Shop Objects_99: -1172012649
-      Shop Objects_7: -972440508
-      Shop Objects_121: -1749701419
-      Shop Objects_69: 1445492808
-      Table 8: 1551015183
-      Shop Objects_13: 119877781
+      Shop Objects_52: -404246525
+      Shop Objects_53: -1136680429
+      Shop Objects_54: -776203361
+      Shop Objects_55: 1473830498
+      Shop Objects_56: 2045329824
+      Shop Objects_59: 879967
+      Shop Objects_6: 2141847435
+      Shop Objects_60: -312277192
       Shop Objects_61: -393444137
-      Table 6: 170158068
-      Shop Objects_20: 859318508
-      Shop Objects_46: 1322110728
+      Shop Objects_62: -310713871
+      Shop Objects_63: 1788393825
+      Shop Objects_64: -1686667604
+      Shop Objects_65: -567947289
       Shop Objects_66: 818856937
       Shop Objects_67: -2029054230
-      Shop Objects_56: 2045329824
-      Shop Objects_22: -588704367
-      Shop Objects_42: -1149672198
-      Shop Objects_107: 363114975
-      Shop Objects_123: 1543201984
-      Shop Objects_3: -1079411705
-      Shop Objects_1: -2116621722
-      Shop Objects_8: -1815969158
-      Shop Objects_111: 1521381269
-      Shop Objects_55: 1473830498
-      Shop Objects_72: 1088520275
-      Shop Objects_127: -978832802
-      Shop Objects_50: 1908757429
-      Counter 1: 350012930
-      Shop Objects_97: 206737151
-      Shop Objects_53: -1136680429
-      Shop Objects_94: -1743703466
-      Shop Objects_82: 1529170376
-      Shop Objects_105: -319715811
-      Shop Objects_139: -1105028522
-      Shop Objects_115: 1325045989
-      Shop Objects_36: 1926503804
-      Shop Objects_95: 901042633
-      Shop Objects_118: 1042406864
-      Shop Objects_101: 432525958
-      Shop Objects_63: 1788393825
-      Shop Objects_31: 1086505340
-      Shop Objects_87: 1589686945
-      Shop Objects_16: -1473967836
-      Shop Objects_110: -1446082670
-      Shop Objects_116: -450585988
-      Shop Objects_2: -195369622
-      Shop Objects_98: -1272341109
-      Shop Objects_73: 93663165
-      Shop Objects_12: -1473771128
-      Shop Objects_86: 670595215
-      Shop Objects_45: 350186861
-      Shop Objects_52: -404246525
-      Counter 5: -727103594
-      Shop Objects_47: 928002064
-      Shop Objects_133: 407523091
-      Shop Objects_92: 1802897464
-      Shop Objects_10: 1872831694
-      Shop Objects_65: -567947289
-      Shop Objects_71: -1757531430
-      Shop Objects_77: -1190278827
-      Shop Objects_17: 1405327621
-      Shop Objects_91: -1923529176
-      Shop Objects_60: -312277192
-      Shop Objects_84: 1092258844
-      Shop Objects_119: -1307669197
-      Shop Objects_114: -678055473
-      Counter 4: 174763523
-      Table 1: 369696888
-      Shop Objects_132: 60615360
-      Shop Objects_113: -489856271
-      Shop Objects_135: 102344953
-      Table 5: -1336666375
-      Shop Objects_142: -1247067189
-      Shop Objects_41: 957972236
-      Shop Objects_124: 525600113
       Shop Objects_68: -1485850032
-      Shop Objects_32: -960468530
-      Shop Objects_75: 440343493
-      Shop Objects_6: 2141847435
-      Shop Objects_134: 873740200
+      Shop Objects_69: 1445492808
+      Shop Objects_7: -972440508
       Shop Objects_70: -964976044
-      Shop Objects_106: 974743168
-      Table 3: -1031511538
-      Shop Objects_34: -500300822
-      Table 4: -1401100917
-      Shop Objects_44: -1431315373
-      Shop Objects_128: 688744874
-      Shop Objects_11: -589780119
-      Shop Objects_126: -797273309
-      Shop Objects_140: 458802725
-      Table 9: -1592979463
-      Shop Objects_54: -776203361
-      Shop Objects_138: -63179168
-      Shop Objects_80: -38466949
-      Shop Objects_129: -998388434
-      Shop Objects_103: -848641626
-      Table 10: 979461048
-      Shop Objects_136: 652229001
-      Shop Objects_112: -250985774
-      Shop Objects_14: 515923093
-      Shop Objects_125: -257961117
+      Shop Objects_71: -1757531430
+      Shop Objects_72: 1088520275
+      Shop Objects_73: 93663165
       Shop Objects_74: 374443568
-      Shop Objects_93: 1299336234
-      Shop Objects_15: -773813986
-      Shop Objects_143: 1625712658
-      Table 7: -730158564
-      Shop Objects_78: 751400937
-      Shop Objects_120: 614499296
-      Shop Objects_40: -1537976679
+      Shop Objects_75: 440343493
       Shop Objects_76: -1721061169
-      Shop Objects_88: -1870887427
+      Shop Objects_77: -1190278827
+      Shop Objects_78: 751400937
       Shop Objects_79: 1997122236
-      Counter 3: 1194628462
+      Shop Objects_8: -1815969158
+      Shop Objects_80: -38466949
+      Shop Objects_81: -7446999
+      Shop Objects_82: 1529170376
+      Shop Objects_83: 934156079
+      Shop Objects_84: 1092258844
+      Shop Objects_85: -2123531845
+      Shop Objects_86: 670595215
+      Shop Objects_87: 1589686945
+      Shop Objects_88: -1870887427
+      Shop Objects_89: 649242289
+      Shop Objects_9: -1139426905
+      Shop Objects_90: 1062462751
+      Shop Objects_91: -1923529176
+      Shop Objects_92: 1802897464
+      Shop Objects_93: 1299336234
+      Shop Objects_94: -1743703466
+      Shop Objects_95: 901042633
+      Shop Objects_96: -2007841914
+      Shop Objects_97: 206737151
+      Shop Objects_98: -1272341109
+      Shop Objects_99: -1172012649
+      Table 1: 369696888
+      Table 10: 979461048
+      Table 2: -2078457767
+      Table 3: -1031511538
+      Table 4: -1401100917
+      Table 5: -1336666375
+      Table 6: 170158068
+      Table 7: -730158564
+      Table 8: 1551015183
+      Table 9: -1592979463
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
