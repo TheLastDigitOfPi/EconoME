@@ -43,9 +43,39 @@ public class GlobalSceneManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
+
+    public void StartGame()
+    {
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        var transitionHandler = Instantiate(sceneTransitionHandler, transform);
+        transitionHandler.Initialize();
+        transitionHandler.OnScreenInvisible += () => { InitializeGame(); };
+        transitionHandler.OnScreenVisible += ScreenVisible;
+        _onScenesDataAquired += GameStarted;
+
+        _onSceneStartDisable?.Invoke();
+
+        void GameStarted()
+        {
+            _onScenesDataAquired -= GameStarted;
+            _onSceneLoad?.Invoke();
+        }
+
+        void ScreenVisible()
+        {
+            _sceneLoading = false;
+            _onSceneVisible?.Invoke();
+            Destroy(transitionHandler.gameObject);
+        }
+    }
+
+
+
+    private void InitializeGame()
     {
         Debug.Log("Unloading scenes...");
         StartCoroutine(RemoveInvalidScenes());
@@ -146,7 +176,7 @@ public class GlobalSceneManager : MonoBehaviour
             AsyncOperation unloadOperation = SceneManager.UnloadSceneAsync(currentScene);
             while (!loadOperation.isDone && !unloadOperation.isDone)
             {
-                sceneTransitionHandler.UpdateStatus(loadOperation, unloadOperation);
+                transitionHandler.UpdateStatus(loadOperation, unloadOperation);
                 yield return null;
             }
             CurrentLocation = location;

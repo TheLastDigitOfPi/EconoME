@@ -25,6 +25,7 @@ public class SceneTransitionHandler : MonoBehaviour
     {
         GlobalSceneManager.OnSceneLoad += StartScreenToVisible;
         GlobalSceneManager.OnSceneStartDisable += StartScreenToBlack;
+        ProgressCanvas.SetCanvas(false);
     }
 
     public void StartScreenToVisible()

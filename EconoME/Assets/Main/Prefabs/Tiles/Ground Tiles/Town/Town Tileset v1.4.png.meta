@@ -3,7 +3,7 @@ guid: 4bf8d718f9c28cc4b83427467a933be4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,6 +107,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -7970,64 +7983,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_520
+      name: Bridge
       rect:
         serializedVersion: 2
         x: 672
-        y: 352
-        width: 32
-        height: 32
+        y: 288
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 32, y: 0, z: 31, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f0342bef708918047bf082a521ce57ff
       internalID: 250546805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_521
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09d63d7cfeef2fa45a36b23154b05567
-      internalID: 1887257307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_522
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8434b2e465b44f64289e19a132c5d45e
-      internalID: -692595145
       vertices: []
       indices: 
       edges: []
@@ -8348,69 +8319,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_539
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 961e1a82638c75a4ea5d5da3463ee624
-      internalID: 2005483377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_540
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 244e9ded388ec22418c26f8b854050b6
-      internalID: -80600980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_541
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30efa40f08be6584cad7deca24365f62
-      internalID: -30010839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Town Tileset v1.4_542
       rect:
         serializedVersion: 2
@@ -8679,69 +8587,6 @@ TextureImporter:
       bones: []
       spriteID: 497b5613759655843a8c4926c20349d0
       internalID: 438577576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_558
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf17d88d6ff76dd4abae55a7838ae2e2
-      internalID: 897587856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_559
-      rect:
-        serializedVersion: 2
-        x: 704
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eaea1c61ee8b9c4190e30be83d35b83
-      internalID: -64048367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_560
-      rect:
-        serializedVersion: 2
-        x: 736
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b63b3f53b14656d4686305ed8c4bf7f2
-      internalID: -350099790
       vertices: []
       indices: 
       edges: []
@@ -10028,16 +9873,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_630
+      name: Center Deck
       rect:
         serializedVersion: 2
         x: 1184
-        y: 224
+        y: 219
         width: 32
-        height: 32
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 11, y: 0, z: 11, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -10049,13 +9894,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_631
+      name: Left Deck
       rect:
         serializedVersion: 2
         x: 1248
-        y: 224
+        y: 219
         width: 32
-        height: 32
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10070,13 +9915,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_632
+      name: Right Deck
       rect:
         serializedVersion: 2
         x: 1280
-        y: 224
+        y: 219
         width: 32
-        height: 32
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10674,69 +10519,6 @@ TextureImporter:
       bones: []
       spriteID: 01481af5b95e2594cb677916ffbf836c
       internalID: -1545170904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_663
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29910dfaad540ad45aa2a2996abefb30
-      internalID: 354895991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_664
-      rect:
-        serializedVersion: 2
-        x: 1248
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d2d281a14a5a7f4e9c5852a896917db
-      internalID: 161477906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_665
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 192
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20db0f657f4f74545b9c655d1964211b
-      internalID: 777586077
       vertices: []
       indices: 
       edges: []
@@ -12820,6 +12602,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Wooden Dock
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 14
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 19, y: 0, z: 18, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e105f4d51606c4090c6d3351958e7c
+      internalID: -1204642387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -12831,773 +12634,774 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      House_5 19: 1010960402
-      Bricks B: 229100538
-      Brick Fence C5: 1382390573
-      Town Tileset v1.4_498: -1448190018
-      House_4 15: 1878168354
-      Town Tileset v1.4_568: -65112431
-      Town Tileset v1.4_192: -1226764895
-      Inner Bricks ML: 1819271192
-      Town Tileset v1.4_567: -273485661
-      House_Banner 3: -268439452
-      Town Tileset v1.4_378: -313152671
-      House_3 11: -1319961800
-      House_3 19: 1484054795
-      House_5 11: -108675071
-      Town Tileset v1.4_560: -350099790
-      Town Tileset v1.4_765: 1456457173
-      Town Tileset v1.4_659: -563262430
-      Town Tileset v1.4_143: 163084720
-      Town Tileset v1.4_632: 877865822
-      Town Tileset v1.4_694: -1089114481
-      Town Tileset v1.4_517: -1021609993
-      Brick Fence C9: 1973802281
-      Town Tileset v1.4_542: -1335809984
-      Town Tileset v1.4_285: -2012787171
-      Bricks Path C2: -437934715
-      Town Tileset v1.4_361: 1610490915
-      House 1: -834972456
-      House_2 10: 370154659
-      House_5 30: -888851429
-      Town Tileset v1.4_85: 2049737004
-      Town Tileset v1.4_397: 797550554
-      Town Tileset v1.4_662: -1545170904
-      Town Tileset v1.4_714: -877487887
-      Bricks Path BR: 1788463982
-      Bricks Path XXXB: -1124786953
-      Town Tileset v1.4_525: 1128770410
-      Town Tileset v1.4_360: -1651021607
-      Town Tileset v1.4_596: 39741698
-      House_3 33: 759596054
-      Town Tileset v1.4_377: -1963248649
-      Town Tileset v1.4_665: 777586077
-      Door 2: -1543503679
-      Brick Fence C6: 1880124053
-      Town Tileset v1.4_743: 282693834
-      Brick Fence L: 1978219699
-      Town Tileset v1.4_655: -115921370
-      House 29: 1197599115
-      Bricks Path TL: 1228406340
-      House_2 20: 1951461539
-      House 2: -1319184261
-      Town Tileset v1.4_37: -299018733
-      House_6 11: 652232885
-      Bricks Path TR: 361057759
-      Town Tileset v1.4_91: 1908770612
-      Town Tileset v1.4_190: -811620946
-      Town Tileset v1.4_547: 1017671908
-      Town Tileset v1.4_264: -82096900
-      Bricks M: -533783095
-      House_3 15: 180272869
-      Bricks Path T: 859649266
-      House_5 34: 1837098120
-      House_4 19: 306432169
-      Town Tileset v1.4_310: -1551243664
-      Town Tileset v1.4_759: 755961841
-      Inner Bricks BL: 1471398787
-      House Window 3: -49463281
-      Town Tileset v1.4_145: 161804171
-      House_5 28: 624747706
-      Town Tileset v1.4_624: 1512197819
-      Brick Fence C2: -122623732
-      House_2 25: 384713061
-      House Window 9: 662211358
-      Brick Fence R: 324632651
-      Town Tileset v1.4_92: -320116408
-      House_3 16: 1640914335
-      House_3 36: 1978201511
-      House 40: 442005253
-      Town Tileset v1.4_356: -2035332341
-      House_5 40: -1584267184
-      Town Tileset v1.4_195: -792568729
-      Town Tileset v1.4_148: 359152606
-      Town Tileset v1.4_405: 1019263703
-      House_4 10: -572162038
-      Town Tileset v1.4_501: 1598013957
-      House 8: -631690102
-      Town Tileset v1.4_188: 1204597397
-      House_3 14: -529583669
-      Town Tileset v1.4_593: -367895283
-      House_3 3: 767890501
-      Town Tileset v1.4_522: -692595145
-      Town Tileset v1.4_198: -610292265
-      Bricks TL: 1901939283
-      House 13: 153307216
-      Town Tileset v1.4_658: -404037037
-      Town Tileset v1.4_342: -602496082
-      House 37: -1792216662
-      Town Tileset v1.4_543: 1978965923
-      House_4 31: 880210302
-      Town Tileset v1.4_96: -553265538
-      Wood Fence TR: 703275011
-      Town Tileset v1.4_545: 607341321
-      House_6 22: -130658341
-      Town Tileset v1.4_350: -707965077
-      Town Tileset v1.4_693: -2085511102
-      Town Tileset v1.4_737: 794368439
-      Bricks Path XTRB: -1179168971
-      House_4 30: -761080684
-      Bricks Path BL: -2074764368
-      Hedge TL: -1320095643
-      House_3 37: 1755054284
-      Town Tileset v1.4_375: 704192656
-      Town Tileset v1.4_130: 1197054152
-      Town Tileset v1.4_79: -230359637
-      Town Tileset v1.4_339: -1492366499
-      House_2 14: 123262414
-      House_2 1: -967116147
-      House_5 25: -2084883163
-      House_5 32: -14048387
-      House_1 Extra: -1776102487
-      Town Tileset v1.4_736: 1303399626
-      House_2 7: -1487366416
-      Town Tileset v1.4_275: -1697523350
-      Town Tileset v1.4_574: -1068889012
-      House_4 25: -1731621200
-      House_2 21: 1528199124
-      Town Tileset v1.4_713: -1171320401
-      House_5 7: -1165317602
-      Town Tileset v1.4_355: -1646762858
-      Inner Bricks B: -2136534244
-      Brick Fence C4: 827130878
-      House_5 1: -621182670
-      House_5 39: 1634724863
-      Town Tileset v1.4_588: 120879024
-      Town Tileset v1.4_696: 1092762049
-      Wood Fence T: -1256816904
-      House_5 35: 482084627
-      Town Tileset v1.4_471: -122211921
-      House 21: -1482166730
-      Windmill: -1086770820
-      House 4: 1057183798
-      House_5 42: -249839497
-      House_6 15: 2037190375
-      House_3 2: -335514611
-      Town Tileset v1.4_61: -1114272419
-      Town Tileset v1.4_154: 1035044539
-      Town Tileset v1.4_199: 1987909612
-      Town Tileset v1.4_279: 1610259524
-      Town Tileset v1.4_115: 795485308
-      Town Tileset v1.4_528: -1273971411
-      Town Tileset v1.4_273: 619203618
-      House_1 Extra 2: -1532927885
-      Town Tileset v1.4_762: 1736232040
-      House_3 31: 690382341
-      Bricks Path C16: -321573790
-      Town Tileset v1.4_587: -1103548874
-      Town Tileset v1.4_689: -355906089
-      House_2 23: 1488360487
-      Town Tileset v1.4_619: -35733332
-      Town Tileset v1.4_94: -636015448
-      Town Tileset v1.4_400: 1487509446
-      House_5 9: 873787398
-      House 9: -1287451999
-      House_5 14: -856401236
-      Town Tileset v1.4_142: 127186644
-      Hedge C8: 2005007071
-      Town Tileset v1.4_128: 1475139512
-      Brick Fence BR: 743989066
-      House_5 41: 509473505
-      Town Tileset v1.4_763: 1847612633
-      Door 4: -1706034192
-      Town Tileset v1.4_157: -1771081768
-      House_4 24: 1024853461
-      Town Tileset v1.4_335: -985424914
-      Town Tileset v1.4_133: 804927724
-      Town Tileset v1.4_712: -2060884904
-      House_5 20: 125410524
-      Town Tileset v1.4_376: -1568056786
-      House 38: -572086274
-      Town Tileset v1.4_319: -524170210
-      Town Tileset v1.4_108: 1970759035
-      Bricks Path Connector1: 1101131936
-      House_5 18: -1827622769
-      Town Tileset v1.4_184: 2002913344
-      House_Banner 2: 518100835
-      House_5 33: -1306389030
-      Town Tileset v1.4_626: -1427468465
-      Town Tileset v1.4_598: -1295796192
-      Town Tileset v1.4_502: -1220261458
-      House Window 16: -1568263350
-      House 12: 318632996
-      Town Tileset v1.4_521: 1887257307
-      Town Tileset v1.4_266: -2123561248
-      House_5 10: -1915405982
-      Town Tileset v1.4_135: -1691388239
-      Town Tileset v1.4_472: 1220371355
-      House_2 3: 742852121
-      Inner Bricks TL: 1928571007
-      Town Tileset v1.4_161: 750286673
-      Town Tileset v1.4_758: 1804269796
-      Town Tileset v1.4_269: 2023186915
-      Town Tileset v1.4_679: -1842551235
-      Town Tileset v1.4_546: 36134730
-      Town Tileset v1.4_153: -481542545
-      Town Tileset v1.4_309: -997473663
-      Town Tileset v1.4_330: -1517312576
-      Town Tileset v1.4_398: 1765605294
-      House Window 7: 1317683391
-      Town Tileset v1.4_734: -1895372186
-      Town Tileset v1.4_314: -1330076451
-      House_2 5: -203719803
-      Town Tileset v1.4_733: 841399915
-      Bricks Path C3: -1694533588
-      Town Tileset v1.4_112: -251315623
-      Town Tileset v1.4_745: -2125159712
-      House Window 1: -1690545726
-      Bricks BL: -1227990289
-      Town Tileset v1.4_711: 433335634
-      Wood Fence BL: -1653626891
-      Town Tileset v1.4_193: -631685128
-      Town Tileset v1.4_617: -584323030
-      Bricks Path C6: 1354889218
-      House_4 7: 893646605
-      Town Tileset v1.4_354: -815449971
-      House_2 2: 72061256
-      Town Tileset v1.4_441: 40588258
-      Bricks Path C17: 8182703
-      Town Tileset v1.4_661: 1707882842
-      Town Tileset v1.4_615: -1751204395
-      House_3 26: 134348098
-      House_2 18: 806153944
-      House 10: 875018131
-      House_5 16: -1608031311
-      Inner Bricks MR: 2003751327
-      House Window 18: 935704161
-      House_4 26: -1806120640
-      Town Tileset v1.4_280: -1596778656
-      Town Tileset v1.4_337: -1048067009
-      Town Tileset v1.4_149: -722154767
-      Town Tileset v1.4_131: 1185352307
-      House_4 27: 2146306260
-      Town Tileset v1.4_274: -1064854402
-      House_3 21: -1993101925
-      Town Tileset v1.4_187: 1440198428
-      Town Tileset v1.4_691: -1711464821
-      House_6 21: -892770764
-      Town Tileset v1.4_735: -99030759
-      Town Tileset v1.4_718: 735524515
-      Town Tileset v1.4_68: -1388115025
-      Town Tileset v1.4_284: -1091426001
-      Town Tileset v1.4_764: 1150935919
-      House_3 20: -361842716
-      House_4 14: -570370509
-      House_4 Chimney 3: 1564155099
-      Town Tileset v1.4_158: -1555820299
-      Town Tileset v1.4_757: -1554417097
-      Town Tileset v1.4_78: 346889587
-      House_5 8: 1505891220
-      Town Tileset v1.4_114: -617269125
-      Town Tileset v1.4_690: 1322849744
-      Town Tileset v1.4_436: -2043331282
-      House_3 13: 223143714
-      Town Tileset v1.4_89: 1840129586
-      House Window 15: -351410001
-      Town Tileset v1.4_178: -680550101
-      Town Tileset v1.4_503: -719468436
-      House_3 7: 2131239129
-      Town Tileset v1.4_66: -1971558180
-      Town Tileset v1.4_505: 1785375646
-      Town Tileset v1.4_695: 2029729756
-      Town Tileset v1.4_267: -759756324
-      Town Tileset v1.4_121: 1324786044
-      Town Tileset v1.4_272: 1384990735
-      Town Tileset v1.4_614: 2094967876
-      Town Tileset v1.4_557: 1564554334
-      House 34: 1123203683
-      Hedge BL: -1065054672
-      Town Tileset v1.4_500: 1785277562
-      House_4 6: 1091351151
-      House_6 17: 408807390
-      Town Tileset v1.4_752: 1160493061
-      Dppr 1: 1722587323
-      Town Tileset v1.4_520: 250546805
-      House_5 17: 151596894
-      House 28: -616527446
-      Town Tileset v1.4_332: 1555687389
-      Bricks T: -642573959
-      House Attachment 3: 1895028899
-      Town Tileset v1.4_620: 1564038632
-      Wood Fence TL: -1552953103
-      House 15: 820978210
-      Town Tileset v1.4_473: -1570711972
-      House_3 35: 1995366265
-      Town Tileset v1.4_141: 679414443
-      Town Tileset v1.4_311: 201285298
-      Town Tileset v1.4_550: 1512829781
-      Town Tileset v1.4_537: -725494084
-      Town Tileset v1.4_317: 441822857
-      Bricks Path C1: 1537088595
-      Town Tileset v1.4_715: -1127189743
-      Town Tileset v1.4_652: -1012950853
-      Town Tileset v1.4_277: 1424165929
-      Town Tileset v1.4_519: 1720033289
-      Town Tileset v1.4_146: -1006703885
-      House_3 38: -187577989
-      Town Tileset v1.4_95: 1452023830
-      House_6 Extension 1: 438577576
-      House 27: 1858078707
-      House_5 31: 255474166
-      House_4 29: -85059257
-      House_6 10: 1356988982
-      Town Tileset v1.4_233: -1591979479
-      House 22: 1926747616
-      Town Tileset v1.4_191: -1665258664
-      Town Tileset v1.4_566: -12934753
-      House_4 12: 97159796
-      House_6 14: -517468182
-      Town Tileset v1.4_754: -188006064
-      Town Tileset v1.4_540: -80600980
-      House_4 16: 2124427476
-      House_2 11: -804828251
-      House_3 8: 1695451904
-      House_5 29: -190447396
-      House Chimney 4: -24094579
-      House_4 5: 542350705
-      Town Tileset v1.4_150: -71811268
-      Town Tileset v1.4_263: 1224386243
-      House Attachment 4: 2136573062
-      Town Tileset v1.4_664: 161477906
-      Town Tileset v1.4_370: 174000039
-      Wood Fence B: -261902097
-      Town Tileset v1.4_123: -1374838202
-      Town Tileset v1.4_738: -1225140113
-      Town Tileset v1.4_544: -467161070
-      Town Tileset v1.4_653: -1844326331
-      Brick Fence C7: 494107367
-      Hedge Top: -659742910
-      House_3 25: -291904951
-      Town Tileset v1.4_185: -2039414442
-      House_3 18: -117678803
-      Town Tileset v1.4_102: -912305535
-      Town Tileset v1.4_243: 541792251
-      House Window 17: 1592236637
-      Town Tileset v1.4_304: -1725187128
-      Town Tileset v1.4_338: 1148139396
-      House_2 13: -1663540023
-      Town Tileset v1.4_524: 967241540
-      Wood Fence L: -1713619165
-      Town Tileset v1.4_663: 354895991
-      Town Tileset v1.4_120: 495192128
-      Town Tileset v1.4_246: 198956732
-      House_6 4: 1643217964
-      Town Tileset v1.4_499: -1154133309
-      Town Tileset v1.4_555: 1808774888
-      Town Tileset v1.4_303: -2025895224
-      Town Tileset v1.4_434: -491166604
-      Town Tileset v1.4_268: 596480185
-      Town Tileset v1.4_622: -1402963966
-      House_6 18: 1699966180
-      Town Tileset v1.4_586: 1561520481
-      Town Tileset v1.4_322: -731208393
-      House 24: 1740907880
-      Small House With Sign: -1978495327
-      House_6 25: 547945865
-      Town Tileset v1.4_262: 1949392868
-      Hedge C1: -987459127
-      Town Tileset v1.4_564: 102034909
-      Bricks Path C12: -589373000
-      Inner Bricks BR: 1125807865
-      House_4 Chimney 1: 1105385760
-      Town Tileset v1.4_561: -456322985
-      Town Tileset v1.4_329: -1805638961
-      Town Tileset v1.4_189: -685931282
-      Inner Bricks TR: 1519352358
-      House_6 13: 54478529
-      House_4 23: 441979637
-      Town Tileset v1.4_523: -149585509
-      Town Tileset v1.4_597: -75727103
-      Town Tileset v1.4_631: -1851510280
-      Town Tileset v1.4_756: -1093739209
-      Town Tileset v1.4_327: -348305925
-      Bricks Path C9: 339377707
-      Town Tileset v1.4_516: 58450701
-      Bricks Path C13: -2006165954
-      Town Tileset v1.4_357: -1182055917
-      Town Tileset v1.4_163: 1807991054
-      Hedge Side R: 211213029
-      Hedge BR: 821109866
-      Town Tileset v1.4_591: -1527501192
-      Town Tileset v1.4_236: 679197509
-      Town Tileset v1.4_59: -74330084
-      Town Tileset v1.4_156: 2013958751
-      House_3 32: 1502759548
-      House 31: -1402750637
-      Town Tileset v1.4_527: 1284630457
-      Bricks Path M: 1631441531
-      House_6 20: 1894522745
-      Town Tileset v1.4_570: 478729552
-      Town Tileset v1.4_651: -210698234
-      House Window 2: -1496226268
-      House Cross 2: 719021339
-      House_6 8: 1932654155
-      House_5 26: 1434082404
-      Town Tileset v1.4_242: -594855685
-      House_3 5: -1192155033
-      House 26: 577203319
-      Bricks Path LTRX: 1503450500
-      Town Tileset v1.4_110: 2105669412
-      Town Tileset v1.4_585: -262652656
-      House_Banner: 754302528
-      House_6 9: 2066172461
-      House_6 3: -2118846552
-      Town Tileset v1.4_692: 1155870450
-      House_3 24: 1899567299
-      Bricks Path C14: -520985299
-      Town Tileset v1.4_116: 1275926070
-      House 11: -1232191462
-      Town Tileset v1.4_152: -1359819205
-      Town Tileset v1.4_359: 1935701550
-      Town Tileset v1.4_379: -938225079
-      Town Tileset v1.4_732: -28722457
-      House 18: -1314165478
-      Town Tileset v1.4_155: 822808788
-      Town Tileset v1.4_237: -991034020
-      Town Tileset v1.4_276: -1336308075
-      Town Tileset v1.4_265: -1659077540
-      House_5 2: 1972753864
-      Bricks Path LTXB: -1215352402
-      House_2 22: 2022964346
-      Town Tileset v1.4_740: 2142379504
-      Town Tileset v1.4_182: 1231019921
-      Town Tileset v1.4_573: 1248363924
-      Town Tileset v1.4_40: 439345802
-      Town Tileset v1.4_119: 487090666
-      Hedge C6: 905558005
-      House_6 16: -507179238
-      House 33: -1414190322
-      House 35: -1880441290
-      House Window 11: 1110431020
-      Town Tileset v1.4_720: -1083266342
-      Town Tileset v1.4_117: -252983892
       Brick Fence B: -885909885
-      House_2 6: -2136009294
-      Town Tileset v1.4_113: -1300087156
-      Town Tileset v1.4_435: -2095648712
-      House 32: 1304737141
-      House with Sign: 227516710
-      Bricks Path LXXX: -1502780209
-      Town Tileset v1.4_660: 2037506866
-      Town Tileset v1.4_341: 811669153
-      Town Tileset v1.4_623: 1868348001
-      House_2 16: -1999503551
-      Town Tileset v1.4_372: 1358550028
-      Town Tileset v1.4_739: -348048960
-      Town Tileset v1.4_439: 673092905
-      Town Tileset v1.4_625: -1561414315
-      Town Tileset v1.4_592: 125433291
-      Town Tileset v1.4_559: -64048367
-      Town Tileset v1.4_761: -58132239
-      Town Tileset v1.4_325: -296207307
-      Town Tileset v1.4_687: 94401742
-      Town Tileset v1.4_64: -1421289532
-      House_6 23: -1593989010
-      Brick Fence TR: 308045249
-      Town Tileset v1.4_599: -1004013867
-      Bricks Path C15: -182639232
-      House_4 Chimney 2: -1911382951
-      House 30: 1882746989
-      Town Tileset v1.4_60: 2027305986
-      Town Tileset v1.4_346: -1802527852
-      Town Tileset v1.4_565: 66919029
       Brick Fence BL: -2144625728
+      Brick Fence BR: 743989066
+      Brick Fence C1: -24094579
+      Brick Fence C2: -122623732
+      Brick Fence C3: -387773941
+      Brick Fence C4: 827130878
+      Brick Fence C5: 1382390573
+      Brick Fence C6: 1880124053
+      Brick Fence C7: 494107367
+      Brick Fence C8: -1331957483
+      Brick Fence C9: 1973802281
+      Brick Fence L: 1978219699
+      Brick Fence R: 324632651
+      Brick Fence T: -93744246
+      Brick Fence TL: -394316615
+      Brick Fence TR: 308045249
+      Bricks B: 229100538
+      Bricks BL: -1227990289
+      Bricks BR: -1325055188
+      Bricks L: -1642334627
+      Bricks M: -533783095
+      Bricks Path B: -1882475892
+      Bricks Path BL: -2074764368
+      Bricks Path BR: 1788463982
+      Bricks Path C1: 1537088595
+      Bricks Path C10: 1715959817
+      Bricks Path C11: 783441840
+      Bricks Path C12: -589373000
+      Bricks Path C13: -2006165954
+      Bricks Path C14: -520985299
+      Bricks Path C15: -182639232
+      Bricks Path C16: -321573790
+      Bricks Path C17: 8182703
+      Bricks Path C2: -437934715
+      Bricks Path C3: -1694533588
+      Bricks Path C4: 547945865
+      Bricks Path C5: -394486709
+      Bricks Path C6: 1354889218
+      Bricks Path C7: -1124137574
+      Bricks Path C8: 1355882856
+      Bricks Path C9: 339377707
+      Bricks Path Connector1: 1101131936
+      Bricks Path Connector2: 599677007
+      Bricks Path L: 1402163094
+      Bricks Path LRTB: 2003863287
+      Bricks Path LTRX: 1503450500
+      Bricks Path LTXB: -1215352402
+      Bricks Path LXRB: 1203068047
+      Bricks Path LXXX: -1502780209
+      Bricks Path M: 1631441531
+      Bricks Path R: 1762546279
+      Bricks Path T: 859649266
+      Bricks Path TL: 1228406340
+      Bricks Path TR: 361057759
+      Bricks Path XTRB: -1179168971
+      Bricks Path XTXX: 773598370
+      Bricks Path XXRX: -411686904
+      Bricks Path XXXB: -1124786953
+      Bricks R: 864487089
+      Bricks T: -642573959
+      Bricks TL: 1901939283
+      Bricks TR: -1289191068
+      Bridge: 250546805
+      Center Deck: -739186677
+      Door 2: -1543503679
+      Door 3: 1566053884
+      Door 4: -1706034192
+      Dppr 1: 1722587323
+      Grass M: 1375153245
+      Hedge B: -1790385166
+      Hedge BL: -1065054672
+      Hedge BR: 821109866
+      Hedge C1: -987459127
       Hedge C2: -1863208370
+      Hedge C3: -1893276854
+      Hedge C4: -1083702568
+      Hedge C5: -1915405982
+      Hedge C6: 905558005
+      Hedge C7: 1095077615
+      Hedge C8: 2005007071
+      Hedge Side L: -1161180363
+      Hedge Side R: 211213029
+      Hedge TL: -1320095643
+      Hedge TR: -1730000693
+      Hedge Top: -659742910
+      House 1: -834972456
+      House 10: 875018131
+      House 11: -1232191462
+      House 12: 318632996
+      House 13: 153307216
+      House 14: -586478143
+      House 15: 820978210
+      House 16: -1838529894
+      House 17: -1118828035
+      House 18: -1314165478
+      House 19: -2122368546
+      House 2: -1319184261
+      House 20: 1382390573
+      House 21: -1482166730
+      House 22: 1926747616
+      House 23: -1149563123
+      House 24: 1740907880
+      House 25: -972479450
+      House 26: 577203319
+      House 27: 1858078707
+      House 28: -616527446
+      House 29: 1197599115
+      House 3: 1710298672
+      House 30: 1882746989
+      House 31: -1402750637
+      House 32: 1304737141
+      House 33: -1414190322
+      House 34: 1123203683
+      House 35: -1880441290
+      House 36: -2055728040
+      House 37: -1792216662
+      House 38: -572086274
+      House 39: 1490716637
+      House 4: 1057183798
+      House 40: 442005253
+      House 5: 546756493
+      House 6: -1868084921
+      House 7: -1065941438
+      House 8: -631690102
+      House 9: -1287451999
+      House Attachment 1: 1039958855
+      House Attachment 2: 74540206
+      House Attachment 3: 1895028899
+      House Attachment 4: 2136573062
+      House Chimney 1: 1236463865
+      House Chimney 2: -549483765
       House Chimney 3: -269002546
-      Town Tileset v1.4_628: 1589888741
-      Town Tileset v1.4_504: 828420374
-      House_3 29: 1324876835
-      Town Tileset v1.4_109: -930471778
-      Town Tileset v1.4_682: 1762024276
-      Town Tileset v1.4_744: 156211442
+      House Chimney 4: -24094579
+      House Chimney 5: -2105670782
+      House Chimney 6: -7222209
+      House Cross 2: 719021339
+      House Window 1: -1690545726
+      House Window 10: 662211358
+      House Window 11: 1110431020
       House Window 12: -421827869
       House Window 13: -1842042983
-      Bricks Path C8: 1355882856
-      Town Tileset v1.4_348: -1804559192
-      Town Tileset v1.4_132: -1368087257
-      House_6 24: -565027892
-      House 25: -972479450
-      Town Tileset v1.4_551: 2036085435
-      Town Tileset v1.4_240: 692324690
-      Town Tileset v1.4_562: -1234597293
-      Town Tileset v1.4_245: -1291400714
-      House_3 10: 296256087
-      Brick Fence TL: -394316615
-      Town Tileset v1.4_159: 1944912630
-      House_2 9: 964727399
-      Bricks Path C7: -1124137574
-      Town Tileset v1.4_218: 576652685
-      Bricks Path C10: 1715959817
-      Wood Fence R: -1574552797
-      House_2 12: -1948199207
-      Inner Bricks T: 881046866
-      Hedge B: -1790385166
-      House Window 6: 1957582190
-      House Chimney 6: -7222209
-      Bricks TR: -1289191068
-      Town Tileset v1.4_406: 199517249
-      House_5 3: -444020670
-      Bricks Path Connector2: 599677007
-      House_5 15: 649271811
-      Town Tileset v1.4_65: -928963598
-      House 5: 546756493
-      Town Tileset v1.4_283: 49281947
-      House_6 2: -254877261
-      Town Tileset v1.4_345: 693461237
-      Town Tileset v1.4_374: 1917576480
-      Brick Fence T: -93744246
-      House_4 33: 622907727
-      House Window 4: -1570477388
-      House Window 8: 219535469
-      Town Tileset v1.4_590: 514690703
-      Town Tileset v1.4_324: 1084176805
-      House_3 17: -1828650592
-      Town Tileset v1.4_371: 940456379
-      Town Tileset v1.4_111: -1209041447
-      Wood Fence BR: 1048749431
-      House_4 8: 299636284
-      Town Tileset v1.4_686: 1807076943
-      House_4 20: -284417826
-      House_5 Extra 1: 607241501
-      Town Tileset v1.4_250: -1524037245
-      Town Tileset v1.4_308: 816873854
-      Town Tileset v1.4_683: 1711074329
-      House_5 43: -190028377
-      Town Tileset v1.4_323: -836584844
-      Town Tileset v1.4_536: 198390137
-      Town Tileset v1.4_362: 523385533
-      Town Tileset v1.4_616: -1583031674
-      Town Tileset v1.4_395: 838932801
-      Town Tileset v1.4_753: -730381290
-      House_4 18: -824706335
-      Hedge C3: -1893276854
-      Town Tileset v1.4_281: -944742302
-      House 7: -1065941438
-      Town Tileset v1.4_719: -2102786980
-      Town Tileset v1.4_103: -451104566
-      Town Tileset v1.4_127: -621947984
-      Town Tileset v1.4_515: 1100518764
-      House_3 23: -538222651
-      Town Tileset v1.4_548: 1570789645
-      Town Tileset v1.4_526: 1748681725
-      Town Tileset v1.4_151: -585948859
-      House_5 12: -669366629
-      Town Tileset v1.4_750: 1819937213
-      Town Tileset v1.4_147: -1444385810
-      Town Tileset v1.4_349: 1546288602
-      Town Tileset v1.4_38: 1794365782
-      Town Tileset v1.4_86: 581174856
-      Town Tileset v1.4_139: -371245070
-      Bricks Path LXRB: 1203068047
-      Town Tileset v1.4_39: 1075170439
-      Bricks L: -1642334627
-      Town Tileset v1.4_125: 1320168694
-      Smith House: -1666636559
-      Town Tileset v1.4_373: 2072834767
-      Town Tileset v1.4_552: -710870694
-      House_3 34: -922253727
-      Town Tileset v1.4_749: 306353264
-      Town Tileset v1.4_179: -1197941194
-      Town Tileset v1.4_766: 702612269
-      Town Tileset v1.4_18: 44004794
-      Town Tileset v1.4_84: 1797575183
-      Town Tileset v1.4_180: 244900061
-      House_5 45: -1145543414
-      House 14: -586478143
-      Town Tileset v1.4_62: -1780046338
-      Town Tileset v1.4_716: 628527955
       House Window 14: -418394752
-      Town Tileset v1.4_318: 1852849686
-      House Chimney 2: -549483765
-      Town Tileset v1.4_194: -438008574
-      Town Tileset v1.4_741: 514159529
-      House_3 28: -1696264137
-      Town Tileset v1.4_124: 1177886871
-      Town Tileset v1.4_380: 50372504
-      House 6: -1868084921
-      Town Tileset v1.4_367: 2048527264
-      Town Tileset v1.4_334: -40299617
-      Town Tileset v1.4_160: -1979894762
-      Town Tileset v1.4_340: 1025837983
-      House_4 13: 1915750834
-      House Window 5: 1209664774
-      Town Tileset v1.4_93: -2081447320
-      Town Tileset v1.4_571: 1274957970
-      Town Tileset v1.4_200: -1733813862
-      Town Tileset v1.4_235: -1192070871
-      Town Tileset v1.4_549: 737884857
-      Town Tileset v1.4_244: -1149563123
-      Town Tileset v1.4_90: 2136573062
-      Town Tileset v1.4_710: -1097108992
-      Town Tileset v1.4_140: -572162038
-      Town Tileset v1.4_347: 842637861
-      Town Tileset v1.4_483: -824706335
-      Town Tileset v1.4_196: 397382117
-      Town Tileset v1.4_88: 370154659
-      Town Tileset v1.4_249: 1894522745
-      House_2 17: 1088830047
-      Town Tileset v1.4_183: -335514611
-      House_2 24: -148020260
-      Town Tileset v1.4_315: 1527883644
-      Bricks Path L: 1402163094
-      Town Tileset v1.4_122: 1735130880
-      Town Tileset v1.4_67: 1799125549
-      Town Tileset v1.4_629: -190279305
-      House_6 5: 531854374
-      Town Tileset v1.4_97: -1863208370
-      House Window 10: 662211358
-      Town Tileset v1.4_278: -566265837
-      Town Tileset v1.4_306: 624747706
-      Town Tileset v1.4_621: -517468182
-      House_3 12: 94100314
-      Hedge C7: 1095077615
-      Town Tileset v1.4_648: 1932654155
-      House_5 5: -440550857
-      House_5 24: -248176481
-      Town Tileset v1.4_539: 1930356567
-      Town Tileset v1.4_518: -1242557704
-      House 19: -2122368546
-      Town Tileset v1.4_717: 2005483377
-      House Attachment 2: 74540206
-      Town Tileset v1.4_534: 1763574799
-      Bricks R: 864487089
-      Town Tileset v1.4_419: 1178329440
-      Town Tileset v1.4_688: -1235987034
-      Town Tileset v1.4_755: 1780764979
-      Town Tileset v1.4_556: 580080260
-      Town Tileset v1.4_126: 348334034
-      Town Tileset v1.4_594: -776814654
-      Bricks Path C5: -394486709
-      Hedge C4: -1083702568
-      Town Tileset v1.4_353: -436792600
-      Bricks BR: -1325055188
-      House_3 4: 1373170360
-      Town Tileset v1.4_87: 959319190
-      House_5 27: 1278018976
-      Town Tileset v1.4_307: 1307410858
-      Town Tileset v1.4_684: 2124427476
-      House_3 6: -1812532532
-      House_5 4: 1979782858
-      Town Tileset v1.4_627: -1988469480
-      House_5 6: -1242557704
-      Town Tileset v1.4_680: -534219083
-      Town Tileset v1.4_312: 1376406462
-      House_3 1: 1414498008
-      Town Tileset v1.4_271: 1895028899
-      Hedge Side L: -1161180363
-      House_4 11: -394486709
-      House_5 44: -334324171
-      Town Tileset v1.4_541: 1528199124
-      House_6 Extension 2: -1344610630
-      House_4 3: -2136494345
-      Town Tileset v1.4_238: 937195567
-      Town Tileset v1.4_618: 509473505
-      House_5 38: 1438697280
-      Bricks Path LRTB: 2003863287
-      House 3: 1710298672
-      House_5 37: -1772839823
-      Town Tileset v1.4_181: -1648630162
-      House_4 17: 1473726063
-      House_2 19: -178302056
-      Town Tileset v1.4_654: 358126017
-      Town Tileset v1.4_358: 1679254547
-      Town Tileset v1.4_333: -638515406
-      House_4 32: -148020260
-      Town Tileset v1.4_302: 384713061
-      Town Tileset v1.4_270: -2090049320
-      Town Tileset v1.4_107: -489106075
-      Town Tileset v1.4_305: 1643217964
-      Town Tileset v1.4_282: -295416113
-      House 23: -1149563123
-      House_6 12: -739186677
-      Bricks Path R: 1762546279
-      Town Tileset v1.4_630: -108675071
-      Town Tileset v1.4_731: -2058689520
-      Town Tileset v1.4_144: 874914171
-      Town Tileset v1.4_239: -1497099230
-      Town Tileset v1.4_186: -875370289
-      Town Tileset v1.4_352: -1222163168
-      House_5 21: 1543506480
-      Town Tileset v1.4_440: -1293218070
-      House_6 19: -1588448222
-      Town Tileset v1.4_118: 58269726
-      Bricks Path XTXX: 773598370
-      House Chimney 5: -2105670782
-      Town Tileset v1.4_197: -1985676701
-      Grass M: 1375153245
-      House 39: 1490716637
-      Town Tileset v1.4_656: -735509875
-      House_5 22: 97159796
-      Town Tileset v1.4_286: -67390346
-      House 36: -2055728040
-      Side Banner: 787039634
-      House_2 4: 827130878
-      Town Tileset v1.4_313: -2061955696
-      Brick Fence C3: -387773941
-      House_5 46: -1559901689
-      Town Tileset v1.4_538: 103781754
+      House Window 15: -351410001
+      House Window 16: -1568263350
+      House Window 17: 1592236637
+      House Window 18: 935704161
       House Window 19: 506248096
-      House_6 7: -1681125314
-      Town Tileset v1.4_657: 1137682686
-      House_6 1: -1554478122
-      Brick Fence C1: -24094579
-      Town Tileset v1.4_563: 1236463865
-      Bricks Path C11: 783441840
-      House_3 22: 396618346
-      Town Tileset v1.4_572: -1718423365
-      Town Tileset v1.4_751: 531046835
-      Town Tileset v1.4_162: 885625814
-      Town Tileset v1.4_742: 754302528
-      Town Tileset v1.4_595: -1923489205
-      House 20: 1382390573
-      Town Tileset v1.4_336: 1780764979
-      House Attachment 1: 1039958855
-      House_4 4: 2037591618
-      House_3 30: -711202283
-      Town Tileset v1.4_234: 134348098
-      Town Tileset v1.4_316: 622907727
-      Town Tileset v1.4_697: 639915943
+      House Window 2: -1496226268
+      House Window 3: -49463281
+      House Window 4: -1570477388
+      House Window 5: 1209664774
+      House Window 6: 1957582190
+      House Window 7: 1317683391
+      House Window 8: 219535469
+      House Window 9: 662211358
+      House with Sign: 227516710
+      House_1 Extra: -1776102487
+      House_1 Extra 2: -1532927885
+      House_2 1: -967116147
+      House_2 10: 370154659
+      House_2 11: -804828251
+      House_2 12: -1948199207
+      House_2 13: -1663540023
+      House_2 14: 123262414
       House_2 15: 690382341
-      Town Tileset v1.4_746: -811280498
-      Hedge C5: -1915405982
-      Town Tileset v1.4_685: -1034997798
-      Town Tileset v1.4_328: -1984991855
-      House 16: -1838529894
-      Brick Fence C8: -1331957483
-      Town Tileset v1.4_633: -1648630162
-      Town Tileset v1.4_569: -2058689520
-      Hedge TR: -1730000693
-      Town Tileset v1.4_404: 1679254547
+      House_2 16: -1999503551
+      House_2 17: 1088830047
+      House_2 18: 806153944
+      House_2 19: -178302056
+      House_2 2: 72061256
+      House_2 20: 1951461539
+      House_2 21: 1528199124
+      House_2 22: 2022964346
+      House_2 23: 1488360487
+      House_2 24: -148020260
+      House_2 25: 384713061
+      House_2 3: 742852121
+      House_2 4: 827130878
+      House_2 5: -203719803
+      House_2 6: -2136009294
+      House_2 7: -1487366416
       House_2 8: 639110350
-      Town Tileset v1.4_301: 927136357
-      Town Tileset v1.4_83: -421827869
-      Town Tileset v1.4_247: 1104877182
-      Bricks Path C4: 547945865
-      Town Tileset v1.4_399: 1866242212
-      Door 3: 1566053884
-      Town Tileset v1.4_535: -1487366416
-      Bricks Path XXRX: -411686904
-      Town Tileset v1.4_331: -811280498
-      Bricks Path B: -1882475892
-      Town Tileset v1.4_351: 348334034
-      House_4 9: -875370289
-      House_5 23: 123262414
-      Town Tileset v1.4_760: 1335214887
-      House_4 1: 1671397399
-      House_5 13: -433407483
-      House_4 21: -1868084921
-      Town Tileset v1.4_589: 685133071
-      House 17: -1118828035
-      Town Tileset v1.4_558: 1209664774
-      Town Tileset v1.4_396: -1167175928
-      House Chimney 1: 1236463865
-      House_3 9: 1874339058
-      House_6 6: -1331957483
+      House_2 9: 964727399
+      House_3 1: 1414498008
+      House_3 10: 296256087
+      House_3 11: -1319961800
+      House_3 12: 94100314
+      House_3 13: 223143714
+      House_3 14: -529583669
+      House_3 15: 180272869
+      House_3 16: 1640914335
+      House_3 17: -1828650592
+      House_3 18: -117678803
+      House_3 19: 1484054795
+      House_3 2: -335514611
+      House_3 20: -361842716
+      House_3 21: -1993101925
+      House_3 22: 396618346
+      House_3 23: -538222651
+      House_3 24: 1899567299
+      House_3 25: -291904951
+      House_3 26: 134348098
       House_3 27: 1100826117
+      House_3 28: -1696264137
+      House_3 29: 1324876835
+      House_3 3: 767890501
+      House_3 30: -711202283
+      House_3 31: 690382341
+      House_3 32: 1502759548
+      House_3 33: 759596054
+      House_3 34: -922253727
+      House_3 35: 1995366265
+      House_3 36: 1978201511
+      House_3 37: 1755054284
+      House_3 38: -187577989
+      House_3 4: 1373170360
+      House_3 5: -1192155033
+      House_3 6: -1812532532
+      House_3 7: 2131239129
+      House_3 8: 1695451904
+      House_3 9: 1874339058
+      House_4 1: 1671397399
+      House_4 10: -572162038
+      House_4 11: -394486709
+      House_4 12: 97159796
+      House_4 13: 1915750834
+      House_4 14: -570370509
+      House_4 15: 1878168354
+      House_4 16: 2124427476
+      House_4 17: 1473726063
+      House_4 18: -824706335
+      House_4 19: 306432169
       House_4 2: 1673588017
+      House_4 20: -284417826
+      House_4 21: -1868084921
       House_4 22: 520899574
+      House_4 23: 441979637
+      House_4 24: 1024853461
+      House_4 25: -1731621200
+      House_4 26: -1806120640
+      House_4 27: 2146306260
+      House_4 29: -85059257
+      House_4 3: -2136494345
+      House_4 30: -761080684
+      House_4 31: 880210302
+      House_4 32: -148020260
+      House_4 33: 622907727
+      House_4 4: 2037591618
+      House_4 5: 542350705
+      House_4 6: 1091351151
+      House_4 7: 893646605
+      House_4 8: 299636284
+      House_4 9: -875370289
+      House_4 Chimney 1: 1105385760
+      House_4 Chimney 2: -1911382951
+      House_4 Chimney 3: 1564155099
+      House_5 1: -621182670
+      House_5 10: -1915405982
+      House_5 11: -108675071
+      House_5 12: -669366629
+      House_5 13: -433407483
+      House_5 14: -856401236
+      House_5 15: 649271811
+      House_5 16: -1608031311
+      House_5 17: 151596894
+      House_5 18: -1827622769
+      House_5 19: 1010960402
+      House_5 2: 1972753864
+      House_5 20: 125410524
+      House_5 21: 1543506480
+      House_5 22: 97159796
+      House_5 23: 123262414
+      House_5 24: -248176481
+      House_5 25: -2084883163
+      House_5 26: 1434082404
+      House_5 27: 1278018976
+      House_5 28: 624747706
+      House_5 29: -190447396
+      House_5 3: -444020670
+      House_5 30: -888851429
+      House_5 31: 255474166
+      House_5 32: -14048387
+      House_5 33: -1306389030
+      House_5 34: 1837098120
+      House_5 35: 482084627
+      House_5 37: -1772839823
+      House_5 38: 1438697280
+      House_5 39: 1634724863
+      House_5 4: 1979782858
+      House_5 40: -1584267184
+      House_5 41: 509473505
+      House_5 42: -249839497
+      House_5 43: -190028377
+      House_5 44: -334324171
+      House_5 45: -1145543414
+      House_5 46: -1559901689
+      House_5 5: -440550857
+      House_5 6: -1242557704
+      House_5 7: -1165317602
+      House_5 8: 1505891220
+      House_5 9: 873787398
+      House_5 Extra 1: 607241501
+      House_6 1: -1554478122
+      House_6 10: 1356988982
+      House_6 11: 652232885
+      House_6 12: -739186677
+      House_6 13: 54478529
+      House_6 14: -517468182
+      House_6 15: 2037190375
+      House_6 16: -507179238
+      House_6 17: 408807390
+      House_6 18: 1699966180
+      House_6 19: -1588448222
+      House_6 2: -254877261
+      House_6 20: 1894522745
+      House_6 21: -892770764
+      House_6 22: -130658341
+      House_6 23: -1593989010
+      House_6 24: -565027892
+      House_6 25: 547945865
+      House_6 3: -2118846552
+      House_6 4: 1643217964
+      House_6 5: 531854374
+      House_6 6: -1331957483
+      House_6 7: -1681125314
+      House_6 8: 1932654155
+      House_6 9: 2066172461
+      House_6 Extension 1: 438577576
+      House_6 Extension 2: -1344610630
+      House_Banner: 754302528
+      House_Banner 2: 518100835
+      House_Banner 3: -268439452
+      Inner Bricks B: -2136534244
+      Inner Bricks BL: 1471398787
+      Inner Bricks BR: 1125807865
+      Inner Bricks ML: 1819271192
+      Inner Bricks MR: 2003751327
+      Inner Bricks T: 881046866
+      Inner Bricks TL: 1928571007
+      Inner Bricks TR: 1519352358
+      Left Deck: -1851510280
+      Right Deck: 877865822
+      Side Banner: 787039634
+      Small House With Sign: -1978495327
+      Smith House: -1666636559
+      Town Tileset v1.4_102: -912305535
+      Town Tileset v1.4_103: -451104566
+      Town Tileset v1.4_107: -489106075
+      Town Tileset v1.4_108: 1970759035
+      Town Tileset v1.4_109: -930471778
+      Town Tileset v1.4_110: 2105669412
+      Town Tileset v1.4_111: -1209041447
+      Town Tileset v1.4_112: -251315623
+      Town Tileset v1.4_113: -1300087156
+      Town Tileset v1.4_114: -617269125
+      Town Tileset v1.4_115: 795485308
+      Town Tileset v1.4_116: 1275926070
+      Town Tileset v1.4_117: -252983892
+      Town Tileset v1.4_118: 58269726
+      Town Tileset v1.4_119: 487090666
+      Town Tileset v1.4_120: 495192128
+      Town Tileset v1.4_121: 1324786044
+      Town Tileset v1.4_122: 1735130880
+      Town Tileset v1.4_123: -1374838202
+      Town Tileset v1.4_124: 1177886871
+      Town Tileset v1.4_125: 1320168694
+      Town Tileset v1.4_126: 348334034
+      Town Tileset v1.4_127: -621947984
+      Town Tileset v1.4_128: 1475139512
+      Town Tileset v1.4_130: 1197054152
+      Town Tileset v1.4_131: 1185352307
+      Town Tileset v1.4_132: -1368087257
+      Town Tileset v1.4_133: 804927724
+      Town Tileset v1.4_135: -1691388239
+      Town Tileset v1.4_139: -371245070
+      Town Tileset v1.4_140: -572162038
+      Town Tileset v1.4_141: 679414443
+      Town Tileset v1.4_142: 127186644
+      Town Tileset v1.4_143: 163084720
+      Town Tileset v1.4_144: 874914171
+      Town Tileset v1.4_145: 161804171
+      Town Tileset v1.4_146: -1006703885
+      Town Tileset v1.4_147: -1444385810
+      Town Tileset v1.4_148: 359152606
+      Town Tileset v1.4_149: -722154767
+      Town Tileset v1.4_150: -71811268
+      Town Tileset v1.4_151: -585948859
+      Town Tileset v1.4_152: -1359819205
+      Town Tileset v1.4_153: -481542545
+      Town Tileset v1.4_154: 1035044539
+      Town Tileset v1.4_155: 822808788
+      Town Tileset v1.4_156: 2013958751
+      Town Tileset v1.4_157: -1771081768
+      Town Tileset v1.4_158: -1555820299
+      Town Tileset v1.4_159: 1944912630
+      Town Tileset v1.4_160: -1979894762
+      Town Tileset v1.4_161: 750286673
+      Town Tileset v1.4_162: 885625814
+      Town Tileset v1.4_163: 1807991054
+      Town Tileset v1.4_178: -680550101
+      Town Tileset v1.4_179: -1197941194
+      Town Tileset v1.4_18: 44004794
+      Town Tileset v1.4_180: 244900061
+      Town Tileset v1.4_181: -1648630162
+      Town Tileset v1.4_182: 1231019921
+      Town Tileset v1.4_183: -335514611
+      Town Tileset v1.4_184: 2002913344
+      Town Tileset v1.4_185: -2039414442
+      Town Tileset v1.4_186: -875370289
+      Town Tileset v1.4_187: 1440198428
+      Town Tileset v1.4_188: 1204597397
+      Town Tileset v1.4_189: -685931282
+      Town Tileset v1.4_190: -811620946
+      Town Tileset v1.4_191: -1665258664
+      Town Tileset v1.4_192: -1226764895
+      Town Tileset v1.4_193: -631685128
+      Town Tileset v1.4_194: -438008574
+      Town Tileset v1.4_195: -792568729
+      Town Tileset v1.4_196: 397382117
+      Town Tileset v1.4_197: -1985676701
+      Town Tileset v1.4_198: -610292265
+      Town Tileset v1.4_199: 1987909612
+      Town Tileset v1.4_200: -1733813862
+      Town Tileset v1.4_218: 576652685
+      Town Tileset v1.4_233: -1591979479
+      Town Tileset v1.4_234: 134348098
+      Town Tileset v1.4_235: -1192070871
+      Town Tileset v1.4_236: 679197509
+      Town Tileset v1.4_237: -991034020
+      Town Tileset v1.4_238: 937195567
+      Town Tileset v1.4_239: -1497099230
+      Town Tileset v1.4_240: 692324690
+      Town Tileset v1.4_242: -594855685
+      Town Tileset v1.4_243: 541792251
+      Town Tileset v1.4_244: -1149563123
+      Town Tileset v1.4_245: -1291400714
+      Town Tileset v1.4_246: 198956732
+      Town Tileset v1.4_247: 1104877182
       Town Tileset v1.4_248: -1320095643
+      Town Tileset v1.4_249: 1894522745
+      Town Tileset v1.4_250: -1524037245
+      Town Tileset v1.4_262: 1949392868
+      Town Tileset v1.4_263: 1224386243
+      Town Tileset v1.4_264: -82096900
+      Town Tileset v1.4_265: -1659077540
+      Town Tileset v1.4_266: -2123561248
+      Town Tileset v1.4_267: -759756324
+      Town Tileset v1.4_268: 596480185
+      Town Tileset v1.4_269: 2023186915
+      Town Tileset v1.4_270: -2090049320
+      Town Tileset v1.4_271: 1895028899
+      Town Tileset v1.4_272: 1384990735
+      Town Tileset v1.4_273: 619203618
+      Town Tileset v1.4_274: -1064854402
+      Town Tileset v1.4_275: -1697523350
+      Town Tileset v1.4_276: -1336308075
+      Town Tileset v1.4_277: 1424165929
+      Town Tileset v1.4_278: -566265837
+      Town Tileset v1.4_279: 1610259524
+      Town Tileset v1.4_280: -1596778656
+      Town Tileset v1.4_281: -944742302
+      Town Tileset v1.4_282: -295416113
+      Town Tileset v1.4_283: 49281947
+      Town Tileset v1.4_284: -1091426001
+      Town Tileset v1.4_285: -2012787171
+      Town Tileset v1.4_286: -67390346
+      Town Tileset v1.4_301: 927136357
+      Town Tileset v1.4_302: 384713061
+      Town Tileset v1.4_303: -2025895224
+      Town Tileset v1.4_304: -1725187128
+      Town Tileset v1.4_305: 1643217964
+      Town Tileset v1.4_306: 624747706
+      Town Tileset v1.4_307: 1307410858
+      Town Tileset v1.4_308: 816873854
+      Town Tileset v1.4_309: -997473663
+      Town Tileset v1.4_310: -1551243664
+      Town Tileset v1.4_311: 201285298
+      Town Tileset v1.4_312: 1376406462
+      Town Tileset v1.4_313: -2061955696
+      Town Tileset v1.4_314: -1330076451
+      Town Tileset v1.4_315: 1527883644
+      Town Tileset v1.4_316: 622907727
+      Town Tileset v1.4_317: 441822857
+      Town Tileset v1.4_318: 1852849686
+      Town Tileset v1.4_319: -524170210
+      Town Tileset v1.4_322: -731208393
+      Town Tileset v1.4_323: -836584844
+      Town Tileset v1.4_324: 1084176805
+      Town Tileset v1.4_325: -296207307
+      Town Tileset v1.4_327: -348305925
+      Town Tileset v1.4_328: -1984991855
+      Town Tileset v1.4_329: -1805638961
+      Town Tileset v1.4_330: -1517312576
+      Town Tileset v1.4_331: -811280498
+      Town Tileset v1.4_332: 1555687389
+      Town Tileset v1.4_333: -638515406
+      Town Tileset v1.4_334: -40299617
+      Town Tileset v1.4_335: -985424914
+      Town Tileset v1.4_336: 1780764979
+      Town Tileset v1.4_337: -1048067009
+      Town Tileset v1.4_338: 1148139396
+      Town Tileset v1.4_339: -1492366499
+      Town Tileset v1.4_340: 1025837983
+      Town Tileset v1.4_341: 811669153
+      Town Tileset v1.4_342: -602496082
+      Town Tileset v1.4_345: 693461237
+      Town Tileset v1.4_346: -1802527852
+      Town Tileset v1.4_347: 842637861
+      Town Tileset v1.4_348: -1804559192
+      Town Tileset v1.4_349: 1546288602
+      Town Tileset v1.4_350: -707965077
+      Town Tileset v1.4_351: 348334034
+      Town Tileset v1.4_352: -1222163168
+      Town Tileset v1.4_353: -436792600
+      Town Tileset v1.4_354: -815449971
+      Town Tileset v1.4_355: -1646762858
+      Town Tileset v1.4_356: -2035332341
+      Town Tileset v1.4_357: -1182055917
+      Town Tileset v1.4_358: 1679254547
+      Town Tileset v1.4_359: 1935701550
+      Town Tileset v1.4_360: -1651021607
+      Town Tileset v1.4_361: 1610490915
+      Town Tileset v1.4_362: 523385533
+      Town Tileset v1.4_367: 2048527264
+      Town Tileset v1.4_37: -299018733
+      Town Tileset v1.4_370: 174000039
+      Town Tileset v1.4_371: 940456379
+      Town Tileset v1.4_372: 1358550028
+      Town Tileset v1.4_373: 2072834767
+      Town Tileset v1.4_374: 1917576480
+      Town Tileset v1.4_375: 704192656
+      Town Tileset v1.4_376: -1568056786
+      Town Tileset v1.4_377: -1963248649
+      Town Tileset v1.4_378: -313152671
+      Town Tileset v1.4_379: -938225079
+      Town Tileset v1.4_38: 1794365782
+      Town Tileset v1.4_380: 50372504
+      Town Tileset v1.4_39: 1075170439
+      Town Tileset v1.4_395: 838932801
+      Town Tileset v1.4_396: -1167175928
+      Town Tileset v1.4_397: 797550554
+      Town Tileset v1.4_398: 1765605294
+      Town Tileset v1.4_399: 1866242212
+      Town Tileset v1.4_40: 439345802
+      Town Tileset v1.4_400: 1487509446
+      Town Tileset v1.4_404: 1679254547
+      Town Tileset v1.4_405: 1019263703
+      Town Tileset v1.4_406: 199517249
       Town Tileset v1.4_41: 404133109
+      Town Tileset v1.4_419: 1178329440
+      Town Tileset v1.4_434: -491166604
+      Town Tileset v1.4_435: -2095648712
+      Town Tileset v1.4_436: -2043331282
+      Town Tileset v1.4_439: 673092905
+      Town Tileset v1.4_440: -1293218070
+      Town Tileset v1.4_441: 40588258
+      Town Tileset v1.4_471: -122211921
+      Town Tileset v1.4_472: 1220371355
+      Town Tileset v1.4_473: -1570711972
+      Town Tileset v1.4_483: -824706335
+      Town Tileset v1.4_498: -1448190018
+      Town Tileset v1.4_499: -1154133309
+      Town Tileset v1.4_500: 1785277562
+      Town Tileset v1.4_501: 1598013957
+      Town Tileset v1.4_502: -1220261458
+      Town Tileset v1.4_503: -719468436
+      Town Tileset v1.4_504: 828420374
+      Town Tileset v1.4_505: 1785375646
+      Town Tileset v1.4_515: 1100518764
+      Town Tileset v1.4_516: 58450701
+      Town Tileset v1.4_517: -1021609993
+      Town Tileset v1.4_518: -1242557704
+      Town Tileset v1.4_519: 1720033289
+      Town Tileset v1.4_521: 1887257307
+      Town Tileset v1.4_522: -692595145
+      Town Tileset v1.4_523: -149585509
+      Town Tileset v1.4_524: 967241540
+      Town Tileset v1.4_525: 1128770410
+      Town Tileset v1.4_526: 1748681725
+      Town Tileset v1.4_527: 1284630457
+      Town Tileset v1.4_528: -1273971411
+      Town Tileset v1.4_534: 1763574799
+      Town Tileset v1.4_535: -1487366416
+      Town Tileset v1.4_536: 198390137
+      Town Tileset v1.4_537: -725494084
+      Town Tileset v1.4_538: 103781754
+      Town Tileset v1.4_539: 1930356567
+      Town Tileset v1.4_540: -80600980
+      Town Tileset v1.4_541: 1528199124
+      Town Tileset v1.4_542: -1335809984
+      Town Tileset v1.4_543: 1978965923
+      Town Tileset v1.4_544: -467161070
+      Town Tileset v1.4_545: 607341321
+      Town Tileset v1.4_546: 36134730
+      Town Tileset v1.4_547: 1017671908
+      Town Tileset v1.4_548: 1570789645
+      Town Tileset v1.4_549: 737884857
+      Town Tileset v1.4_550: 1512829781
+      Town Tileset v1.4_551: 2036085435
+      Town Tileset v1.4_552: -710870694
+      Town Tileset v1.4_555: 1808774888
+      Town Tileset v1.4_556: 580080260
+      Town Tileset v1.4_557: 1564554334
+      Town Tileset v1.4_558: 1209664774
+      Town Tileset v1.4_559: -64048367
+      Town Tileset v1.4_560: -350099790
+      Town Tileset v1.4_561: -456322985
+      Town Tileset v1.4_562: -1234597293
+      Town Tileset v1.4_563: 1236463865
+      Town Tileset v1.4_564: 102034909
+      Town Tileset v1.4_565: 66919029
+      Town Tileset v1.4_566: -12934753
+      Town Tileset v1.4_567: -273485661
+      Town Tileset v1.4_568: -65112431
+      Town Tileset v1.4_569: -2058689520
+      Town Tileset v1.4_570: 478729552
+      Town Tileset v1.4_571: 1274957970
+      Town Tileset v1.4_572: -1718423365
+      Town Tileset v1.4_573: 1248363924
+      Town Tileset v1.4_574: -1068889012
+      Town Tileset v1.4_585: -262652656
+      Town Tileset v1.4_586: 1561520481
+      Town Tileset v1.4_587: -1103548874
+      Town Tileset v1.4_588: 120879024
+      Town Tileset v1.4_589: 685133071
+      Town Tileset v1.4_59: -74330084
+      Town Tileset v1.4_590: 514690703
+      Town Tileset v1.4_591: -1527501192
+      Town Tileset v1.4_592: 125433291
+      Town Tileset v1.4_593: -367895283
+      Town Tileset v1.4_594: -776814654
+      Town Tileset v1.4_595: -1923489205
+      Town Tileset v1.4_596: 39741698
+      Town Tileset v1.4_597: -75727103
+      Town Tileset v1.4_598: -1295796192
+      Town Tileset v1.4_599: -1004013867
+      Town Tileset v1.4_60: 2027305986
+      Town Tileset v1.4_61: -1114272419
+      Town Tileset v1.4_614: 2094967876
+      Town Tileset v1.4_615: -1751204395
+      Town Tileset v1.4_616: -1583031674
+      Town Tileset v1.4_617: -584323030
+      Town Tileset v1.4_618: 509473505
+      Town Tileset v1.4_619: -35733332
+      Town Tileset v1.4_62: -1780046338
+      Town Tileset v1.4_620: 1564038632
+      Town Tileset v1.4_621: -517468182
+      Town Tileset v1.4_622: -1402963966
+      Town Tileset v1.4_623: 1868348001
+      Town Tileset v1.4_624: 1512197819
+      Town Tileset v1.4_625: -1561414315
+      Town Tileset v1.4_626: -1427468465
+      Town Tileset v1.4_627: -1988469480
+      Town Tileset v1.4_628: 1589888741
+      Town Tileset v1.4_629: -190279305
+      Town Tileset v1.4_633: -1648630162
+      Town Tileset v1.4_64: -1421289532
+      Town Tileset v1.4_648: 1932654155
+      Town Tileset v1.4_65: -928963598
+      Town Tileset v1.4_651: -210698234
+      Town Tileset v1.4_652: -1012950853
+      Town Tileset v1.4_653: -1844326331
+      Town Tileset v1.4_654: 358126017
+      Town Tileset v1.4_655: -115921370
+      Town Tileset v1.4_656: -735509875
+      Town Tileset v1.4_657: 1137682686
+      Town Tileset v1.4_658: -404037037
+      Town Tileset v1.4_659: -563262430
+      Town Tileset v1.4_66: -1971558180
+      Town Tileset v1.4_660: 2037506866
+      Town Tileset v1.4_661: 1707882842
+      Town Tileset v1.4_662: -1545170904
+      Town Tileset v1.4_663: 354895991
+      Town Tileset v1.4_664: 161477906
+      Town Tileset v1.4_665: 777586077
+      Town Tileset v1.4_67: 1799125549
+      Town Tileset v1.4_679: -1842551235
+      Town Tileset v1.4_68: -1388115025
+      Town Tileset v1.4_680: -534219083
+      Town Tileset v1.4_682: 1762024276
+      Town Tileset v1.4_683: 1711074329
+      Town Tileset v1.4_684: 2124427476
+      Town Tileset v1.4_685: -1034997798
+      Town Tileset v1.4_686: 1807076943
+      Town Tileset v1.4_687: 94401742
+      Town Tileset v1.4_688: -1235987034
+      Town Tileset v1.4_689: -355906089
+      Town Tileset v1.4_690: 1322849744
+      Town Tileset v1.4_691: -1711464821
+      Town Tileset v1.4_692: 1155870450
+      Town Tileset v1.4_693: -2085511102
+      Town Tileset v1.4_694: -1089114481
+      Town Tileset v1.4_695: 2029729756
+      Town Tileset v1.4_696: 1092762049
+      Town Tileset v1.4_697: 639915943
+      Town Tileset v1.4_710: -1097108992
+      Town Tileset v1.4_711: 433335634
+      Town Tileset v1.4_712: -2060884904
+      Town Tileset v1.4_713: -1171320401
+      Town Tileset v1.4_714: -877487887
+      Town Tileset v1.4_715: -1127189743
+      Town Tileset v1.4_716: 628527955
+      Town Tileset v1.4_717: 2005483377
+      Town Tileset v1.4_718: 735524515
+      Town Tileset v1.4_719: -2102786980
+      Town Tileset v1.4_720: -1083266342
+      Town Tileset v1.4_731: -2058689520
+      Town Tileset v1.4_732: -28722457
+      Town Tileset v1.4_733: 841399915
+      Town Tileset v1.4_734: -1895372186
+      Town Tileset v1.4_735: -99030759
+      Town Tileset v1.4_736: 1303399626
+      Town Tileset v1.4_737: 794368439
+      Town Tileset v1.4_738: -1225140113
+      Town Tileset v1.4_739: -348048960
+      Town Tileset v1.4_740: 2142379504
+      Town Tileset v1.4_741: 514159529
+      Town Tileset v1.4_742: 754302528
+      Town Tileset v1.4_743: 282693834
+      Town Tileset v1.4_744: 156211442
+      Town Tileset v1.4_745: -2125159712
+      Town Tileset v1.4_746: -811280498
+      Town Tileset v1.4_749: 306353264
+      Town Tileset v1.4_750: 1819937213
+      Town Tileset v1.4_751: 531046835
+      Town Tileset v1.4_752: 1160493061
+      Town Tileset v1.4_753: -730381290
+      Town Tileset v1.4_754: -188006064
+      Town Tileset v1.4_755: 1780764979
+      Town Tileset v1.4_756: -1093739209
+      Town Tileset v1.4_757: -1554417097
+      Town Tileset v1.4_758: 1804269796
+      Town Tileset v1.4_759: 755961841
+      Town Tileset v1.4_760: 1335214887
+      Town Tileset v1.4_761: -58132239
+      Town Tileset v1.4_762: 1736232040
+      Town Tileset v1.4_763: 1847612633
+      Town Tileset v1.4_764: 1150935919
+      Town Tileset v1.4_765: 1456457173
+      Town Tileset v1.4_766: 702612269
+      Town Tileset v1.4_78: 346889587
+      Town Tileset v1.4_79: -230359637
+      Town Tileset v1.4_83: -421827869
+      Town Tileset v1.4_84: 1797575183
+      Town Tileset v1.4_85: 2049737004
+      Town Tileset v1.4_86: 581174856
+      Town Tileset v1.4_87: 959319190
+      Town Tileset v1.4_88: 370154659
+      Town Tileset v1.4_89: 1840129586
+      Town Tileset v1.4_90: 2136573062
+      Town Tileset v1.4_91: 1908770612
+      Town Tileset v1.4_92: -320116408
+      Town Tileset v1.4_93: -2081447320
+      Town Tileset v1.4_94: -636015448
+      Town Tileset v1.4_95: 1452023830
+      Town Tileset v1.4_96: -553265538
+      Town Tileset v1.4_97: -1863208370
+      Windmill: -1086770820
+      Wood Fence B: -261902097
+      Wood Fence BL: -1653626891
+      Wood Fence BR: 1048749431
+      Wood Fence L: -1713619165
+      Wood Fence R: -1574552797
+      Wood Fence T: -1256816904
+      Wood Fence TL: -1552953103
+      Wood Fence TR: 703275011
+      Wooden Dock: -1204642387
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

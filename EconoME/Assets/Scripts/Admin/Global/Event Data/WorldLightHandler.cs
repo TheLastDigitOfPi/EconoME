@@ -48,6 +48,12 @@ public class WorldLightHandler : MonoBehaviour
     {
         WorldTimeManager.Instance.OnGameTick += CheckTime;
         WorldTimeManager.Instance.OnNewDay += NewDay;
+
+        if(WorldTimeManager.CurrentTime.TimeOfDayTick < SunRiseTime.StandardizedTime || WorldTimeManager.CurrentTime.TimeOfDayTick > SunSetTime.StandardizedTime)
+        {
+            _globalLight.intensity = MinSunBrightness;
+            _globalLight.color = _nightTimeColor;
+        }
     }
 
     private void NewDay()
