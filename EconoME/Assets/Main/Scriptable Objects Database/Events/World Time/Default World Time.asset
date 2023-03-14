@@ -17,7 +17,7 @@ MonoBehaviour:
   Month: 0
   Year: 0
   <MaxTicksInDay>k__BackingField: 2400
-  <TicksPerSecond>k__BackingField: 40
+  <TicksPerSecond>k__BackingField: 25
   <WeeksInMonth>k__BackingField: 4
-  TotalSecondsPerDay: 60
-  <TimeOfDayTick>k__BackingField: 1486
+  TotalSecondsPerDay: 96
+  <TimeOfDayTick>k__BackingField: 1020

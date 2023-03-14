@@ -5,12 +5,14 @@ using System.Collections.Generic;
 [Serializable]
 public class ResourceNode
 {
-
     public int TilePos;
 
     //Node Characteristics (tier, type, etc)
 
     public ResourceNodeType NodeType;
+    [field: SerializeField] public ResourceNodeBase NodeBase { get; private set; }
+
+
     public ToolType ToolNeeded;
     public int NodePrefabID;
     public int NodeTier { get; private set; }
@@ -25,15 +27,15 @@ public class ResourceNode
     /// <summary>
     /// The amount of damage needed to be done to the node in order to gain a single drop
     /// </summary>
-    [field: SerializeField]public int DamagePerDrop { get; private set; }
+    [field: SerializeField] public int DamagePerDrop { get; private set; }
     /// <summary>
     /// The time is takes to use a tool with speed 1 on the node in seconds
     /// </summary>
-    [field: SerializeField]public float TimeToHarvest { get; private set; } = 1;
+    [field: SerializeField] public float TimeToHarvest { get; private set; } = 1;
     /// <summary>
     /// The range for number of items that will be produced on a single drop
     /// </summary>
-    [field: SerializeField] Vector2Int ItemCountPerDrop {get; set;}
+    [field: SerializeField] Vector2Int ItemCountPerDrop { get; set; }
     /// <summary>
     /// The number of possible drops remanining on the node
     /// </summary>
@@ -158,6 +160,53 @@ public class ResourceNode
     }
 
 
+}
+
+public class ResourceNodeBase : ScriptableObject
+{
+    [field: SerializeField] public ResourceNodeType NodeType { get; private set; }
+    public ResourceBase GetNodeItem()
+    {
+        return ResourceDropTable.GetDrop();
+    }
+
+    [SerializeField] ItemDropTable<ResourceBase> ResourceDropTable;
+
+
+
+
+}
+
+[Serializable]
+public class ResourceDropTable
+{
+    [SerializeField] float something;
+    System.Random rand = new();
+    public ResourceBase GetDrop()
+    {
+        return null;
+    }
+}
+
+[Serializable]
+public class ItemDropTable<T>
+{
+    [SerializeField] List<DropTableItem<T>> tableItems;
+
+    public T GetDrop()
+    {
+        System.Random rand = new();
+        return tableItems.RandomListItem().Item;
+    }
+}
+
+
+
+[Serializable]
+public class DropTableItem<T>
+{
+    public T Item;
+    public float DropChance;
 }
 
 

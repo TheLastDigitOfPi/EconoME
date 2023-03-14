@@ -17,6 +17,7 @@ public class SceneTransitionHandler : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] Slider slider;
     [SerializeField] TextMeshProUGUI progressText;
+    [SerializeField] TextMeshProUGUI debugText;
 
 
     bool screenInvisible = false;
@@ -58,6 +59,12 @@ public class SceneTransitionHandler : MonoBehaviour
 
         }
     }
+
+    public void AddLoadingText(string text)
+    {
+        debugText.text = text;
+    }
+
 
     private void OnDestroy()
     {

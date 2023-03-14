@@ -1,0 +1,3621 @@
+fileFormatVersion: 2
+guid: 5508b9df7b7f08649be7d989839e661c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2775530734414573546
+    second: Housing tileset_0
+  - first:
+      213: 2255233874696164072
+    second: Housing tileset_1
+  - first:
+      213: -6968990959807988811
+    second: Housing tileset_2
+  - first:
+      213: -8596954404742269529
+    second: Housing tileset_3
+  - first:
+      213: 6790578397469637133
+    second: Housing tileset_4
+  - first:
+      213: 2371923078951087504
+    second: Housing tileset_5
+  - first:
+      213: 2313912364159036244
+    second: Housing tileset_6
+  - first:
+      213: -2503879755276271844
+    second: Housing tileset_7
+  - first:
+      213: 3098462313041591046
+    second: Housing tileset_8
+  - first:
+      213: 6824734648672447092
+    second: Housing tileset_9
+  - first:
+      213: 5089220464500368481
+    second: Housing tileset_10
+  - first:
+      213: 8347669204834193398
+    second: Housing tileset_11
+  - first:
+      213: -758407179578532015
+    second: Housing tileset_12
+  - first:
+      213: -4364408340856038264
+    second: Housing tileset_13
+  - first:
+      213: -8538886338128749286
+    second: Housing tileset_14
+  - first:
+      213: -4381695094636813641
+    second: Housing tileset_15
+  - first:
+      213: -6779754667250441209
+    second: Housing tileset_16
+  - first:
+      213: -5763002374518529760
+    second: Housing tileset_17
+  - first:
+      213: 5294609500819125095
+    second: Housing tileset_18
+  - first:
+      213: 1724955100665023798
+    second: Housing tileset_19
+  - first:
+      213: -8185671102986352980
+    second: Housing tileset_20
+  - first:
+      213: -6502313294919645537
+    second: Housing tileset_21
+  - first:
+      213: 4171193305367003836
+    second: Housing tileset_22
+  - first:
+      213: -9092868954602882328
+    second: Housing tileset_23
+  - first:
+      213: -355920977166047687
+    second: Housing tileset_24
+  - first:
+      213: -7720694214491521572
+    second: Housing tileset_25
+  - first:
+      213: 696097930773422673
+    second: Housing tileset_26
+  - first:
+      213: -1025625365428744224
+    second: Housing tileset_27
+  - first:
+      213: 3695924725873092441
+    second: Housing tileset_28
+  - first:
+      213: 3578488098400791393
+    second: Housing tileset_29
+  - first:
+      213: -7923952478427021822
+    second: Housing tileset_30
+  - first:
+      213: 9075654141401745386
+    second: Housing tileset_31
+  - first:
+      213: -7217460661235356777
+    second: Housing tileset_32
+  - first:
+      213: -2366253664769944113
+    second: Housing tileset_33
+  - first:
+      213: -399854408261708772
+    second: Housing tileset_34
+  - first:
+      213: 4538034519237237805
+    second: Housing tileset_35
+  - first:
+      213: -7720154788619477877
+    second: Housing tileset_36
+  - first:
+      213: -7457916881708958481
+    second: Housing tileset_37
+  - first:
+      213: 2310856475285884973
+    second: Housing tileset_38
+  - first:
+      213: 4363927608541196303
+    second: Housing tileset_39
+  - first:
+      213: 3408720565364152979
+    second: Housing tileset_40
+  - first:
+      213: -5734053490331135711
+    second: Housing tileset_41
+  - first:
+      213: 7397043831425517460
+    second: Housing tileset_42
+  - first:
+      213: 5946893338921501113
+    second: Housing tileset_43
+  - first:
+      213: -5493839838121437713
+    second: Housing tileset_44
+  - first:
+      213: -2680847717436466354
+    second: Housing tileset_45
+  - first:
+      213: -1740788895444363959
+    second: Housing tileset_46
+  - first:
+      213: -1651174967566275128
+    second: Housing tileset_47
+  - first:
+      213: 2014849279946083472
+    second: Housing tileset_48
+  - first:
+      213: -4067913364722599172
+    second: Housing tileset_49
+  - first:
+      213: 2668704580963525198
+    second: Housing tileset_50
+  - first:
+      213: 2734103996813787416
+    second: Housing tileset_51
+  - first:
+      213: -8715057058345789614
+    second: Housing tileset_52
+  - first:
+      213: -3023466828149893626
+    second: Housing tileset_53
+  - first:
+      213: -5466787386441157152
+    second: Housing tileset_54
+  - first:
+      213: 4343422215375065411
+    second: Housing tileset_55
+  - first:
+      213: -6529375583169267495
+    second: Housing tileset_56
+  - first:
+      213: -6522339871286042039
+    second: Housing tileset_57
+  - first:
+      213: 6102549045556905985
+    second: Housing tileset_58
+  - first:
+      213: -7065055359332942023
+    second: Housing tileset_59
+  - first:
+      213: -2395896448200764410
+    second: Housing tileset_60
+  - first:
+      213: -3246722315886855510
+    second: Housing tileset_61
+  - first:
+      213: -6502107986919207563
+    second: Housing tileset_62
+  - first:
+      213: 3800510555297404755
+    second: Housing tileset_63
+  - first:
+      213: 9079723116325068358
+    second: Housing tileset_64
+  - first:
+      213: 8550019084385752376
+    second: Housing tileset_65
+  - first:
+      213: 4595975128471250133
+    second: Housing tileset_66
+  - first:
+      213: 8595774988673813791
+    second: Housing tileset_67
+  - first:
+      213: 187051058602377211
+    second: Housing tileset_68
+  - first:
+      213: -4687067544439125405
+    second: Housing tileset_69
+  - first:
+      213: 7938070682330234222
+    second: Housing tileset_70
+  - first:
+      213: 6891713335261237380
+    second: Housing tileset_71
+  - first:
+      213: -2695699413122341315
+    second: Housing tileset_72
+  - first:
+      213: 7680085592273902292
+    second: Housing tileset_73
+  - first:
+      213: -1435937509017974878
+    second: Housing tileset_74
+  - first:
+      213: -5676407468071990080
+    second: Housing tileset_75
+  - first:
+      213: -1983745317545358356
+    second: Housing tileset_76
+  - first:
+      213: -4818129410481645791
+    second: Housing tileset_77
+  - first:
+      213: 5470803777365314639
+    second: Housing tileset_78
+  - first:
+      213: 1977187377564346247
+    second: Housing tileset_79
+  - first:
+      213: 8715808121017228240
+    second: Housing tileset_80
+  - first:
+      213: 1420294941134247600
+    second: Housing tileset_81
+  - first:
+      213: 7619495923599735859
+    second: Housing tileset_82
+  - first:
+      213: -6966847525294266766
+    second: Housing tileset_83
+  - first:
+      213: -8676863678341367621
+    second: Housing tileset_84
+  - first:
+      213: 1073220745795168004
+    second: Housing tileset_85
+  - first:
+      213: 8615987596984671265
+    second: Housing tileset_86
+  - first:
+      213: 4799458211754464343
+    second: Housing tileset_87
+  - first:
+      213: -2262358527364059724
+    second: Housing tileset_88
+  - first:
+      213: 3245348940361081262
+    second: Housing tileset_89
+  - first:
+      213: -8116714647080277227
+    second: Housing tileset_90
+  - first:
+      213: 1404878566837079982
+    second: Housing tileset_91
+  - first:
+      213: -8641378050413490955
+    second: Housing tileset_92
+  - first:
+      213: 3088985812635029467
+    second: Housing tileset_93
+  - first:
+      213: -4788926203470755240
+    second: Housing tileset_94
+  - first:
+      213: 7075159606387121295
+    second: Housing tileset_95
+  - first:
+      213: 2977139573277121313
+    second: Housing tileset_96
+  - first:
+      213: -9075508678707385853
+    second: Housing tileset_97
+  - first:
+      213: 8884378020407392875
+    second: Housing tileset_98
+  - first:
+      213: 8597805462775537357
+    second: Housing tileset_99
+  - first:
+      213: -8828991531279977555
+    second: Housing tileset_100
+  - first:
+      213: 3733998168267627946
+    second: Housing tileset_101
+  - first:
+      213: -7003527765149763935
+    second: Housing tileset_102
+  - first:
+      213: -6887436711142977509
+    second: Housing tileset_103
+  - first:
+      213: -8552688911738416803
+    second: Housing tileset_104
+  - first:
+      213: -4102513444208328689
+    second: Housing tileset_105
+  - first:
+      213: -6988326999936302301
+    second: Housing tileset_106
+  - first:
+      213: 7430199974487676643
+    second: Housing tileset_107
+  - first:
+      213: 3194482081493220859
+    second: Housing tileset_108
+  - first:
+      213: 8824001972379984718
+    second: Housing tileset_109
+  - first:
+      213: 1486886368356700157
+    second: Housing tileset_110
+  - first:
+      213: 3072220249014008976
+    second: Housing tileset_111
+  - first:
+      213: 9007661956107620385
+    second: Housing tileset_112
+  - first:
+      213: -401605420202783474
+    second: Housing tileset_113
+  - first:
+      213: -1482438790875841314
+    second: Housing tileset_114
+  - first:
+      213: -5261380437874468414
+    second: Housing tileset_115
+  - first:
+      213: 3528519620833768863
+    second: Housing tileset_116
+  - first:
+      213: 4318787133902178449
+    second: Housing tileset_117
+  - first:
+      213: -7530604881745785194
+    second: Housing tileset_118
+  - first:
+      213: 5869112739309850218
+    second: Housing tileset_119
+  - first:
+      213: 6576798522897873311
+    second: Housing tileset_120
+  - first:
+      213: 2738517376650597421
+    second: Housing tileset_121
+  - first:
+      213: -1350418445630197044
+    second: Housing tileset_122
+  - first:
+      213: 2051332041474683296
+    second: Housing tileset_123
+  - first:
+      213: -1704692793641699403
+    second: Housing tileset_124
+  - first:
+      213: -1928410353868426604
+    second: Housing tileset_125
+  - first:
+      213: 501520757523445556
+    second: Housing tileset_126
+  - first:
+      213: -7058107282158692220
+    second: Housing tileset_127
+  - first:
+      213: -2510408464106448586
+    second: Housing tileset_128
+  - first:
+      213: -6528057984966769572
+    second: Housing tileset_129
+  - first:
+      213: 6931756169031176267
+    second: Housing tileset_130
+  - first:
+      213: -5146154942284713229
+    second: Housing tileset_131
+  - first:
+      213: -4468418793304710830
+    second: Housing tileset_132
+  - first:
+      213: 7524770210316577226
+    second: Housing tileset_133
+  - first:
+      213: 7429850338172250973
+    second: Housing tileset_134
+  - first:
+      213: 7568192739664920378
+    second: Housing tileset_135
+  - first:
+      213: -1382293752093523478
+    second: Housing tileset_136
+  - first:
+      213: -4397184289926076705
+    second: Housing tileset_137
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15.99
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Housing tileset_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1008
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6105a00a0855b79d0800000000000000
+      internalID: -2775530734414573546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1008
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e251b2a2433c4f10800000000000000
+      internalID: 2255233874696164072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_2
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 977
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb7cb535ab294f90800000000000000
+      internalID: -6968990959807988811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 977
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a57b1b748b71b880800000000000000
+      internalID: -8596954404742269529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 945
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a7e90131bfc3e50800000000000000
+      internalID: 6790578397469637133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_5
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 929
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d2e6b2973cae020800000000000000
+      internalID: 2371923078951087504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 929
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b651b190bac1020800000000000000
+      internalID: 2313912364159036244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f3772f0ae604dd0800000000000000
+      internalID: -2503879755276271844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 992
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b77ceae03fffa20800000000000000
+      internalID: 3098462313041591046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_9
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 929
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47aeb64010456be50800000000000000
+      internalID: 6824734648672447092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 979
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16461327c0b80a640800000000000000
+      internalID: 5089220464500368481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 976
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff0c98f9e0e8d370800000000000000
+      internalID: 8347669204834193398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f9d1a30b89975f0800000000000000
+      internalID: -758407179578532015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 960
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c1684dcb18e63c0800000000000000
+      internalID: -4364408340856038264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 928
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d566ecd18cf7980800000000000000
+      internalID: -8538886338128749286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2e912d6871133c0800000000000000
+      internalID: -4381695094636813641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 929
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704ad320d0979e1a0800000000000000
+      internalID: -6779754667250441209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 944
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0212713cfd3b500b0800000000000000
+      internalID: -5763002374518529760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 897
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7637bb8f94b3a7940800000000000000
+      internalID: 5294609500819125095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 897
+        width: 5
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d03ac568540f710800000000000000
+      internalID: 1724955100665023798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_20
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 928
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6815a5087a66e80800000000000000
+      internalID: -8185671102986352980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 928
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96c30e428423c5a0800000000000000
+      internalID: -6502313294919645537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_22
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 928
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb243e7163e03e930800000000000000
+      internalID: 4171193305367003836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 881
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eab7b3acd3afc180800000000000000
+      internalID: -9092868954602882328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 881
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93668ebc1c38f0bf0800000000000000
+      internalID: -355920977166047687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 896
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddb1d594859ad490800000000000000
+      internalID: -7720694214491521572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15262a4416909a900800000000000000
+      internalID: 696097930773422673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_27
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef4df40a2f34c1f0800000000000000
+      internalID: -1025625365428744224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 896
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957af32d4ff8a4330800000000000000
+      internalID: 3695924725873092441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_29
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 785
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b642247f759a130800000000000000
+      internalID: 3578488098400791393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_30
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 832
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ef74a2437780290800000000000000
+      internalID: -7923952478427021822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_31
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 833
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7cd825b5333fd70800000000000000
+      internalID: 9075654141401745386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 833
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79be5b2b4cd66db90800000000000000
+      internalID: -7217460661235356777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 816
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5dbee24d0692fd0800000000000000
+      internalID: -2366253664769944113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 816
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14dfa1c88e637af0800000000000000
+      internalID: -399854408261708772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_35
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 753
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c98990a565afe30800000000000000
+      internalID: 4538034519237237805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_36
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 737
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c1e457f108cd490800000000000000
+      internalID: -7720154788619477877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 737
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec395d1c18208890800000000000000
+      internalID: -7457916881708958481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 800
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20935888bfc11020800000000000000
+      internalID: 2310856475285884973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 800
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f003e94f909cf8c30800000000000000
+      internalID: 4363927608541196303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 785
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a59154b453e4f20800000000000000
+      internalID: 3408720565364152979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_41
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 800
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12159b91bbc8c60b0800000000000000
+      internalID: -5734053490331135711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_42
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 787
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497cc186c2497a660800000000000000
+      internalID: 7397043831425517460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_43
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 784
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b18d87dbfb978250800000000000000
+      internalID: 5946893338921501113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5d1eb56c5f1c3b0800000000000000
+      internalID: -5493839838121437713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 768
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b58496437bbcad0800000000000000
+      internalID: -2680847717436466354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_46
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 705
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945181209b977d7e0800000000000000
+      internalID: -1740788895444363959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 705
+        width: 5
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cde1348d19d519e0800000000000000
+      internalID: -1651174967566275128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 736
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c4327bebe26fb10800000000000000
+      internalID: 2014849279946083472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 736
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa35a6f85edb87c0800000000000000
+      internalID: -4067913364722599172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_50
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 736
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42e9ce4da4290520800000000000000
+      internalID: 2668704580963525198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_51
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 736
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811cf05691d71f520800000000000000
+      internalID: 2734103996813787416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_52
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 705
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257d900a7c5ed0780800000000000000
+      internalID: -8715057058345789614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_53
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 705
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606d2f550fc7a06d0800000000000000
+      internalID: -3023466828149893626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 689
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5b69816d11224b0800000000000000
+      internalID: -5466787386441157152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 689
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34198f01e7fe64c30800000000000000
+      internalID: 4343422215375065411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_56
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 704
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d83610508ff265a0800000000000000
+      internalID: -6529375583169267495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e0a3a17efb75a0800000000000000
+      internalID: -6522339871286042039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10881d4360c90b450800000000000000
+      internalID: 6102549045556905985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_59
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 704
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f7d7c3591e3fd90800000000000000
+      internalID: -7065055359332942023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 657
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6049f56dfd010ced0800000000000000
+      internalID: -2395896448200764410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_61
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 704
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaafa3d614351f2d0800000000000000
+      internalID: -3246722315886855510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_62
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 657
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d437c4c3fd3c5a0800000000000000
+      internalID: -6502107986919207563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_63
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 673
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357df9dc6302eb430800000000000000
+      internalID: 3800510555297404755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_64
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 657
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e557f5118a10e70800000000000000
+      internalID: 9079723116325068358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 640
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8359f9bae05c7a670800000000000000
+      internalID: 8550019084385752376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d42f01670f28cf30800000000000000
+      internalID: 4595975128471250133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_67
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 577
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d07115fc35a4770800000000000000
+      internalID: 8595774988673813791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_68
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 561
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfffade52f9889200800000000000000
+      internalID: 187051058602377211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 561
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a8177c6e034feb0800000000000000
+      internalID: -4687067544439125405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 624
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d7c365a31b92e60800000000000000
+      internalID: 7938070682330234222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_71
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 624
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480911ab3c844af50800000000000000
+      internalID: 6891713335261237380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_72
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 611
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d362d9b8aa3f69ad0800000000000000
+      internalID: -2695699413122341315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_73
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 577
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad414c725259a60800000000000000
+      internalID: 7680085592273902292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_74
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 577
+        width: 11
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a703578176821ce0800000000000000
+      internalID: -1435937509017974878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 592
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccc1319b795931b0800000000000000
+      internalID: -5676407468071990080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 592
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb4dded4225874e0800000000000000
+      internalID: -1983745317545358356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_77
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 529
+        width: 33
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127116624d0922db0800000000000000
+      internalID: -4818129410481645791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 560
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c89b9cc033ceb40800000000000000
+      internalID: 5470803777365314639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_79
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 560
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787eb1eb171607b10800000000000000
+      internalID: 1977187377564346247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_80
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db52b7ce45c4f870800000000000000
+      internalID: 8715808121017228240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_81
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 529
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6579259b6e5b310800000000000000
+      internalID: 1420294941134247600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_82
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 529
+        width: 5
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cf2b53c23edb960800000000000000
+      internalID: 7619495923599735859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_83
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 560
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a6827619c05f90800000000000000
+      internalID: -6966847525294266766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_84
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 560
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb839ffd476959780800000000000000
+      internalID: -8676863678341367621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 528
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40763b60598d4ee00800000000000000
+      internalID: 1073220745795168004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 528
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c517be113229770800000000000000
+      internalID: 8615987596984671265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 529
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754d4f1a0d91b9240800000000000000
+      internalID: 4799458211754464343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_88
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 544
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bda3e5e7ec7a90e0800000000000000
+      internalID: -2262358527364059724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_89
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 513
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1a96aaaabc90d20800000000000000
+      internalID: 3245348940361081262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 513
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51be19d5803ab5f80800000000000000
+      internalID: -8116714647080277227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf42e8fc912f7310800000000000000
+      internalID: 1404878566837079982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_92
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 528
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc0f377278a31880800000000000000
+      internalID: -8641378050413490955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_93
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 528
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf055efa384eda20800000000000000
+      internalID: 3088985812635029467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac092adf05a8db0800000000000000
+      internalID: -4788926203470755240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_95
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c95eb1d24003260800000000000000
+      internalID: 7075159606387121295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_96
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 385
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bd0f71bace05920800000000000000
+      internalID: 2977139573277121313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_97
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 369
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30aeba9d0f05d0280800000000000000
+      internalID: -9075508678707385853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 369
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6abba4fcb6ab4b70800000000000000
+      internalID: 8884378020407392875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_99
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce16a8e38a815770800000000000000
+      internalID: 8597805462775537357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_100
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 432
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3ff15fafe197580800000000000000
+      internalID: -8828991531279977555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_101
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 419
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad1d8bec83d1d330800000000000000
+      internalID: 3733998168267627946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_102
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b9a79a987ece90800000000000000
+      internalID: -7003527765149763935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_103
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 400
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10965b6dc8ea60a0800000000000000
+      internalID: -6887436711142977509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_104
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 337
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51d865bfbebe4980800000000000000
+      internalID: -8552688911738416803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_105
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 337
+        width: 5
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00c2bf22c1f017c0800000000000000
+      internalID: -4102513444208328689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_106
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 368
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323868a8e99740f90800000000000000
+      internalID: -6988326999936302301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 368
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e65479828f5d1760800000000000000
+      internalID: 7430199974487676643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_108
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 368
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdf0cc2784155c20800000000000000
+      internalID: 3194482081493220859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 368
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e432e05da07257a70800000000000000
+      internalID: 8824001972379984718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_110
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 321
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff854f264b72a410800000000000000
+      internalID: 1486886368356700157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_111
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 321
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cfd360a08b2aa20800000000000000
+      internalID: 3072220249014008976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 336
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120589e03d4a10d70800000000000000
+      internalID: 9007661956107620385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_113
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 336
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d01f48ff53d6af0800000000000000
+      internalID: -401605420202783474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_114
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcf59426c15d6be0800000000000000
+      internalID: -1482438790875841314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_115
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c99d442e52dbf6b0800000000000000
+      internalID: -5261380437874468414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_116
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95fac676e1d7f030800000000000000
+      internalID: 3528519620833768863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_117
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19844c0340a6feb30800000000000000
+      internalID: 4318787133902178449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_118
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 177
+        width: 27
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e48b742caed7790800000000000000
+      internalID: -7530604881745785194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_119
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 161
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e8845c0f6437150800000000000000
+      internalID: 5869112739309850218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 161
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9934a4496b754b50800000000000000
+      internalID: 6576798522897873311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_121
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d245e767b0b210620800000000000000
+      internalID: 2738517376650597421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_122
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2b31a1499524de0800000000000000
+      internalID: -1350418445630197044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_123
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 211
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1b9709f9bc77c10800000000000000
+      internalID: 2051332041474683296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b771df9fe6b758e0800000000000000
+      internalID: -1704692793641699403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_125
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492bc741009ec35e0800000000000000
+      internalID: -1928410353868426604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_126
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 129
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4377ba7c872c5f600800000000000000
+      internalID: 501520757523445556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_127
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 129
+        width: 5
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488555482d09c0e90800000000000000
+      internalID: -7058107282158692220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_128
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6391dc77dcc392dd0800000000000000
+      internalID: -2510408464106448586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_129
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5447ec89dda765a0800000000000000
+      internalID: -6528057984966769572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_130
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 160
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40d9bc728b823060800000000000000
+      internalID: 6931756169031176267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_131
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2bff1785f2598b0800000000000000
+      internalID: -5146154942284713229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_132
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 113
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251a46d38ccfcf1c0800000000000000
+      internalID: -4468418793304710830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_133
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 113
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac96c5a63aa5d6860800000000000000
+      internalID: 7524770210316577226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_134
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ba21d74812c1760800000000000000
+      internalID: 7429850338172250973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_135
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ffa6fd23f970960800000000000000
+      internalID: 7568192739664920378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1493bf72b11dce0800000000000000
+      internalID: -1382293752093523478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Housing tileset_137
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd627038f201af2c0800000000000000
+      internalID: -4397184289926076705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Housing tileset_0: -2775530734414573546
+      Housing tileset_1: 2255233874696164072
+      Housing tileset_10: 5089220464500368481
+      Housing tileset_100: -8828991531279977555
+      Housing tileset_101: 3733998168267627946
+      Housing tileset_102: -7003527765149763935
+      Housing tileset_103: -6887436711142977509
+      Housing tileset_104: -8552688911738416803
+      Housing tileset_105: -4102513444208328689
+      Housing tileset_106: -6988326999936302301
+      Housing tileset_107: 7430199974487676643
+      Housing tileset_108: 3194482081493220859
+      Housing tileset_109: 8824001972379984718
+      Housing tileset_11: 8347669204834193398
+      Housing tileset_110: 1486886368356700157
+      Housing tileset_111: 3072220249014008976
+      Housing tileset_112: 9007661956107620385
+      Housing tileset_113: -401605420202783474
+      Housing tileset_114: -1482438790875841314
+      Housing tileset_115: -5261380437874468414
+      Housing tileset_116: 3528519620833768863
+      Housing tileset_117: 4318787133902178449
+      Housing tileset_118: -7530604881745785194
+      Housing tileset_119: 5869112739309850218
+      Housing tileset_12: -758407179578532015
+      Housing tileset_120: 6576798522897873311
+      Housing tileset_121: 2738517376650597421
+      Housing tileset_122: -1350418445630197044
+      Housing tileset_123: 2051332041474683296
+      Housing tileset_124: -1704692793641699403
+      Housing tileset_125: -1928410353868426604
+      Housing tileset_126: 501520757523445556
+      Housing tileset_127: -7058107282158692220
+      Housing tileset_128: -2510408464106448586
+      Housing tileset_129: -6528057984966769572
+      Housing tileset_13: -4364408340856038264
+      Housing tileset_130: 6931756169031176267
+      Housing tileset_131: -5146154942284713229
+      Housing tileset_132: -4468418793304710830
+      Housing tileset_133: 7524770210316577226
+      Housing tileset_134: 7429850338172250973
+      Housing tileset_135: 7568192739664920378
+      Housing tileset_136: -1382293752093523478
+      Housing tileset_137: -4397184289926076705
+      Housing tileset_14: -8538886338128749286
+      Housing tileset_15: -4381695094636813641
+      Housing tileset_16: -6779754667250441209
+      Housing tileset_17: -5763002374518529760
+      Housing tileset_18: 5294609500819125095
+      Housing tileset_19: 1724955100665023798
+      Housing tileset_2: -6968990959807988811
+      Housing tileset_20: -8185671102986352980
+      Housing tileset_21: -6502313294919645537
+      Housing tileset_22: 4171193305367003836
+      Housing tileset_23: -9092868954602882328
+      Housing tileset_24: -355920977166047687
+      Housing tileset_25: -7720694214491521572
+      Housing tileset_26: 696097930773422673
+      Housing tileset_27: -1025625365428744224
+      Housing tileset_28: 3695924725873092441
+      Housing tileset_29: 3578488098400791393
+      Housing tileset_3: -8596954404742269529
+      Housing tileset_30: -7923952478427021822
+      Housing tileset_31: 9075654141401745386
+      Housing tileset_32: -7217460661235356777
+      Housing tileset_33: -2366253664769944113
+      Housing tileset_34: -399854408261708772
+      Housing tileset_35: 4538034519237237805
+      Housing tileset_36: -7720154788619477877
+      Housing tileset_37: -7457916881708958481
+      Housing tileset_38: 2310856475285884973
+      Housing tileset_39: 4363927608541196303
+      Housing tileset_4: 6790578397469637133
+      Housing tileset_40: 3408720565364152979
+      Housing tileset_41: -5734053490331135711
+      Housing tileset_42: 7397043831425517460
+      Housing tileset_43: 5946893338921501113
+      Housing tileset_44: -5493839838121437713
+      Housing tileset_45: -2680847717436466354
+      Housing tileset_46: -1740788895444363959
+      Housing tileset_47: -1651174967566275128
+      Housing tileset_48: 2014849279946083472
+      Housing tileset_49: -4067913364722599172
+      Housing tileset_5: 2371923078951087504
+      Housing tileset_50: 2668704580963525198
+      Housing tileset_51: 2734103996813787416
+      Housing tileset_52: -8715057058345789614
+      Housing tileset_53: -3023466828149893626
+      Housing tileset_54: -5466787386441157152
+      Housing tileset_55: 4343422215375065411
+      Housing tileset_56: -6529375583169267495
+      Housing tileset_57: -6522339871286042039
+      Housing tileset_58: 6102549045556905985
+      Housing tileset_59: -7065055359332942023
+      Housing tileset_6: 2313912364159036244
+      Housing tileset_60: -2395896448200764410
+      Housing tileset_61: -3246722315886855510
+      Housing tileset_62: -6502107986919207563
+      Housing tileset_63: 3800510555297404755
+      Housing tileset_64: 9079723116325068358
+      Housing tileset_65: 8550019084385752376
+      Housing tileset_66: 4595975128471250133
+      Housing tileset_67: 8595774988673813791
+      Housing tileset_68: 187051058602377211
+      Housing tileset_69: -4687067544439125405
+      Housing tileset_7: -2503879755276271844
+      Housing tileset_70: 7938070682330234222
+      Housing tileset_71: 6891713335261237380
+      Housing tileset_72: -2695699413122341315
+      Housing tileset_73: 7680085592273902292
+      Housing tileset_74: -1435937509017974878
+      Housing tileset_75: -5676407468071990080
+      Housing tileset_76: -1983745317545358356
+      Housing tileset_77: -4818129410481645791
+      Housing tileset_78: 5470803777365314639
+      Housing tileset_79: 1977187377564346247
+      Housing tileset_8: 3098462313041591046
+      Housing tileset_80: 8715808121017228240
+      Housing tileset_81: 1420294941134247600
+      Housing tileset_82: 7619495923599735859
+      Housing tileset_83: -6966847525294266766
+      Housing tileset_84: -8676863678341367621
+      Housing tileset_85: 1073220745795168004
+      Housing tileset_86: 8615987596984671265
+      Housing tileset_87: 4799458211754464343
+      Housing tileset_88: -2262358527364059724
+      Housing tileset_89: 3245348940361081262
+      Housing tileset_9: 6824734648672447092
+      Housing tileset_90: -8116714647080277227
+      Housing tileset_91: 1404878566837079982
+      Housing tileset_92: -8641378050413490955
+      Housing tileset_93: 3088985812635029467
+      Housing tileset_94: -4788926203470755240
+      Housing tileset_95: 7075159606387121295
+      Housing tileset_96: 2977139573277121313
+      Housing tileset_97: -9075508678707385853
+      Housing tileset_98: 8884378020407392875
+      Housing tileset_99: 8597805462775537357
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

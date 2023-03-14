@@ -83,4 +83,49 @@ public class WorldTile : Item
 
 }
 
+public class TileItem : Item
+{
+    //Store the data for data that does not change
+    //Background Tiles are stored based off Seed
+    int _seed;
+
+    //There should be some defined area for resource nodes
+    int _resourceNodesSeed;
+
+    TileGenerationSettings _generationSettings;
+    
+    //Resource Nodes currently on tile
+    //Mobs currently on tile
+    //Structures currently on tile
+
+    ResourceNode _resourceNode;
+    public const int width = 32;
+    public const int height = 32;
+
+    public TileItem()
+    {
+
+    }
+
+    public TileItem GenerateNewTile(TileGenerationSettings settings)
+    {
+        TileItem tile = new();
+        if (settings.UseRandomSeed)
+        {
+            System.Random rand = new();
+            _seed = rand.Next(0, 69420).GetHashCode() / 69420;
+            _resourceNodesSeed = rand.Next(0,69420).GetHashCode() /69420;
+        }
+
+        return tile;
+    }
+
+    void GenerateResourceNodes()
+    {
+
+    }
+
+
+}
+
 

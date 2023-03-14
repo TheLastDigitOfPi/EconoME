@@ -46,15 +46,15 @@ public class GlobalSceneManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
+    SceneTransitionHandler currentLoadingScreen;
     public void StartGame()
     {
 
         Scene currentScene = SceneManager.GetActiveScene();
-        var transitionHandler = Instantiate(sceneTransitionHandler, transform);
-        transitionHandler.Initialize();
-        transitionHandler.OnScreenInvisible += () => { InitializeGame(); };
-        transitionHandler.OnScreenVisible += ScreenVisible;
+        currentLoadingScreen = Instantiate(sceneTransitionHandler, transform);
+        currentLoadingScreen.Initialize();
+        currentLoadingScreen.OnScreenInvisible += () => { InitializeGame(); };
+        currentLoadingScreen.OnScreenVisible += ScreenVisible;
         _onScenesDataAquired += GameStarted;
 
         _onSceneStartDisable?.Invoke();
@@ -69,7 +69,7 @@ public class GlobalSceneManager : MonoBehaviour
         {
             _sceneLoading = false;
             _onSceneVisible?.Invoke();
-            Destroy(transitionHandler.gameObject);
+            Destroy(currentLoadingScreen.gameObject);
         }
     }
 
@@ -90,6 +90,19 @@ public class GlobalSceneManager : MonoBehaviour
                 openScenes.Add(SceneManager.GetSceneAt(i).buildIndex);
             }
 
+            currentLoadingScreen.AddLoadingText("Loading Persistant Scene...");
+            //First load persistant scene if it isn't open so events can subscribe properly to it
+            if (!openScenes.Contains(PersistantSceneIndex))
+            {
+                AsyncOperation PersistantSceneOperation = SceneManager.LoadSceneAsync(PersistantSceneIndex, LoadSceneMode.Additive);
+                while (!PersistantSceneOperation.isDone)
+                {
+                    yield return null;
+                }
+                openScenes.Add(PersistantSceneIndex);
+            }
+            
+            currentLoadingScreen.AddLoadingText("Loading all required scenes...");
             //Go through all the scenes we need to be loaded, and load them.
             List<AsyncOperation> SceneLoadingOperations = new();
             foreach (var sceneIndex in SceneIndexesThatMustBeLoaded)
@@ -115,6 +128,8 @@ public class GlobalSceneManager : MonoBehaviour
                 yield return null;
             }
             //Once they are all loaded, unload em. We don't need em anymore, we are just using them for their data (location). Basically we have data in each scene that we may want to access from other scenes without having to load the other scene up. So we STEAL the data, and use the scenes like the little hoes they are.
+            
+            currentLoadingScreen.AddLoadingText("Unloading temporary scenes...");
             List<AsyncOperation> SceneUnloadingOperations = new();
             sceneCount = SceneManager.sceneCount;
             for (int i = 0; i < sceneCount; i++)
@@ -138,6 +153,9 @@ public class GlobalSceneManager : MonoBehaviour
                 }
                 yield return null;
             }
+            
+            currentLoadingScreen.AddLoadingText("Done!");
+            yield return null;
             _sceneLoading = false;
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(StartingSceneIndex));
             Debug.Log("Data Aquired :)");

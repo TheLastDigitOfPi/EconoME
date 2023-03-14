@@ -11,9 +11,9 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
 {
     //Handles the visual display of items as well as interactions player makes with the inventory (Got Clicked)
 
-    [Space(10)]
-    [Header("Inventory Group")]
-    [SerializeField] InventoryObject Inventory;
+    [field: Space(10)]
+    [field: Header("Inventory Group")]
+    [field: SerializeField] public InventoryObject Inventory { get; private set; }
     [field: SerializeField] public int SlotNumber { get; private set; }
     ItemBase ItemBase { get { return ItemSlot.ItemBase; } }
     public ItemSlot ItemSlot { get { return Inventory.Data.ItemSlots[SlotNumber]; } }

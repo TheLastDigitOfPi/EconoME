@@ -1,0 +1,5643 @@
+fileFormatVersion: 2
+guid: aaea59e36fa033041bdf086be04b292d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4237335016486946384
+    second: Character_Skintones_0
+  - first:
+      213: -4266668964347282938
+    second: Character_Skintones_1
+  - first:
+      213: 6564417649436637751
+    second: Right Idle 1
+  - first:
+      213: -3129351359111445089
+    second: Right Idle 2
+  - first:
+      213: 326767389918550781
+    second: Right Walk 1
+  - first:
+      213: -7925292310607150462
+    second: Right Walk 2
+  - first:
+      213: -431426491825395720
+    second: Right Walk 3
+  - first:
+      213: 3150289587209692262
+    second: Right Walk 4
+  - first:
+      213: -6328393220210441617
+    second: Right Run 1
+  - first:
+      213: 3890467148018145479
+    second: Right Run 2
+  - first:
+      213: -5567473349876711625
+    second: Right Run 3
+  - first:
+      213: 1564335045218442631
+    second: Right Run 4
+  - first:
+      213: 7609088867302402127
+    second: Right Jump 1
+  - first:
+      213: -2110010286797570174
+    second: Right Jump 2
+  - first:
+      213: -5312604230904921573
+    second: Right Jump 3
+  - first:
+      213: 9173298932376876543
+    second: Right Jump 4
+  - first:
+      213: 8988510374925983695
+    second: Right Jump 5
+  - first:
+      213: -6784956653635000208
+    second: Right Jump 6
+  - first:
+      213: 3667717549358522830
+    second: Right Jump 7
+  - first:
+      213: -7208556347431773624
+    second: Right Jump 8
+  - first:
+      213: -2997945412154168852
+    second: Character_Skintones_20
+  - first:
+      213: 1533488221499465937
+    second: Character_Skintones_21
+  - first:
+      213: -7004605942643815615
+    second: Left Idle 1
+  - first:
+      213: -153272880004537912
+    second: Left Idle 2
+  - first:
+      213: -3491784585044465996
+    second: Lef Walk 1
+  - first:
+      213: -6483572783159815704
+    second: Left Walk 2
+  - first:
+      213: -7866533706552659756
+    second: Left Walk 3
+  - first:
+      213: 8099116863661361727
+    second: Left Walk 4
+  - first:
+      213: 1519749071147736607
+    second: Left Run 1
+  - first:
+      213: 1111721764652480285
+    second: Left Run 2
+  - first:
+      213: -7825607376722697454
+    second: Left Run 3
+  - first:
+      213: -6161248177428596504
+    second: Left Run 4
+  - first:
+      213: 7613144720004858013
+    second: Left Jump 1
+  - first:
+      213: -6463568827252499295
+    second: Left Jump 2
+  - first:
+      213: -5495056524228124283
+    second: Left Jump 3
+  - first:
+      213: -2561289531032988337
+    second: Left Jump 4
+  - first:
+      213: 804251917954479487
+    second: Left Jump 5
+  - first:
+      213: 365946129912412461
+    second: Left Jump 6
+  - first:
+      213: -3546242609641588910
+    second: Left Jump 7
+  - first:
+      213: -3229461323626025591
+    second: Left Jump 8
+  - first:
+      213: 9121746992888376177
+    second: Character_Skintones_40
+  - first:
+      213: 5297362075316890437
+    second: Character_Skintones_41
+  - first:
+      213: -7355159670931400844
+    second: Down Idle 1
+  - first:
+      213: -2480611421283492681
+    second: Down Idle 2
+  - first:
+      213: -5792177007722794245
+    second: Down Walk 1
+  - first:
+      213: 5766482948251753719
+    second: Down Walk 2
+  - first:
+      213: -2989983988633388193
+    second: Down Walk 3
+  - first:
+      213: 8167988431448167585
+    second: Down Walk 4
+  - first:
+      213: 2341874459742823381
+    second: Down Run 1
+  - first:
+      213: -5358738267425311618
+    second: Down Run 2
+  - first:
+      213: 8405671278264203690
+    second: Down Run 3
+  - first:
+      213: -579228172058195957
+    second: Down Run 4
+  - first:
+      213: 3889397656731791388
+    second: Down Jump 1
+  - first:
+      213: -4748023995324499460
+    second: Down Jump 2
+  - first:
+      213: 7554732366832775325
+    second: Down Jump 3
+  - first:
+      213: -9073300911673041454
+    second: Down Jump 4
+  - first:
+      213: 2403900430805328236
+    second: Down Jump 5
+  - first:
+      213: -1739539390868404206
+    second: Down Jump 6
+  - first:
+      213: -1851663733665320202
+    second: Down Jump 7
+  - first:
+      213: -1672101981361689984
+    second: Down Jump 8
+  - first:
+      213: 1120993660723583007
+    second: Character_Skintones_60
+  - first:
+      213: 7140092496541436283
+    second: Character_Skintones_61
+  - first:
+      213: 8417163372621697357
+    second: Idle Up 1
+  - first:
+      213: -7918026440503087430
+    second: Idle Up 2
+  - first:
+      213: -2017487370310108322
+    second: Up Walk 1
+  - first:
+      213: -7018115822538725159
+    second: Up Walk 2
+  - first:
+      213: 8007500324425008834
+    second: Up Walk 3
+  - first:
+      213: 4584509955819027229
+    second: Up Walk 4
+  - first:
+      213: 5620821833652060162
+    second: Up Run 1
+  - first:
+      213: 3015411882295827553
+    second: Up Run 2
+  - first:
+      213: -5657507487733691872
+    second: Up Run 3
+  - first:
+      213: -74574675607121028
+    second: Up Run 4
+  - first:
+      213: 4668240457830873900
+    second: Up Jump 1
+  - first:
+      213: -8944373014102897757
+    second: Up Jump 2
+  - first:
+      213: 6658753082791339933
+    second: Up Jump 3
+  - first:
+      213: 297154696413780324
+    second: Up Jump 4
+  - first:
+      213: -5072454872196031264
+    second: Up Jump 5
+  - first:
+      213: 6940570264777366909
+    second: Up Jump 6
+  - first:
+      213: 5832404115509202809
+    second: Up Jump 7
+  - first:
+      213: -6552940803234379880
+    second: Up Jump 8
+  - first:
+      213: 871001466872410091
+    second: Character_Skintones_80
+  - first:
+      213: 5489561435769909252
+    second: Character_Skintones_81
+  - first:
+      213: -4524687302203393992
+    second: Character_Skintones_82
+  - first:
+      213: 5066481549728120124
+    second: Character_Skintones_83
+  - first:
+      213: 6668108333230158479
+    second: Character_Skintones_84
+  - first:
+      213: 9054780581911740532
+    second: Character_Skintones_85
+  - first:
+      213: 6481823495818378606
+    second: Character_Skintones_86
+  - first:
+      213: 8304448396752643003
+    second: Character_Skintones_87
+  - first:
+      213: 4721274858731686452
+    second: Character_Skintones_88
+  - first:
+      213: -2194413193089754916
+    second: Character_Skintones_89
+  - first:
+      213: 645810828424922740
+    second: Character_Skintones_90
+  - first:
+      213: 3556137001151119549
+    second: Character_Skintones_91
+  - first:
+      213: 6409084430216724296
+    second: Character_Skintones_92
+  - first:
+      213: -8630112390669778142
+    second: Character_Skintones_93
+  - first:
+      213: -4416833604280453133
+    second: Character_Skintones_94
+  - first:
+      213: -4391578741312359542
+    second: Character_Skintones_95
+  - first:
+      213: 8185514951757315578
+    second: Character_Skintones_96
+  - first:
+      213: 5313582181258645645
+    second: Character_Skintones_97
+  - first:
+      213: 6325384518717207954
+    second: Character_Skintones_98
+  - first:
+      213: 5957324556760849268
+    second: Character_Skintones_99
+  - first:
+      213: 3482959995288016673
+    second: Character_Skintones_100
+  - first:
+      213: -7972598395557484702
+    second: Character_Skintones_101
+  - first:
+      213: -2322592321444877763
+    second: Character_Skintones_102
+  - first:
+      213: 4452021859066199282
+    second: Character_Skintones_103
+  - first:
+      213: -628173518836459495
+    second: Character_Skintones_104
+  - first:
+      213: 1541669425088024823
+    second: Character_Skintones_105
+  - first:
+      213: -4627509976884721157
+    second: Character_Skintones_106
+  - first:
+      213: 1637507976778470986
+    second: Character_Skintones_107
+  - first:
+      213: -2929122364553003985
+    second: Character_Skintones_108
+  - first:
+      213: 5651440193246035613
+    second: Character_Skintones_109
+  - first:
+      213: 7002743229317125383
+    second: Character_Skintones_110
+  - first:
+      213: 3716646389160645004
+    second: Character_Skintones_111
+  - first:
+      213: 8222124391696354685
+    second: Character_Skintones_112
+  - first:
+      213: 4376291536992775562
+    second: Character_Skintones_113
+  - first:
+      213: 298130171157743272
+    second: Character_Skintones_114
+  - first:
+      213: 8281300816645410001
+    second: Character_Skintones_115
+  - first:
+      213: -4932428707952448903
+    second: Character_Skintones_116
+  - first:
+      213: -7830518346170030126
+    second: Character_Skintones_117
+  - first:
+      213: -1018673538460984706
+    second: Character_Skintones_118
+  - first:
+      213: -1825127151790908628
+    second: Character_Skintones_119
+  - first:
+      213: 759593370383075906
+    second: Character_Skintones_120
+  - first:
+      213: -2797856660787569921
+    second: Character_Skintones_121
+  - first:
+      213: 5953452746402458716
+    second: Character_Skintones_122
+  - first:
+      213: 3186581892949640551
+    second: Character_Skintones_123
+  - first:
+      213: 4334062231126621360
+    second: Character_Skintones_124
+  - first:
+      213: -471792439528091759
+    second: Character_Skintones_125
+  - first:
+      213: -6578932197003664633
+    second: Character_Skintones_126
+  - first:
+      213: -8974639653555435427
+    second: Character_Skintones_127
+  - first:
+      213: -7091369000257695029
+    second: Character_Skintones_128
+  - first:
+      213: -1231405180023298616
+    second: Character_Skintones_129
+  - first:
+      213: 8530668560910056583
+    second: Character_Skintones_130
+  - first:
+      213: 7055652803187603784
+    second: Character_Skintones_131
+  - first:
+      213: 6400719677998250683
+    second: Character_Skintones_132
+  - first:
+      213: 4297200815902302971
+    second: Character_Skintones_133
+  - first:
+      213: -4803640477774171074
+    second: Character_Skintones_134
+  - first:
+      213: 7312304954475556545
+    second: Character_Skintones_135
+  - first:
+      213: 7757118232176277215
+    second: Character_Skintones_136
+  - first:
+      213: -3874606655757025587
+    second: Character_Skintones_137
+  - first:
+      213: -8049333130500981937
+    second: Character_Skintones_138
+  - first:
+      213: -7047977104212649872
+    second: Character_Skintones_139
+  - first:
+      213: 1108622745048213025
+    second: Character_Skintones_140
+  - first:
+      213: 6988120450787114105
+    second: Character_Skintones_141
+  - first:
+      213: -4784903724507741205
+    second: Character_Skintones_142
+  - first:
+      213: 1352007608692167740
+    second: Character_Skintones_143
+  - first:
+      213: -7623023186345436209
+    second: Character_Skintones_144
+  - first:
+      213: 1903948757325270157
+    second: Character_Skintones_145
+  - first:
+      213: 4032024449790569547
+    second: Character_Skintones_146
+  - first:
+      213: 2916426863854650257
+    second: Character_Skintones_147
+  - first:
+      213: 7686676531240872653
+    second: Character_Skintones_148
+  - first:
+      213: 4186685064984776669
+    second: Character_Skintones_149
+  - first:
+      213: -1683406470245881432
+    second: Character_Skintones_150
+  - first:
+      213: 7963185150215375153
+    second: Character_Skintones_151
+  - first:
+      213: 3814615745967503134
+    second: Character_Skintones_152
+  - first:
+      213: 1473346693927678131
+    second: Character_Skintones_153
+  - first:
+      213: -1657668599406517131
+    second: Character_Skintones_154
+  - first:
+      213: 6047149609524930003
+    second: Character_Skintones_155
+  - first:
+      213: 9085666845929217164
+    second: Character_Skintones_156
+  - first:
+      213: 4938080501638548472
+    second: Character_Skintones_157
+  - first:
+      213: 2128250048666768201
+    second: Character_Skintones_158
+  - first:
+      213: -4592760344659110280
+    second: Character_Skintones_159
+  - first:
+      213: -6444545299550675432
+    second: Character_Skintones_160
+  - first:
+      213: 8801220482163875361
+    second: Character_Skintones_161
+  - first:
+      213: 4847964873970835446
+    second: Character_Skintones_162
+  - first:
+      213: 3557646857933699735
+    second: Character_Skintones_163
+  - first:
+      213: -8733957393348574663
+    second: Character_Skintones_164
+  - first:
+      213: -1403822028673009303
+    second: Character_Skintones_165
+  - first:
+      213: 1685644912092913235
+    second: Character_Skintones_166
+  - first:
+      213: -3913081093426105533
+    second: Character_Skintones_167
+  - first:
+      213: 9145932042824017032
+    second: Character_Skintones_168
+  - first:
+      213: -8694121037475211105
+    second: Character_Skintones_169
+  - first:
+      213: 9106909892944998933
+    second: Character_Skintones_170
+  - first:
+      213: 58227835347618971
+    second: Character_Skintones_171
+  - first:
+      213: -7234989355114297990
+    second: Character_Skintones_172
+  - first:
+      213: 3160668717154769472
+    second: Character_Skintones_173
+  - first:
+      213: 4738017156437493209
+    second: Character_Skintones_174
+  - first:
+      213: -8429496450888602432
+    second: Character_Skintones_175
+  - first:
+      213: -5869140938635397219
+    second: Character_Skintones_176
+  - first:
+      213: 6005182323241989289
+    second: Character_Skintones_177
+  - first:
+      213: 819033498200317744
+    second: Character_Skintones_178
+  - first:
+      213: -8416516721651129271
+    second: Character_Skintones_179
+  - first:
+      213: -3666509254245711474
+    second: Character_Skintones_180
+  - first:
+      213: 507351559075960641
+    second: Character_Skintones_181
+  - first:
+      213: -6657571098211632584
+    second: Character_Skintones_182
+  - first:
+      213: 2341353881853890714
+    second: Character_Skintones_183
+  - first:
+      213: -8392220219517450341
+    second: Character_Skintones_184
+  - first:
+      213: 164269570825590361
+    second: Character_Skintones_185
+  - first:
+      213: 878332066516464491
+    second: Character_Skintones_186
+  - first:
+      213: 3635381846255215352
+    second: Character_Skintones_187
+  - first:
+      213: 6052568376106570382
+    second: Character_Skintones_188
+  - first:
+      213: -5346973068572052586
+    second: Character_Skintones_189
+  - first:
+      213: -7356804763348082888
+    second: Character_Skintones_190
+  - first:
+      213: -6159394995609443066
+    second: Character_Skintones_191
+  - first:
+      213: -3111605077434283437
+    second: Character_Skintones_192
+  - first:
+      213: -476093357004299060
+    second: Character_Skintones_193
+  - first:
+      213: 406602404531691867
+    second: Character_Skintones_194
+  - first:
+      213: 3409699063628573490
+    second: Character_Skintones_195
+  - first:
+      213: -7888073265014381613
+    second: Character_Skintones_196
+  - first:
+      213: -2197191158448513367
+    second: Character_Skintones_197
+  - first:
+      213: -8793733941818982528
+    second: Character_Skintones_198
+  - first:
+      213: 9197044676503824243
+    second: Character_Skintones_199
+  - first:
+      213: -8173026404188350848
+    second: Character_Skintones_200
+  - first:
+      213: -475180722162842577
+    second: Character_Skintones_201
+  - first:
+      213: 7149401873860224921
+    second: Character_Skintones_202
+  - first:
+      213: 415355808474176056
+    second: Character_Skintones_203
+  - first:
+      213: -1492224532304572497
+    second: Character_Skintones_204
+  - first:
+      213: -2209297976279554386
+    second: Character_Skintones_205
+  - first:
+      213: 13882854948368126
+    second: Character_Skintones_206
+  - first:
+      213: -5016847864405146956
+    second: Character_Skintones_207
+  - first:
+      213: 2172659654527163878
+    second: Character_Skintones_208
+  - first:
+      213: 1077798082875902998
+    second: Character_Skintones_209
+  - first:
+      213: -6637589147871301784
+    second: Character_Skintones_210
+  - first:
+      213: 364136185717845052
+    second: Character_Skintones_211
+  - first:
+      213: -5082829187053299018
+    second: Character_Skintones_212
+  - first:
+      213: -2036321398663588471
+    second: Character_Skintones_213
+  - first:
+      213: -4472197791387123915
+    second: Character_Skintones_214
+  - first:
+      213: 2184864980143019586
+    second: Character_Skintones_215
+  - first:
+      213: 4852688415940354864
+    second: Character_Skintones_216
+  - first:
+      213: -1521643548064393004
+    second: Character_Skintones_217
+  - first:
+      213: 6437417079674501458
+    second: Character_Skintones_218
+  - first:
+      213: -2585044424536663586
+    second: Character_Skintones_219
+  - first:
+      213: 4037194996111871678
+    second: Character_Skintones_220
+  - first:
+      213: 1080340081786989452
+    second: Character_Skintones_221
+  - first:
+      213: 6155884551606616650
+    second: Character_Skintones_222
+  - first:
+      213: 7515319950972785010
+    second: Character_Skintones_223
+  - first:
+      213: -824917353188853470
+    second: Character_Skintones_224
+  - first:
+      213: -2487124248397287593
+    second: Character_Skintones_225
+  - first:
+      213: 2204453449122792990
+    second: Character_Skintones_226
+  - first:
+      213: -2177023062265819078
+    second: Character_Skintones_227
+  - first:
+      213: -2178882478900569298
+    second: Character_Skintones_228
+  - first:
+      213: 3135676915464135749
+    second: Character_Skintones_229
+  - first:
+      213: -799693617581453960
+    second: Character_Skintones_230
+  - first:
+      213: -3542904078388967898
+    second: Character_Skintones_231
+  - first:
+      213: 4648216875130433618
+    second: Character_Skintones_232
+  - first:
+      213: 8697689630191294266
+    second: Character_Skintones_233
+  - first:
+      213: -4778000896518348587
+    second: Character_Skintones_234
+  - first:
+      213: 7364731339324398254
+    second: Character_Skintones_235
+  - first:
+      213: 3494190209219863659
+    second: Character_Skintones_236
+  - first:
+      213: 8408602321645124860
+    second: Character_Skintones_237
+  - first:
+      213: 3798108687253768620
+    second: Character_Skintones_238
+  - first:
+      213: -3936031270540107397
+    second: Character_Skintones_239
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character_Skintones_82
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bbd1786fbe8c040800000000000000
+      internalID: -4524687302203393992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_83
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab8ecb02243fd380800000000000000
+      internalID: 5066481549728120124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_84
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97a0d236a4a86c50800000000000000
+      internalID: 6668108333230158479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_85
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469151b3f94bf1400800000000000000
+      internalID: 9054780581911740532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_86
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec5e833b250b99b0800000000000000
+      internalID: 6481823495818378606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_87
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d91b212ebd15060800000000000000
+      internalID: 8304448396752643003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_88
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fc37344acd0f050800000000000000
+      internalID: 4721274858731686452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_89
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8974d05fe074f05a0800000000000000
+      internalID: -2194413193089754916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_90
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef26c7283b661c00800000000000000
+      internalID: 645810828424922740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400bfb77a07de2c40800000000000000
+      internalID: 3556137001151119549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_92
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83832781fd41531c0800000000000000
+      internalID: 6409084430216724296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_93
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7d984022cf4640800000000000000
+      internalID: -8630112390669778142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_94
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82710e2331e98c50800000000000000
+      internalID: -4416833604280453133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_95
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47044f707fa09ad70800000000000000
+      internalID: -4391578741312359542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_96
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6df805902014f950800000000000000
+      internalID: 8185514951757315578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_97
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3e00861d35f3370800000000000000
+      internalID: 5313582181258645645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_98
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a4fa93876558140800000000000000
+      internalID: 6325384518717207954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_99
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8547fc3d0eb81e0800000000000000
+      internalID: 5957324556760849268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_102
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4764e5cd68166f800800000000000000
+      internalID: -2322592321444877763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_103
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db04c36e2cfe95130800000000000000
+      internalID: 4452021859066199282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_104
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ffd8e1554a1f850800000000000000
+      internalID: -628173518836459495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_105
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2234e66418eab3880800000000000000
+      internalID: 1541669425088024823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_106
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7fad00d3144b2c0800000000000000
+      internalID: -4627509976884721157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_107
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a837be0076afd03c0800000000000000
+      internalID: 1637507976778470986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_108
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdb42bda7ac89170800000000000000
+      internalID: -2929122364553003985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_109
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8054ce57d2adb940800000000000000
+      internalID: 5651440193246035613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295f4e9d4b748c750800000000000000
+      internalID: 7002743229317125383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_111
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b11710f1baca250800000000000000
+      internalID: 3716646389160645004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_112
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127d90689a5f55030800000000000000
+      internalID: 8222124391696354685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_113
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26762f7fff3ab5190800000000000000
+      internalID: 4376291536992775562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_114
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a6a3ad69e74cfd0800000000000000
+      internalID: 298130171157743272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_115
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc3ae10b42c8cd30800000000000000
+      internalID: 8281300816645410001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_116
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918127843874847f0800000000000000
+      internalID: -4932428707952448903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_117
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0d37b8c2c156510800000000000000
+      internalID: -7830518346170030126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_118
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9c5319138c7cfb0800000000000000
+      internalID: -1018673538460984706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_119
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46dfb834d899b610800000000000000
+      internalID: -1825127151790908628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_122
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c7a258abaa957d0800000000000000
+      internalID: 5953452746402458716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_123
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e7bc3c9e2fd6e40800000000000000
+      internalID: 3186581892949640551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_124
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70518bc6dddbe2160800000000000000
+      internalID: 4334062231126621360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_125
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8198a5033e249330800000000000000
+      internalID: -471792439528091759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7dc222529ada1270800000000000000
+      internalID: -6578932197003664633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_127
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8da00067f5bbbc30800000000000000
+      internalID: -8974639653555435427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_128
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60fa4afcb232400800000000000000
+      internalID: -7091369000257695029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_129
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc4d4e67371de270800000000000000
+      internalID: -1231405180023298616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_130
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a2e86293e7c8bb0800000000000000
+      internalID: 8530668560910056583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_131
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d72b515d09645390800000000000000
+      internalID: 7055652803187603784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_132
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a51fd50d1fcd1f0800000000000000
+      internalID: 6400719677998250683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_133
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b159f7688dba6e0800000000000000
+      internalID: 4297200815902302971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_134
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24acc67552e9a8a00800000000000000
+      internalID: -4803640477774171074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_135
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffadb41d0340c29d0800000000000000
+      internalID: 7312304954475556545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_136
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c6468eab9ee9250800000000000000
+      internalID: 7757118232176277215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_137
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76584f03953093c20800000000000000
+      internalID: -3874606655757025587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_138
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc3db8e2aea52c30800000000000000
+      internalID: -8049333130500981937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_139
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f8632a64bd379f0800000000000000
+      internalID: -7047977104212649872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_142
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70367340600f2b4a0800000000000000
+      internalID: -4784903724507741205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_143
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5881b6e8cca37380800000000000000
+      internalID: 1352007608692167740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_144
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc25c684775669d90800000000000000
+      internalID: -7623023186345436209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_145
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5a226538b29eee0800000000000000
+      internalID: 1903948757325270157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_146
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cf2a5dbd5036670800000000000000
+      internalID: 4032024449790569547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_147
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8497c7097d6bae160800000000000000
+      internalID: 2916426863854650257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_148
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba30f972ace3d850800000000000000
+      internalID: 7686676531240872653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_149
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf22060ef59b2ab30800000000000000
+      internalID: 4186685064984776669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_150
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34359daf6a065db0800000000000000
+      internalID: -1683406470245881432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_151
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce28d42d968a7560800000000000000
+      internalID: 7963185150215375153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_152
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6b295eee1d6ab60800000000000000
+      internalID: 3814615745967503134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_153
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcefc3f66c1aa3ac0800000000000000
+      internalID: 1473346693927678131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_154
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bb4bd3a260b4090800000000000000
+      internalID: -1657668599406517131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_155
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078915e5a2e803e90800000000000000
+      internalID: 6047149609524930003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_156
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126648c438e926f00800000000000000
+      internalID: 9085666845929217164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_157
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cfecc768acaf060800000000000000
+      internalID: 4938080501638548472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_158
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3c5400a6b989db0800000000000000
+      internalID: 2128250048666768201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_159
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34d8b1c1cb43c210800000000000000
+      internalID: -4592760344659110280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_162
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb505fecc4953690800000000000000
+      internalID: 4847964873970835446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_163
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c4be6ae4f2c6a10800000000000000
+      internalID: 3557646857933699735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ce47fdfd0a4f730800000000000000
+      internalID: -8733957393348574663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_165
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1938671e7ca397820800000000000000
+      internalID: -1403822028673009303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_166
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaa1f3549f8caa60800000000000000
+      internalID: 1685644912092913235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_167
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfc9d472e71a1a30800000000000000
+      internalID: -3913081093426105533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_168
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a966600cb653a8e0800000000000000
+      internalID: 9145932042824017032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_169
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139c04f04bae28e60800000000000000
+      internalID: -8694121037475211105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_170
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17310d6fcc30f430800000000000000
+      internalID: 9106909892944998933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_171
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b03e821301627410800000000000000
+      internalID: 58227835347618971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_172
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5742e090137cef8e0800000000000000
+      internalID: -7234989355114297990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_173
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5206bd78acbe350800000000000000
+      internalID: 3160668717154769472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_174
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c9723cbd5c61e70800000000000000
+      internalID: 4738017156437493209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_175
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbc27c9d06978440800000000000000
+      internalID: -8429496450888602432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_176
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9439dffa420198d10800000000000000
+      internalID: -5869140938635397219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_177
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876d71ecccc3340c0800000000000000
+      internalID: 6005182323241989289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_178
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e5e59d1306096a0800000000000000
+      internalID: 819033498200317744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_179
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e154dc567342a70800000000000000
+      internalID: -8416516721651129271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_182
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff5a940e5e674340800000000000000
+      internalID: -6657571098211632584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_183
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a3c63d7fc4f5130800000000000000
+      internalID: 2341353881853890714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_184
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932cf067600cac680800000000000000
+      internalID: -8392220219517450341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_185
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969b31d7d4f948ce0800000000000000
+      internalID: 164269570825590361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_186
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e1ebadd1d946710800000000000000
+      internalID: 878332066516464491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_187
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3433a095a71f1b9c0800000000000000
+      internalID: 3635381846255215352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_188
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88463685cb0ecee70800000000000000
+      internalID: 6052568376106570382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_189
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f981a07daf6485780800000000000000
+      internalID: -5346973068572052586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_190
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5123a721c4e326e70800000000000000
+      internalID: -7356804763348082888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_191
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c4fe168eddec000800000000000000
+      internalID: -6159394995609443066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_192
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a750eae9387289b90800000000000000
+      internalID: -3111605077434283437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_193
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a13bac373fcdb20800000000000000
+      internalID: -476093357004299060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_194
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5c92d2081d0c140800000000000000
+      internalID: 406602404531691867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_195
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc6e59a3a9640b80800000000000000
+      internalID: 3409699063628573490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_196
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d973fef896f9c8ea0800000000000000
+      internalID: -7888073265014381613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_197
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a43b449181b65350800000000000000
+      internalID: -2197191158448513367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_198
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f106f80aacd5b00800000000000000
+      internalID: -8793733941818982528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_199
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94469df52a6823b80800000000000000
+      internalID: 9197044676503824243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_202
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81800f5241fd1dc0800000000000000
+      internalID: 7149401873860224921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_203
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14796fe0e897a0700800000000000000
+      internalID: 415355808474176056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_204
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a30380c5e8b93a0800000000000000
+      internalID: -1492224532304572497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_205
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90126553f82e7020800000000000000
+      internalID: -2209297976279554386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_206
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97cfca9c28d88b80800000000000000
+      internalID: 13882854948368126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_207
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9561778ed4a974200800000000000000
+      internalID: -5016847864405146956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_208
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b637c836c56703c00800000000000000
+      internalID: 2172659654527163878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_209
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f222f03788737230800000000000000
+      internalID: 1077798082875902998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_210
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e825894ceda0ff350800000000000000
+      internalID: -6637589147871301784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_211
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693be28d25cbbc5b0800000000000000
+      internalID: 364136185717845052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_212
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f5cb6bb0167e990800000000000000
+      internalID: -5082829187053299018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_213
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6056167a2ee658aa0800000000000000
+      internalID: -2036321398663588471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_214
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a4a360bab51d4d0800000000000000
+      internalID: -4472197791387123915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_215
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4e5df3d939469f0800000000000000
+      internalID: 2184864980143019586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4076b2f8e7b7f47b029a6cc9260b07
+      internalID: -114221796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle 2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd3593d4c675c24aaa5a9fc5689f5ab
+      internalID: -631284205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401377099548ff64db80094cbd5f3cf4
+      internalID: -317307137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69a28fe8e1e3fc4aad778b46743ef49
+      internalID: -161285600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b706fade227ac4b8b66afba5bc489f
+      internalID: -896789001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddcc2f351a947b46a6d3365bb8fe301
+      internalID: -935799355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e85deab7c033d4d9cb8bc218fbb02e
+      internalID: -1704991683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 6
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec6e62066a4d614d9d24d1998fbe673
+      internalID: 790107582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 7
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c02057e5a96934cbefcf6f93701c3b
+      internalID: 820349611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 8
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455839294a2251245970585d55d26408
+      internalID: -1473457244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 9
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63d1bdcec12e9e49ad7c7cb2a0010db
+      internalID: -250448449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Move 10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d50136feccdd68439fa64adb82950a0
+      internalID: 459631681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 1
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c407ccbe23fc50e4fb534354cce3f7d2
+      internalID: 1988168409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4b9bb30daff05468a8212115d79885
+      internalID: -441000081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 3
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d42adf365e43c84783b914a832a9ce8
+      internalID: 325370056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 4
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e8bd2d2976ec246936cc18fd07d7c4
+      internalID: -13339975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 5
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c51efd8dea89004aa7eeb55babb029f
+      internalID: 1033726069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump 6
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 720
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062fa49a7b96c7a489203b01cd7faea1
+      internalID: 1874697867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5234e659d919d4fa8dbc6d7b9d3670
+      internalID: -465720871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da68a06d4f1863649a67527884607af3
+      internalID: 437165240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098a3a3790a3b194795bf726c85118b1
+      internalID: -1159006746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d6b8d321cace449a2d65781986618c
+      internalID: -743518758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aba6273c0386c943a968211717ec1f9
+      internalID: 54507829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510faf00cdad8144ea0df56be526b8df
+      internalID: 558181317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54e54fad0a54d7468d6f7685b6ed50d
+      internalID: -1056384779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_25
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11651a325f18f0408a703f0001785d2
+      internalID: 1180445027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_26
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc92f437b7522b14cae4b60df66edd57
+      internalID: -1414194079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_27
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1aa617e18b2f1448ede9d999d1c2e9
+      internalID: 1605454668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_28
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa4d59d9f23b264c9d2ad8d8e93e574
+      internalID: 306928981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_29
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acb73331be2aa840a68dff4965fc28d
+      internalID: 1036885301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_30
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13af023c3ed54b146808f2f919d74b65
+      internalID: -227603567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_31
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9d9e878b1ca564b95d672446c81167
+      internalID: -1618532045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_32
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e96221aa1921e488c32064b11ff21b
+      internalID: 433925739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_33
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6456575a7fd7d2244a2c726ef0cb187d
+      internalID: 1680976514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_34
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d56fb598cade24cb9211c3ce17db4f
+      internalID: 951313792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_35
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 656
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ee122f32e8ef49a9ebf1cdbd6b912
+      internalID: -1637620635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae66c0b06ff044468443414fe83d6d4
+      internalID: 1604021273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4c99a2612feb34f9caa940f04f11ae
+      internalID: -646857145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_38
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff84c84f221bbe442a73face875209ef
+      internalID: 344794315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_39
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5c7e3f9d5435c4a833f13801b03915
+      internalID: -592468874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_40
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e934af7786d28348899701b41943a79
+      internalID: 189730336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391ad79db0feaa44b8a125961e1b1020
+      internalID: -654359302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_42
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163d31be56cafd049a46cf507985d4ef
+      internalID: 854359258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_43
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c80ce449bb9464cb713c485b01ded0
+      internalID: 682323956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_44
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e1a369fd4ecc340b3e5e3432039ec2
+      internalID: -845174519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_45
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c1aba708ed1cd41b9198f96df98cd0
+      internalID: -1669064675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_46
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc7aa3a79734af489bf2764a71a3dbd
+      internalID: -131953488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_47
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794384f149ea106468137ddfbbf18b94
+      internalID: -356244982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_48
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15436e2aca638e743ab8ead1d7247d80
+      internalID: 1316300987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_49
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58498d6e19e49574ab908b6bb2843749
+      internalID: -943361015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_50
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a558126eddfce8248858cf0e3294171e
+      internalID: 577842220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_51
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115b486b04cef9548a8917f2c0ebb93a
+      internalID: 1835503249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_52
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b66b039770fe14a9f014669e3dba56
+      internalID: 1828266616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_53
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 592
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48d50aeca76bbe44abc782af6ab1144
+      internalID: -1905272562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_54
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e35a8fbb475c2d44bba9cfa894eb1c2
+      internalID: -1784537428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_55
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695ca8c9e6cb3e4aa0667b562e06c79
+      internalID: 1533982937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_56
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62204fb37f69be1458889c43c03f58c0
+      internalID: 433502284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_57
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fd552e121dd72449ecf5107b6d77ca
+      internalID: 854429593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_58
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f3b6c4a428e1a40b619b5e366a28fc
+      internalID: 304288287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_59
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cb236f17aebc3438556b613c1ae4f9
+      internalID: 1342738206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107591371be06ad48938244d206dfce7
+      internalID: -911474810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_61
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e534524424983a43859f25cd29d8145
+      internalID: -333979523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_62
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ab205596ab4b74e99c1235c2633a6a
+      internalID: -1801214981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_63
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549d1c4ca359bb342ac8d016aa54d3bc
+      internalID: 1379353363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_64
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a82d0ba011e5204ab372e235f058e93
+      internalID: 953613751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_65
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc15c3c843967d45ad6bf73b158dd54
+      internalID: 512219312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_66
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c17cf8cb265db4eaf127d1e522c2a3
+      internalID: -1589723528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_67
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef21e34a5018e24e9e808a11eec46cb
+      internalID: 1163991709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_68
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660f2f0c5c4c67b4893b26209210987d
+      internalID: -1733641950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_69
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8798b6302cc56c4aa8233f604915db1
+      internalID: 812471086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_70
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28718230fc3b5e40bcae0b1e272a5a5
+      internalID: -270798155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_71
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 528
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adebf095eb860584ab479642fd041625
+      internalID: 925310865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e50e7231dfd1d47b24df9ba6bef5eb
+      internalID: -126915835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1466eb24c3d7b46871469418a778c8
+      internalID: -467870955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_74
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4203fde78b9b84386fb0b57b9f5811
+      internalID: 980716097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_75
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9272d3cd1299f444c8bca2a7c775114f
+      internalID: -1103215884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_76
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c988a05998aecb2438c5a5967b5d017c
+      internalID: 390595085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_77
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc42a66e2075e045a472e14a74478f6
+      internalID: 1511709958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_78
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164e2d62e423b4148989e76b52d00b56
+      internalID: -1877681418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_79
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289eb0d1fc8782644b15d7c6070d7200
+      internalID: -53596975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_80
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f41c2d3d216cde4090a82855fcd31aa
+      internalID: -1926651762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_81
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 464
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8293a8c21f862164f919cf09c097efbe
+      internalID: 295475582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_100
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41427b854d35b4342ac0226ce0b35596
+      internalID: -1693198204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_101
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 400
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363fdb7d283b2f3479a1b36f1dd9e4de
+      internalID: 2108421263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_120
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2bed80b4ec1ab4195c0c3379217700
+      internalID: 1896899366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_121
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 336
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ef890cf45555343b2d3257e0450aec
+      internalID: -975085314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_140
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b214d0f6a84e447844a7d8ab38472e
+      internalID: -147445098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_141
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bb6353b0e087d46825c87804a9b98d
+      internalID: 1311755761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_160
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b841a474e82ff46ba146d7cbacf135
+      internalID: -471313776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_161
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 208
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee41ef374b1e91945b1f21f4568116e1
+      internalID: 1714228134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_180
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7bbae27e4bb8e40b07a3759afcef57
+      internalID: -1463110017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_181
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa332ca3ad39ae8428f6657e264115f2
+      internalID: 132819929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_200
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280cce2944431774ba48ba13e3df9772
+      internalID: 1939250615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character_Skintones_201
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d9c9cda8797c645baeba9b83c7f606
+      internalID: 1958969232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Character_Skintones_100: -1693198204
+      Character_Skintones_101: 2108421263
+      Character_Skintones_102: -2322592321444877763
+      Character_Skintones_103: 4452021859066199282
+      Character_Skintones_104: -628173518836459495
+      Character_Skintones_105: 1541669425088024823
+      Character_Skintones_106: -4627509976884721157
+      Character_Skintones_107: 1637507976778470986
+      Character_Skintones_108: -2929122364553003985
+      Character_Skintones_109: 5651440193246035613
+      Character_Skintones_110: 7002743229317125383
+      Character_Skintones_111: 3716646389160645004
+      Character_Skintones_112: 8222124391696354685
+      Character_Skintones_113: 4376291536992775562
+      Character_Skintones_114: 298130171157743272
+      Character_Skintones_115: 8281300816645410001
+      Character_Skintones_116: -4932428707952448903
+      Character_Skintones_117: -7830518346170030126
+      Character_Skintones_118: -1018673538460984706
+      Character_Skintones_119: -1825127151790908628
+      Character_Skintones_120: 1896899366
+      Character_Skintones_121: -975085314
+      Character_Skintones_122: 5953452746402458716
+      Character_Skintones_123: 3186581892949640551
+      Character_Skintones_124: 4334062231126621360
+      Character_Skintones_125: -471792439528091759
+      Character_Skintones_126: -6578932197003664633
+      Character_Skintones_127: -8974639653555435427
+      Character_Skintones_128: -7091369000257695029
+      Character_Skintones_129: -1231405180023298616
+      Character_Skintones_130: 8530668560910056583
+      Character_Skintones_131: 7055652803187603784
+      Character_Skintones_132: 6400719677998250683
+      Character_Skintones_133: 4297200815902302971
+      Character_Skintones_134: -4803640477774171074
+      Character_Skintones_135: 7312304954475556545
+      Character_Skintones_136: 7757118232176277215
+      Character_Skintones_137: -3874606655757025587
+      Character_Skintones_138: -8049333130500981937
+      Character_Skintones_139: -7047977104212649872
+      Character_Skintones_140: -147445098
+      Character_Skintones_141: 1311755761
+      Character_Skintones_142: -4784903724507741205
+      Character_Skintones_143: 1352007608692167740
+      Character_Skintones_144: -7623023186345436209
+      Character_Skintones_145: 1903948757325270157
+      Character_Skintones_146: 4032024449790569547
+      Character_Skintones_147: 2916426863854650257
+      Character_Skintones_148: 7686676531240872653
+      Character_Skintones_149: 4186685064984776669
+      Character_Skintones_150: -1683406470245881432
+      Character_Skintones_151: 7963185150215375153
+      Character_Skintones_152: 3814615745967503134
+      Character_Skintones_153: 1473346693927678131
+      Character_Skintones_154: -1657668599406517131
+      Character_Skintones_155: 6047149609524930003
+      Character_Skintones_156: 9085666845929217164
+      Character_Skintones_157: 4938080501638548472
+      Character_Skintones_158: 2128250048666768201
+      Character_Skintones_159: -4592760344659110280
+      Character_Skintones_160: -471313776
+      Character_Skintones_161: 1714228134
+      Character_Skintones_162: 4847964873970835446
+      Character_Skintones_163: 3557646857933699735
+      Character_Skintones_164: -8733957393348574663
+      Character_Skintones_165: -1403822028673009303
+      Character_Skintones_166: 1685644912092913235
+      Character_Skintones_167: -3913081093426105533
+      Character_Skintones_168: 9145932042824017032
+      Character_Skintones_169: -8694121037475211105
+      Character_Skintones_170: 9106909892944998933
+      Character_Skintones_171: 58227835347618971
+      Character_Skintones_172: -7234989355114297990
+      Character_Skintones_173: 3160668717154769472
+      Character_Skintones_174: 4738017156437493209
+      Character_Skintones_175: -8429496450888602432
+      Character_Skintones_176: -5869140938635397219
+      Character_Skintones_177: 6005182323241989289
+      Character_Skintones_178: 819033498200317744
+      Character_Skintones_179: -8416516721651129271
+      Character_Skintones_18: -465720871
+      Character_Skintones_180: -1463110017
+      Character_Skintones_181: 132819929
+      Character_Skintones_182: -6657571098211632584
+      Character_Skintones_183: 2341353881853890714
+      Character_Skintones_184: -8392220219517450341
+      Character_Skintones_185: 164269570825590361
+      Character_Skintones_186: 878332066516464491
+      Character_Skintones_187: 3635381846255215352
+      Character_Skintones_188: 6052568376106570382
+      Character_Skintones_189: -5346973068572052586
+      Character_Skintones_19: 437165240
+      Character_Skintones_190: -7356804763348082888
+      Character_Skintones_191: -6159394995609443066
+      Character_Skintones_192: -3111605077434283437
+      Character_Skintones_193: -476093357004299060
+      Character_Skintones_194: 406602404531691867
+      Character_Skintones_195: 3409699063628573490
+      Character_Skintones_196: -7888073265014381613
+      Character_Skintones_197: -2197191158448513367
+      Character_Skintones_198: -8793733941818982528
+      Character_Skintones_199: 9197044676503824243
+      Character_Skintones_20: -1159006746
+      Character_Skintones_200: 1939250615
+      Character_Skintones_201: 1958969232
+      Character_Skintones_202: 7149401873860224921
+      Character_Skintones_203: 415355808474176056
+      Character_Skintones_204: -1492224532304572497
+      Character_Skintones_205: -2209297976279554386
+      Character_Skintones_206: 13882854948368126
+      Character_Skintones_207: -5016847864405146956
+      Character_Skintones_208: 2172659654527163878
+      Character_Skintones_209: 1077798082875902998
+      Character_Skintones_21: -743518758
+      Character_Skintones_210: -6637589147871301784
+      Character_Skintones_211: 364136185717845052
+      Character_Skintones_212: -5082829187053299018
+      Character_Skintones_213: -2036321398663588471
+      Character_Skintones_214: -4472197791387123915
+      Character_Skintones_215: 2184864980143019586
+      Character_Skintones_22: 54507829
+      Character_Skintones_23: 558181317
+      Character_Skintones_24: -1056384779
+      Character_Skintones_25: 1180445027
+      Character_Skintones_26: -1414194079
+      Character_Skintones_27: 1605454668
+      Character_Skintones_28: 306928981
+      Character_Skintones_29: 1036885301
+      Character_Skintones_30: -227603567
+      Character_Skintones_31: -1618532045
+      Character_Skintones_32: 433925739
+      Character_Skintones_33: 1680976514
+      Character_Skintones_34: 951313792
+      Character_Skintones_35: -1637620635
+      Character_Skintones_36: 1604021273
+      Character_Skintones_37: -646857145
+      Character_Skintones_38: 344794315
+      Character_Skintones_39: -592468874
+      Character_Skintones_40: 189730336
+      Character_Skintones_41: -654359302
+      Character_Skintones_42: 854359258
+      Character_Skintones_43: 682323956
+      Character_Skintones_44: -845174519
+      Character_Skintones_45: -1669064675
+      Character_Skintones_46: -131953488
+      Character_Skintones_47: -356244982
+      Character_Skintones_48: 1316300987
+      Character_Skintones_49: -943361015
+      Character_Skintones_50: 577842220
+      Character_Skintones_51: 1835503249
+      Character_Skintones_52: 1828266616
+      Character_Skintones_53: -1905272562
+      Character_Skintones_54: -1784537428
+      Character_Skintones_55: 1533982937
+      Character_Skintones_56: 433502284
+      Character_Skintones_57: 854429593
+      Character_Skintones_58: 304288287
+      Character_Skintones_59: 1342738206
+      Character_Skintones_60: -911474810
+      Character_Skintones_61: -333979523
+      Character_Skintones_62: -1801214981
+      Character_Skintones_63: 1379353363
+      Character_Skintones_64: 953613751
+      Character_Skintones_65: 512219312
+      Character_Skintones_66: -1589723528
+      Character_Skintones_67: 1163991709
+      Character_Skintones_68: -1733641950
+      Character_Skintones_69: 812471086
+      Character_Skintones_70: -270798155
+      Character_Skintones_71: 925310865
+      Character_Skintones_72: -126915835
+      Character_Skintones_73: -467870955
+      Character_Skintones_74: 980716097
+      Character_Skintones_75: -1103215884
+      Character_Skintones_76: 390595085
+      Character_Skintones_77: 1511709958
+      Character_Skintones_78: -1877681418
+      Character_Skintones_79: -53596975
+      Character_Skintones_80: -1926651762
+      Character_Skintones_81: 295475582
+      Character_Skintones_82: -4524687302203393992
+      Character_Skintones_83: 5066481549728120124
+      Character_Skintones_84: 6668108333230158479
+      Character_Skintones_85: 9054780581911740532
+      Character_Skintones_86: 6481823495818378606
+      Character_Skintones_87: 8304448396752643003
+      Character_Skintones_88: 4721274858731686452
+      Character_Skintones_89: -2194413193089754916
+      Character_Skintones_90: 645810828424922740
+      Character_Skintones_91: 3556137001151119549
+      Character_Skintones_92: 6409084430216724296
+      Character_Skintones_93: -8630112390669778142
+      Character_Skintones_94: -4416833604280453133
+      Character_Skintones_95: -4391578741312359542
+      Character_Skintones_96: 8185514951757315578
+      Character_Skintones_97: 5313582181258645645
+      Character_Skintones_98: 6325384518717207954
+      Character_Skintones_99: 5957324556760849268
+      Idle 1: -114221796
+      Idle 2: -631284205
+      Jump 1: 1988168409
+      Jump 2: -441000081
+      Jump 3: 325370056
+      Jump 4: -13339975
+      Jump 5: 1033726069
+      Jump 6: 1874697867
+      Move 1: -317307137
+      Move 10: 459631681
+      Move 2: -161285600
+      Move 3: -896789001
+      Move 4: -935799355
+      Move 5: -1704991683
+      Move 6: 790107582
+      Move 7: 820349611
+      Move 8: -1473457244
+      Move 9: -250448449
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

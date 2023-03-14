@@ -127,7 +127,1225 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 225
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589af8cc0be5d6a41aef4a8d7a82edaa
+      internalID: 1227748299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 225
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ca100991d589c4e91c049447ca4df2
+      internalID: -1991500445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 224
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0200cf2499426294e88091b8ac1454c5
+      internalID: 1719146661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 226
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f754d858a4a52f34ba82b9eb9893d86e
+      internalID: 1235125375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 224
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c5d5d0308290f4e92152aa3b187859
+      internalID: -1681012487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Tree 1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 224
+        width: 50
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad91e9d33963c554ab1b2d8dc6ab899c
+      internalID: -1915406937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Tree 2
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 226
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276fceba43b22f34f85207c2e86c8999
+      internalID: 1512112987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_7
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 228
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0675380f5530b4ab43af2f505b86c7
+      internalID: 177218952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 194
+        width: 92
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73716babfd675da438bea39bc299bd0a
+      internalID: -1262490633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 194
+        width: 100
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b70f5b20d412848bd4ac51e49048eb
+      internalID: -1665558482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 193
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2057c6b50d967546a9a6553705782f2
+      internalID: 1996420960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_11
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 193
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8e661554bceb848853a92e3096d3d6
+      internalID: -80800511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 192
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ecce08b95992c4485ad007e621ed62
+      internalID: 896695555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_13
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 194
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593d253ca83d5cc418a45f7d09b9ad99
+      internalID: 2137773270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_14
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 194
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2778032d1ddb7ff449be23fe3f53540a
+      internalID: 918267324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_15
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 196
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec063118383c54246857857f427b86d2
+      internalID: 568120751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_16
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 187
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b47450ccdab70346988f8eb0d7d0d07
+      internalID: -1654249428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 166
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5705ab2acee2ba459aaebeb0aa71b86
+      internalID: -1868062113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 167
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765eed64aeafec441803e9eade9cf1db
+      internalID: 809351041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 168
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc2fe68ed332be43943e049175a7351
+      internalID: -313525622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 167
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd062077cdca1e841a8b7f85dd72e136
+      internalID: -418055715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_21
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 168
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c573c8d50b2e28f45bc50a31cd13d525
+      internalID: -1028260007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_22
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 167
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c809c4dd35a85b6449adb1daa633cae6
+      internalID: 250196417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_23
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 165
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a12f08b9130644adfc9d85a8e92b3
+      internalID: 2010089984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_24
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 166
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ee4be7d5030344881221ece33c555a
+      internalID: 976162859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_25
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 165
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ed712d138c7044cacea3f036dedcbb
+      internalID: -1268176041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_26
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 162
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ed1edf4769907488e5914ae11fe04d
+      internalID: 512227009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 140
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0178caf6a74134688bbabebff0c28e
+      internalID: 823974058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_28
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 141
+        width: 17
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119f1d5d486f5d24c99044665a27a801
+      internalID: -707809184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_29
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 139
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602d2c12881bbf64496c3fbacb2dd917
+      internalID: 307933038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_30
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 140
+        width: 22
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c6600f09562604296e7ab95ec19722
+      internalID: 1089805035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_31
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 133
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db75a75c5c4d4f543a6e5699c7de0bc2
+      internalID: -1411732033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_32
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 134
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a4a8021e12abe499c759565363a2bc
+      internalID: -1614770678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_33
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 134
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04807d24dc774a348a799377d0f2e33e
+      internalID: 726765952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 134
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b966408c1e5f4f438bc6ce150bbd5b7
+      internalID: -1596259082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_35
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 132
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df301f2840d44804faa6a01b132a6f8b
+      internalID: -659035473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_36
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 102
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f0d0743e82b4243ae9c0d41ee6b190
+      internalID: -1409562034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_37
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 99
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f3bd6107a177547a60e2e4f441961c
+      internalID: 415700393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_38
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 98
+        width: 46
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e37ec88843456b4d9e6f4b1498f6eda
+      internalID: -41222011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_39
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 103
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8366d3923ac524b9e1c66132fda966
+      internalID: -1992156276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_40
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 106
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb653b9fb21258348ae31b7b509cc1f6
+      internalID: -911365035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_41
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 102
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feb72bd62798d846a379c537de20855
+      internalID: 272587610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_42
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 98
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d382139a1a6bca24e9f36f920ce6dc1e
+      internalID: 828546894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_43
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 100
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83d38ebf77cec2409b4a747ca937557
+      internalID: 378188224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 75
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13676b282bb284438203778d20d5fee
+      internalID: 1702035708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_45
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 71
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5d5d4e232935d41ba30da34fcea283
+      internalID: -104879413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_46
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 75
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b81e76af0624148a9e5b6bf90a9cf2
+      internalID: -1400846513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_47
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 75
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260f2f12c2675234e8b54f47b9487d89
+      internalID: -1486489717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_48
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 72
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d1a94f38c39d74bbe80dd6a7cf88f7
+      internalID: -1851805700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_49
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 71
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324d1221ed100254bb7f07f82fcef6d3
+      internalID: -775961580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_50
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 71
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0be9285d78f77a4fbdbd2519f3df1cf
+      internalID: 832864188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_51
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 71
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5853bf6d83c64b04982d1748269ea893
+      internalID: 733203806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_52
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 49
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a579dd7a6e55ec142ac92bf1a864b857
+      internalID: 206642180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_53
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2
+        width: 20
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4217159cb6332044b065d15733cbe94
+      internalID: -1429080298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_54
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bc07293e8ac5a47a3a8183ba1c96b2
+      internalID: -296080891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_55
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33b9ed0ee75fcd43a8cefb4e808c4c5
+      internalID: 1032150273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_56
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c5b18b4f8b73246b35d8df0df8381d
+      internalID: 1748791403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snowy Arctic Objects_57
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c061b392da5004c86f00ff71b5023f
+      internalID: -1097142689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -139,7 +1357,64 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snowy Arctic Tileset_0: 585703253
+      Snowy Arctic Objects_0: 1227748299
+      Snowy Arctic Objects_1: -1991500445
+      Snowy Arctic Objects_10: 1996420960
+      Snowy Arctic Objects_11: -80800511
+      Snowy Arctic Objects_12: 896695555
+      Snowy Arctic Objects_13: 2137773270
+      Snowy Arctic Objects_14: 918267324
+      Snowy Arctic Objects_15: 568120751
+      Snowy Arctic Objects_16: -1654249428
+      Snowy Arctic Objects_17: -1868062113
+      Snowy Arctic Objects_18: 809351041
+      Snowy Arctic Objects_19: -313525622
+      Snowy Arctic Objects_2: 1719146661
+      Snowy Arctic Objects_20: -418055715
+      Snowy Arctic Objects_21: -1028260007
+      Snowy Arctic Objects_22: 250196417
+      Snowy Arctic Objects_23: 2010089984
+      Snowy Arctic Objects_24: 976162859
+      Snowy Arctic Objects_25: -1268176041
+      Snowy Arctic Objects_26: 512227009
+      Snowy Arctic Objects_27: 823974058
+      Snowy Arctic Objects_28: -707809184
+      Snowy Arctic Objects_29: 307933038
+      Snowy Arctic Objects_3: 1235125375
+      Snowy Arctic Objects_30: 1089805035
+      Snowy Arctic Objects_31: -1411732033
+      Snowy Arctic Objects_32: -1614770678
+      Snowy Arctic Objects_33: 726765952
+      Snowy Arctic Objects_34: -1596259082
+      Snowy Arctic Objects_35: -659035473
+      Snowy Arctic Objects_36: -1409562034
+      Snowy Arctic Objects_37: 415700393
+      Snowy Arctic Objects_38: -41222011
+      Snowy Arctic Objects_39: -1992156276
+      Snowy Arctic Objects_4: -1681012487
+      Snowy Arctic Objects_40: -911365035
+      Snowy Arctic Objects_41: 272587610
+      Snowy Arctic Objects_42: 828546894
+      Snowy Arctic Objects_43: 378188224
+      Snowy Arctic Objects_44: 1702035708
+      Snowy Arctic Objects_45: -104879413
+      Snowy Arctic Objects_46: -1400846513
+      Snowy Arctic Objects_47: -1486489717
+      Snowy Arctic Objects_48: -1851805700
+      Snowy Arctic Objects_49: -775961580
+      Snowy Arctic Objects_50: 832864188
+      Snowy Arctic Objects_51: 733203806
+      Snowy Arctic Objects_52: 206642180
+      Snowy Arctic Objects_53: -1429080298
+      Snowy Arctic Objects_54: -296080891
+      Snowy Arctic Objects_55: 1032150273
+      Snowy Arctic Objects_56: 1748791403
+      Snowy Arctic Objects_57: -1097142689
+      Snowy Arctic Objects_7: 177218952
+      Snowy Arctic Objects_8: -1262490633
+      Snowy Arctic Objects_9: -1665558482
+      Snowy Tree 1: -1915406937
+      Snowy Tree 2: 1512112987
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

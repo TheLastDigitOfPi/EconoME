@@ -11,13 +11,13 @@ public class SlotItemEditor : Editor
 
         InventorySlotHandler handler = (InventorySlotHandler)target;
 
-        if(GUILayout.Button("Force Scriptable Item data to Slot"))
+        if (GUILayout.Button("Force Scriptable Item data to Slot"))
         {
-            if(handler.ForceSlotItem == null) {return;}
+            if (handler.ForceSlotItem == null) { return; }
             handler.ItemSlot.Item = handler.ForceSlotItem.CreateItem();
             handler.UpdateSlot();
         }
-        
+
     }
 
 }
