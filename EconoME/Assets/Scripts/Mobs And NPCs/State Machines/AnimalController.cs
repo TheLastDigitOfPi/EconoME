@@ -169,7 +169,7 @@ public class Wander : IState
     {
         _animator.CrossFade(Hop, 0);
         TimeStuck = 0f;
-        movePos = _rigidBody.position + Extensions.GetRandomDir() * UnityEngine.Random.Range(1f, 2f);
+        movePos = _rigidBody.position + VectorExtensions.GetRandomDir() * UnityEngine.Random.Range(1f, 2f);
 
         _renderer.flipX = movePos.x > _controller.transform.position.x ? false : true;
 

@@ -6,7 +6,7 @@ public class RenderDistance : MonoBehaviour
 {
     // Render Distance Script. Should Enable/Disable Objects that are in view
 
-
+    /*
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -36,5 +36,5 @@ public class RenderDistance : MonoBehaviour
             collision.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
-
+    */
 }

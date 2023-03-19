@@ -24,6 +24,11 @@ public class TileGeneratorEditor : Editor
             generator.ClearTile();
         }
 
+        if (GUILayout.Button("Generate Tile From Settings"))
+        {
+            generator.GenerateTileFromSettings();
+        }
+
 
     }
 

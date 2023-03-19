@@ -228,11 +228,4 @@ public class PlayerMovementController : MonoBehaviour
 
 
 }
-public enum MoveDirection
-{
-    Up,
-    Down,
-    Right,
-    Left
-}
 

@@ -14,7 +14,7 @@ public class NPCScheduleHandler : MonoBehaviour
 
     private void Start()
     {
-        WorldTimeManager.Instance.OnGameTick += SearchForSchedule;
+        WorldTimeManager.OnGameTick += SearchForSchedule;
         Npc = GetComponent<NPC>();
     }
 
@@ -79,7 +79,7 @@ public class NPCScheduleHandler : MonoBehaviour
 
     private void OnDestroy()
     {
-        WorldTimeManager.Instance.OnGameTick -= SearchForSchedule;
+        WorldTimeManager.OnGameTick -= SearchForSchedule;
     }
 
     public bool GetTravelLocation(out WorldLocationData location)

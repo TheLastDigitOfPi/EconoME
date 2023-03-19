@@ -29,8 +29,3 @@ public class PlayerRequestsHandler : MonoBehaviour
     }
 }
 
-public class NPCRequest
-{
-
-}
-

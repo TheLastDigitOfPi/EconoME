@@ -55,189 +55,189 @@ MonoBehaviour:
         SlotNum: 0
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: 1
+          <ItemBase>k__BackingField: {fileID: 11400000, guid: a419d88daffb323499d458b180c8a716, type: 2}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929515
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 1
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929516
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 2
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929517
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 3
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: 1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929518
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 4
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: 1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929519
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 5
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929520
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 6
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929521
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 7
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929522
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 8
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929523
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 9
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929524
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 10
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929525
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 11
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929526
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 12
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929527
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 13
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929528
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 14
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929529
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 15
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929530
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 16
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929531
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 17
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929532
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 18
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929533
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 19
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929534
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 20
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929535
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 21
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929536
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 22
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1
     - rid: 975289009302929537
       type: {class: ItemSlot, ns: , asm: Assembly-CSharp}
       data:
         SlotNum: 23
         _inventoryGroup: {fileID: 11400000}
         _item:
-          ItemBase: {fileID: 0}
-          Stacksize: -1
+          <ItemBase>k__BackingField: {fileID: 0}
+          <Stacksize>k__BackingField: -1

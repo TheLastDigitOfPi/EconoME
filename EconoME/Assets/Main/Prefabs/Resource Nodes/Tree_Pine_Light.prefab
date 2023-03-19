@@ -194,7 +194,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5215204611617668498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be776b58923fb014db19a52dc8be33c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e769a9022cc36a43a40bd0db7a880d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!60 &8602807272677772333
@@ -314,23 +314,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 6191380992764978649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b208f0ece20d84da5dfbee49302d6b, type: 3}
+  m_Script: {fileID: 11500000, guid: c2aeee6faa1c9ad47bfa686325932714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   <NodeData>k__BackingField:
-    TilePos: 0
-    NodeType: {fileID: 11400000, guid: e59f3707c0ed1944988caf73d00df4e2, type: 2}
-    ToolNeeded: 0
-    NodePrefabID: 0
-    <MaxDrops>k__BackingField: 11
-    <DamagePerDrop>k__BackingField: 50
-    <TimeToHarvest>k__BackingField: 2
-    <ItemCountPerDrop>k__BackingField: {x: 4, y: 7}
-    <RemainingDrops>k__BackingField: 11
-  <NodeItem>k__BackingField: {fileID: 11400000, guid: 5bd94fd8acecc9b45ac5db9641ab0122, type: 2}
-  WorldItemPrefab: {fileID: 3011172760107893553, guid: 505d21ba72a588d438a1fca37c671914, type: 3}
+    <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
+    <TilePos>k__BackingField: {x: 0, y: 0}
+    <MaxDrops>k__BackingField: 10
+    <RemainingDrops>k__BackingField: 10
   BreakAnimation: {fileID: -5591905523380219499, guid: e072e51d1ced77149a98a92b2b59ce30, type: 3}
   HitAnimation: {fileID: -5591905523380219499, guid: 9d7dd0481f7b71f4982ce2c4b38c04a8, type: 3}
+  animationOffset: {x: 0, y: 0.2, z: 0}
   IndicatorPrefab: {fileID: 1473513973526449437, guid: 22f1689e9bcb9c141bc21382aa0a5bab, type: 3}
   IndicatorPosition: {fileID: 8109335824126405321}
-  animationOffset: {x: 0, y: 0.2, z: 0}
+  <IndicatorIcon>k__BackingField: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}

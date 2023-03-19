@@ -81,23 +81,6 @@ public class NPC : MonoBehaviour, IAmInteractable
     }
 }
 
-public class NPCDialogHandler : MonoBehaviour
-{
-    /*
-     This class is possibly not required, as we may want to place the logic for determining the 
-     
-     
-     */
-    [SerializeField] NPCInteractionSet PossibleInteractions;
-
-    public bool TryGetInteraction(NPCBase NPCData, out Interaction[] foundSet)
-    {
-        foundSet = null;
-        return false;
-    }
-
-}
-
 /* NPC Dialog Determiner
  * No Recent Chat Base - "Hey, how's it going?"
  * Recent Chat Base - "What the frick you already talked to me"

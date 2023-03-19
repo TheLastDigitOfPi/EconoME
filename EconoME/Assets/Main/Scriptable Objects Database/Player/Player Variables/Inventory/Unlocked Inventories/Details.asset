@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsUnlocked>k__BackingField: 1
   TabSide: 0
-  <TabSprite>k__BackingField: {fileID: -513960188, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
+  <TabSprite>k__BackingField: {fileID: -649272767, guid: 53f10efa3da72a04d99c1c24b84ed853, type: 3}
   ConnectedPage: {fileID: 0}

@@ -10344,7 +10344,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 1
 --- !u!95 &3564195801097079293
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10361,7 +10361,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7735135206798743149
 GameObject:
   m_ObjectHideFlags: 0
@@ -10420,7 +10420,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7735135206798743149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ef1b6acb723fb46ae8cff723e9d101, type: 3}
+  m_Script: {fileID: 11500000, guid: 1450ba4838960984cba6f2bd17a38b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8052193702867700607
@@ -10647,7 +10647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb369f24dcb8942ad0405eefe90007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <IsTryingToRun>k__BackingField: 0
+  <PlayerSprinting>k__BackingField: 0
   <UsingTool>k__BackingField: 0
   <MoveVec>k__BackingField: {x: 0, y: 0}
   _baseSpeed: 2
@@ -10778,7 +10778,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8690959731749307699}
-  - component: {fileID: 7735135204878532913}
   m_Layer: 0
   m_Name: New Character
   m_TagString: Player Parent
@@ -10802,21 +10801,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7735135204878532913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8690959731749307696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc26d2298a6d9c48b149632ec6712d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <InventoryVariables>k__BackingField:
-    <CurrentOpenInventories>k__BackingField: []
-  Something: 5
 --- !u!1 &8894775582747584074
 GameObject:
   m_ObjectHideFlags: 0

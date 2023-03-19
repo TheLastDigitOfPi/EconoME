@@ -42,10 +42,3 @@ public class PlayerCombatController : MonoBehaviour
         return false;
     }
 }
-
-
-
-public class DamageInstance
-{
-
-}

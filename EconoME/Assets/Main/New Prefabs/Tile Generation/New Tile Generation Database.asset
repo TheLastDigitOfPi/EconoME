@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3c08d264c76c54c8ca68887506e8ef, type: 3}
+  m_Name: New Tile Generation Database
+  m_EditorClassIdentifier: Assembly-CSharp::TileGenerationDatabase
+  TileBaseSettings:
+  - <BiomeType>k__BackingField: 3
+    <Cliffs>k__BackingField: {fileID: 11400000, guid: 94820893228cc864ab18b3e3e8b7506a, type: 2}
+    <Grass>k__BackingField: {fileID: 11400000, guid: 834475e99c8c0b642abb4480dcaaa13b, type: 2}
+    <Water>k__BackingField: {fileID: 11400000, guid: a44b99c6019446543b1f17980df44a04, type: 2}
+  - <BiomeType>k__BackingField: 0
+    <Cliffs>k__BackingField: {fileID: 11400000, guid: 9097a98238917084890a3e0d283c6f18, type: 2}
+    <Grass>k__BackingField: {fileID: 11400000, guid: 0d842a3e04ab4074f9c7065ac2380662, type: 2}
+    <Water>k__BackingField: {fileID: 11400000, guid: 0a13ae238521b314dba04eae5ec4be3d, type: 2}
+  - <BiomeType>k__BackingField: 2
+    <Cliffs>k__BackingField: {fileID: 11400000, guid: ed4acc949f8cc0b4d823f9349eb0c7f7, type: 2}
+    <Grass>k__BackingField: {fileID: 11400000, guid: 74995e98c43b637498178f2c744122d8, type: 2}
+    <Water>k__BackingField: {fileID: 11400000, guid: 0a13ae238521b314dba04eae5ec4be3d, type: 2}
+  - <BiomeType>k__BackingField: 4
+    <Cliffs>k__BackingField: {fileID: 11400000, guid: 168579f2ff4afed46a49ca408381ee29, type: 2}
+    <Grass>k__BackingField: {fileID: 11400000, guid: bb77c14728019f14aa89d6877e30138a, type: 2}
+    <Water>k__BackingField: {fileID: 11400000, guid: 0a13ae238521b314dba04eae5ec4be3d, type: 2}
+  - <BiomeType>k__BackingField: 5
+    <Cliffs>k__BackingField: {fileID: 11400000, guid: f71ba25fd4d4a0842808bde65440dd96, type: 2}
+    <Grass>k__BackingField: {fileID: 0}
+    <Water>k__BackingField: {fileID: 11400000, guid: 6a9086684b107614aaac98c34c657850, type: 2}
