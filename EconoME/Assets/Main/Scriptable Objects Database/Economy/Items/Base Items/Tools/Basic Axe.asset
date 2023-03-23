@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Basic Axe
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Basic Axe
-  <Icon>k__BackingField: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+  <ForegroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 21300000, guid: 8708d80070522a043a1ab6a2b2775382, type: 3}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <BackgroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 0}
+  <EffectIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
   <IconPath>k__BackingField: 
   <Weight>k__BackingField: 100
   <ItemType>k__BackingField: 1

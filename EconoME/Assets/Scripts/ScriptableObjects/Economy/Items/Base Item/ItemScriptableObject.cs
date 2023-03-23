@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-
 public abstract class ItemBase : ScriptableObject
 {
     [field: SerializeField] public string ItemName { get; private set; }
-    [field: SerializeField] public Sprite Icon { get; private set; }
+    [field: SerializeField] public ItemIcon ForegroundIcon { get; private set; }
+    [field: SerializeField] public ItemIcon BackgroundIcon { get; private set; }
+    [field: SerializeField] public ItemIcon EffectIcon { get; private set; }
     [field: SerializeField] public string IconPath { get; private set; }
     [field: SerializeField] public int Weight { get; private set; }
     [field: SerializeField] public ItemType ItemType { get; protected set; }
@@ -33,7 +34,6 @@ public abstract class ItemBase : ScriptableObject
             return EconomyData.multiplier.Multiplier;
         }
     }
-
 
 }
 

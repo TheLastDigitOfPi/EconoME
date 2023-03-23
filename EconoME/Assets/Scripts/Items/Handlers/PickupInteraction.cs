@@ -91,7 +91,7 @@ public class PickupInteraction : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (CanBePickedUp && !handler.SetForRemoval)
+        if (CanBePickedUp && !handler.SetForRemoval && !handler.PickupByPlayer)
         {
             if (collision.CompareTag("Player"))
             {
@@ -99,6 +99,7 @@ public class PickupInteraction : MonoBehaviour
                 {
                     GroundItemManager.Instance.ItemRemoved(handler);
                     handler.PickupByPlayer = true;
+                    return;
                 }
 
                 handler.UpdateText();

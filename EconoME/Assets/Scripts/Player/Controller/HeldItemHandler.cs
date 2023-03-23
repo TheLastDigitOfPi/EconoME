@@ -7,8 +7,10 @@ public class HeldItemHandler : MonoBehaviour
     public static HeldItemHandler Instance;
 
     //Local
-    [SerializeField] SpriteRenderer frontIcon;
-    [SerializeField] SpriteRenderer backIcon;
+    [SerializeField] SpriteRenderer frontIconForeground;
+    [SerializeField] SpriteRenderer frontIconBackground;
+    [SerializeField] SpriteRenderer backIconForeground;
+    [SerializeField] SpriteRenderer backIconBackground;
     [SerializeField] SpriteMask spriteMask;
 
     Color ORIGINAL_BACK_COLOR = new Color(1, 1, 1, 120 / 255f);
@@ -21,15 +23,17 @@ public class HeldItemHandler : MonoBehaviour
             return;
         }
         Instance = this;
-        frontIcon.sprite = default;
-        backIcon.sprite = default;
+        frontIconForeground.sprite = default;
+        frontIconBackground.sprite = default;
+        backIconForeground.sprite = default;
+        backIconBackground.sprite = default;
     }
 
     private void Start()
     {
         HotBarHandler.Instance.OnItemSelect += SelectItem;
         HotBarHandler.Instance.OnItemDeselect += DeSelectItem;
-        spriteMask.localBounds = frontIcon.localBounds;
+        spriteMask.localBounds = frontIconForeground.localBounds;
     }
 
     private void OnDestroy()
@@ -40,25 +44,52 @@ public class HeldItemHandler : MonoBehaviour
 
     private void DeSelectItem()
     {
-        frontIcon.sprite = default;
-        frontIcon.color = Color.clear;
-        backIcon.sprite = default;
-        backIcon.color = Color.clear;
+
+        frontIconForeground.sprite = default;
+        frontIconBackground.sprite = default;
+        backIconForeground.sprite = default;
+        backIconBackground.sprite = default;
+
+        frontIconForeground.color = Color.clear;
+        frontIconBackground.color = Color.clear;
+        backIconForeground.color = Color.clear;
+        backIconBackground.color = Color.clear;
     }
 
     private void SelectItem()
     {
+        DeSelectItem();
         if (HotBarHandler.GetCurrentSelectedItem(out Item foundItem))
         {
-            var icon = foundItem.ItemBase.Icon;
-            frontIcon.sprite = icon;
-            frontIcon.color = Color.white;
-            backIcon.sprite = icon;
-            backIcon.color = ORIGINAL_BACK_COLOR;
+            var iconBase = foundItem.ItemBase.ForegroundIcon;
+            var icon = iconBase.Icon;
 
-            Vector2 ScaledObjectValue = new Vector2(16 / icon.texture.width, 16 / icon.texture.height);
-            frontIcon.transform.localScale = ScaledObjectValue;
-            backIcon.transform.localScale = ScaledObjectValue;
+
+            frontIconForeground.sprite = icon;
+            backIconForeground.sprite = icon;
+            backIconForeground.color = iconBase.IconColor;
+            frontIconForeground.color = iconBase.IconColor;
+
+            if (foundItem.ItemBase.BackgroundIcon.Icon != null)
+            {
+                var backIconBase = foundItem.ItemBase.BackgroundIcon;
+                var backIcon = backIconBase.Icon;
+
+                frontIconBackground.sprite = backIcon;
+                backIconBackground.sprite = backIcon;
+
+                frontIconBackground.color = backIconBase.IconColor;
+                backIconBackground.color = backIconBase.IconColor;
+            }
+
+            Vector2 ScaledObjectValue = new Vector2(16f / (icon.bounds.size.x * icon.pixelsPerUnit), 16f/ (icon.bounds.size.y * icon.pixelsPerUnit));
+            
+            frontIconForeground.transform.localScale = ScaledObjectValue;
+            backIconForeground.transform.localScale = ScaledObjectValue;
+
+            frontIconBackground.transform.localScale = ScaledObjectValue;
+            backIconBackground.transform.localScale = ScaledObjectValue;
+            
             spriteMask.transform.localScale = ScaledObjectValue / 2;
 
         }

@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
@@ -7997,60 +7997,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 672
-        y: 288
-        width: 96
-        height: 96
+        y: 306
+        width: 97
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 32, y: 0, z: 31, w: 0}
+      border: {x: 13, y: 0, z: 20, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f0342bef708918047bf082a521ce57ff
       internalID: 250546805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_523
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f39d9178a23c874ca5ce804f91d1d3a
-      internalID: -149585509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_524
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a830dd2170237c439b692cdd02795d3
-      internalID: 967241540
       vertices: []
       indices: 
       edges: []
@@ -8077,7 +8035,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_526
+      name: Vertical Dock
       rect:
         serializedVersion: 2
         x: 1184
@@ -8329,69 +8287,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_542
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c04e03c94989f57458d643799caefaa6
-      internalID: -1335809984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_543
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b968dd8ff2eaeb74a9dadb7118e4336e
-      internalID: 1978965923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_544
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5d3cddf0468a234d9f07354f779390e
-      internalID: -467161070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Town Tileset v1.4_545
       rect:
         serializedVersion: 2
@@ -8471,27 +8366,6 @@ TextureImporter:
       bones: []
       spriteID: 63292af33d0ba3a4285c4a9328bd23ff
       internalID: 1570789645
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_549
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c5be1353a3413946a51862004e9571c
-      internalID: -1192070871
       vertices: []
       indices: 
       edges: []
@@ -8597,69 +8471,6 @@ TextureImporter:
       bones: []
       spriteID: 497b5613759655843a8c4926c20349d0
       internalID: 438577576
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_561
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6f42b0b6360dd94899cf8798f41cf66
-      internalID: -456322985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_562
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e16d3e8e444a2994ea02a0237bdb7391
-      internalID: -1234597293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_563
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ad0f2ed0ca41b24b8ca9fcc4a218bd4
-      internalID: -1681125314
       vertices: []
       indices: 
       edges: []
@@ -8828,27 +8639,6 @@ TextureImporter:
       bones: []
       spriteID: 3613247cfdb53dc468dec8b3d6262d10
       internalID: 182982539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_572
-      rect:
-        serializedVersion: 2
-        x: 1184
-        y: 288
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 955b9a64ca70db048b387dac3ee38cf7
-      internalID: 1119082410
       vertices: []
       indices: 
       edges: []
@@ -9106,58 +8896,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Town Tileset v1.4_588
+      name: Verticle Bridge
       rect:
         serializedVersion: 2
-        x: 768
+        x: 793
         y: 256
-        width: 32
-        height: 32
+        width: 46
+        height: 103
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 204dc06de08050c4d826396e5c369450
-      internalID: 120879024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_589
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b8afbe3f11576d458a4017efdde8d88
-      internalID: -1567363796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Town Tileset v1.4_590
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 256
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 43, z: 0, w: 32}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -12633,6 +12381,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Vetical Dock 2
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 19
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 1, z: 0, w: 1}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b5bfaa10643a847be1b216188abe36
+      internalID: 991712194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizonatal Dock
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 14
+        width: 65
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 11, y: 0, z: 11, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8356af3e62fc4894d854c6cdc33e3b7c
+      internalID: 1191549651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Verticle dock 3
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 15
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 13, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b2775bd0cea7846836b03e94fbad56
+      internalID: -1256248566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -12730,6 +12541,7 @@ TextureImporter:
       Hedge TL: -1320095643
       Hedge TR: -1730000693
       Hedge Top: -659742910
+      Horizonatal Dock: 1191549651
       House 1: -834972456
       House 10: 875018131
       House 11: -1232191462
@@ -13223,7 +13035,6 @@ TextureImporter:
       Town Tileset v1.4_523: -149585509
       Town Tileset v1.4_524: 967241540
       Town Tileset v1.4_525: 1128770410
-      Town Tileset v1.4_526: 1748681725
       Town Tileset v1.4_527: 1284630457
       Town Tileset v1.4_528: -1273971411
       Town Tileset v1.4_534: 1763574799
@@ -13271,7 +13082,6 @@ TextureImporter:
       Town Tileset v1.4_588: 120879024
       Town Tileset v1.4_589: 685133071
       Town Tileset v1.4_59: -74330084
-      Town Tileset v1.4_590: 514690703
       Town Tileset v1.4_591: -1527501192
       Town Tileset v1.4_592: 125433291
       Town Tileset v1.4_593: -367895283
@@ -13402,6 +13212,10 @@ TextureImporter:
       Town Tileset v1.4_95: 1452023830
       Town Tileset v1.4_96: -553265538
       Town Tileset v1.4_97: -1863208370
+      Vertical Dock: 1748681725
+      Verticle Bridge: 514690703
+      Verticle dock 3: -1256248566
+      Vetical Dock 2: 991712194
       Windmill: -1086770820
       Wood Fence B: -261902097
       Wood Fence BL: -1653626891

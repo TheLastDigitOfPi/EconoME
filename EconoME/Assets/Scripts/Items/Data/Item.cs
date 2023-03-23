@@ -15,8 +15,9 @@ public class Item
     [field:SerializeField] public int Stacksize { get; set; } = -1;
     //Helpers
     public string ItemName { get { return ItemBase.ItemName; } }
-    public Sprite Icon { get { return ItemBase.Icon; } }
-    public string IconPath { get { return ItemBase.IconPath; } }
+    public ItemIcon ForegroundIcon { get { return ItemBase.ForegroundIcon; } }
+    public ItemIcon BackgroundIcon { get { return ItemBase.BackgroundIcon; } }
+    public ItemIcon EffectIcon { get { return ItemBase.EffectIcon; } }
     public int IndividualItemWeight { get { return ItemBase.Weight; } }
     public int StackWeight { get { return Stacksize * IndividualItemWeight; } }
 
@@ -61,8 +62,6 @@ public class Item
     {
         if (other.ItemBase != this.ItemBase)
             return false;
-
         return true;
     }
 }
-

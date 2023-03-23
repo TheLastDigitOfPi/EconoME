@@ -1206,8 +1206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <database>k__BackingField: {fileID: 11400000, guid: 54619a19c66c6e247ab001272648366f, type: 2}
   prefab: {fileID: 6318189044747741902, guid: 8ebfe4cf2db31aa4c928facceae70f5d, type: 3}
-  nodeSettings:
-  - {fileID: 11400000, guid: f9ba5fc132170024c8d100b18194ba9a, type: 2}
 --- !u!1 &1404008194
 GameObject:
   m_ObjectHideFlags: 0

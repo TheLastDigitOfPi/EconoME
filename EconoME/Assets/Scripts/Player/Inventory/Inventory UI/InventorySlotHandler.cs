@@ -21,7 +21,9 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
     [Space(10)]
     [Header("Visuals")]
     [SerializeField] TextMeshProUGUI itemCountText;
-    [SerializeField] Image image;
+    [SerializeField] Image _foregroundImage;
+    [SerializeField] Image ItemSlotEffect;
+    [SerializeField] Image _backgroundImage;
     [field: SerializeField] public Image BorderImage { get; private set; }
     [SerializeField] GameObject TileInspect;
 
@@ -77,13 +79,19 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
     {
         if (ItemSlot.HasItem)
         {
-            image.color = Color.white;
-            image.sprite = ItemBase.Icon;
+            _foregroundImage.color = ItemBase.ForegroundIcon.IconColor;
+            _foregroundImage.sprite = ItemBase.ForegroundIcon.Icon;
+            
+            _backgroundImage.color = ItemBase.BackgroundIcon.IconColor;
+            _backgroundImage.sprite = ItemBase.BackgroundIcon.Icon;
+            
             itemCountText.text = ItemSlot.StackSize > 1 ? ItemSlot.StackSize.ToString() : default;
             return;
         }
-        image.sprite = default;
-        image.color = Color.clear;
+        _foregroundImage.sprite = default;
+        _foregroundImage.color = Color.clear;
+        _backgroundImage.sprite = default;
+        _backgroundImage.color = Color.clear;
         itemCountText.text = default;
     }
 

@@ -10,7 +10,10 @@ public class InventoryObjectEditor : Editor
 
         var handler = (InventoryObject)target;
 
-        
+        if (GUILayout.Button("Add Test Item"))
+        {
+            handler.InsertItemToSlot();
+        }
     }
 
 }

@@ -40,4 +40,46 @@ public static class UnsortedExtensions
 
         return new Rect(min, size);
     }
+
+    public static Direction GridToDirection(this GridNeighborPos pos)
+    {
+        switch (pos)
+        {
+            case GridNeighborPos.TopLeft:
+                return Direction.Left;
+            case GridNeighborPos.Top:
+                return Direction.Up;
+            case GridNeighborPos.TopRight:
+                return Direction.Right;
+            case GridNeighborPos.Left:
+                return Direction.Left;
+            case GridNeighborPos.Right:
+                return Direction.Right;
+            case GridNeighborPos.BottomLeft:
+                return Direction.Left;
+            case GridNeighborPos.BottomRight:
+                return Direction.Right;
+            case GridNeighborPos.Bottom:
+                return Direction.Down;
+            default:
+                return Direction.Right;
+        }
+    }
+
+    public static Direction Inverse(this Direction direction)
+    {
+        switch (direction)
+        {
+            case Direction.Left:
+                return Direction.Right;
+            case Direction.Right:
+                return Direction.Left;
+            case Direction.Up:
+                return Direction.Down;
+            case Direction.Down:
+                return Direction.Up;
+            default:
+                return Direction.Right;
+        }
+    }
 }

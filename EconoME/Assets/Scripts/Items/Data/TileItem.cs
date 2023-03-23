@@ -12,26 +12,26 @@ public class TileItem : Item
     /// <summary>
     /// The seed for this specific tile. Used to generate the tile's visuals as well as locations that stuff can spawn on it
     /// </summary>
-    public int Seed { get; private set; }
+    [field: SerializeField] public int Seed { get; private set; }
 
     /// <summary>
     /// The settings of this current tile, updated as the game progresses
     /// </summary>
-    public TileSettings TileSettings { get; private set; }
+    [field: SerializeField] public TileSettings TileSettings { get; private set; }
 
 
-//Objects Currently on Tile
-    
+    //Objects Currently on Tile
+
     //Resource Nodes currently on tile
-    public List<ResourceNode> ResrouceNodesOnTile { get; private set; } = new();
+    [field: SerializeField] public List<ResourceNode> ResrouceNodesOnTile { get; private set; } = new();
 
     //Mobs currently on tile
 
     //Structures currently on tile
 
     //Data generated from seed
-    List<Vector2Int> _possibleNodePlacements;
-    
+    [SerializeField] List<Vector2Int> _possibleNodePlacements;
+
     float[,] _noise;
     bool _initialized = false;
     int _height;
@@ -59,9 +59,9 @@ public class TileItem : Item
 
         List<Vector2Int> possiblePlacements = new();
         var grassArea = TileSettings.GrassArea;
-        for (int x = 1; x < _width/2 - 1; x++)
+        for (int x = 1; x < _width / 2 - 1; x++)
         {
-            for (int y = 1; y < _height/2 - 1; y++)
+            for (int y = 1; y < _height / 2 - 1; y++)
             {
                 //Check if this spot can contain a tree
                 if (_noise[x, y] > grassArea)
@@ -100,6 +100,14 @@ public class TileItem : Item
 
     public TileItem(TileItem other) : base(other)
     {
+        this.TileSettings = other.TileSettings;
+        this._height = other._height;
+        this._width = other._width;
+        this._initialized = other._initialized;
+        this._noise = other._noise;
+        this._possibleNodePlacements = other._possibleNodePlacements;
+        this.ResrouceNodesOnTile = other.ResrouceNodesOnTile;
+        this.Seed = other.Seed;
     }
 
     public TileItem(TileSettings settings) : base(settings.ItemBase)
@@ -116,7 +124,10 @@ public class TileItem : Item
     }
 
 
-
+    public override Item Duplicate()
+    {
+        return new TileItem(this);
+    }
 
     public void OnGameTick()
     {

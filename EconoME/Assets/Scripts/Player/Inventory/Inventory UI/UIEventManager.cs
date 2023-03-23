@@ -24,7 +24,8 @@ public class UIEventManager : MonoBehaviour
 
     [field: SerializeField] public CanvasGroup MouseItemCanvas { get; private set; }
     [field: SerializeField] public TextMeshProUGUI ItemText { get; private set; }
-    [field: SerializeField] public Image ItemImage { get; private set; }
+    [field: SerializeField] public Image ItemImageForeground { get; private set; }
+    [field: SerializeField] public Image ItemImageBackground { get; private set; }
 
     [SerializeReference] private Item ItemOnMouse;
     public bool HoldingItem
@@ -81,9 +82,9 @@ public class UIEventManager : MonoBehaviour
             {
                 ItemOnMouse = null;
                 UpdateItemUI();
-                return;    
+                return;
             }
-            if(PartialAddition)
+            if (PartialAddition)
                 SlotClicked.SwapItem(ItemOnMouse, out ItemOnMouse);
             UpdateItemUI();
             return;
@@ -101,7 +102,7 @@ public class UIEventManager : MonoBehaviour
         //Item dropped into world
         if (!HoldingItem) { return; }
 
-        var mousePos =(Input.mousePosition);
+        var mousePos = (Input.mousePosition);
         mousePos.z = Camera.main.nearClipPlane;
         var worldPos = Camera.main.ScreenToWorldPoint(mousePos);
         worldPos.z = 0;
@@ -112,9 +113,12 @@ public class UIEventManager : MonoBehaviour
 
     void UpdateItemUI()
     {
-        ItemImage.sprite = HoldingItem ? ItemOnMouse.ItemBase.Icon : null;
+        ItemImageForeground.sprite = HoldingItem ? ItemOnMouse.ItemBase.ForegroundIcon.Icon == null ? null : ItemOnMouse.ItemBase.ForegroundIcon.Icon : null;
+        ItemImageBackground.sprite = HoldingItem ? ItemOnMouse.ItemBase.BackgroundIcon.Icon == null ? null : ItemOnMouse.ItemBase.BackgroundIcon.Icon : null;
+
         ItemText.text = HoldingItem ? ItemOnMouse.Stacksize > 1 ? ItemOnMouse.Stacksize.ToString() : default : default;
-        ItemImage.color = HoldingItem? Color.white : Color.clear;
+        ItemImageForeground.color = HoldingItem ? ItemOnMouse.ItemBase.ForegroundIcon.Icon == null ? Color.clear : ItemOnMouse.ItemBase.ForegroundIcon.IconColor : Color.clear;
+        ItemImageBackground.color = HoldingItem ? ItemOnMouse.ItemBase.BackgroundIcon.Icon == null ? Color.clear : ItemOnMouse.ItemBase.BackgroundIcon.IconColor : Color.clear;
         MouseItemCanvas.alpha = HoldingItem ? 1 : 0;
     }
 
@@ -123,9 +127,9 @@ public class UIEventManager : MonoBehaviour
         if (HoldingItem)
         {
             transform.position = Mouse.current.position.ReadValue() + new Vector2(15, 15);
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
-                if(!MouseOverUI)
+                if (!MouseOverUI)
                     DropItem();
             }
         }

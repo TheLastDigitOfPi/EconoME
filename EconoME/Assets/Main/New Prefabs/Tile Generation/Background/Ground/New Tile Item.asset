@@ -9,22 +9,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67601344576c7d24d842c87e5a7bfe3c, type: 3}
-  m_Name: Coal
+  m_Script: {fileID: 11500000, guid: 0c8b7ad15a382ce4da1fdf818fc1de79, type: 3}
+  m_Name: New Tile Item
   m_EditorClassIdentifier: 
-  <ItemName>k__BackingField: Coal
+  <ItemName>k__BackingField: Default Tile Base
   <ForegroundIcon>k__BackingField:
-    <Icon>k__BackingField: {fileID: 21300000, guid: 9c5f75faa4c63d4499e6694da108de76, type: 3}
-    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+    <Icon>k__BackingField: {fileID: -88482963, guid: eb7faa3e514300c4f9b334535d240431, type: 3}
+    <IconColor>k__BackingField: {r: 0.07450981, g: 0.5058824, b: 0.08235294, a: 1}
   <BackgroundIcon>k__BackingField:
-    <Icon>k__BackingField: {fileID: 0}
-    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 0}
+    <Icon>k__BackingField: {fileID: -60740134, guid: eb7faa3e514300c4f9b334535d240431, type: 3}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
   <EffectIcon>k__BackingField:
     <Icon>k__BackingField: {fileID: 0}
     <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
   <IconPath>k__BackingField: 
-  <Weight>k__BackingField: 1
-  <ItemType>k__BackingField: 2
+  <Weight>k__BackingField: 100
+  <ItemType>k__BackingField: 1
   EconomyData:
     BasePrice: 0
     Threshold: 1
@@ -36,5 +36,4 @@ MonoBehaviour:
     MaxInflationHits: 25
     TotalItemsSold: 0
     multiplier: {fileID: 0}
-  _resourceType: 1
-  _tier: 0
+  tileType: 0

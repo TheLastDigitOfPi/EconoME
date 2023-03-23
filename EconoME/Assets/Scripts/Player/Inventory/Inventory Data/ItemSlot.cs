@@ -7,7 +7,7 @@ public class ItemSlot
     public event Action OnItemChange;
     public int SlotNum;
     [SerializeField] InventoryObject _inventoryGroup;
-    [SerializeField] Item _item;
+    [SerializeReference] Item _item;
 
     public ItemSlot(int slotNum, InventoryObject inventory)
     {
@@ -15,8 +15,9 @@ public class ItemSlot
         SlotNum = slotNum;
     }
 
-    public void Initialize()
+    public void Initialize(InventoryObject inventory)
     {
+        _inventoryGroup = inventory;
         OnItemChange = null;
     }
 

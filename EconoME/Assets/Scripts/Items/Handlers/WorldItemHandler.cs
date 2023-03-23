@@ -10,13 +10,15 @@ using TMPro;
 public class WorldItemHandler : MonoBehaviour
 {
     //Public data
-    public WorldItemInstance data { get; private set; } = new WorldItemInstance();
+    [field: SerializeField] public WorldItemInstance data { get; private set; } = new WorldItemInstance();
     public bool SetForRemoval { get; private set; } = false;
     public bool PickupByPlayer { get; set; } = false;
-    
+
     //Local fields
     //Assign in editor
-    [SerializeField] Image _itemImage;
+    [SerializeField] Image _itemForegroundImage;
+    [SerializeField] Image _itemBackgroundImage;
+    [SerializeField] Image _itemEffectImage;
     [SerializeField] TextMeshProUGUI _itemCountText;
     [SerializeField] bool AllowCombining = false;
 
@@ -70,15 +72,19 @@ public class WorldItemHandler : MonoBehaviour
             Debug.LogWarning("Tried to update world item image but the item data was never instantiated");
             return;
         }
-        if (data.item.Icon != null)
+        if (data.item.ForegroundIcon != null)
         {
-            _itemImage.sprite = data.item.Icon;
-            _itemImage.color = new Color(_itemImage.color.r, _itemImage.color.g, _itemImage.color.b, 1);
+            _itemForegroundImage.sprite = data.item.ForegroundIcon.Icon;
+            _itemForegroundImage.color = data.item.ForegroundIcon.IconColor;
+            _itemBackgroundImage.sprite = data.item.BackgroundIcon.Icon;
+            _itemBackgroundImage.color = data.item.BackgroundIcon.IconColor;
             return;
         }
 
-        _itemImage.sprite = null;
-        _itemImage.color = new Color(_itemImage.color.r, _itemImage.color.g, _itemImage.color.b, 0);
+        _itemForegroundImage.sprite = default;
+        _itemForegroundImage.color = Color.clear;
+        _itemBackgroundImage.sprite = default;
+        _itemBackgroundImage.color = Color.clear;
 
     }
 

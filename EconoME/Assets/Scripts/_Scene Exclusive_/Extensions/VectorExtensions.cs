@@ -41,4 +41,48 @@ public static class VectorExtensions
     {
         return new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1.0f)).normalized;
     }
+
+    public static Vector2Int GetNeighborPos(this Vector2Int v, GridNeighborPos pos)
+    {
+        switch (pos)
+        {
+            case GridNeighborPos.Bottom:
+                return v + Vector2Int.down;
+            case GridNeighborPos.Top:
+                return v + Vector2Int.up;
+            case GridNeighborPos.Left:
+                return v + Vector2Int.left;
+            case GridNeighborPos.Right:
+                return v + Vector2Int.right;
+
+            case GridNeighborPos.TopLeft:
+                return v + Vector2Int.left + Vector2Int.up;
+            case GridNeighborPos.TopRight:
+                return v + Vector2Int.right + Vector2Int.up;
+            case GridNeighborPos.BottomLeft:
+                return v + Vector2Int.left + Vector2Int.down;
+            case GridNeighborPos.BottomRight:
+                return v + Vector2Int.right + Vector2Int.down;
+            default:
+                return v;
+        }
+    }
+
+    public static Vector2Int GetNeighborPos(this Vector2Int v, Direction direction)
+    {
+        switch (direction)
+        {
+            case Direction.Left:
+                return v + Vector2Int.left;
+            case Direction.Right:
+                return v + Vector2Int.right;
+            case Direction.Up:
+                return v + Vector2Int.up;
+            case Direction.Down:
+                return v + Vector2Int.down;
+            default:
+                return v + Vector2Int.right;
+        }
+        
+    }
 }

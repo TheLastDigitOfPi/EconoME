@@ -187,14 +187,27 @@ public class InventoryObject : ScriptableObject
             Data.ItemSlots = newSlotsArray;
         }
 
+        for (int i = 0; i < Data.ItemSlots.Length; i++)
+        {
+            Data.ItemSlots[i].SlotNum = i;
+        }
+
         InitializeSlots();
 
         void InitializeSlots()
         {
             foreach (var slot in Data.ItemSlots)
             {
-                slot.Initialize();
+                slot.Initialize(this);
             }
         }
+
+    }
+    [Header("Testing")]
+    [SerializeField] int SlotNum;
+    [SerializeField] DefinedScriptableItem item;
+    public void InsertItemToSlot()
+    {
+        AddItemToSlot(item.CreateItem(), SlotNum, out _);
     }
 }
