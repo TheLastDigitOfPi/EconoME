@@ -7,10 +7,7 @@ public class Helmet : Armor
     public Helmet(HelmetSriptableObject itemType) : base(itemType)
     {
     }
-    public Helmet()
-    {
-
-    }
+    
     public Helmet(Helmet helmet) : base(helmet)
     {
         Intelligence = helmet.Intelligence;

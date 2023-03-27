@@ -60,7 +60,7 @@ public class InventoryManager
                     if (CuurentSlot.ItemSlot.StackSize >= RemainingItems)
                     {
                         CuurentSlot.ItemSlot.StackSize -= RemainingItems;
-                        CuurentSlot.UpdateSlot();
+                        //CuurentSlot.UpdateSlot();
                         return true;
                     }
                     RemainingItems -= CuurentSlot.ItemSlot.StackSize;
@@ -99,7 +99,7 @@ public class InventoryManager
                 if (SlotsToLookThrough[i].ItemSlot.StackSize >= RemainingItems)
                 {
                     SlotsToLookThrough[i].ItemSlot.StackSize -= RemainingItems;
-                    SlotsToLookThrough[i].UpdateSlot();
+                    //SlotsToLookThrough[i].UpdateSlot();
                     return true;
                 }
                 RemainingItems -= SlotsToLookThrough[i].ItemSlot.StackSize;

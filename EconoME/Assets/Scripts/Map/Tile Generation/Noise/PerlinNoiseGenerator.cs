@@ -135,19 +135,14 @@ public class PerlinNoiseGenerator : MonoBehaviour
     {
         float offsetX = seed / DIVIDER;
         float offsetY = seed / DIVIDER;
+        int x = 0;
+        int y = 0;
 
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                float xCoord = (float)x / width * scale + offsetX;
-                float yCoord = (float)y / height * scale + offsetY;
+        float xCoord = (float)x / width * scale + offsetX;
+        float yCoord = (float)y / height * scale + offsetY;
 
-                return Mathf.PerlinNoise(xCoord, yCoord);
-            }
-        }
+        return Mathf.PerlinNoise(xCoord, yCoord);
 
-        return 0;
 
     }
 

@@ -66,7 +66,7 @@ public class TileMakerShopHandler : MonoBehaviour
     {
         for (int i = 0; i < ShopItems.Count; i++)
         {
-            ShopItems[i].UpdateSlot();
+            //ShopItems[i].UpdateSlot();
         }
     }
     [SerializeField] BoolVariable TileMakerOpen;

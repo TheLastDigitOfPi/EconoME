@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class ItemSlot
 {
-    public event Action OnItemChange;
+    public event Action<Item> OnItemChange;
     public int SlotNum;
     [SerializeField] InventoryObject _inventoryGroup;
     [SerializeReference] Item _item;
@@ -24,7 +24,7 @@ public class ItemSlot
     public Item Item { set { _item = value; UpdateItem(); } }
     public void UpdateItem()
     {
-        OnItemChange?.Invoke();
+        OnItemChange?.Invoke(_item);
     }
     public bool HasItem
     {

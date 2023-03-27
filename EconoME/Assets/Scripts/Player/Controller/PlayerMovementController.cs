@@ -92,6 +92,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Start()
     {
+        PlayerPosition.Value = transform.position;
         GlobalSceneManager.OnLocationChange += LocationChange;
     }
     private void LocationChange(WorldLocationData location)

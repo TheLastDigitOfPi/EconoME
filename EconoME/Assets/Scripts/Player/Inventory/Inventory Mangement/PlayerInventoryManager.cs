@@ -80,6 +80,7 @@ public class PlayerInventoryManager : MonoBehaviour
             {
                 handlers[i].Initialize(i, slots);
             }
+            slots.UpdateData();
         }
 
 

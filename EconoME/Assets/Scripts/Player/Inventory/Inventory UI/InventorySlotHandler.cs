@@ -38,7 +38,6 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
         Inventory = inventory;
         //Subscribe to updates on this slot
         Inventory.Data.ItemSlots[SlotNumber].OnItemChange += UpdateSlot;
-        UpdateSlot();
     }
 
     private void OnDestroy()
@@ -75,7 +74,7 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
 
     }
 
-    public void UpdateSlot()
+    public void UpdateSlot(Item item)
     {
         if (ItemSlot.HasItem)
         {

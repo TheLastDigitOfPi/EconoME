@@ -67,7 +67,13 @@ public class WorldTileManager : MonoBehaviour
         tileHandler.LoadTileCorroutine(UseFasterLoading, HideLoading);
         return true;
     }
+    private void Start()
+    {
 
+#if UNITY_EDITOR
+        EditorTest3x3();
+#endif
+    }
     private void TileLoaded(WorldTileHandler tileHandler)
     {
         var manager = ResourceWorldManager.Instance;
@@ -216,6 +222,7 @@ public class WorldTileManager : MonoBehaviour
         var y = tilePos.y * TILE_SIZE_Y + tilePos.y * DISTANCE_BETWEEN_TILES;
         return new Vector3(x, y, 0);
     }
+
 
     public bool TryRemoveTile(WorldTileHandler tileToRemove)
     {

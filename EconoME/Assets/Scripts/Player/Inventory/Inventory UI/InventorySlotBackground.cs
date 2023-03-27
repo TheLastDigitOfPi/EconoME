@@ -17,7 +17,7 @@ public class InventorySlotBackground : MonoBehaviour
         backgroundImage.color = Color.white;
     }
 
-    private void UpdateBackground()
+    private void UpdateBackground(Item item)
     {
         if (handler.Inventory.Data.ItemSlots[handler.SlotNumber].HasItem)
         {

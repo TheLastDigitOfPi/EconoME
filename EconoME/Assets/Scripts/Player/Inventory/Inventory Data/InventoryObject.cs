@@ -203,6 +203,13 @@ public class InventoryObject : ScriptableObject
         }
 
     }
+    public void UpdateData()
+    {
+        foreach (var slot in Data.ItemSlots)
+        {
+            slot.UpdateItem();
+        }
+    }
     [Header("Testing")]
     [SerializeField] int SlotNum;
     [SerializeField] DefinedScriptableItem item;

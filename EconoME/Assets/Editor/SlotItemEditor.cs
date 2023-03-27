@@ -15,7 +15,6 @@ public class SlotItemEditor : Editor
         {
             if (handler.ForceSlotItem == null) { return; }
             handler.ItemSlot.Item = handler.ForceSlotItem.CreateItem();
-            handler.UpdateSlot();
         }
 
     }
