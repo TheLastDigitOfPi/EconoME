@@ -29,7 +29,7 @@ namespace Assets.Scripts.Admin
                 var currentTime = WorldTimeManager.CurrentTime;
                 string timeText = $"Day: {currentTime.Day} \n" +
                     $"Time: {WorldTimeManager.CurrentGameTimeToHumanTime}\n" +
-                    $"Tick: {currentTime.TimeOfDayTick}\n";
+                    $"Tick: {currentTime.CurrentTick}\n";
 
                 _debugText.text = timeText;
                 return;

@@ -18,6 +18,7 @@ public class ToolBase : ItemBase
     }
 }
 
+
 public enum ToolType
 {
     Axe,

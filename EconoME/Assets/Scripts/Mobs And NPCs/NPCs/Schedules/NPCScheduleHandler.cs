@@ -24,7 +24,7 @@ public class NPCScheduleHandler : MonoBehaviour
         var time = WorldTimeManager.CurrentTime;
 
         //Only check every other tick
-        if(time.TimeOfDayTick % 2 != 0)
+        if(time.CurrentTick % 2 != 0)
             return;
 
         InFreeTime = !EnsureActiveAndValidSchedule();
@@ -37,7 +37,7 @@ public class NPCScheduleHandler : MonoBehaviour
             foreach (var item in overrideItems)
             {
                 //If we found a valid time, set it to our current schedule item
-                if (time.TimeOfDayTick.isBetweenInclusive(item.StartTime, item.EndTime))
+                if (time.CurrentTick.isBetweenInclusive(item.StartTime, item.EndTime))
                 {
                     currentAction.OnScheduleInterrupt(this);
                     currentAction = item;
@@ -48,7 +48,7 @@ public class NPCScheduleHandler : MonoBehaviour
             //If our current action exists, check if it is still valid
             if (currentAction != null)
             {
-                if (time.TimeOfDayTick.isBetweenInclusive(currentAction.StartTime, currentAction.EndTime))
+                if (time.CurrentTick.isBetweenInclusive(currentAction.StartTime, currentAction.EndTime))
                     return true;
 
                 currentAction.OnScheduleStop(this);
@@ -63,7 +63,7 @@ public class NPCScheduleHandler : MonoBehaviour
                 foreach (var scheduleItem in todayItems)
                 {
                     //If we found a valid time, set it to our current schedule item
-                    if (time.TimeOfDayTick.isBetweenInclusive(scheduleItem.StartTime, scheduleItem.EndTime))
+                    if (time.CurrentTick.isBetweenInclusive(scheduleItem.StartTime, scheduleItem.EndTime))
                     {
                         currentAction = scheduleItem;
                         currentAction.OnScheduleStart(this);

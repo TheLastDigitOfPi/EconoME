@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Oak Wood
   m_EditorClassIdentifier: 
   <ItemName>k__BackingField: Oak Wood
-  <Icon>k__BackingField: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}
+  <ForegroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <BackgroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 0}
+  <EffectIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
   <IconPath>k__BackingField: 
   <Weight>k__BackingField: 1
   <ItemType>k__BackingField: 2

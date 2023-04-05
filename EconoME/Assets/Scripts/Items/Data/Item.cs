@@ -10,9 +10,13 @@ public class Item
 {
     //Base Class for items that can be placed into inventory
 
+    //Event Data
+    public event Action OnItemUpdate;
+
     //Public Data
-    [field:SerializeField] public ItemBase ItemBase { get; private set; }
-    [field:SerializeField] public int Stacksize { get; set; } = -1;
+    [field: SerializeField] public ItemBase ItemBase { get; private set; }
+    [SerializeField] int _stackSize = -1;
+    public int Stacksize { get { return _stackSize; } set { _stackSize = value; OnItemUpdate?.Invoke(); } }
     //Helpers
     public string ItemName { get { return ItemBase.ItemName; } }
     public ItemIcon ForegroundIcon { get { return ItemBase.ForegroundIcon; } }
@@ -25,6 +29,11 @@ public class Item
     {
         ItemBase = itemBase;
         this.Stacksize = stackSsize;
+    }
+
+    public void ResetEvents()
+    {
+        OnItemUpdate = null;
     }
 
     /// <summary>

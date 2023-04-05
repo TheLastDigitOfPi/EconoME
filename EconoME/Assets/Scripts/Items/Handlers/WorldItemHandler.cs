@@ -90,7 +90,7 @@ public class WorldItemHandler : MonoBehaviour
 
     internal void CreateItem(Item item, Vector3 position)
     {
-        data.item = item.Duplicate();
+        data.item = item;
         data.WorldPos = position;
         UpdateImage();
         UpdateText();

@@ -8,9 +8,10 @@ using UnityEngine.InputSystem;
 public class RaycastHandler : MonoBehaviour
 {
     //Static
-
+    public static RaycastHandler Instance;
     //Events
-
+    public event Action<IAmInteractable> OnRaycastSuccess;
+    public event Action OnRaycastFail;
     //Public fields
 
     //Local Serialized fields
@@ -22,7 +23,7 @@ public class RaycastHandler : MonoBehaviour
     //Local Private fields
     Vector3 raycastOffSet = new Vector3(0, 0.4f);
     PlayerMovementController owner;
-    private PlayerInput playerInput;
+    [SerializeField] PlayerInput playerInput;
     private InputAction _interactAction;
     bool _playerTryingToRaycast;
 
@@ -31,7 +32,13 @@ public class RaycastHandler : MonoBehaviour
 
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
+        if (Instance != null)
+        {
+            Debug.LogWarning("More than 1 raycast handler found");
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         _interactAction = playerInput.actions["Interact"];
     }
 
@@ -69,29 +76,29 @@ public class RaycastHandler : MonoBehaviour
             {
                 if (CanRayCast)
                 {
-                    RaycastAndNotfiyPotentialHits();
+                    RaycastAndNotifiyPotentialHits();
                 }
                 yield return new WaitForSeconds(0.1f);
             }
-
         }
-
     }
 
-
-    public void RaycastAndNotfiyPotentialHits()
+    public void RaycastAndNotifiyPotentialHits()
     {
         RaycastHit2D[] raycastData = getHit();
-        if (raycastData == null) { return; }
+        if (raycastData == null) { OnRaycastFail?.Invoke(); return; }
 
         for (int i = 0; i < raycastData.Length; i++)
         {
             if (raycastData[i].collider.TryGetComponent(out IAmInteractable target))
             {
-                if (target.OnRaycastHit(owner, raycastData[i].collider))
-                    return;
+                if (!target.OnRaycastHit(owner, raycastData[i].collider))
+                    continue;
+                OnRaycastSuccess?.Invoke(target);
+                return;
             }
         }
+        OnRaycastFail?.Invoke();
     }
 
     RaycastHit2D[] getHit()

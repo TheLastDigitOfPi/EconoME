@@ -14,33 +14,22 @@ public class CombatAttackInstance
     /// Option A - The event is called in this class, keeping it nice and organized
     /// Option B - The event is called in the person getting hit. This makes it easy to send over who is being attacked to the attacker
     /// </remarks>
-    public Action<ICombatEntity> OnAttackHit;
-    public Action<ICombatEntity> OnAttackFail;
-    public CombatEntityBase AttackerBase { get; private set; }
-    public CombatDamageInstance AttackInfo { get; private set; }
-    public ICombatEntity Attacker { get; private set; }
+    public Action<EntityCombatController> OnAttackHit;
+    public Action<EntityCombatController> OnAttackFail;
+    public CombatDamageInstance Attack { get; private set; }
+    public EntityCombatController Attacker { get; private set; }
 
-    public CombatAttackInstance(CombatEntityType attackerType, ICombatEntity attacker)
+    public CombatAttackInstance(EntityCombatController attacker, CombatDamageInstance attack)
     {
-        AttackerBase = new(attackerType);
+        Attack = attack;
         Attacker = attacker;
     }
 
-    public void CalculateAttack(CombatEntityDefenses defenses)
+    public CombatDamageInstance CalculateAttack(EntityCombatController defenses)
     {
-
+        return new CombatDamageInstance();
     }
 
-    public CombatAttackInstance CreateInstance()
-    {
-        return new(this);
-    }
-
-    public CombatAttackInstance(CombatAttackInstance other)
-    {
-        other.OnAttackHit = OnAttackHit;
-        other.OnAttackFail = OnAttackFail;
-    }
 }
 
 #region Thoughts

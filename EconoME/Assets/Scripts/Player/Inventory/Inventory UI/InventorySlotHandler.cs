@@ -74,7 +74,7 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
 
     }
 
-    public void UpdateSlot(Item item)
+    public void UpdateSlot()
     {
         if (ItemSlot.HasItem)
         {

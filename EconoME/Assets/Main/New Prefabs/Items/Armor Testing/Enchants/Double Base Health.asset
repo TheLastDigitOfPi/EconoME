@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0c1d877cb40534d9b9d090253f03e5, type: 3}
+  m_Name: Double Base Health
+  m_EditorClassIdentifier: 
+  StatChanges:
+    HealthChanges:
+      BasePercentChange: 100
+      BaseAdditionChange: 0
+      PerecentChange: 0
+      AddtionChange: 0
+    PhysicalDefenseChanges:
+      BasePercentChange: 0
+      BaseAdditionChange: 0
+      PerecentChange: 0
+      AddtionChange: 0
+    MagicalDefenseChanges:
+      BasePercentChange: 0
+      BaseAdditionChange: 0
+      PerecentChange: 0
+      AddtionChange: 0
+    RangedDefenseChanges:
+      BasePercentChange: 0
+      BaseAdditionChange: 0
+      PerecentChange: 0
+      AddtionChange: 0
+    TrueDefenseChanges:
+      BasePercentChange: 0
+      BaseAdditionChange: 0
+      PerecentChange: 0
+      AddtionChange: 0
+    HPSChanges:
+      BasePercentChange: 0
+      BaseAdditionChange: 2
+      PerecentChange: 0
+      AddtionChange: 0

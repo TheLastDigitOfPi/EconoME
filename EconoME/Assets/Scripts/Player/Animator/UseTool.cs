@@ -25,7 +25,7 @@ public class UseTool : AnimateSprite
     public override void OnExit()
     {
         base.OnExit();
-        _controller.CancelToolUse();
+        //_controller.CancelToolUse();
         ToolRenderer.sprite = null;
     }
 
@@ -48,7 +48,7 @@ public class UseTool : AnimateSprite
 
         if (TotalFrameTime > TimePerFrame * animationSet.BaseLayer.Textures.Length)
         {
-            _controller.UseTool();
+            //_controller.UseTool();
         }
 
     }

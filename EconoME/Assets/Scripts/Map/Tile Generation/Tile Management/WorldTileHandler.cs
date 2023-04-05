@@ -188,7 +188,7 @@ public class WorldTileHandler : MonoBehaviour
         await Task.Yield();
     }
 
-    public void LoadTileCorroutine(bool UseFasterLoading = false, bool HideLoading = true)
+    public void LoadTileCorroutine(bool UseFasterLoading = false, bool HideLoading = true, bool ShowLogs = false)
     {
         if (_tileData == null)
             return;
@@ -370,7 +370,8 @@ public class WorldTileHandler : MonoBehaviour
                 possiblePlacements.Remove(randSpot);
 
             }
-            Debug.Log($"Placed {placedNodes} nodes with {loop} loops");
+            if (ShowLogs)
+                Debug.Log($"Placed {placedNodes} nodes with {loop} loops");
 
             //Load border
             SetBorders();

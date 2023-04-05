@@ -66,7 +66,7 @@ public class InventoryObject : ScriptableObject
 
                 //Set new slot to the item
                 var currentSlot = Data.ItemSlots[i];
-                currentSlot.Item = item.Duplicate();
+                currentSlot.TrySetItem(item.Duplicate());
                 //If the item overloaded the slot, update the item and fix the slot
                 if (currentSlot.RemainingStackRoom < 0)
                 {
@@ -88,18 +88,19 @@ public class InventoryObject : ScriptableObject
     /// <returns>Returns true if able to swap the item</returns>
     internal bool SawpItem(Item itemToSwap, out Item swappedItem, int slotNum)
     {
+        swappedItem = null;
         var itemSlot = Data.ItemSlots[slotNum];
-        Item slotOriginalItem = itemSlot.ItemCopy;
-        itemSlot.Item = null;
+        if (!itemSlot.TryRemoveItem(out var slotOriginalItem))
+            return false;
 
         if (ItemRequirement.isValidItem(itemToSwap))
         {
-            itemSlot.Item = itemToSwap;
+            itemSlot.TrySetItem(itemToSwap);
             swappedItem = slotOriginalItem;
             return true;
         }
         swappedItem = null;
-        itemSlot.Item = slotOriginalItem;
+        itemSlot.TrySetItem(slotOriginalItem);
         return false;
 
     }
@@ -121,7 +122,7 @@ public class InventoryObject : ScriptableObject
         if (!Data.ItemSlots[slotNum].HasItem)
         {
             //Set new slot to the item
-            currentSlot.Item = item.Duplicate();
+            currentSlot.TrySetItem(item.Duplicate());
             //If placed more than possible, then we add the partial amount
             if (currentSlot.RemainingStackRoom < 0)
             {
@@ -156,8 +157,7 @@ public class InventoryObject : ScriptableObject
     /// <param name="itemInSlot">The item that was removed</param>
     public void RemoveItemFromSlot(int slotNum, out Item itemInSlot)
     {
-        itemInSlot = Data.ItemSlots[slotNum].ItemCopy;
-        Data.ItemSlots[slotNum].Item = null;
+        Data.ItemSlots[slotNum].TryRemoveItem(out itemInSlot);
     }
 
     public void InitializeData()
@@ -207,7 +207,7 @@ public class InventoryObject : ScriptableObject
     {
         foreach (var slot in Data.ItemSlots)
         {
-            slot.UpdateItem();
+            slot.UpdateSlot();
         }
     }
     [Header("Testing")]

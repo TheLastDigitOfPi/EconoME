@@ -141,7 +141,7 @@ public class PlayerInventoryManager : MonoBehaviour
 
         bool AttemptMoveToInventory(InventoryObject newInventory)
         {
-            if (newInventory.ItemRequirement.isValidItem(originalInventory.Data.ItemSlots[slotNum].ItemCopy))
+            if (newInventory.ItemRequirement.isValidItem(originalInventory.Data.ItemSlots[slotNum].Item))
             {
                 //Take item from slot and move it to the other inventory. If it doesn't fully fit, place item back in original slot
                 originalInventory.RemoveItemFromSlot(slotNum, out Item foundItem);

@@ -49,7 +49,7 @@ public class WorldLightHandler : MonoBehaviour
         WorldTimeManager.OnGameTick += CheckTime;
         WorldTimeManager.OnNewDay += NewDay;
 
-        if(WorldTimeManager.CurrentTime.TimeOfDayTick < SunRiseTime.StandardizedTime || WorldTimeManager.CurrentTime.TimeOfDayTick > SunSetTime.StandardizedTime)
+        if(WorldTimeManager.CurrentTime.CurrentTick < SunRiseTime.StandardizedTime || WorldTimeManager.CurrentTime.CurrentTick > SunSetTime.StandardizedTime)
         {
             _globalLight.intensity = MinSunBrightness;
             _globalLight.color = _nightTimeColor;
@@ -68,7 +68,7 @@ public class WorldLightHandler : MonoBehaviour
             return;
         if (!_sunHasRisen && !_sunTransitioning)
         {
-            if (WorldTimeManager.CurrentTime.TimeOfDayTick >= SunRiseTime.StandardizedTime)
+            if (WorldTimeManager.CurrentTime.CurrentTick >= SunRiseTime.StandardizedTime)
             {
                 _sunTransitioning = true;
                 StartCoroutine(SunRise());
@@ -78,7 +78,7 @@ public class WorldLightHandler : MonoBehaviour
 
         if (!_sunHasSet && !_sunTransitioning)
         {
-            if (WorldTimeManager.CurrentTime.TimeOfDayTick >= SunSetTime.StandardizedTime)
+            if (WorldTimeManager.CurrentTime.CurrentTick >= SunSetTime.StandardizedTime)
             {
                 _sunTransitioning = true;
                 StartCoroutine(SunSet());

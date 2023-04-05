@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd576971d5b3a364487f6b3fe51c0fc3, type: 3}
+  m_Name: Console Log Enchant
+  m_EditorClassIdentifier: 
+  TriggerSO: {fileID: 11400000, guid: 3b888dabcca1dde4a9bdb61d3f257d94, type: 2}
+  EffectsSO:
+  - {fileID: 11400000, guid: e09cbd80bcf62e34b9e725d71748786c, type: 2}
+  - {fileID: 11400000, guid: a82a3ecb7ff58fb4c9d19404fc30f020, type: 2}
+  - {fileID: 11400000, guid: 1e79e9322ce6f3946bfadd760a583d05, type: 2}

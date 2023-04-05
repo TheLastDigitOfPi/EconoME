@@ -1,6 +1,6 @@
 ﻿public interface IAmASlot
 {
-    public void UpdateSlot(Item item);
+    public void UpdateSlot();
     public bool GrabItem(out Item ItemGrabbed);
     /// <summary>
     /// Attempts to add item to the slot

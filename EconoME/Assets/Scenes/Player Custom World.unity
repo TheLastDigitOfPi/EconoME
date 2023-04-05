@@ -378,6 +378,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f9ba5fc132170024c8d100b18194ba9a, type: 2}
   UseFasterLoading: 1
   HideLoading: 0
+  ShowLogs: 0
   AddTilePos: {x: 0, y: 0}
 --- !u!1 &187719709
 GameObject:

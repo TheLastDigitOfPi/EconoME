@@ -51,5 +51,6 @@ public enum ItemType
     Any,
     Tool,
     Resource,
-    Armor
+    Armor,
+    Weapon
 }

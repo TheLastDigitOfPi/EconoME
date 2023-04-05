@@ -4,10 +4,17 @@ using UnityEngine;
 [Serializable]
 public class ItemSlot
 {
-    public event Action<Item> OnItemChange;
+    public event Action OnItemChange;
+
+    /// <summary>
+    /// Since the item is being removed from the slot, we don't care what happens to the i
+    /// </summary>
+    public event Action<Item> OnItemRemoved;
+    public event Action<Item> OnItemAdded;
+
     public int SlotNum;
     [SerializeField] InventoryObject _inventoryGroup;
-    [SerializeReference] Item _item;
+    [field: SerializeReference] public Item Item { get; private set; }
 
     public ItemSlot(int slotNum, InventoryObject inventory)
     {
@@ -19,18 +26,25 @@ public class ItemSlot
     {
         _inventoryGroup = inventory;
         OnItemChange = null;
+        if (Item != null)
+        {
+            Item.ResetEvents();
+            Item.OnItemUpdate += UpdateSlot;
+        }
+        OnItemRemoved = null;
+        OnItemAdded = null;
+        UpdateSlot();
     }
 
-    public Item Item { set { _item = value; UpdateItem(); } }
-    public void UpdateItem()
+    public void UpdateSlot()
     {
-        OnItemChange?.Invoke(_item);
+        OnItemChange?.Invoke();
     }
     public bool HasItem
     {
         get
         {
-            if (_item == null || StackSize < 1 || ItemBase == null)
+            if (Item == null || StackSize < 1 || ItemBase == null)
                 return false;
             return true;
         }
@@ -39,17 +53,44 @@ public class ItemSlot
     {
         get
         {
-            if (_item.IndividualItemWeight == -1)
+            if (Item.IndividualItemWeight == -1)
                 return true;
             return RemainingStackRoom <= 0;
         }
     }
-    public int RemainingStackRoom { get { return MaxItems - _item.Stacksize; } }
-    public int MaxItems { get { return MaxInventorySlotWeight / _item.IndividualItemWeight; } }
+
+    public bool TryRemoveItem(out Item removedItem)
+    {
+        removedItem = null;
+        if (Item == null)
+            return false;
+
+        removedItem = Item;
+        removedItem.OnItemUpdate -= UpdateSlot;
+        OnItemRemoved?.Invoke(Item);
+        Item = null;
+        UpdateSlot();
+        return true;
+    }
+
+    public bool TrySetItem(Item itemToAdd)
+    {
+        if (HasItem)
+            return false;
+        Item = itemToAdd;
+        OnItemAdded?.Invoke(Item);
+        if (Item != null)
+            Item.OnItemUpdate += UpdateSlot;
+        UpdateSlot();
+        return true;
+    }
+
+
+    public int RemainingStackRoom { get { return MaxItems - Item.Stacksize; } }
+    public int MaxItems { get { return MaxInventorySlotWeight / Item.IndividualItemWeight; } }
     int MaxInventorySlotWeight { get { return _inventoryGroup.MaxInventorySlotWeight.Value; } }
-    public int StackSize { get { return _item.Stacksize; } set { _item.Stacksize = value; UpdateItem(); } }
-    public ItemBase ItemBase { get { return _item.ItemBase; } }
-    public bool SameBase(Item item) { return _item.SameBase(item); }
-    public Item ItemCopy { get { return _item.Duplicate(); } }
+    public int StackSize { get { return Item.Stacksize; } set { Item.Stacksize = value; UpdateSlot(); } }
+    public ItemBase ItemBase { get { return Item.ItemBase; } }
+    public bool SameBase(Item item) { return Item.SameBase(item); }
 
 }

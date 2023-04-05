@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,10 @@ public class HeldItemHandler : MonoBehaviour
 {
     //Static
     public static HeldItemHandler Instance;
+
+    //Events
+    public event Action OnComplete;
+    public event Action OnStart;
 
     //Local
     [SerializeField] SpriteRenderer frontIconForeground;
@@ -31,18 +36,18 @@ public class HeldItemHandler : MonoBehaviour
 
     private void Start()
     {
-        HotBarHandler.Instance.OnItemSelect += SelectItem;
-        HotBarHandler.Instance.OnItemDeselect += DeSelectItem;
+        HotBarHandler.Instance.OnSelectItem += SelectItem;
+        HotBarHandler.Instance.OnDeselectItem += DeSelectItem;
         spriteMask.localBounds = frontIconForeground.localBounds;
     }
 
     private void OnDestroy()
     {
-        HotBarHandler.Instance.OnItemSelect -= SelectItem;
-        HotBarHandler.Instance.OnItemDeselect -= DeSelectItem;
+        HotBarHandler.Instance.OnSelectItem -= SelectItem;
+        HotBarHandler.Instance.OnDeselectItem -= DeSelectItem;
     }
 
-    private void DeSelectItem()
+    private void DeSelectItem(Item item)
     {
 
         frontIconForeground.sprite = default;
@@ -56,47 +61,46 @@ public class HeldItemHandler : MonoBehaviour
         backIconBackground.color = Color.clear;
     }
 
-    private void SelectItem()
+    private void SelectItem(Item foundItem)
     {
-        DeSelectItem();
-        if (HotBarHandler.GetCurrentSelectedItem(out Item foundItem))
+        DeSelectItem(foundItem);
+
+        var iconBase = foundItem.ItemBase.ForegroundIcon;
+        var icon = iconBase.Icon;
+
+
+        frontIconForeground.sprite = icon;
+        backIconForeground.sprite = icon;
+        backIconForeground.color = iconBase.IconColor;
+        frontIconForeground.color = iconBase.IconColor;
+
+        if (foundItem.ItemBase.BackgroundIcon.Icon != null)
         {
-            var iconBase = foundItem.ItemBase.ForegroundIcon;
-            var icon = iconBase.Icon;
+            var backIconBase = foundItem.ItemBase.BackgroundIcon;
+            var backIcon = backIconBase.Icon;
 
+            frontIconBackground.sprite = backIcon;
+            backIconBackground.sprite = backIcon;
 
-            frontIconForeground.sprite = icon;
-            backIconForeground.sprite = icon;
-            backIconForeground.color = iconBase.IconColor;
-            frontIconForeground.color = iconBase.IconColor;
-
-            if (foundItem.ItemBase.BackgroundIcon.Icon != null)
-            {
-                var backIconBase = foundItem.ItemBase.BackgroundIcon;
-                var backIcon = backIconBase.Icon;
-
-                frontIconBackground.sprite = backIcon;
-                backIconBackground.sprite = backIcon;
-
-                frontIconBackground.color = backIconBase.IconColor;
-                backIconBackground.color = backIconBase.IconColor;
-            }
-
-            Vector2 ScaledObjectValue = new Vector2(16f / (icon.bounds.size.x * icon.pixelsPerUnit), 16f/ (icon.bounds.size.y * icon.pixelsPerUnit));
-            
-            frontIconForeground.transform.localScale = ScaledObjectValue;
-            backIconForeground.transform.localScale = ScaledObjectValue;
-
-            frontIconBackground.transform.localScale = ScaledObjectValue;
-            backIconBackground.transform.localScale = ScaledObjectValue;
-            
-            spriteMask.transform.localScale = ScaledObjectValue / 2;
-
+            frontIconBackground.color = backIconBase.IconColor;
+            backIconBackground.color = backIconBase.IconColor;
         }
+
+        Vector2 ScaledObjectValue = new Vector2(16f / (icon.bounds.size.x * icon.pixelsPerUnit), 16f / (icon.bounds.size.y * icon.pixelsPerUnit));
+
+        frontIconForeground.transform.localScale = ScaledObjectValue;
+        backIconForeground.transform.localScale = ScaledObjectValue;
+
+        frontIconBackground.transform.localScale = ScaledObjectValue;
+        backIconBackground.transform.localScale = ScaledObjectValue;
+
+        spriteMask.transform.localScale = ScaledObjectValue / 2;
+
     }
 
     public void StartProgress(float totalTime)
     {
+        OnStart?.Invoke();
         spriteMask.transform.localPosition = new Vector3(-spriteMask.transform.localScale.x, 0, 0);
         StartCoroutine(StartFill());
         IEnumerator StartFill()
@@ -108,7 +112,7 @@ public class HeldItemHandler : MonoBehaviour
                 spriteMask.transform.localPosition = new Vector3(-spriteMask.transform.localScale.x + currentTime / totalTime, 0, 0);
                 yield return null;
             }
-            PlayerMovementController.Instance.UseTool();
+            OnComplete?.Invoke();
         }
     }
 }

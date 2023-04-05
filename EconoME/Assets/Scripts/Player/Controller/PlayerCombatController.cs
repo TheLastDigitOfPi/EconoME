@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerCombatController : EntityCombatController
 {
@@ -9,21 +10,28 @@ public class PlayerCombatController : EntityCombatController
     public static PlayerCombatController Instance { get; private set; }
 
     //Public fields
-    public float PlayerCurrentHealth { get { return _playerStats.CurrentHealth; } }
+    public float PlayerCurrentHealth { get { return EntityStartingStats.CurrentHealth; } }
+    [field: SerializeField] public bool ImmunityFramesActive { get; private set; } = false;
 
-    //Events
-    public event Action OnPlayerHit;
-    public event Action OnPlayerDeath;
-    public event Action OnPlayerFullyHealed;
-    public event Action OnPlayerPassiveHeal;
-    public event Action OnPlayerAttack;
-    public event Action OnPlayerCastSpell;
-
-    public event Action<CombatDamageReport> OnPlayerCombatReportDefense;
+    public event Action<CombatDamageReport> OnPlayerCompleteDefenseReport;
     public event Action<CombatDamageReport> OnPlayerCombatReportAttack;
 
-    [SerializeField] CombatEntityDefenses _playerStats = new();
+    //Local fields
     [SerializeField] InventoryObject _armorSlots;
+    [SerializeReference] Weapon _currentHeldWeapon;
+    [field: SerializeField] public ModifiableStat AttackSpeed { get; private set; }
+
+    //Helpers
+    bool HoldingWeapon { get { return _currentHeldWeapon != null; } }
+    public bool CanMove
+    {
+        get
+        {
+            if (!HoldingWeapon)
+                return true;
+            return !_currentHeldWeapon.Attacking;
+        }
+    }
     private void Awake()
     {
         if (Instance != null)
@@ -33,36 +41,111 @@ public class PlayerCombatController : EntityCombatController
             return;
         }
         Instance = this;
+    }
 
+    private void Start()
+    {
         foreach (var slot in _armorSlots.Data.ItemSlots)
         {
-            slot.OnItemChange += OnArmorChange;
+            slot.OnItemAdded += ArmorEquiped;
+            slot.OnItemRemoved += ArmorRemoved;
+            if (slot.HasItem)
+            {
+                var armor = slot.Item as Armor;
+                armor.Equip(this);
+            }
+        }
+
+        UpdateDefenses(useBaseStats: true);
+        OnPlayerCompleteDefenseReport += CheckReport;
+        WorldTimeManager.OnGameTick += PassiveRegen;
+        HotBarHandler.Instance.OnSelectItem += HotbarSelectedItem;
+        HotBarHandler.Instance.OnDeselectItem += HotbarDeselectItem;
+        RaycastHandler.Instance.OnRaycastFail += AttemptAttack;
+    }
+
+    private void AttemptAttack()
+    {
+        if (!HoldingWeapon)
+            return;
+        _currentHeldWeapon.Attack(this);
+    }
+
+    private void HotbarDeselectItem(Item obj)
+    {
+        if (obj != _currentHeldWeapon || !HoldingWeapon)
+            return;
+        _currentHeldWeapon?.Unequip();
+        _currentHeldWeapon = default;
+    }
+
+    private void HotbarSelectedItem(Item item)
+    {
+        if (item is Weapon)
+        {
+            _currentHeldWeapon = item as Weapon;
+            _currentHeldWeapon.Equip(this);
         }
     }
 
-    private void OnArmorChange(Item item)
+    private void OnDestroy()
+    {
+        foreach (var slot in _armorSlots.Data.ItemSlots)
+        {
+            if (slot.HasItem)
+            {
+                var armor = slot.Item as Armor;
+                armor.Unequip();
+            }
+        }
+    }
+
+    private void CheckReport(CombatDamageReport report)
+    {
+        if (report.KilledEntity)
+            PlayerDeath();
+    }
+
+    void PlayerDeath()
+    {
+        Debug.Log("Player Dead");
+    }
+
+    private void ArmorRemoved(Item item)
     {
         if (item is not Armor)
             return;
 
-        var armorItem = item as Armor;
-        OnPlayerDefenseCalculation += (stats) =>
-        {
+        var armor = item as Armor;
+        armor.Unequip();
+    }
+    private void ArmorEquiped(Item item)
+    {
+        if (item is not Armor)
+            return;
 
-
-        };
-
+        var armor = item as Armor;
+        armor.Equip(this);
     }
 
-    public event Action<CombatEntityDefenses> OnPlayerDefenseCalculation;
+    [SerializeField] float HealPerSecond = 0.25f;
+    void PassiveRegen()
+    {
+        if (WorldTimeManager.CurrentTime.CurrentTick % WorldTimeManager.CurrentTime.TicksPerSecond != 0)
+            return;
+        EntityCurrentStats = EntityCurrentStats.Heal(EntityCurrentStats.HealthPerSecond);
+    }
 
     public override CombatDamageReport ReceiveAttack(CombatAttackInstance attack)
     {
-        var defenses = CalculateDefenses();
+        if (ImmunityFramesActive)
+            return CombatDamageReport.ImmunityReport;
 
-        OnPlayerDefenseCalculation?.Invoke(_playerStats);
 
-
+        CombatDamageReport report = new(attack, this);
+        report.CalculateInitalDamage();
+        onDamageReportCalculation.Invoke(report);
+        report.RecalculateDamage();
 
 
         /*
@@ -72,121 +155,169 @@ public class PlayerCombatController : EntityCombatController
         What if there is a scenario where we should do something after the block, where the order matters?
         Such as maybe an armor piece that gives % mitagation after blocking a hit idk.
 
+
+        Chance to block attack
+        Every x hits reduce damage taken by 5
+
+
         On one hand, we can just hard code in blocking and have armor specifically subscribe to when we block do something.
+         
+        So for now this is how it is going to work
+        Enchantments can subscribe to events and do certain actions based on that event
+        Any enchantment that needs to manipulate some form of data on an action (Ex: Add defense to player when hit 5 times idk) will subscribe to an action that gives data that can be manipulated
+
+         
          */
-        var combatReport = new CombatDamageReport();
+
 
         //Let anyone that wants to know about a defensive report know what happened
-        OnPlayerCombatReportDefense?.Invoke(combatReport);
-        return combatReport;
+        OnPlayerCompleteDefenseReport?.Invoke(report);
+        onDefense?.Invoke();
+        StartCoroutine(StartImmunityFrames());
+
+        return report;
     }
 
-    CombatEntityDefenses CalculateDefenses()
+    IEnumerator StartImmunityFrames()
     {
-        return new CombatEntityDefenses();
+        ImmunityFramesActive = true;
+        yield return null;
+        ImmunityFramesActive = false;
     }
+
 }
 
-public struct CombatDamageReport
+public class CombatDamageReport
 {
-    public float DamageDone;
-    public float DamageMitagated;
-    public bool KilledEntity;
+    public EntityCombatController Defender { get; private set; }
+    public CombatAttackInstance Attack { get; private set; }
+    public float DamageDone { get; private set; }
+    public float DamageMitagated { get; private set; }
+    public bool KilledEntity { get; private set; }
     public bool BlockedAttack { get { return DamageDone <= 0; } }
 
-    public CombatDamageReport(float damageDone, float damageMitagated, bool killedEntity)
+    public bool Immune { get; private set; }
+
+    public bool StopCalculating { get { return BlockedAttack || KilledEntity; } }
+    public CombatDamageReport(CombatAttackInstance attack, EntityCombatController defender)
     {
-        DamageDone = damageDone;
-        DamageMitagated = damageMitagated;
-        KilledEntity = killedEntity;
+        Attack = attack;
+        Defender = defender;
+    }
+
+    CombatDamageReport(bool immune)
+    {
+        Immune = immune;
+    }
+
+    List<CombatReportModifier> modifiers = new();
+    public void AddReportModifier(CombatReportModifier modifier)
+    {
+        modifiers.Add(modifier);
+    }
+
+    public CombatDamageInstance CurrentDamage;
+    public CombatEntityDefenses CurrentDefenses;
+    public DefenseStatChangeInstance DefenseChanges;
+    public void RecalculateDamage()
+    {
+        var flatChanges = modifiers.FindAll(m => m.Priority == CombatReportPriority.FlatStatChanges);
+        foreach (var change in flatChanges)
+        {
+            change.ApplyModifier(this);
+        }
+        CurrentDefenses.CalculateBaseStatChange(DefenseChanges);
+        CurrentDefenses.CalculateSecondStatChange(DefenseChanges);
+
+        var otherModifiers = modifiers.FindAll(m => m.Priority != CombatReportPriority.FlatStatChanges).ToList();
+        foreach (var item in modifiers)
+        {
+            item.ApplyModifier(this);
+        }
+
+    }
+
+
+
+    public static CombatDamageReport ImmunityReport { get { return new CombatDamageReport(true); } }
+
+    public void CalculateInitalDamage()
+    {
+        var attack = Attack.Attack;
     }
 }
 
-public abstract class EntityCombatController : MonoBehaviour, ICombatEntity
+public enum CombatReportPriority
 {
-    [SerializeField] public CombatEntityDefenses EntityStats { get; protected set; }
-    public abstract CombatDamageReport ReceiveAttack(CombatAttackInstance attack);
+    FlatStatChanges,
+    FancyStatChanges,
 }
 
-public class CombatEntityDefenses
+[System.Serializable]
+public abstract class CombatReportModifier
 {
-    public float CurrentHealth;
-    public float MaxHealth;
-    public float PhysicalDefense;
-    public float MagicalDefense;
-    public float RangedDefense;
-    public float BasicDefense;
-
-    #region Thoughts
-    /*
-     
-    We need a way to calculate damage done to the player, as well as special effects that could happen when the player is hit.
-
-    Each step should have some kind of defined level. That way we can create effects that are done before or after certain calculations
-
-    First, we should have some way of defining how the base damage is calculated
-    Ex: Say we have 10 defense and are taking 20 damage, simple solution is we are taking (20-10) 10 total damage.
-
-    Then we need to apply special effects done by the armor.
-    Ex: The armor provides 25% damage mitigation, so we go from 10 -> 8 damage being done.
-     
-    What if the attacker has some kind of special effect? Maybe they ignore armor or do more if you are wearing a certain type of armor
-    Ignoring Armor -> Just send in damage as True Damage
-    Damage on certain type of armor -> Should be calculated by armor wearer (i.e. leather armor takes more fire damage)
-
-    How do we add effects to attacks like poison, slowness, etc.
-
-
-    To caluclate these we need a few sections.
-
-    Section 1: Pre Calculation Base value changes
-    Make changes to the base value
-    The base value is never technically changed, but these changes are directly applied to the base value
-
-    Section 2: Normal calculation value changes
-    Add up changes not to the base value
-
-    Section 3: Post calculation value changes
-    These changes are applied after, commonly addtion or subtraction that we don't want on the base value. Very rare, possibly never used
-
-
-    Simple Ex:
-
-    Base Defense value of 20
-    Armor gives +5 bonus defense for each something, totaling +10
-
-    20 + 10 = 30
-
-    We are currently debuffed from a monster so our armor is reduced by 20%
-
-    30 * 0.8 = 24
-     
-    Defense is now 24
-
-    Medium Ex:
-    Our armor has a total of 40 base defense. One piece gives -15% defense when holding a stick idk. Another piece gives +20% defense when it is night time idk. Lets say the conditions are being met for the bonuses.
-
-    Part 1: Base Calculation
-    Base = 40
-
-    Part 2: Post-Base Calculation
-    40 * (-15 + 20 = 5%, to decimal -> = 1.05) = 42
+    public CombatReportPriority Priority;
+    public abstract void ApplyModifier(CombatDamageReport report);
+}
 
 
 
-    Complicated Ex:
+public abstract class EntityCombatController : MonoBehaviour
+{
+    [field: SerializeField] public CombatEntityDefenses EntityStartingStats { get; protected set; }
+    [field: SerializeField] public CombatEntityDefenses EntityCurrentStats { get; protected set; }
+    [field: SerializeField] public CombatEntityType EntityType { get; protected set; }
+    [SerializeField] protected List<DefenseStatChangeInstance> _statModifiers = new();
 
-    Currently Wearing 4 pieces of armor
-    Helmet - 10 defense. Blocks 1 hit of magical damage every 10 seconds.
-    Chestplate - 20 defense. Bonus 5% base armor for each piece of metal armor on.(20% total)
-    Leggings - 15 defense. 20% bonus armor at night. 
-    Boots - 5 defense 15% bonus armor when standing still
+    public event Action OnDeath;
+    protected Action onDeath { get { return OnDeath; } set { OnDeath = value; } }
+
+    public event Action OnFullyHealed;
+    protected Action onFullyHealed { get { return onFullyHealed; } set { onFullyHealed = value; } }
+
+    public event Action OnPassiveHeal;
+    protected Action onPassiveHeal { get { return OnPassiveHeal; } set { OnPassiveHeal = value; } }
+
+    public event Action OnAttack;
+    protected Action onAttack { get { return OnAttack; } set { OnAttack = value; } }
+
+    public event Action OnDefense;
+    protected Action onDefense { get { return OnDefense; } set { OnDefense = value; } }
+
+    public event Action OnCastSpell;
+    protected Action onCastSpell { get { return OnCastSpell; } set { OnCastSpell = value; } }
 
 
+    public event Action<CombatDamageReport> OnDamageReportCalculation;
+    protected Action<CombatDamageReport> onDamageReportCalculation { get { return OnDamageReportCalculation; } set { OnDamageReportCalculation = value; } }
 
+    /// <summary>
+    /// Called when an entity has landed an attack on this entity
+    /// </summary>
+    /// <param name="attack"></param>
+    /// <returns></returns>
+    public abstract CombatDamageReport ReceiveAttack(CombatAttackInstance attack);
+    public void TestHit()
+    {
+        onDefense?.Invoke();
+    }
 
-     */
-    #endregion
+    public void AddStatChange(DefenseStatChangeInstance modifier)
+    {
+        _statModifiers.Add(modifier);
+        UpdateDefenses();
+    }
 
+    public void RemoveStatChange(DefenseStatChangeInstance modifier)
+    {
+        _statModifiers.Remove(modifier);
+        UpdateDefenses();
+    }
+    protected void UpdateDefenses(bool useBaseStats = false)
+    {
+        var originalHealth = useBaseStats ? EntityStartingStats.CurrentHealth : EntityCurrentStats.CurrentHealth;
+        EntityCurrentStats = EntityStartingStats;
+        EntityCurrentStats = EntityCurrentStats.CalcuateAllChanges(_statModifiers, originalHealth);
+    }
 
 }

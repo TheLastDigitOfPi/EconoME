@@ -189,7 +189,7 @@ public class NPCSchedule : ScriptableObject
 
         foreach (var item in CurrentDaySchedule)
         {
-            if (WorldTimeManager.CurrentTime.TimeOfDayTick.isBetweenInclusive(item.StartTime, item.EndTime))
+            if (WorldTimeManager.CurrentTime.CurrentTick.isBetweenInclusive(item.StartTime, item.EndTime))
             {
                 if (item is not NPCScheduleLocation)
                     return false;

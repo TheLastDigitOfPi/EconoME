@@ -14,7 +14,7 @@ public class SlotItemEditor : Editor
         if (GUILayout.Button("Force Scriptable Item data to Slot"))
         {
             if (handler.ForceSlotItem == null) { return; }
-            handler.ItemSlot.Item = handler.ForceSlotItem.CreateItem();
+            handler.ItemSlot.TrySetItem(handler.ForceSlotItem.CreateItem());
         }
 
     }

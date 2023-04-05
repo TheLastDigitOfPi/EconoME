@@ -1,28 +1,20 @@
 ﻿using UnityEngine;
 using System;
+using System.Numerics;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 
+[CreateAssetMenu(fileName = "New Armor Base", menuName = "ScriptableObjects/Items/Armor")]
 public class ArmorBase : ItemBase
 {
     [field: SerializeField] public ArmorType armorType { get; private set; }
-    [field: SerializeField] public List<ArmorAttributeBase> Attributes { get; private set; }
+    [field: SerializeField] public List<ArmorEnchantmentSO> Enchantments { get; private set; }
 
     public override Item CreateItem(int stackSize)
     {
         return new Armor(this);
     }
-
-    public List<ArmorAttribute> GetAttributes()
-    {
-        var newList = new List<ArmorAttribute>();
-        foreach (var item in Attributes)
-        {
-            newList.Add(item.Attribute);
-        }
-        return newList;
-    }
-
 }
 public enum ArmorType
 {
@@ -31,80 +23,82 @@ public enum ArmorType
     Leggings,
     Boots
 }
-
-public abstract class ArmorAttributeBase : ScriptableObject
+[Serializable]
+public struct DefenseStatChangeInstance : IEquatable<DefenseStatChangeInstance>
 {
-    [SerializeField] public abstract ArmorAttribute Attribute { get; set; }
+    public StatCalulation HealthChanges;
+    public StatCalulation PhysicalDefenseChanges;
+    public StatCalulation MagicalDefenseChanges;
+    public StatCalulation RangedDefenseChanges;
+    public StatCalulation TrueDefenseChanges;
+    public StatCalulation HPSChanges;
+
+    public bool Equals(DefenseStatChangeInstance other)
+    {
+        return other.HealthChanges == this.HealthChanges
+            && other.PhysicalDefenseChanges == this.PhysicalDefenseChanges
+            && other.MagicalDefenseChanges == this.MagicalDefenseChanges
+            && other.RangedDefenseChanges == this.RangedDefenseChanges
+            && other.TrueDefenseChanges == this.TrueDefenseChanges
+            && other.HPSChanges == this.HPSChanges;
+    }
+
+    public static bool operator ==(DefenseStatChangeInstance c1, DefenseStatChangeInstance c2)
+    {
+        return c1.Equals(c2);
+    }
+
+    public static bool operator !=(DefenseStatChangeInstance c1, DefenseStatChangeInstance c2)
+    {
+        return !c1.Equals(c2);
+    }
+
+    public static DefenseStatChangeInstance operator +(DefenseStatChangeInstance first, DefenseStatChangeInstance second)
+    {
+        DefenseStatChangeInstance result = new();
+        result.HealthChanges = first.HealthChanges + second.HealthChanges;
+        result.PhysicalDefenseChanges = first.PhysicalDefenseChanges + second.PhysicalDefenseChanges;
+        result.MagicalDefenseChanges = first.MagicalDefenseChanges + second.MagicalDefenseChanges;
+        result.RangedDefenseChanges = first.RangedDefenseChanges + second.RangedDefenseChanges;
+        result.TrueDefenseChanges = first.TrueDefenseChanges + second.TrueDefenseChanges;
+        return result;
+    }
+
+
 }
-
-
-public abstract class ArmorDefensesBase : ArmorAttributeBase
+[Serializable]
+public struct StatCalulation : IEquatable<StatCalulation>
 {
+    public float BasePercentChange;
+    public float BaseAdditionChange;
+    public float PerecentChange;
+    public float AddtionChange;
 
-}
-
-public abstract class ArmorAttribute
-{
-    public abstract CombatEntityDefenses AddAttribute(CombatEntityDefenses defenses);
-    public abstract void OnEquip();
-    public abstract void OnUnequip();
-
-}
-
-public class ArmorDefenses : ArmorAttribute
-{
-    public override CombatEntityDefenses AddAttribute(CombatEntityDefenses defenses)
+    public bool Equals(StatCalulation other)
     {
-        throw new NotImplementedException();
+        return other.BasePercentChange == this.BasePercentChange
+            && other.BaseAdditionChange == this.BaseAdditionChange
+            && other.PerecentChange == this.PerecentChange
+            && other.AddtionChange == this.AddtionChange;
     }
 
-    public override void OnEquip()
+    public static bool operator ==(StatCalulation c1, StatCalulation c2)
     {
-
-    }
-    public override void OnUnequip()
-    {
-        throw new NotImplementedException();
-    }
-}
-
-public class ArmorDamageMitagation : ArmorAttribute
-{
-    public override CombatEntityDefenses AddAttribute(CombatEntityDefenses defenses)
-    {
-        throw new NotImplementedException();
+        return c1.Equals(c2);
     }
 
-    public override void OnEquip()
+    public static bool operator !=(StatCalulation c1, StatCalulation c2)
     {
+        return !c1.Equals(c2);
     }
 
-    public override void OnUnequip()
+    public static StatCalulation operator +(StatCalulation first, StatCalulation second)
     {
-    }
-}
-
-public class ArmorSpecialEffectExample : ArmorAttribute
-{
-    public override CombatEntityDefenses AddAttribute(CombatEntityDefenses defenses)
-    {
-        throw new NotImplementedException();
-    }
-
-    private async void OnDefense(CombatDamageReport report)
-    {
-        if (report.BlockedAttack)
-        {
-            await Task.Delay(5000);
-        }
-    }
-    public override void OnEquip()
-    {
-        PlayerCombatController.Instance.OnPlayerCombatReportDefense += OnDefense;
-    }
-
-    public override void OnUnequip()
-    {
-        PlayerCombatController.Instance.OnPlayerCombatReportDefense -= OnDefense;
+        StatCalulation result = new();
+        result.BasePercentChange = first.BasePercentChange + second.BasePercentChange;
+        result.BaseAdditionChange = first.BaseAdditionChange + second.BaseAdditionChange;
+        result.PerecentChange = first.PerecentChange + second.PerecentChange;
+        result.AddtionChange = first.AddtionChange + second.AddtionChange;
+        return result;
     }
 }

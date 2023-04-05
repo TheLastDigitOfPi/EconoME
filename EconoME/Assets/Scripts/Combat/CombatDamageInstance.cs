@@ -14,6 +14,16 @@ public struct CombatDamageInstance
     public float ElementalDamage;
 }
 
+public struct CombatDefenseInstance
+{
+    public float NeturalDamage;
+    public float RangedDamage;
+    public float MagicDamage;
+    public float PhysicalDamage;
+    public float TrueDamage;
+    public float ElementalDamage;
+}
+
 #region Thoughts
 /*
 

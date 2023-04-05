@@ -39,7 +39,7 @@ public class WorldTimeManager : MonoBehaviour
     {
         get
         {
-            var percent = (float)CurrentTime.TimeOfDayTick / CurrentTime.MaxTicksInDay;
+            var percent = (float)CurrentTime.CurrentTick / CurrentTime.MaxTicksInDay;
 
             var currentClockTicks = percent * 1440f;
             return $"{(int)(percent * 24)} : {(int)currentClockTicks % 60}";
@@ -125,7 +125,7 @@ public class WorldTimeManager : MonoBehaviour
     private void NewDay()
     {
         Day++;
-        WorldTime.TimeOfDayTick = 0;
+        WorldTime.CurrentTick = 0;
         _onNewDay?.Invoke();
 
         if (Day >= 7)
@@ -151,7 +151,7 @@ public class WorldTimeManager : MonoBehaviour
             if (ticksThisFrame >= 1)
             {
                 timeHolder -= ticksPerSec * ticksThisFrame;
-                WorldTime.TimeOfDayTick += (ticksThisFrame);
+                WorldTime.CurrentTick += (ticksThisFrame);
                 UpdateClock();
             }
             //Wait for the next tick
@@ -163,7 +163,7 @@ public class WorldTimeManager : MonoBehaviour
     void UpdateClock()
     {
         _onGameTick?.Invoke();
-        if (WorldTime.TimeOfDayTick >= MaxTicksInDay)
+        if (WorldTime.CurrentTick >= MaxTicksInDay)
         {
             NewDay();
         }

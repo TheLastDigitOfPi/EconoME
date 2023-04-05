@@ -115,10 +115,8 @@ public class ResourceNodeHandler : MonoBehaviour, IAmInteractable
                 indicator = Instantiate(IndicatorPrefab, IndicatorPosition);
                 indicator.Initialize(this);
             }
-
-
-            owner.OnEndUseTool += HitNode;
-
+            HeldItemHandler.Instance.OnComplete += HitNode;
+            HeldItemHandler.Instance.StartProgress(NodeData.TimeToHarvest / foundTool.Speed);
             bool CheckIfValidTool(out ToolBase foundTool)
             {
                 foundTool = null;
@@ -135,7 +133,7 @@ public class ResourceNodeHandler : MonoBehaviour, IAmInteractable
             void HitNode()
             {
                 Hit(foundItem.ItemBase as ToolBase);
-                owner.OnEndUseTool -= HitNode;
+                HeldItemHandler.Instance.OnComplete -= HitNode;
             }
         }
 

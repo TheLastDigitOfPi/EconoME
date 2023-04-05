@@ -13,32 +13,7 @@ public class NodeIndicator : MonoBehaviour
     [SerializeField] float _rotateAmount;
 
     ResourceNodeHandler nodeHandler;
-    public void StartProgress(Sprite icon, float totalTime)
-    {
-        if (icon == null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        _backgroundImage.sprite = icon;
-        _foregroundImage.sprite = icon;
-
-        _foregroundImage.fillAmount = 0;
-        StartCoroutine(StartFill());
-        IEnumerator StartFill()
-        {
-            float currentTime = 0;
-            while (_foregroundImage.fillAmount < 1)
-            {
-                currentTime += Time.deltaTime;
-                _foregroundImage.fillAmount = currentTime / totalTime;
-                yield return null;
-            }
-            PlayerMovementController.Instance.UseTool();
-            Destroy(gameObject);
-        }
-    }
-
+    
     public void Initialize(ResourceNodeHandler handler)
     {
         Sprite icon = handler.IndicatorIcon;

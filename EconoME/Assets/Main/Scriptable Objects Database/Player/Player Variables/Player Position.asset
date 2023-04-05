@@ -15,4 +15,4 @@ MonoBehaviour:
   DefaultValue: {x: 0, y: 0, z: 0}
   ResetToDefault: 0
   ValueName: Player Position
-  Value: {x: 3, y: -2, z: 0}
+  _value: {x: 1.63, y: 16.6, z: 0}

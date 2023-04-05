@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13153bf74bee3e94cbe57a36d51d47ab, type: 3}
+  m_Name: Enchanted Chestplate Test
+  m_EditorClassIdentifier: 
+  <ItemName>k__BackingField: 
+  <ForegroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 1755508996546732074, guid: f79c2b955f3d8d84aa1dc8af018e03e0, type: 3}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <BackgroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 0}
+  <EffectIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <IconPath>k__BackingField: 
+  <Weight>k__BackingField: 100
+  <ItemType>k__BackingField: 3
+  EconomyData:
+    BasePrice: 0
+    Threshold: 1
+    RemainingThreshold: 100
+    DailyInflationHits: 0
+    DailyItemsSold: 0
+    InflationPerHit: 0.02
+    TotalInflationHits: 0
+    MaxInflationHits: 25
+    TotalItemsSold: 0
+    multiplier: {fileID: 0}
+  <armorType>k__BackingField: 1
+  <Enchantments>k__BackingField:
+  - {fileID: 11400000, guid: 4b97aabb2173a9748831893aa8e0dc03, type: 2}
+  - {fileID: 11400000, guid: 976f4c4676fefb04bb4d6d604b3f14de, type: 2}

@@ -46,6 +46,7 @@ public class WorldTileManager : MonoBehaviour
     [SerializeField] List<ResourceNodeSpawnSetting> nodeSettings = new();
     [SerializeField] bool UseFasterLoading = false;
     [SerializeField] bool HideLoading = false;
+    [SerializeField] bool ShowLogs = true;
     /// <summary>
     /// Attempt to place a given tile at the desired location
     /// </summary>
@@ -64,7 +65,7 @@ public class WorldTileManager : MonoBehaviour
         _placedTiles.Add(pos, tileHandler);
         tileHandler.transform.position = ((Vector3)WorldPosOfTile(pos));
         TileLoaded(tileHandler);
-        tileHandler.LoadTileCorroutine(UseFasterLoading, HideLoading);
+        tileHandler.LoadTileCorroutine(UseFasterLoading, HideLoading, ShowLogs:ShowLogs);
         return true;
     }
     private void Start()

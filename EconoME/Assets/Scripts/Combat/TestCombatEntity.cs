@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TestCombatEntity : MonoBehaviour, ICombatEntity
+public class TestCombatEntity : EntityCombatController
 {
     /*
     I like the idea of each combat entity having a set of attacks that can choose from.
@@ -12,20 +12,14 @@ public class TestCombatEntity : MonoBehaviour, ICombatEntity
      */
 
 
-    public CombatDamageReport ReceiveAttack(CombatAttackInstance attack)
-    {
-        attack.OnAttackHit.Invoke(this);
-
-        return new CombatDamageReport();
-    }
-
+    
     #region CreatingAProjectile
 
     void ProjectileAttack()
     {
 
         GameObject projectilePrefab = new();
-        var projectile = UnityEngine.Object.Instantiate(projectilePrefab);
+        var projectile = Instantiate(projectilePrefab);
         //Initialize the projectile with the attack
         //projectile.GetComponent<ProjectileHandler>().Initialize(attack);
 
@@ -42,30 +36,29 @@ public class TestCombatEntity : MonoBehaviour, ICombatEntity
         //projectile.GetComponent<ProjectileHandler>().Initialize(attack);
     }
 
-    CombatAttackInstance _attack;
+    CombatDamageInstance _baseAttack;
 
-    private void Awake()
-    {
-        _attack = new(CombatEntityType.Evil, this);
-    }
 
-    private void Start()
+    void BasicHit(EntityCombatController target)
     {
-        _attack.OnAttackHit += BasicHit;
-    }
-
-    void BasicHit(ICombatEntity target)
-    {
-        var entityTransform = (target as Component).transform;
+        var entityTransform = target.transform;
 
         //Call lightning strike on target at target position
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out ICombatEntity foundentity))
+        if (collision.TryGetComponent(out EntityCombatController foundentity))
         {
-            foundentity.ReceiveAttack(_attack);
+            CombatAttackInstance attack = new(this, _baseAttack);
+            foundentity.ReceiveAttack(attack);
         }
+    }
+
+    public override CombatDamageReport ReceiveAttack(CombatAttackInstance attack)
+    {
+         attack.OnAttackHit.Invoke(this);
+
+        return CombatDamageReport.ImmunityReport;
     }
     #endregion
 }

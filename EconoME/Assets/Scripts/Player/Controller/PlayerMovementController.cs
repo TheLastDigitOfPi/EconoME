@@ -4,26 +4,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovementController : MonoBehaviour
 {
     //Static
     public static PlayerMovementController Instance;
 
     //Events
-
-    public event Action OnEndUseTool;
-    public event Action OnStartUseTool;
-
     public event Action OnPlayerStartMove;
     public event Action OnPlayerStopMove;
 
     public event Action OnPlayerStartSprint;
     public event Action OnPlayerStopSprint;
+
     public event Action OnPlayerChangeDirection;
 
     //Public Fields
     [field: SerializeField] public bool PlayerSprinting { get; private set; }
+    [field: SerializeField] public ModifiableStat PlayerSpeed { get; private set; }
     [field: SerializeField] public bool UsingTool { get; private set; } = false;
     [field: SerializeField] public Vector2 MoveVec { get; private set; } = Vector2.zero;
     public bool IsWalking { get { return (!PlayerSprinting && (MoveVec.y != 0 || MoveVec.x != 0)); } }
@@ -31,14 +28,15 @@ public class PlayerMovementController : MonoBehaviour
     public MoveDirection CurrentRaycastDirection { get; private set; } = MoveDirection.Right;
 
     public bool PlayerWantsToBeMovingButCant { get; private set; }
-    public bool PlayerMoving { get; private set; }
+    public bool PlayerMoving { get { return !MoveVec.Equals(Vector2.zero); } }
 
     //Local Fields
     [SerializeField] float _baseSpeed;
     [SerializeField] float _runSpeedModifier = 1.5f;
     [SerializeField] public Vector3Variable PlayerPosition;
     [SerializeField] BoolListVariable UIOpen;
-    Rigidbody2D _rigidbody2D;
+    [SerializeField] Rigidbody2D _rigidbody2D;
+
     private MoveDirection _lastDirection = MoveDirection.Right;
     bool _playerMoveKeyPressed;
     bool _playerSprintKeyPressed;
@@ -49,7 +47,7 @@ public class PlayerMovementController : MonoBehaviour
     private InputAction _sprintAction;
 
     //Helpers
-    private float CurrentSpeed { get { return PlayerSprinting ? _baseSpeed * _runSpeedModifier : _baseSpeed; } }
+    private float CurrentSpeed { get { return PlayerSprinting ? PlayerSpeed.CurrentValue * _runSpeedModifier : PlayerSpeed.CurrentValue; } }
     public MoveDirection CurrentDirection
     {
         get
@@ -66,7 +64,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         get
         {
-            return !UIOpen.TrueValueExists() && !UsingTool && !GlobalSceneManager.Instance.SceneTransitioning;
+            return !UIOpen.TrueValueExists() && !NewPlayerAnimationController.Instance.AnimationLocked;
         }
     }
 
@@ -81,7 +79,6 @@ public class PlayerMovementController : MonoBehaviour
         }
         Instance = this;
 
-        _rigidbody2D = GetComponent<Rigidbody2D>();
 
         //Player Input
         playerInput = GetComponent<PlayerInput>();
@@ -92,7 +89,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Start()
     {
-        PlayerPosition.Value = transform.position;
+        PlayerPosition.Value = _rigidbody2D.transform.position;
         GlobalSceneManager.OnLocationChange += LocationChange;
     }
     private void LocationChange(WorldLocationData location)
@@ -104,7 +101,7 @@ public class PlayerMovementController : MonoBehaviour
         Debug.Log("x:" + pos.x + " y:" + pos.y + " z:" + pos.z);
 
         _rigidbody2D.position = pos;
-        PlayerPosition.Value = transform.position;
+        PlayerPosition.Value = _rigidbody2D.transform.position;
     }
 
     private void OnEnable()
@@ -118,6 +115,10 @@ public class PlayerMovementController : MonoBehaviour
     private void StoppedMovingKey(InputAction.CallbackContext obj)
     {
         _playerMoveKeyPressed = false;
+        if (PlayerMoving)
+        {
+            OnPlayerStopMove?.Invoke();
+        }
     }
 
     private void StartedMovingKey(InputAction.CallbackContext obj)
@@ -147,19 +148,9 @@ public class PlayerMovementController : MonoBehaviour
     //Character direction and movement + Deal with raycast results
     void FixedUpdate()
     {
+        //If we are no longer pressing the move key or are forced to stop moving, call the events
         if (!_playerMoveKeyPressed || !CanMove)
         {
-            if (PlayerMoving)
-            {
-                PlayerMoving = false;
-                OnPlayerStopMove?.Invoke();
-            }
-
-            if (PlayerSprinting)
-            {
-                PlayerSprinting = false;
-                OnPlayerStopSprint?.Invoke();
-            }
             return;
         }
 
@@ -169,12 +160,7 @@ public class PlayerMovementController : MonoBehaviour
         if (MoveVec.Equals(Vector2.zero))
             return;
 
-        //Check if we were stuck trying to move but now can move
-        if (!PlayerMoving)
-        {
-            PlayerMoving = true;
-            OnPlayerStartMove?.Invoke();
-        }
+        OnPlayerStartMove?.Invoke();
 
         if (!PlayerSprinting && _playerSprintKeyPressed)
         {
@@ -182,6 +168,11 @@ public class PlayerMovementController : MonoBehaviour
             OnPlayerStartSprint?.Invoke();
         }
 
+        if (PlayerSprinting && !_playerSprintKeyPressed)
+        {
+            PlayerSprinting = false;
+            OnPlayerStopSprint?.Invoke();
+        }
 
         //Get Direction Facing
         MoveDirection lastDirection = CurrentFacingDirection;
@@ -196,35 +187,21 @@ public class PlayerMovementController : MonoBehaviour
         //Move the player and store their position
         var movements = CurrentSpeed * Time.fixedDeltaTime * MoveVec;
         _rigidbody2D.MovePosition(_rigidbody2D.position + movements);
-        PlayerPosition.Value = transform.position;
+        PlayerPosition.Value = _rigidbody2D.transform.position;
     }
 
     public bool StartUsingTool(float toolUseTime)
     {
-        if (UsingTool)
+        if (!NewPlayerAnimationController.Instance.TryStartUsingTool())
             return false;
-        UsingTool = true;
 
         //Stop the player
-        PlayerMoving = false;
         MoveVec = Vector2.zero;
-
-        HeldItemHandler.Instance.StartProgress(toolUseTime);
-
-        //Invoke event
-        OnStartUseTool?.Invoke();
         return true;
     }
-    public void UseTool()
-    {
-        UsingTool = false;
-        OnEndUseTool?.Invoke();
-    }
 
-    public void CancelToolUse()
-    {
-        UsingTool = false;
-    }
+
+
 
 
 

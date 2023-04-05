@@ -16,7 +16,7 @@ public class TimeObject : ScriptableObject
 
     [SerializeField] int TotalSecondsPerDay;
     public int TicksPerDay { get { return MaxTicksInDay / TicksPerSecond; } }
-    [field: SerializeField] public int TimeOfDayTick { get; set; }
+    [field: SerializeField] public int CurrentTick { get; set; }
 
     public void UpdateTotalSecondsPerDay()
     {
@@ -29,11 +29,11 @@ public class TimeObject : ScriptableObject
         Week = 0;
         Month = 0;
         Year = 0;
-        TimeOfDayTick = 0;
+        CurrentTick = 0;
     }
     internal void ResetTime(GameTime time)
     {
-        TimeOfDayTick = time.StandardizedTime;
+        CurrentTick = time.StandardizedTime;
         Day = 0;
         Week = 0;
         Month = 0;
