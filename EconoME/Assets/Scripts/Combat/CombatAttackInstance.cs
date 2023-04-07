@@ -16,10 +16,10 @@ public class CombatAttackInstance
     /// </remarks>
     public Action<EntityCombatController> OnAttackHit;
     public Action<EntityCombatController> OnAttackFail;
-    public CombatDamageInstance Attack { get; private set; }
+    public WeaponDamage Attack { get; private set; }
     public EntityCombatController Attacker { get; private set; }
 
-    public CombatAttackInstance(EntityCombatController attacker, CombatDamageInstance attack)
+    public CombatAttackInstance(EntityCombatController attacker, WeaponDamage attack)
     {
         Attack = attack;
         Attacker = attacker;

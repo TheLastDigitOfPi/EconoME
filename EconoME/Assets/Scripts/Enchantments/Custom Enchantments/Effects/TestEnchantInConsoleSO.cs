@@ -2,7 +2,7 @@
 using System;
 using System.Collections;
 
-[CreateAssetMenu(fileName = "New Test Message Enchant", menuName = "ScriptableObjects/Enchants/Custom/Effects/Test Message")]
+[CreateAssetMenu(fileName = "New Test Message Enchant", menuName = "ScriptableObjects/Enchants/Armor/Custom/Effects/Test Message")]
 public class TestEnchantInConsoleSO : ArmorEffectSO
 {
     [SerializeField] string Message;

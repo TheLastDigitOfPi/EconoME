@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/Enchants/Custom/New Custom Enchantment", fileName = "New Custom Enchantment")]
+[CreateAssetMenu(menuName = "ScriptableObjects/Enchants/Armor/Custom/New Custom Enchantment", fileName = "New Custom Enchantment")]
 public class CustomEnchantmentSO : ArmorEnchantmentSO
 {
     [SerializeField] EventTriggerSO TriggerSO;

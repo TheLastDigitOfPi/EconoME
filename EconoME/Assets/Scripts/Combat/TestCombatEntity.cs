@@ -36,7 +36,7 @@ public class TestCombatEntity : EntityCombatController
         //projectile.GetComponent<ProjectileHandler>().Initialize(attack);
     }
 
-    CombatDamageInstance _baseAttack;
+    WeaponDamage _baseAttack;
 
 
     void BasicHit(EntityCombatController target)

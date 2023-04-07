@@ -140,36 +140,38 @@ public class NewPlayerAnimationController : MonoBehaviour
         if (AnimationLocked)
             return false;
 
+        Debug.Log("Starting Tool Anim");
         if (_toolWaitingCoroutine != null)
+        {
             StopCoroutine(_toolWaitingCoroutine);
+            _toolWaitingCoroutine = null;
+        }
 
         AnimationLocked = true;
-        
-        var currentClipInfo = _animator.GetCurrentAnimatorClipInfo(0);
-        if (currentClipInfo[0].clip.name != _interactAnimationName)
-            _animator.CrossFade(_interactAnimationName, 0);
-        
+        _animator.CrossFade(_interactAnimationName, 0);
+
         //Subscribe to when to stop the animation
         HeldItemHandler.Instance.OnComplete += ToolComplete;
         return true;
         void ToolComplete()
         {
             AnimationLocked = false;
-            //Since don't want to start and stop the animation if continuously using the tool, we check for it here
+            HeldItemHandler.Instance.OnComplete -= ToolComplete;
+            //Stop the animation after a set time, cancel the routine if using tool again
             _toolWaitingCoroutine = StartCoroutine(WaitForNextAction());
             IEnumerator WaitForNextAction()
             {
                 //Wait some time
-                yield return new WaitForSeconds(0.6f);
+                yield return new WaitForSeconds(0.3f);
                 //If our animation has not been changed by anyone and the coroutine hasn't been stopped, we will idle
                 var currentClipInfo = _animator.GetCurrentAnimatorClipInfo(0);
+                Debug.Log("At Stop Idle");
                 if (currentClipInfo[0].clip.name == _interactAnimationName)
                     Idle();
+                _toolWaitingCoroutine = null;
             }
         }
     }
-
-
 
     private void ChangeDirection()
     {
@@ -188,7 +190,7 @@ public class NewPlayerAnimationController : MonoBehaviour
     Coroutine _waitForMove;
     private void StopMoving()
     {
-        if (AnimationLocked)
+        if (AnimationLocked || _toolWaitingCoroutine != null)
             return;
         StopAnimation();
         _animator.CrossFade(_idleAnimationName, 0);
@@ -197,13 +199,13 @@ public class NewPlayerAnimationController : MonoBehaviour
 
     private void StartMoving()
     {
-        _waitForMove = StartCoroutine(MoveAnimation());
-        IEnumerator MoveAnimation()
-        {
-            yield return new WaitUntil(() => { return PlayerMovementController.Instance.PlayerMoving; });
-            _spriteRenderer.flipX = PlayerMovementController.Instance.CurrentFacingDirection == MoveDirection.Left;
-            _animator.CrossFade(_movementAnimationName, 0);
-        }
+        if (AnimationLocked)
+            return;
+        _spriteRenderer.flipX = PlayerMovementController.Instance.CurrentFacingDirection == MoveDirection.Left;
+
+        Debug.Log("Started Moving");
+        _animator.CrossFade(_movementAnimationName, 0);
+
     }
     private void StopSprinting()
     {

@@ -17,35 +17,35 @@ MonoBehaviour:
     ItemSlots:
     - SlotNum: 0
       _inventoryGroup: {fileID: 11400000}
-      _item:
-        rid: 4779453322114367527
+      <Item>k__BackingField:
+        rid: 4779453470859592018
     - SlotNum: 1
       _inventoryGroup: {fileID: 11400000}
-      _item:
-        rid: 4779453322114367531
+      <Item>k__BackingField:
+        rid: 4779453470859592019
     - SlotNum: 2
       _inventoryGroup: {fileID: 11400000}
-      _item:
-        rid: -2
+      <Item>k__BackingField:
+        rid: 4779453470859592030
     - SlotNum: 3
       _inventoryGroup: {fileID: 11400000}
-      _item:
+      <Item>k__BackingField:
         rid: -2
     - SlotNum: 4
       _inventoryGroup: {fileID: 11400000}
-      _item:
+      <Item>k__BackingField:
         rid: -2
     - SlotNum: 5
       _inventoryGroup: {fileID: 11400000}
-      _item:
+      <Item>k__BackingField:
         rid: -2
     - SlotNum: 6
       _inventoryGroup: {fileID: 11400000}
-      _item:
+      <Item>k__BackingField:
         rid: -2
     - SlotNum: 7
       _inventoryGroup: {fileID: 11400000}
-      _item:
+      <Item>k__BackingField:
         rid: -2
   <MaxSlots>k__BackingField: {fileID: 11400000, guid: 976a611dfed61c745b54228491ff211d, type: 2}
   <ItemRequirement>k__BackingField:
@@ -61,31 +61,19 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4779453322114367527
-      type: {class: Tool, ns: , asm: Assembly-CSharp}
-      data:
-        <ItemBase>k__BackingField: {fileID: 11400000, guid: a419d88daffb323499d458b180c8a716, type: 2}
-        <Stacksize>k__BackingField: 1
-        _toolTier: 0
-        _damage: 50
-        _toolSwingAnimations:
-        - {fileID: 11400000, guid: 159fa61be8d25944faec4fd53e6c2d45, type: 2}
-        - {fileID: 11400000, guid: 71db539f91449fb4dba7edfbb90c23b3, type: 2}
-        - {fileID: 11400000, guid: 84bf9ee7f5b53134b968cf4215795482, type: 2}
-        - {fileID: 11400000, guid: fbe79472d7050d2478aedf026852832a, type: 2}
-    - rid: 4779453322114367531
+    - rid: 4779453470859592018
       type: {class: TileItem, ns: , asm: Assembly-CSharp}
       data:
         <ItemBase>k__BackingField: {fileID: 11400000, guid: e33e19fcf8b206d48b936cf9b1de6d56, type: 2}
-        <Stacksize>k__BackingField: 1
-        <Seed>k__BackingField: -861284574
+        _stackSize: 1
+        <Seed>k__BackingField: 645959577
         <TileSettings>k__BackingField:
           <Tier>k__BackingField: 0
-          <TileBiome>k__BackingField: 0
+          <TileBiome>k__BackingField: 2
           <NodesThatCanBeGenerated>k__BackingField:
           - {fileID: 11400000, guid: f9ba5fc132170024c8d100b18194ba9a, type: 2}
           <MobsThatCanSpawn>k__BackingField: []
-          <BaseSeed>k__BackingField: 4999777
+          <BaseSeed>k__BackingField: 5537562
           <UseRandomSeed>k__BackingField: 0
           <GrassArea>k__BackingField: 0.6
           <GroundArea>k__BackingField: 0.7
@@ -195,104 +183,63 @@ MonoBehaviour:
           <TilePos>k__BackingField: {x: 0, y: 0}
           <MaxDrops>k__BackingField: 10
           <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
-        - <NodeBase>k__BackingField: {fileID: 11400000, guid: 73452f3fc3b79d740b533cf6e3cb07d4, type: 2}
-          <TilePos>k__BackingField: {x: 0, y: 0}
-          <MaxDrops>k__BackingField: 10
-          <RemainingDrops>k__BackingField: 10
         _possibleNodePlacements:
-        - {x: 1, y: 3}
-        - {x: 1, y: 11}
-        - {x: 1, y: 12}
-        - {x: 1, y: 13}
-        - {x: 2, y: 12}
-        - {x: 2, y: 13}
-        - {x: 3, y: 12}
-        - {x: 3, y: 13}
-        - {x: 3, y: 14}
+        - {x: 2, y: 2}
+        - {x: 2, y: 6}
+        - {x: 2, y: 7}
+        - {x: 3, y: 1}
+        - {x: 3, y: 3}
+        - {x: 3, y: 9}
+        - {x: 4, y: 5}
         - {x: 4, y: 11}
-        - {x: 5, y: 2}
-        - {x: 5, y: 11}
-        - {x: 6, y: 7}
-        - {x: 6, y: 8}
-        - {x: 6, y: 10}
-        - {x: 6, y: 13}
-        - {x: 6, y: 14}
-        - {x: 7, y: 6}
-        - {x: 7, y: 14}
-        - {x: 8, y: 6}
-        - {x: 8, y: 7}
-        - {x: 8, y: 14}
-        - {x: 9, y: 7}
-        - {x: 9, y: 8}
+        - {x: 4, y: 12}
+        - {x: 5, y: 4}
+        - {x: 5, y: 5}
+        - {x: 7, y: 2}
+        - {x: 8, y: 2}
+        - {x: 9, y: 1}
+        - {x: 10, y: 2}
         - {x: 10, y: 6}
         - {x: 10, y: 8}
-        - {x: 11, y: 5}
-        - {x: 11, y: 8}
-        - {x: 12, y: 7}
-        - {x: 12, y: 8}
-        - {x: 12, y: 9}
-        - {x: 13, y: 6}
-        - {x: 13, y: 7}
+        - {x: 11, y: 3}
+        - {x: 11, y: 6}
+        - {x: 12, y: 2}
+        - {x: 12, y: 4}
+        - {x: 12, y: 5}
         - {x: 13, y: 9}
-        - {x: 13, y: 10}
-        - {x: 14, y: 6}
-        - {x: 14, y: 7}
-        - {x: 14, y: 11}
-        - {x: 14, y: 12}
+        - {x: 13, y: 12}
+        - {x: 14, y: 9}
         - {x: 14, y: 13}
+    - rid: 4779453470859592019
+      type: {class: Tool, ns: , asm: Assembly-CSharp}
+      data:
+        <ItemBase>k__BackingField: {fileID: 11400000, guid: a419d88daffb323499d458b180c8a716, type: 2}
+        _stackSize: 1
+        _toolTier: 0
+        _damage: 50
+        _toolSwingAnimations:
+        - {fileID: 11400000, guid: 159fa61be8d25944faec4fd53e6c2d45, type: 2}
+        - {fileID: 11400000, guid: 71db539f91449fb4dba7edfbb90c23b3, type: 2}
+        - {fileID: 11400000, guid: 84bf9ee7f5b53134b968cf4215795482, type: 2}
+        - {fileID: 11400000, guid: fbe79472d7050d2478aedf026852832a, type: 2}
+    - rid: 4779453470859592030
+      type: {class: Weapon, ns: , asm: Assembly-CSharp}
+      data:
+        <ItemBase>k__BackingField: {fileID: 11400000, guid: 6a65e69d2d9a5694e9a7f57819018a5e, type: 2}
+        _stackSize: 1
+        _weaponTier: 0
+        _attackSpeed: 1
+        _startingDamage:
+          TrueDamage: 0
+          PhysicalDamage: 10
+          RangedDamage: 0
+          MagicalDamage: 0
+        <CurrentDamage>k__BackingField:
+          TrueDamage: 0
+          PhysicalDamage: 15
+          RangedDamage: 0
+          MagicalDamage: 0
+        _attackObjectPrefab: {fileID: 6526385537241600330, guid: c5a98f4250de8cc41b7578c00f10abe4, type: 3}
+        Enchantments:
+        - {fileID: 11400000, guid: cbb0d8841c2cb74489d11cb64b0e691f, type: 2}
+        <Attacking>k__BackingField: 0

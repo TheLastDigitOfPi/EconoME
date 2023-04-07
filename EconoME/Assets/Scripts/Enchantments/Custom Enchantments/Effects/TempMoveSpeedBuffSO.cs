@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Temp Movement Speed Buff", menuName = "ScriptableObjects/Enchants/Custom/Effects/Movement Speed")]
+[CreateAssetMenu(fileName = "New Temp Movement Speed Buff", menuName = "ScriptableObjects/Enchants/Armor/Custom/Effects/Movement Speed")]
 public class TempMoveSpeedBuffSO : ArmorEffectSO
 {
     [SerializeField] StatChanger _moveSpeedModifier;

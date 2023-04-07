@@ -62,6 +62,12 @@ public class PlayerCombatController : EntityCombatController
         HotBarHandler.Instance.OnSelectItem += HotbarSelectedItem;
         HotBarHandler.Instance.OnDeselectItem += HotbarDeselectItem;
         RaycastHandler.Instance.OnRaycastFail += AttemptAttack;
+        PlayerMovementController.Instance.OnPlayerStartMove += UpdateDirection;
+    }
+
+    private void UpdateDirection()
+    {
+        FacingDirection = PlayerMovementController.Instance.CurrentDirection;
     }
 
     private void AttemptAttack()
@@ -260,15 +266,13 @@ public abstract class CombatReportModifier
     public abstract void ApplyModifier(CombatDamageReport report);
 }
 
-
-
 public abstract class EntityCombatController : MonoBehaviour
 {
     [field: SerializeField] public CombatEntityDefenses EntityStartingStats { get; protected set; }
     [field: SerializeField] public CombatEntityDefenses EntityCurrentStats { get; protected set; }
     [field: SerializeField] public CombatEntityType EntityType { get; protected set; }
     [SerializeField] protected List<DefenseStatChangeInstance> _statModifiers = new();
-
+    public MoveDirection FacingDirection { get; protected set; }
     public event Action OnDeath;
     protected Action onDeath { get { return OnDeath; } set { OnDeath = value; } }
 

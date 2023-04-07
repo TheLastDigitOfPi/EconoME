@@ -3820,6 +3820,10 @@ PrefabInstance:
       propertyPath: m_Type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4354910735631911780, guid: 3b67c6d2e7ae27641a575a81bb5009e7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000011444092
+      objectReference: {fileID: 0}
     - target: {fileID: 4354910736611929138, guid: 3b67c6d2e7ae27641a575a81bb5009e7, type: 3}
       propertyPath: m_Name
       value: Inventory Slot

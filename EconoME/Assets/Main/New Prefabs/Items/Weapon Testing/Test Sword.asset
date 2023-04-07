@@ -39,9 +39,12 @@ MonoBehaviour:
   <WeaponTier>k__BackingField: 0
   <Damage>k__BackingField:
     TrueDamage: 0
-    PhysicalDamage: 0
+    PhysicalDamage: 10
     RangedDamage: 0
+    MagicalDamage: 0
   <AttackSpeed>k__BackingField: 1
-  <Enchantments>k__BackingField: []
+  <Enchantments>k__BackingField:
+  - {fileID: 11400000, guid: cbb0d8841c2cb74489d11cb64b0e691f, type: 2}
   <WeaponType>k__BackingField: 0
+  <AttackObject>k__BackingField: {fileID: 6526385537241600330, guid: c5a98f4250de8cc41b7578c00f10abe4, type: 3}
   <AttackAnimation>k__BackingField: 0

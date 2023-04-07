@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Temp Attack Speed Buff", menuName = "ScriptableObjects/Enchants/Custom/Effects/Attack Speed")]
+[CreateAssetMenu(fileName = "New Temp Attack Speed Buff", menuName = "ScriptableObjects/Enchants/Armor/Custom/Effects/Attack Speed")]
 public class TempAttackSpeedBuffSO : ArmorEffectSO
 {
     [SerializeField] StatChanger _attackSpeedModifier;

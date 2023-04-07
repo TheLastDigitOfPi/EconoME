@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Defense Enchantment", menuName = "ScriptableObjects/Enchants/Flat Defense Enchantment")]
+[CreateAssetMenu(fileName = "New Defense Enchantment", menuName = "ScriptableObjects/Enchants/Armor/Flat Defense Enchantment")]
 public class DefenseEnchantmentSO : ArmorEnchantmentSO
 {
     [SerializeField] DefenseStatChangeInstance StatChanges;
@@ -23,8 +23,6 @@ public class DefenseEnchantment : ArmorEnchantment
     {
         StatChanges = changes;
     }
-
-
 
     private void AddDefenses(CombatDamageReport report)
     {

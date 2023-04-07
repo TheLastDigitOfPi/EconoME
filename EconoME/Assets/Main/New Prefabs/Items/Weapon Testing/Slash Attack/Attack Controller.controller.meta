@@ -1,10 +1,8 @@
 fileFormatVersion: 2
-guid: 781e603ff193edf4db8681df0395d21f
-labels:
-- Inventory
+guid: 0f59d9f778a91b94b8bd870c75e99a1f
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 11400000
+  mainObjectFileID: 9100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

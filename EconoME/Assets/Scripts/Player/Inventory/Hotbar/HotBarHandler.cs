@@ -113,6 +113,8 @@ public class HotBarHandler : MonoBehaviour
 
     void SelectHotBarSlot(int newSelectedSlot)
     {
+        if(HeldItemHandler.Instance.UsingItem)
+            return;
         //Return If we try to select a slot outside of the hotbar range
         if (newSelectedSlot > HotBar.Data.ItemSlots.Length)
             return;

@@ -11,6 +11,10 @@ public class HeldItemHandler : MonoBehaviour
     public event Action OnComplete;
     public event Action OnStart;
 
+    //Public
+
+    public bool UsingItem { get; private set; }
+
     //Local
     [SerializeField] SpriteRenderer frontIconForeground;
     [SerializeField] SpriteRenderer frontIconBackground;
@@ -71,7 +75,7 @@ public class HeldItemHandler : MonoBehaviour
 
         frontIconForeground.sprite = icon;
         backIconForeground.sprite = icon;
-        backIconForeground.color = iconBase.IconColor;
+        backIconForeground.color = iconBase.IconColor - new Color(0, 0, 0, 0.5f);
         frontIconForeground.color = iconBase.IconColor;
 
         if (foundItem.ItemBase.BackgroundIcon.Icon != null)
@@ -82,7 +86,7 @@ public class HeldItemHandler : MonoBehaviour
             frontIconBackground.sprite = backIcon;
             backIconBackground.sprite = backIcon;
 
-            frontIconBackground.color = backIconBase.IconColor;
+            frontIconBackground.color = backIconBase.IconColor - new Color(0, 0, 0, 0.5f);
             backIconBackground.color = backIconBase.IconColor;
         }
 
@@ -93,26 +97,25 @@ public class HeldItemHandler : MonoBehaviour
 
         frontIconBackground.transform.localScale = ScaledObjectValue;
         backIconBackground.transform.localScale = ScaledObjectValue;
-
-        spriteMask.transform.localScale = ScaledObjectValue / 2;
-
     }
 
     public void StartProgress(float totalTime)
     {
         OnStart?.Invoke();
-        spriteMask.transform.localPosition = new Vector3(-spriteMask.transform.localScale.x, 0, 0);
+        UsingItem = true;
+        spriteMask.transform.localPosition = new Vector3(0, -spriteMask.transform.localScale.y, 0);
         StartCoroutine(StartFill());
         IEnumerator StartFill()
         {
             float currentTime = 0;
-            while (spriteMask.transform.localPosition.x < 0)
+            while (spriteMask.transform.localPosition.y < 0)
             {
                 currentTime += Time.deltaTime;
-                spriteMask.transform.localPosition = new Vector3(-spriteMask.transform.localScale.x + currentTime / totalTime, 0, 0);
+                spriteMask.transform.localPosition = new Vector3(0, -spriteMask.transform.localScale.y + currentTime / totalTime, 0);
                 yield return null;
             }
             OnComplete?.Invoke();
+            UsingItem = false;
         }
     }
 }
