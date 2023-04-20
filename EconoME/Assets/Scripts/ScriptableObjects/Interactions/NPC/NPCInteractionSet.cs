@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -7,18 +8,18 @@ public class NPCInteractionSet : ScriptableObject
 {
     public NPCStatusInteraction[] AllNPCInteractions;
 
-    internal Interaction[] GetCurrentInteraction(NPCRelationshipStatus status, NPCRelationshipStatus NormalStatus)
+    internal NPCStatusInteraction GetCurrentInteraction(NPCRelationshipStatus status, NPCRelationshipStatus NormalStatus, List<NPCStatusInteraction> completedInteractions)
     {
-        var foundInteraction = AllNPCInteractions.FirstOrDefault(i => i.StatusForInteraction == status);
+        var foundInteraction = AllNPCInteractions.FirstOrDefault(i => i.StatusForInteraction == status && !completedInteractions.Any(a => a.ID == i.ID));
         if (foundInteraction == null)
         {
-            foundInteraction = AllNPCInteractions.FirstOrDefault(i => i.StatusForInteraction == NormalStatus);
+            foundInteraction = AllNPCInteractions.FirstOrDefault(i => i.StatusForInteraction == NormalStatus && !completedInteractions.Any(a => a.ID == i.ID));
             if (foundInteraction == null)
             {
                 return null;
             }
         }
-        return foundInteraction.Interactions;
+        return foundInteraction;
     }
 }
 

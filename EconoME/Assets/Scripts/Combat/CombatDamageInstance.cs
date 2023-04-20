@@ -3,6 +3,9 @@
 /// <summary>
 /// The damage values used to calculate the damage being done
 /// </summary>
+/// 
+
+/*
 [Serializable]
 public struct CombatDamageInstance
 {
@@ -23,7 +26,7 @@ public struct CombatDefenseInstance
     public float TrueDamage;
     public float ElementalDamage;
 }
-
+*/
 #region Thoughts
 /*
 

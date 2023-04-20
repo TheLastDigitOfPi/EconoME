@@ -39,30 +39,38 @@ public class InteractionHandler : MonoBehaviour
 
         if (!_queue.TryDequeue(out Interaction nextInteraction))
             return;
-
+        CurrentInteractionActive = true;
         nextInteraction.Activate(this);
+        nextInteraction.OnInteractionEnd += InteractionComplete;
     }
 
-    public bool AddNew(Interaction newInteraction)
+    private void InteractionComplete()
+    {
+        CurrentInteractionActive = false;
+    }
+
+    public bool AddNew(InteractionSO newInteraction, out Interaction interactionMade)
     {
         Interaction[] interactions = _queue.ToArray();
+        interactionMade = null;
         //Make sure interaction isn't already queued up
         for (int i = 0; i < interactions.Length; i++)
         {
             if (interactions[i].IsEqualTo(newInteraction)) { return false; }
         }
-        _queue.Enqueue(newInteraction);
+        interactionMade = newInteraction.GetInteraction();
+        _queue.Enqueue(interactionMade);
         return true;
     }
 
     #region AdminTesting
     [Space(10)]
     [Header("Admin Testing")]
-    [SerializeField] Interaction TestInteraction;
+    [SerializeField] InteractionSO TestInteraction;
 
     public void TestTheInteraction()
     {
-        _queue.Enqueue(TestInteraction);
+        _queue.Enqueue(TestInteraction.GetInteraction());
     }
 
     #endregion

@@ -1,32 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class SlashAttack : AttackObject
 {
     Weapon _weapon;
     EntityCombatController _attacker;
     [SerializeField] SpriteRenderer _spriteRenderer;
-    public override void Initialize(Weapon attackWeapon, EntityCombatController attacker)
+    bool attackTimerFinished = false;
+    public Vector2 Offset;
+    public override void Initialize(Weapon attackWeapon, EntityCombatController attacker, Vector2 direction)
     {
         _weapon = attackWeapon;
         _attacker = attacker;
+        Offset = direction;
     }
 
     private void Start()
     {
-        var offset = Vector3.right * 1 + Vector3.up * 0.2f;
-        _spriteRenderer.flipX = true;
-        switch (_attacker.FacingDirection)
-        {
-            case MoveDirection.Left:
-                offset = Vector3.left * 1 + Vector3.up * 0.2f;
-                _spriteRenderer.flipX = false;
-                break;
-            default:
-                break;
-        }
-        transform.position = _attacker.transform.position + offset;
+        _spriteRenderer.flipX = Offset.x >= 0;
+        transform.position = _attacker.transform.position + Offset.ToVector3();
+        StartCoroutine(StartAttackTimer());
         StartCoroutine(DestroyAfterComplete());
         IEnumerator DestroyAfterComplete()
         {
@@ -35,9 +30,17 @@ public class SlashAttack : AttackObject
         }
     }
 
-    List<EntityCombatController> HitEnemies = new();
-    private void OnTriggerStay2D(Collider2D collision)
+    IEnumerator StartAttackTimer()
     {
+        yield return new WaitForSeconds(0.2f);
+        attackTimerFinished = true;
+    }
+
+    List<EntityCombatController> HitEnemies = new();
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(attackTimerFinished)
+            return;
         if (collision.TryGetComponent(out EntityCombatController entity))
         {
             if (entity == _attacker || HitEnemies.Contains(entity))
@@ -45,7 +48,15 @@ public class SlashAttack : AttackObject
             HitEnemies.Add(entity);
             CombatAttackInstance attackInstance = new(_attacker, _weapon.CurrentDamage);
             Debug.Log("Hit Entity: " + entity.name);
-            var report = entity.ReceiveAttack(attackInstance);
+
+            if (!entity.TryReceiveAttack(_weapon.DoAttack, out var report))
+                return;
+            if (entity is IKnockbackable)
+            {
+                var knockbacktarget = entity as IKnockbackable;
+                var direction = -1 * (_attacker.transform.position - entity.transform.position).normalized;
+                knockbacktarget.Knockback(5, direction);
+            }
             _weapon.AttackLanded(report);
         }
 

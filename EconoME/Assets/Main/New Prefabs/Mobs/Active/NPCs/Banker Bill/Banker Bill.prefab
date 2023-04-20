@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 6567197173530968135}
   - component: {fileID: 8360371496944692937}
   - component: {fileID: 93385988}
+  - component: {fileID: 2927200649353455099}
+  - component: {fileID: 5463870988538294231}
   m_Layer: 0
   m_Name: Banker Bill
   m_TagString: Untagged
@@ -94,7 +96,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 1
 --- !u!95 &3740460229830777821
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111,7 +113,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!61 &7370114270232096888
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -241,9 +243,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a229884b668e2634d8d238aeb8fab61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Health>k__BackingField: -1
+  <Health>k__BackingField:
+    rid: 8968770633804284074
+  <EntityType>k__BackingField: 0
   <IsScared>k__BackingField: 0
   <IsHappy>k__BackingField: 0
   <IsAngry>k__BackingField: 0
   <IsNeutral>k__BackingField: 0
   <Speed>k__BackingField: 2
+  <AttackRange>k__BackingField: 0
+  _movementAnimationName: Walk
+  _idleAnimationName: Idle
+  _attackName: Stomp
+  _attackCooldown: 1
+  _canAttack: 1
+  attackObject: {fileID: 0}
+  weapon:
+    rid: 8968770633804284075
+  references:
+    version: 2
+    RefIds:
+    - rid: 8968770633804284074
+      type: {class: HealthStat, ns: , asm: Assembly-CSharp}
+      data:
+        <BaseValue>k__BackingField: 0
+        <CurrentValue>k__BackingField: 0
+        changes: []
+        <CurrentHealth>k__BackingField: 0
+    - rid: 8968770633804284075
+      type: {class: Weapon, ns: , asm: Assembly-CSharp}
+      data:
+        <ItemBase>k__BackingField: {fileID: 0}
+        _stackSize: -1
+        _weaponTier: 0
+        _attackSpeed: 0
+        _startingDamage:
+          TrueDamage: 0
+          PhysicalDamage: 0
+          RangedDamage: 0
+          MagicalDamage: 0
+          StatusEffects: []
+        <CurrentDamage>k__BackingField:
+          TrueDamage: 0
+          PhysicalDamage: 0
+          RangedDamage: 0
+          MagicalDamage: 0
+          StatusEffects: []
+        _attackObjectPrefab: {fileID: 0}
+        Enchantments: []
+        <Attacking>k__BackingField: 0
+        _statModifiers: []
+--- !u!114 &2927200649353455099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4a835de2833074783e39bd2171c920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossibleInteractions: {fileID: 0}
+--- !u!50 &5463870988538294231
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955032257977377370}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

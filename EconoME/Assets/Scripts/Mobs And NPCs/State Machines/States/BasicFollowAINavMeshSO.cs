@@ -31,7 +31,7 @@ public class BasicFollowAINavMesh : AIState
     Mob _mobData;
 
     public BasicFollowAINavMesh() { }
-    
+
 
     public BasicFollowAINavMesh(AIController controller, BasicFollowAINavMesh other) : base(controller, other.AICondition)
     {
@@ -64,7 +64,8 @@ public class BasicFollowAINavMesh : AIState
 
     public override void OnEnter()
     {
-        Controller.NavMeshAgent.SetDestination(_playerPosition.Value);
+        if (Controller.NavMeshAgent != null && Controller.NavMeshAgent.isOnNavMesh)
+            Controller.NavMeshAgent.SetDestination(_playerPosition.Value);
         _animator.CrossFade(_walkAnimationName, 0);
         angle = Vector3.Angle(_playerPosition.Value, Controller.transform.position);
     }
@@ -76,7 +77,8 @@ public class BasicFollowAINavMesh : AIState
 
     public override void Tick()
     {
-
+        if (Controller.NavMeshAgent == null || !Controller.NavMeshAgent.isOnNavMesh)
+            return;
         //Circle around player if near them
         if (Vector3.Distance(Controller.transform.position, _playerPosition.Value) <= _circleRadiusMax)
         {
@@ -93,6 +95,7 @@ public class BasicFollowAINavMesh : AIState
 
         void CircleAroundPlayer()
         {
+
             //Get the position of the circle we want to rotate around
             Vector3 positionOffset = new();
             positionOffset.Set(Mathf.Cos(angle) * _circleRadius, Mathf.Sin(angle) * _circleRadius, 0);

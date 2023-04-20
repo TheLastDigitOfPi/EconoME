@@ -17,10 +17,9 @@ public class IsDead : AIStateCondition
         {
             Error = "Failed to find mob class";
             return false;
-
         }
 
-        Condition = () => mob.Health <= 0;
+        Condition = () => mob.Health.CurrentHealth <= 0;
         Error = default;
         return true;
     }

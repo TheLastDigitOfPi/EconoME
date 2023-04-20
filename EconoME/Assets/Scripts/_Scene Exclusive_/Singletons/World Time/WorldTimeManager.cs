@@ -82,6 +82,18 @@ public class WorldTimeManager : MonoBehaviour
 
     Coroutine currentRunningClock;
 
+    public void StopTime()
+    {
+        TimePaused = true;
+        Time.timeScale = 0;
+    }
+
+    public void ResumeTime()
+    {
+        TimePaused = false;
+        Time.timeScale = 1;
+    }
+
     private void Awake()
     {
         if (Instance != null)

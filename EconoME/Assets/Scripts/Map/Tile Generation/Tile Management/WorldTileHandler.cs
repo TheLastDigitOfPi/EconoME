@@ -20,7 +20,7 @@ public class WorldTileHandler : MonoBehaviour
     public TileConnectors TileConnectors { get; private set; } = new();
     const int HEIGHT = 32;
     const int WIDTH = 32;
-    TileItem _tileData;
+    public TileItem TileData {get; private set;}
     public Vector2Int TilePos { get; private set; }
 
     //Helpers
@@ -29,7 +29,7 @@ public class WorldTileHandler : MonoBehaviour
     public event Action<WorldTileHandler> OnTileLoad;
     public void Initialize(TileItem data, Vector2Int pos)
     {
-        _tileData = data;
+        TileData = data;
         TilePos = pos;
     }
 
@@ -40,13 +40,13 @@ public class WorldTileHandler : MonoBehaviour
     /// <returns>Returns true if succesfully loads tile</returns>
     public bool LoadTile()
     {
-        if (_tileData == null)
+        if (TileData == null)
             return false;
 
-        _tileData.Initialize(WIDTH, HEIGHT);
+        TileData.Initialize(WIDTH, HEIGHT);
 
-        var Seed = _tileData.Seed;
-        var tileSettings = database.GetTileSettings(_tileData.TileSettings);
+        var Seed = TileData.Seed;
+        var tileSettings = database.GetTileSettings(TileData.TileSettings);
 
         //Tiles
         var Water = tileSettings.Water;
@@ -54,7 +54,7 @@ public class WorldTileHandler : MonoBehaviour
         var CliffRT = tileSettings.Cliffs;
 
         //Noise
-        var noise = _tileData.TryGetNoise();
+        var noise = TileData.TryGetNoise();
 
         LoadBase();
         LoadGrass();
@@ -76,7 +76,7 @@ public class WorldTileHandler : MonoBehaviour
             if (Grass == null)
                 return;
 
-            var _grassArea = _tileData.TileSettings.GrassArea;
+            var _grassArea = TileData.TileSettings.GrassArea;
 
             for (int x = 0; x < noise.GetLength(0); x++)
             {
@@ -122,7 +122,7 @@ public class WorldTileHandler : MonoBehaviour
             if (Water == null)
                 return;
 
-            var _waterArea = _tileData.TileSettings.WaterArea;
+            var _waterArea = TileData.TileSettings.WaterArea;
             for (int x = 1; x < noise.GetLength(0) - 1; x++)
             {
                 for (int y = 1; y < noise.GetLength(1) - 1; y++)
@@ -144,7 +144,7 @@ public class WorldTileHandler : MonoBehaviour
 
             bool[,] nodesInSpot = new bool[16, 16];
 
-            List<Vector2Int> possiblePlacements = _tileData.GetPossibleNodePlacements();
+            List<Vector2Int> possiblePlacements = TileData.GetPossibleNodePlacements();
 
             while (placedNodes < possiblePlacements.Count)
             {
@@ -165,12 +165,12 @@ public class WorldTileHandler : MonoBehaviour
                 var randX = randSpot.x;
                 var randY = randSpot.y;
 
-                var nodeToPlace = _tileData.TileSettings.GetNodePrefab(Seed.GetHashCode(), loop);
+                var nodeToPlace = TileData.TileSettings.GetNodePrefab(Seed.GetHashCode(), loop);
                 if (nodeToPlace == null)
                     continue;
                 placedNodes++;
                 var node = Instantiate(nodeToPlace, NodesParent);
-                _tileData.ResrouceNodesOnTile.Add(node.GetComponentInChildren<ResourceNodeHandler>(true).NodeData);
+                TileData.ResrouceNodesOnTile.Add(node.GetComponentInChildren<ResourceNodeHandler>(true).NodeData);
                 node.transform.localPosition = new Vector3(randX * 2 + 1 + randOffsetX, (randY + 2) * 2 - 1 + randOffsetY, 0);
                 nodesInSpot[randX, randY] = true;
                 possiblePlacements.Remove(randSpot);
@@ -190,7 +190,7 @@ public class WorldTileHandler : MonoBehaviour
 
     public void LoadTileCorroutine(bool UseFasterLoading = false, bool HideLoading = true, bool ShowLogs = false)
     {
-        if (_tileData == null)
+        if (TileData == null)
             return;
 
         var renderers = new List<TilemapRenderer>();
@@ -206,10 +206,10 @@ public class WorldTileHandler : MonoBehaviour
             }
         }
 
-        _tileData.Initialize(WIDTH, HEIGHT);
+        TileData.Initialize(WIDTH, HEIGHT);
 
-        var Seed = _tileData.Seed;
-        var tileSettings = database.GetTileSettings(_tileData.TileSettings);
+        var Seed = TileData.Seed;
+        var tileSettings = database.GetTileSettings(TileData.TileSettings);
 
         //Tiles
         var Water = tileSettings.Water;
@@ -217,7 +217,7 @@ public class WorldTileHandler : MonoBehaviour
         var CliffRT = tileSettings.Cliffs;
 
         //Noise
-        var noise = _tileData.TryGetNoise();
+        var noise = TileData.TryGetNoise();
         ClearTile();
         StartCoroutine(LoadTiles());
         IEnumerator LoadTiles()
@@ -252,7 +252,7 @@ public class WorldTileHandler : MonoBehaviour
                     for (int y = 0; y < HEIGHT + 2; y++)
                     {
                         IslandTiles.SetTile(new Vector3Int(x, y, 0), CliffRT);
-                        if (y % 10 == 0 && !UseFasterLoading)
+                        if (y % 2 == 0 && !UseFasterLoading)
                             yield return null;
                     }
                 }
@@ -264,7 +264,7 @@ public class WorldTileHandler : MonoBehaviour
 
             if (Grass != null)
             {
-                var _grassArea = _tileData.TileSettings.GrassArea;
+                var _grassArea = TileData.TileSettings.GrassArea;
 
                 for (int x = 0; x < noise.GetLength(0); x++)
                 {
@@ -300,7 +300,7 @@ public class WorldTileHandler : MonoBehaviour
                             {
                             }
 
-                            if (y % 5 == 0 && !UseFasterLoading)
+                            if (y % 2 == 0 && !UseFasterLoading)
                                 yield return null;
 
                         }
@@ -312,7 +312,7 @@ public class WorldTileHandler : MonoBehaviour
             //Load Water
             if (Water != null)
             {
-                var _waterArea = _tileData.TileSettings.WaterArea;
+                var _waterArea = TileData.TileSettings.WaterArea;
                 for (int x = 1; x < noise.GetLength(0) - 1; x++)
                 {
                     for (int y = 1; y < noise.GetLength(1) - 1; y++)
@@ -338,7 +338,7 @@ public class WorldTileHandler : MonoBehaviour
 
             bool[,] nodesInSpot = new bool[16, 16];
 
-            List<Vector2Int> possiblePlacements = _tileData.GetPossibleNodePlacements();
+            List<Vector2Int> possiblePlacements = TileData.GetPossibleNodePlacements();
 
             while (placedNodes < possiblePlacements.Count)
             {
@@ -359,12 +359,12 @@ public class WorldTileHandler : MonoBehaviour
                 var randX = randSpot.x;
                 var randY = randSpot.y;
 
-                var nodeToPlace = _tileData.TileSettings.GetNodePrefab(Seed.GetHashCode(), loop);
+                var nodeToPlace = TileData.TileSettings.GetNodePrefab(Seed.GetHashCode(), loop);
                 if (nodeToPlace == null)
                     continue;
                 placedNodes++;
                 var node = Instantiate(nodeToPlace, NodesParent);
-                _tileData.ResrouceNodesOnTile.Add(node.GetComponentInChildren<ResourceNodeHandler>(true).NodeData);
+                TileData.ResrouceNodesOnTile.Add(node.GetComponentInChildren<ResourceNodeHandler>(true).NodeData);
                 node.transform.localPosition = new Vector3(randX * 2 + 1 + randOffsetX, (randY + 2) * 2 - 1 + randOffsetY, 0);
                 nodesInSpot[randX, randY] = true;
                 possiblePlacements.Remove(randSpot);
@@ -376,6 +376,7 @@ public class WorldTileHandler : MonoBehaviour
             //Load border
             SetBorders();
 
+            yield return null;
             //Load Navmesh
             NavMeshSurface surface = GetComponentInChildren<NavMeshSurface>();
             surface.hideEditorLogs = true;
@@ -462,7 +463,7 @@ public class WorldTileHandler : MonoBehaviour
 
     void SetBorders()
     {
-        if (_tileData.TileSettings.TileBiome == TileBiome.Arctic)
+        if (TileData.TileSettings.TileBiome == TileBiome.Arctic)
             return;
 
         //Set Colliders
@@ -470,32 +471,32 @@ public class WorldTileHandler : MonoBehaviour
         //Bottom Left
         List<Vector2> editPoints = new();
         Colliders[0].GetPoints(editPoints);
-        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y + (_tileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
-        editPoints[1] = new Vector2(editPoints[1].x + 0.5f, editPoints[1].y + (_tileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
+        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y + (TileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
+        editPoints[1] = new Vector2(editPoints[1].x + 0.5f, editPoints[1].y + (TileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
         editPoints[2] = new Vector2(editPoints[2].x + 0.5f, editPoints[2].y);
         Colliders[0].SetPoints(editPoints);
         editPoints.Clear();
 
         //Top Left
         Colliders[1].GetPoints(editPoints);
-        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y - (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
-        editPoints[1] = new Vector2(editPoints[1].x + 0.5f, editPoints[1].y - (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
+        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y - (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
+        editPoints[1] = new Vector2(editPoints[1].x + 0.5f, editPoints[1].y - (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
         editPoints[2] = new Vector2(editPoints[2].x + 0.5f, editPoints[2].y);
         Colliders[1].SetPoints(editPoints);
         editPoints.Clear();
 
         //Top Right
         Colliders[2].GetPoints(editPoints);
-        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y - (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
-        editPoints[1] = new Vector2(editPoints[1].x - 0.5f, editPoints[1].y - (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
+        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y - (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
+        editPoints[1] = new Vector2(editPoints[1].x - 0.5f, editPoints[1].y - (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0.5f : 0.75f));
         editPoints[2] = new Vector2(editPoints[2].x - 0.5f, editPoints[2].y);
         Colliders[2].SetPoints(editPoints);
         editPoints.Clear();
 
         //Bottom Right
         Colliders[3].GetPoints(editPoints);
-        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y + (_tileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
-        editPoints[1] = new Vector2(editPoints[1].x - 0.5f, editPoints[1].y + (_tileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (_tileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
+        editPoints[0] = new Vector2(editPoints[0].x, editPoints[0].y + (TileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
+        editPoints[1] = new Vector2(editPoints[1].x - 0.5f, editPoints[1].y + (TileData.TileSettings.TileBiome == TileBiome.Desert ? 0.5f : -0.5f) + (TileData.TileSettings.TileBiome == TileBiome.Arctic ? 0f : 0.25f));
         editPoints[2] = new Vector2(editPoints[2].x - 0.5f, editPoints[2].y);
         Colliders[3].SetPoints(editPoints);
 

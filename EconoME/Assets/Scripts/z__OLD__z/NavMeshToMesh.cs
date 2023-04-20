@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
 
+#if UNITY_EDITOR
 public class NavMeshToMesh : MonoBehaviour
 {
     [SerializeField] MeshFilter meshFilter;
@@ -94,3 +95,4 @@ public class NavMeshToMesh : MonoBehaviour
         }
     }
 }
+#endif

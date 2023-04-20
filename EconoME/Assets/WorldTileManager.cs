@@ -47,32 +47,35 @@ public class WorldTileManager : MonoBehaviour
     [SerializeField] bool UseFasterLoading = false;
     [SerializeField] bool HideLoading = false;
     [SerializeField] bool ShowLogs = true;
+    [SerializeField] bool Generate3x3OnStart = true;
     /// <summary>
     /// Attempt to place a given tile at the desired location
     /// </summary>
     /// <param name="pos"></param>
     /// <returns>Returns true if able to place tile</returns>
-    public bool TryPlaceTile(TileItem tile, Vector2Int pos)
+    public bool TryPlaceTile(TileItem tile, Vector2Int pos, out WorldTileHandler tileHandler)
     {
+        tileHandler = null;
         var manager = ResourceWorldManager.Instance;
         //Check that there is no tile there
         if (!manager.TryAddTile(pos, tile))
             return false;
 
         //Place tile
-        var tileHandler = Instantiate(prefab, transform);
+        tileHandler = Instantiate(prefab, transform);
         tileHandler.Initialize(tile, pos);
         _placedTiles.Add(pos, tileHandler);
         tileHandler.transform.position = ((Vector3)WorldPosOfTile(pos));
         TileLoaded(tileHandler);
-        tileHandler.LoadTileCorroutine(UseFasterLoading, HideLoading, ShowLogs:ShowLogs);
+        tileHandler.LoadTileCorroutine(UseFasterLoading, HideLoading, ShowLogs: ShowLogs);
         return true;
     }
     private void Start()
     {
 
 #if UNITY_EDITOR
-        EditorTest3x3();
+        if (Generate3x3OnStart)
+            EditorTest3x3();
 #endif
     }
     private void TileLoaded(WorldTileHandler tileHandler)
@@ -224,7 +227,15 @@ public class WorldTileManager : MonoBehaviour
         return new Vector3(x, y, 0);
     }
 
-
+    public bool TryGetTileData(Vector2Int tilePos, out TileItem tileData)
+    {
+        tileData = null;
+        if (_placedTiles.TryGetValue(tilePos, out var tile))
+        {
+            tileData = tile.TileData;
+        }
+        return tileData != null;
+    }
     public bool TryRemoveTile(WorldTileHandler tileToRemove)
     {
         if (!ResourceWorldManager.Instance.TryRemoveTile(tileToRemove.TilePos, out var removedTile))
@@ -273,7 +284,7 @@ public class WorldTileManager : MonoBehaviour
             var biome = biomes.RandomListItem();
             TileSettings settings = new(TileBase, 0, biome, nodesThatCanBeGenerated: nodeSettings, baseSeed: UnityEngine.Random.Range(0, 7845124).ToString());
             TileItem newTile = new(settings);
-            TryPlaceTile(newTile, pos);
+            TryPlaceTile(newTile, pos, out _);
         }
 
     }
@@ -328,7 +339,7 @@ public class WorldTileManager : MonoBehaviour
         var biome = biomes.RandomListItem();
         TileSettings settings = new(TileBase, 0, biome, nodesThatCanBeGenerated: nodeSettings, baseSeed: UnityEngine.Random.Range(0, 7845124).ToString());
         TileItem newTile = new(settings);
-        TryPlaceTile(newTile, AddTilePos);
+        TryPlaceTile(newTile, AddTilePos, out _);
 
     }
 }

@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8b7ad15a382ce4da1fdf818fc1de79, type: 3}
   m_Name: Blank Tile
   m_EditorClassIdentifier: 
-  _itemType: {fileID: 11400000, guid: 6abd689f0ab0b95478ba2d153eb511cd, type: 2}
-  _itemName: Forest Tile
-  Icon: {fileID: 0}
-  _iconPath: 
-  _weight: -1
+  <ItemName>k__BackingField: 
+  <ForegroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <BackgroundIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <EffectIcon>k__BackingField:
+    <Icon>k__BackingField: {fileID: 0}
+    <IconColor>k__BackingField: {r: 1, g: 1, b: 1, a: 1}
+  <IconPath>k__BackingField: 
+  <Weight>k__BackingField: 100
+  <ItemType>k__BackingField: 0
   EconomyData:
     BasePrice: -1
     Threshold: 1
@@ -28,3 +36,4 @@ MonoBehaviour:
     MaxInflationHits: 25
     TotalItemsSold: 0
     multiplier: {fileID: 0}
+  tileType: 0

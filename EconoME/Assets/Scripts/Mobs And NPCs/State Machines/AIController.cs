@@ -21,6 +21,8 @@ public class AIController : MonoBehaviour
 
     private void Start()
     {
+        
+
         if (!TryGetComponent<NavMeshAgent>(out _navMeshAgent))
         {
             Debug.LogWarning("No Nav Mesh agent found", this); isRunning = false;
@@ -43,7 +45,7 @@ public class AIController : MonoBehaviour
         if (_activeStates.Count == 0)
         {
             Debug.LogWarning("AI Controller not able to load any states. Commensing Self Destruct!");
-            Destroy(this);
+            isRunning = false;
             return;
         }
 

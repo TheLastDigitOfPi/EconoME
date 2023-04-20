@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2fb2b0486774945a3b41d1f37c2f07, type: 3}
+  m_Name: Receive Basic Axe
+  m_EditorClassIdentifier: 
+  _id: 51ffac65-ba2e-4621-93e0-8da117b85fa2
+  item: {fileID: 11400000, guid: d98097fc76308b74bbb9130aa8d9a3be, type: 2}

@@ -20,7 +20,7 @@ MonoBehaviour:
     - rid: 5133679614272995412
       type: {class: BasicFollowAINavMesh, ns: , asm: Assembly-CSharp}
       data:
-        AICondition: {fileID: 11400000, guid: 1f68e40755f5d8e4cbd7eec532b33409, type: 2}
+        AICondition: {fileID: 11400000, guid: 810262970c476aa43b002a51a9e2fd9b, type: 2}
         _walkAnimationName: Walk
         _idleAnimationName: Idle
         _playerPosition: {fileID: 11400000, guid: ee513706182c49346850608db9d1dc8b, type: 2}

@@ -57,7 +57,7 @@ public class MobDeath : AIState
         _timeTillDestroy -= Time.deltaTime;
         if (_timeTillDestroy <= 0)
         {
-            _mobData.OnDeath();
+            _mobData.OnMobDeath();
             Controller.isRunning = false;
         }
     }

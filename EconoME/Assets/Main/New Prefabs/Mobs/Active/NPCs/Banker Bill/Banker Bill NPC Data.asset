@@ -16,7 +16,12 @@ MonoBehaviour:
   <NPCName>k__BackingField: Banker Bill
   <Description>k__BackingField: A solemn man who works at the bank.
   _relationshipDeterminer:
-    RelationshipOptions: []
+    RelationshipOptions:
+    - <Status>k__BackingField: 3
+      <percentRange>k__BackingField: {x: 0, y: 0}
+      <NoMaxValue>k__BackingField: 1
+      <NoMinValue>k__BackingField: 1
     InvalidOptions: []
     _currentValue: 0
   <InteractionSet>k__BackingField: {fileID: 11400000, guid: e6cac8a176c17fa479f3a56d3beefab9, type: 2}
+  <location>k__BackingField: {fileID: 0}

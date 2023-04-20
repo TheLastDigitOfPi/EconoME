@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310bae4237026c74d93cb72c9f8a1ed8, type: 3}
+  m_Name: Mummy Death
+  m_EditorClassIdentifier: 
+  data:
+    rid: 5133679614272995415
+  references:
+    version: 2
+    RefIds:
+    - rid: 5133679614272995415
+      type: {class: MobDeath, ns: , asm: Assembly-CSharp}
+      data:
+        AICondition: {fileID: 11400000, guid: 6a7d7d953f9dcfa4c9e30ffbcec89116, type: 2}
+        _animationName: Die
+        _timeTillDestroy: 4

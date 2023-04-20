@@ -3,6 +3,8 @@
 /// <summary>
 /// Represents a damaging instance being done to an entity that stores data such as the attack numbers, who is attacking, etc
 /// </summary>
+
+
 [Serializable]
 public class CombatAttackInstance
 {
@@ -25,12 +27,8 @@ public class CombatAttackInstance
         Attacker = attacker;
     }
 
-    public CombatDamageInstance CalculateAttack(EntityCombatController defenses)
-    {
-        return new CombatDamageInstance();
-    }
-
 }
+
 
 #region Thoughts
 /*

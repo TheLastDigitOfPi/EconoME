@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+    #if UNITY_EDITOR
 public class RandomTerrainPlacer : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -24,7 +25,6 @@ public class RandomTerrainPlacer : MonoBehaviour
     [SerializeField] float minScale = 1;
     [SerializeField] float maxScale = 1;
     [SerializeField] float minDistanceBetweenObjects = 1;
-
 
     [ContextMenu("Generate Terrain")]
     public void GenerateTerrain()
@@ -122,3 +122,4 @@ public class RandomTerrainObjectSpecs
     public GameObject objectToPlace;
     [Range(0,100)] public float chanceToSpawn;
 }
+#endif

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db810af28ae5ea43a90448d82c39d6e, type: 3}
+  m_Name: Unlock Page Interaction
+  m_EditorClassIdentifier: 
+  _id: 67dc66ab-5f70-4a1f-9ba3-61ead9b87891
+  PageToUnlock: {fileID: 11400000, guid: 496755841d3322f4da8ec7c723f6cbd3, type: 2}

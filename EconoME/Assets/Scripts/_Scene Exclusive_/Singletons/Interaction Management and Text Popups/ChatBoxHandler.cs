@@ -84,6 +84,7 @@ public class ChatBoxHandler : MonoBehaviour, IPointerClickHandler, IPointerDownH
     {
         if (ChatBoxOpen)
             return false;
+        nameTitleText.text = popup.titleName;
         _currentTextPopup = popup;
         InitializeNewPopup();
         return true;

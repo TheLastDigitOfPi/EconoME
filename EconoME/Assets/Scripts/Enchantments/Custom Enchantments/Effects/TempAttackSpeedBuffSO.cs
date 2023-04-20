@@ -37,7 +37,7 @@ public class TempIncreaseAttackSpeed : ArmorEffect
         if (_currentlyActive)
         {
             _owner.StopCoroutine(currentBuffRoutine);
-            _owner.AttackSpeed.RemoveChanger(_attackSpeedModifier);
+            _owner.AttackSpeed.RemoveChange(_attackSpeedModifier);
             return;
         }
     }
@@ -47,7 +47,7 @@ public class TempIncreaseAttackSpeed : ArmorEffect
         if (_currentlyActive)
         {
             _owner.StopCoroutine(currentBuffRoutine);
-            _owner.AttackSpeed.RemoveChanger(_attackSpeedModifier);
+            _owner.AttackSpeed.RemoveChange(_attackSpeedModifier);
             currentBuffRoutine = _owner.StartCoroutine(GiveTempAttackSpeed());
             return;
         }
@@ -55,9 +55,9 @@ public class TempIncreaseAttackSpeed : ArmorEffect
         IEnumerator GiveTempAttackSpeed()
         {
             _currentlyActive = true;
-            _owner.AttackSpeed.AddChanger(_attackSpeedModifier);
+            _owner.AttackSpeed.AddChange(_attackSpeedModifier);
             yield return new WaitForSeconds(_buffTime);
-            _owner.AttackSpeed.RemoveChanger(_attackSpeedModifier);
+            _owner.AttackSpeed.RemoveChange(_attackSpeedModifier);
             _currentlyActive = false;
         }
     }

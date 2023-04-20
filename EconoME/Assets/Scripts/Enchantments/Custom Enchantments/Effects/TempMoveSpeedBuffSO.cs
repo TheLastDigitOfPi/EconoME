@@ -39,7 +39,7 @@ public class TempIncreaseMoveSpeed : ArmorEffect
         if (_currentlyActive)
         {
             controller.StopCoroutine(currentBuffRoutine);
-            controller.PlayerSpeed.RemoveChanger(_moveSpeedModifier);
+            controller.PlayerSpeed.RemoveChange(_moveSpeedModifier);
             return;
         }
     }
@@ -50,7 +50,7 @@ public class TempIncreaseMoveSpeed : ArmorEffect
         if (_currentlyActive)
         {
             controller.StopCoroutine(currentBuffRoutine);
-            controller.PlayerSpeed.RemoveChanger(_moveSpeedModifier);
+            controller.PlayerSpeed.RemoveChange(_moveSpeedModifier);
             currentBuffRoutine = _owner.StartCoroutine(GiveTempAttackSpeed());
             return;
         }
@@ -58,9 +58,9 @@ public class TempIncreaseMoveSpeed : ArmorEffect
         IEnumerator GiveTempAttackSpeed()
         {
             _currentlyActive = true;
-            controller.PlayerSpeed.AddChanger(_moveSpeedModifier);
+            controller.PlayerSpeed.AddChange(_moveSpeedModifier);
             yield return new WaitForSeconds(_buffTime);
-            controller.PlayerSpeed.RemoveChanger(_moveSpeedModifier);
+            controller.PlayerSpeed.RemoveChange(_moveSpeedModifier);
             _currentlyActive = false;
         }
     }

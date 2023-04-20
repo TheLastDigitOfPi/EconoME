@@ -10,7 +10,7 @@ public class EntityCombatControllerEditor : Editor
         var controller = (EntityCombatController)target;
         if (GUILayout.Button("Test Hit Trigger"))
         {
-            controller.TestHit();
+            controller.TryReceiveAttack(null, out var report);
         }
     }
 

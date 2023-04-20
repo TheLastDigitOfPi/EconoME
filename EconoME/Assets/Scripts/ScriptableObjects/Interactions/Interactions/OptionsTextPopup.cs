@@ -3,16 +3,15 @@ using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Options Text Popup", menuName = "ScriptableObjects/Interactions/Interactions/Options Text Popup")]
-public class OptionsTextPopup : TextPopup
+public class OptionsTextPopup : TextPopupSO
 {
     public Option[] Options { get { return _options; } }
     [SerializeField] Option[] _options;
-
+    /*
     public override void Activate(InteractionHandler handler)
     {
         base.Activate(handler);
 
-        /*
         SetOptionsToShowUpOnFinalText(handler);
         void SetOptionsToShowUpOnFinalText(InteractionHandler handler)
         {
@@ -41,10 +40,8 @@ public class OptionsTextPopup : TextPopup
 
             };
         }
-        */
-
-       
        
     }
+    */
 }
 

@@ -24,28 +24,45 @@ public class NPC : MonoBehaviour, IAmInteractable
     public NPCDialogHandler DialogHandler { get; private set; }
     //Local fields
 
-    Guid[] currentActiveInteractions;
+    NPCStatusInteraction currentActiveInteraction;
     [field: SerializeField] Collider2D RaycastCollider { get; set; }
 
 
     public bool OnRaycastHit(PlayerMovementController owner, Collider2D collider)
     {
-        if (NPCData == null) { return false; }
-        if (collider != RaycastCollider) { return false; }
+        if (NPCData == null) return false;
+        if (collider != RaycastCollider) return false;
+        if (ChatBoxManager.Instance.ChatBoxActive) return false;
+        if (currentActiveInteraction != null) return false;
 
-        if(!DialogHandler.TryGetInteraction(NPCData, out Interaction[] interactionSet))
+        if (!DialogHandler.TryGetInteraction(NPCData, out var interactionData))
         {
             return false;
         }
+        
+        var interactionSet = interactionData.Interactions;
         if (interactionSet == null) { return false; }
-        currentActiveInteractions = new Guid[interactionSet.Length];
+        List<Interaction> interactionsMade = new();
         for (int i = 0; i < interactionSet.Length; i++)
         {
-            InteractionHandler.Instance.AddNew(interactionSet[i]);
-            currentActiveInteractions[i] = interactionSet[i].ID;
+            InteractionHandler.Instance.AddNew(interactionSet[i], out var interaction);
+            interactionsMade.Add(interaction);
         }
-        interactionSet.Last().OnInteractionEnd += () => { OnEndTalkToPlayer?.Invoke(); };
+        if (interactionsMade.Count == 0)
+            return false;
+
+        
+        //PlayerBookHandler.Instance.CloseBook();
+        currentActiveInteraction = interactionData;
+        interactionsMade[interactionsMade.Count - 1].OnInteractionEnd += () => { TryRemoveInteractions(); OnEndTalkToPlayer?.Invoke(); };
+        OnStartTalkToPlayer?.Invoke();
         return true;
+    }
+
+    private void TryRemoveInteractions()
+    {
+        DialogHandler.TryRemoveInteraction(currentActiveInteraction);
+        currentActiveInteraction = null;
     }
 
     private void Awake()
@@ -56,21 +73,6 @@ public class NPC : MonoBehaviour, IAmInteractable
         DialogHandler = GetComponent<NPCDialogHandler>();
     }
 
-    private void Start()
-    {
-
-        for (int i = 0; i < NPCData.InteractionSet.AllNPCInteractions.Length; i++)
-        {
-            for (int j = 0; j < NPCData.InteractionSet.AllNPCInteractions[i].Interactions.Length; j++)
-            {
-                if (NPCData.InteractionSet.AllNPCInteractions[i].Interactions[j] is TextPopup)
-                {
-                    (NPCData.InteractionSet.AllNPCInteractions[i].Interactions[j] as TextPopup).titleName = NPCData.NPCName;
-                }
-            }
-
-        }
-    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {

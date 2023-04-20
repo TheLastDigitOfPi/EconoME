@@ -46,8 +46,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.03}
-  m_Size: {x: 0.5, y: 0.19}
+  m_Offset: {x: -0.0000000059945098, y: -0.15}
+  m_Size: {x: 0.50000006, y: 0.23057148}
   m_Direction: 1
 --- !u!208 &128215517381884851
 NavMeshObstacle:
@@ -63,7 +63,7 @@ NavMeshObstacle:
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0.02, y: -0.05, z: 0}
+  m_Center: {x: 0.02, y: -0.1, z: 0}
   m_TimeToStationary: 0.5
 --- !u!1 &5013563349297862025
 GameObject:
@@ -98,6 +98,7 @@ Transform:
   m_Children:
   - {fileID: 6857308653975512575}
   - {fileID: 1686487471477714343}
+  - {fileID: 791199396227077775}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5013563349297862025}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e769a9022cc36a43a40bd0db7a880d5, type: 3}
   m_Name: 
@@ -237,13 +238,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5386083039177576902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.014, y: 1.022, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.014, y: 1.7827, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1686487471477714343}
-  m_RootOrder: 0
+  m_Father: {fileID: 5013563349297862135}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8528449484204671950
 GameObject:
@@ -274,8 +275,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.7607, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 791199396227077775}
+  m_Children: []
   m_Father: {fileID: 5013563349297862135}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -318,13 +318,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <NodeData>k__BackingField:
-    <NodeBase>k__BackingField: {fileID: 0}
+    <NodeBase>k__BackingField: {fileID: 11400000, guid: e9d6e15273f70a746aa4a9fd5e578881, type: 2}
     <TilePos>k__BackingField: {x: 0, y: 0}
-    <MaxDrops>k__BackingField: 0
-    <RemainingDrops>k__BackingField: 0
+    <MaxDrops>k__BackingField: 10
+    <RemainingDrops>k__BackingField: 10
   BreakAnimation: {fileID: -5591905523380219499, guid: e072e51d1ced77149a98a92b2b59ce30, type: 3}
   HitAnimation: {fileID: -5591905523380219499, guid: 9d7dd0481f7b71f4982ce2c4b38c04a8, type: 3}
   animationOffset: {x: 0, y: 0.2, z: 0}
-  IndicatorPrefab: {fileID: 0}
-  IndicatorPosition: {fileID: 0}
-  <IndicatorIcon>k__BackingField: {fileID: 0}
+  IndicatorPrefab: {fileID: 1473513973526449437, guid: 22f1689e9bcb9c141bc21382aa0a5bab, type: 3}
+  IndicatorPosition: {fileID: 791199396227077775}
+  <IndicatorIcon>k__BackingField: {fileID: 21300000, guid: efe2ac1e04c61d1429e370eb4e493aa0, type: 3}

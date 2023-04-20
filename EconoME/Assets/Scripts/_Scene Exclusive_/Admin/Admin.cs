@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Assets.Scripts.Admin
 {
@@ -13,16 +14,24 @@ namespace Assets.Scripts.Admin
         [SerializeField] int ItemToSpawnStacksize;
         [SerializeField] Vector3Variable PlayerPosition;
 
+        [SerializeField] PlayerInput AdminInput;
+        InputAction _keyboardC;
+        InputAction _keyboardDot;
         [SerializeField] bool Enabled;
+
+        private void Start()
+        {
+            _keyboardC = AdminInput.actions["KeyboardC"];
+            _keyboardDot = AdminInput.actions["KeyboardDot"];
+        }
+
         private void Update()
         {
             if (!Enabled) { return; }
-            if (!Input.GetKey(KeyCode.Period)) { return; }
-
-            if (Input.GetKeyDown(KeyCode.C))
-            {
+            if (!_keyboardC.triggered) { return; }
+            if (_keyboardDot.triggered)
                 SpawnItem();
-            }
+
 
         }
 

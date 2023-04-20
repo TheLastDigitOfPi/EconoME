@@ -49,13 +49,13 @@ public class InventorySlotHandler : MonoBehaviour, IPointerClickHandler, IPointe
     {
         if (Inventory.Data.ItemSlots[SlotNumber].HasItem)
         {
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (CustomInputManager.Instance.LeftShift.IsPressed())
             {
                 //Attempt to quick move item
                 PlayerInventoryManager.QuickMoveItem(Inventory, SlotNumber);
                 return;
             }
-            if (Input.GetKey(KeyCode.LeftControl))
+            if (CustomInputManager.Instance.LeftControl.IsPressed())
             {
                 RemoveItem();
                 return;

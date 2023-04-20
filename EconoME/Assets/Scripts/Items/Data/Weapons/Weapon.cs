@@ -3,11 +3,8 @@ using System.Collections;
 using UnityEngine;
 using System;
 
-
-
 public class Weapon : Item
 {
-
     public event Action<CombatDamageReport> OnAttackLand;
 
     [SerializeField] private int _weaponTier;
@@ -30,8 +27,7 @@ public class Weapon : Item
         _attackObjectPrefab = attackObjectPrefab;
     }
 
-
-
+    public Weapon(){ }
 
     public Weapon(Weapon other) : base(other)
     {
@@ -55,26 +51,30 @@ public class Weapon : Item
         owner.StartCoroutine(UseAttack());
         IEnumerator UseAttack()
         {
-
             var animTime = NewPlayerAnimationController.Instance.GetAnimationTime(WeaponBase.AttackAnimation);
             Debug.Log("Attack called on weapon");
             NewPlayerAnimationController.Instance.TryPlayAttackAnimation(WeaponBase.AttackAnimation, _attackSpeed);
             var attackObject = UnityEngine.Object.Instantiate(_attackObjectPrefab);
-            attackObject.Initialize(this, owner);
+            var offset = PlayerCombatController.Instance.FacingDirection == MoveDirection.Right? Vector3.right * 0.6f + Vector3.up * 0.2f: Vector3.left * 0.6f + Vector3.up * 0.2f;
+            attackObject.Initialize(this, owner, offset);
             HeldItemHandler.Instance.StartProgress(animTime / _attackSpeed);
             yield return new WaitForSeconds(animTime / _attackSpeed);
             Attacking = false;
         }
     }
 
+    public void DoAttack(EntityCombatController target)
+    {
+        Debug.Log("Tried to heal" + target.name + " for -10 health");
+        target.Health.Damage(10);
+    }
 
     public void AttackLanded(CombatDamageReport enemyHit)
     {
         OnAttackLand?.Invoke(enemyHit);
-
     }
 
-    List<AttackStatChangeInstance> _statModifiers = new();
+    [SerializeField] List<AttackStatChangeInstance> _statModifiers = new();
     public void AddStatChange(AttackStatChangeInstance modifier)
     {
         _statModifiers.Add(modifier);
@@ -124,21 +124,6 @@ public abstract class WeaponEnchantmentSO : ScriptableObject
     public abstract bool TryGetEnchantment(EntityCombatController owner, Weapon attack, out WeaponEnchantment enchantment);
 }
 
-[Serializable]
-public abstract class WeaponEnchantment
-{
-    protected EntityCombatController owner;
-    protected Weapon attack;
-
-    public WeaponEnchantment(EntityCombatController owner, Weapon attack)
-    {
-        this.owner = owner;
-        this.attack = attack;
-    }
-    public abstract void OnEquip();
-    public abstract void OnUnequip();
-}
-
 
 public abstract class DamageInstance
 {
@@ -181,7 +166,7 @@ public struct WeaponDamage
         CalculateBaseChange(statChange.TrueDamageChanges, ref TrueDamage);
         CalculateBaseChange(statChange.RangedDamageChanges, ref RangedDamage);
 
-        void CalculateBaseChange(StatCalulation stat, ref float changingStat)
+        void CalculateBaseChange(StatChanger stat, ref float changingStat)
         {
             changingStat += (stat.BasePercentChange / 100f) * changingStat;
             changingStat += stat.BaseAdditionChange;
@@ -195,7 +180,7 @@ public struct WeaponDamage
         CalculateSecondChange(statChange.TrueDamageChanges, ref TrueDamage);
         CalculateSecondChange(statChange.RangedDamageChanges, ref RangedDamage);
 
-        void CalculateSecondChange(StatCalulation stat, ref float changingStat)
+        void CalculateSecondChange(StatChanger stat, ref float changingStat)
         {
             changingStat += (stat.PerecentChange / 100f) * changingStat;
             changingStat += stat.AddtionChange;
@@ -203,13 +188,6 @@ public struct WeaponDamage
     }
 }
 
-public abstract class StatusEffect
-{
-    public float Duration { get; private set; }
-    public float Intensity { get; private set; }
-
-    public abstract void ApplyEffect(EntityCombatController target);
-}
 
 public abstract class StatusEffectSO : ScriptableObject
 {
@@ -219,12 +197,16 @@ public abstract class StatusEffectSO : ScriptableObject
 }
 
 [Serializable]
+#pragma warning disable CS0660 // Type defines operator == or operator != but does not override Object.Equals(object o)
+#pragma warning disable CS0661 // Type defines operator == or operator != but does not override Object.GetHashCode()
 public struct AttackStatChangeInstance : IEquatable<AttackStatChangeInstance>
+#pragma warning restore CS0661 // Type defines operator == or operator != but does not override Object.GetHashCode()
+#pragma warning restore CS0660 // Type defines operator == or operator != but does not override Object.Equals(object o)
 {
-    public StatCalulation PhysicalDamageChanges;
-    public StatCalulation MagicalDamageChanges;
-    public StatCalulation TrueDamageChanges;
-    public StatCalulation RangedDamageChanges;
+    public StatChanger PhysicalDamageChanges;
+    public StatChanger MagicalDamageChanges;
+    public StatChanger TrueDamageChanges;
+    public StatChanger RangedDamageChanges;
 
     public bool Equals(AttackStatChangeInstance other)
     {

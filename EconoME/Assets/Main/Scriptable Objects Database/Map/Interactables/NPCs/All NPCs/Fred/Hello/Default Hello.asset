@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1ce4b8b33612440940c59054a0b4fd, type: 3}
   m_Name: Default Hello
   m_EditorClassIdentifier: 
-  _interactions:
-  - {fileID: 11400000, guid: bba2f0d523b3dd949819e6605ad95f73, type: 2}
-  - {fileID: 11400000, guid: 03276b392a9d8c74f8cc3da1592ebd91, type: 2}
-  _statusForInteraction: {fileID: 11400000, guid: 5a5dac4ead147bb4d9e7b0d7923a1217, type: 2}
-  gameEvent: {fileID: 0}
+  <Interactions>k__BackingField:
+  - {fileID: 11400000, guid: 70f937b67877a4b42939aa9a6108f813, type: 2}
+  - {fileID: 11400000, guid: 107183506faca6e41b7775408c0b4f22, type: 2}
+  - {fileID: 11400000, guid: 8f1144820c64b8f4299d66280ab9e54b, type: 2}
+  <StatusForInteraction>k__BackingField: 3
+  <GameEvent>k__BackingField: {fileID: 0}

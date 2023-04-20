@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.AI;
 
 public static class UnityCanvasExtensions
 {
@@ -17,3 +19,28 @@ public static class UnityCanvasExtensions
     }
 }
 
+public static class CombatExtensions
+{
+    public static void DoKnockback(MonoBehaviour script, NavMeshAgent _agent, Rigidbody2D _rigidbody, float distance, Vector2 direction)
+    {
+        if (_agent != null)
+        {
+            _agent.enabled = false;
+            _rigidbody.bodyType = RigidbodyType2D.Dynamic;
+            _rigidbody.isKinematic = false;
+            _rigidbody.velocity = direction * distance;
+            script.StartCoroutine(WaitForKnockback());
+            IEnumerator WaitForKnockback()
+            {
+                while (_rigidbody.velocity.magnitude > 0.15f)
+                {
+                    yield return null;
+                }
+                _rigidbody.velocity = Vector2.zero;
+                _rigidbody.bodyType = RigidbodyType2D.Kinematic;
+                _rigidbody.isKinematic = true;
+                _agent.enabled = true;
+            }
+        }
+    }
+}

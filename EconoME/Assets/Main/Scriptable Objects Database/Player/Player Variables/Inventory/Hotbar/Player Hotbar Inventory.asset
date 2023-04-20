@@ -234,12 +234,35 @@ MonoBehaviour:
           PhysicalDamage: 10
           RangedDamage: 0
           MagicalDamage: 0
+          StatusEffects: []
         <CurrentDamage>k__BackingField:
           TrueDamage: 0
           PhysicalDamage: 15
           RangedDamage: 0
           MagicalDamage: 0
+          StatusEffects: []
         _attackObjectPrefab: {fileID: 6526385537241600330, guid: c5a98f4250de8cc41b7578c00f10abe4, type: 3}
         Enchantments:
         - {fileID: 11400000, guid: cbb0d8841c2cb74489d11cb64b0e691f, type: 2}
         <Attacking>k__BackingField: 0
+        _statModifiers:
+        - PhysicalDamageChanges:
+            BasePercentChange: 0
+            BaseAdditionChange: 5
+            PerecentChange: 0
+            AddtionChange: 0
+          MagicalDamageChanges:
+            BasePercentChange: 0
+            BaseAdditionChange: 0
+            PerecentChange: 0
+            AddtionChange: 0
+          TrueDamageChanges:
+            BasePercentChange: 0
+            BaseAdditionChange: 0
+            PerecentChange: 0
+            AddtionChange: 0
+          RangedDamageChanges:
+            BasePercentChange: 0
+            BaseAdditionChange: 0
+            PerecentChange: 0
+            AddtionChange: 0

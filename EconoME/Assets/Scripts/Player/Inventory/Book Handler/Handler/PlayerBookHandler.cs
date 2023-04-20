@@ -10,6 +10,7 @@ using UnityEngine.InputSystem;
 //Handles common function of book interactions using custom state machine. Ex: Opens/Closes Book UI, Flips Pages
 public class PlayerBookHandler : MonoBehaviour
 {
+    #region Fields
     [field: Header("General")]
     [field: SerializeField] public CanvasGroup MainInventoryCGroup { get; private set; }
     [field: SerializeField] public Image BookBackground { get; private set; }
@@ -60,7 +61,13 @@ public class PlayerBookHandler : MonoBehaviour
     public static PlayerBookHandler Instance;
 
     //Can't toggle book while pages are flipping or possible new states such as animations
-    bool CanToggleBookOpen { get { return CurrentState == null || CurrentState == _openBookToggle; } }
+    bool CanToggleBook { get { return (CurrentState == null || CurrentState == _openBookToggle) && !_bookLocked && !ChatBoxManager.Instance.ChatBoxActive;} }
+
+    bool _bookLocked = false;
+    private InputAction toggleInventory;
+    #endregion
+
+
     private void Awake()
     {
         if (Instance != null)
@@ -73,7 +80,7 @@ public class PlayerBookHandler : MonoBehaviour
         _openBookToggle = new(this);
         _bookPageToggle = new(this);
         BookOpenCloseAnimation.resetToDefault();
-        toggleInventory = playerInput.actions["ToggleInventory"];
+        toggleInventory = CustomInputManager.Instance.Tab;
         BookPage[] pages = PagesParent.GetComponentsInChildren<BookPage>(true);
         foreach (var page in pages)
         {
@@ -81,14 +88,48 @@ public class PlayerBookHandler : MonoBehaviour
         }
     }
 
-    [SerializeField] PlayerInput playerInput;
-    private InputAction toggleInventory;
+
+
+    internal void CloseBook()
+    {
+        if (InventoryOpen.Value)
+            InventoryOpen.Value = false;
+        _bookLocked = false;
+    }
+
+    internal void UnlockPage(UnlockableInventory pageToUnlock)
+    {
+        bool unsubscribe = false;
+        _bookLocked = true;
+        if (!InventoryOpen.Value)
+        {
+            InventoryOpen.Value = true;
+            _openBookToggle.OnBookOpen += StartFlips;
+            unsubscribe = true;
+            return;
+        }
+        StartFlips();
+        void StartFlips()
+        {
+            pageToUnlock.UnlockInventory();
+            Flip(pageToUnlock, flips: 5, flipSpeed: 3f);
+            if (unsubscribe)
+                _openBookToggle.OnBookOpen -= StartFlips;
+        }
+
+    }
+
+
 
     private void Start()
     {
         _openBookToggle.OnBookOpen += TabManager.EnableTabs;
         _openBookToggle.OnBookClose += TabManager.DisableTabs;
-        InventoryOpen.onValueChange += ToggleBook;
+    }
+
+    private void OnDestroy()
+    {
+        InventoryOpen.onValueChange -= ToggleBook;
     }
 
     public void InitializeStartingPages(BookPage leftPage, BookPage rightPage)
@@ -98,17 +139,17 @@ public class PlayerBookHandler : MonoBehaviour
 
         leftPage?.SetPage(LeftPage.transform.GetChild(0), LeftPageImage, LeftPageTitle);
         rightPage?.SetPage(RightPage.transform.GetChild(0), RightPageImage, RightPageTitle);
-
     }
 
     private void OnEnable()
     {
-        toggleInventory.started += ToggleInventory_started;
+        CustomInputManager.Instance.Tab.started += ToggleInventory_started;
+        InventoryOpen.onValueChange += ToggleBook;
     }
 
     private void ToggleInventory_started(InputAction.CallbackContext obj)
     {
-        if (CanToggleBookOpen)
+        if (CanToggleBook)
             InventoryOpen.Value = !InventoryOpen.Value;
     }
 
@@ -144,18 +185,18 @@ public class PlayerBookHandler : MonoBehaviour
         InventoryOpen.onValueChange -= ToggleBook;
         InventoryOpen.Value = false;
     }
-    
+
     private void ToggleBook()
     {
         SetCurrentState(_openBookToggle);
     }
-    
-    public void Flip(BookPage LeftPage, BookPage RightPage, bool flipRight = false)
+
+    public void Flip(BookPage LeftPage, BookPage RightPage, int pageFlips = 1, float flipSpeedMultiplier = 1f, bool flipRight = false)
     {
         if (!InventoryOpen.Value || CurrentState == _bookPageToggle)
             return;
         if (SetCurrentState(_bookPageToggle))
-            _bookPageToggle.setFlip(flipRight, LeftPage, RightPage);
+            _bookPageToggle.setFlip(flipRight, LeftPage, RightPage, pageFlips: pageFlips, flipSpeedMultiplier: flipSpeedMultiplier);
     }
 
     internal void OnRemoveTab(BookPage connectedPage, BookPage replacedPage = null)
@@ -179,25 +220,25 @@ public class PlayerBookHandler : MonoBehaviour
         if (inventory.TabSide == TabSide.Right && _bookPageToggle.ActiveRightPage == null)
         {
             _bookPageToggle.ActiveRightPage = inventory.ConnectedPage;
-            Flip(_bookPageToggle.ActiveLeftPage, _bookPageToggle.ActiveRightPage, inventory.TabSide != TabSide.Right);
+            Flip(_bookPageToggle.ActiveLeftPage, _bookPageToggle.ActiveRightPage, flipRight: inventory.TabSide != TabSide.Right);
             return;
         }
         if (inventory.TabSide == TabSide.Left && _bookPageToggle.ActiveLeftPage == null)
         {
             _bookPageToggle.ActiveLeftPage = inventory.ConnectedPage;
-            Flip(_bookPageToggle.ActiveLeftPage, _bookPageToggle.ActiveRightPage, inventory.TabSide != TabSide.Right);
+            Flip(_bookPageToggle.ActiveLeftPage, _bookPageToggle.ActiveRightPage, flipRight: inventory.TabSide != TabSide.Right);
         }
 
     }
 
-    public void Flip(UnlockableInventory inventoryToOpen)
+    public void Flip(UnlockableInventory inventoryToOpen, int flips = 1, float flipSpeed = 1f)
     {
         if (FindInventory(inventoryToOpen, out BookPage foundPage))
         {
             if (inventoryToOpen.TabSide == TabSide.Left)
-                Flip(foundPage, _bookPageToggle.ActiveRightPage, inventoryToOpen.TabSide != TabSide.Right);
+                Flip(foundPage, _bookPageToggle.ActiveRightPage, flipRight: inventoryToOpen.TabSide != TabSide.Right, pageFlips: flips, flipSpeedMultiplier: flipSpeed);
             else
-                Flip(_bookPageToggle.ActiveLeftPage, foundPage, inventoryToOpen.TabSide != TabSide.Right);
+                Flip(_bookPageToggle.ActiveLeftPage, foundPage, flipRight: inventoryToOpen.TabSide != TabSide.Right, pageFlips: flips, flipSpeedMultiplier: flipSpeed);
             return;
         }
         Debug.LogWarning("Unable find page for inventory: " + inventoryToOpen.name);

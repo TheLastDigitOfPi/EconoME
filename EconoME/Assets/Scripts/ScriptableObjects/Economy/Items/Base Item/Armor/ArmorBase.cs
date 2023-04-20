@@ -26,12 +26,12 @@ public enum ArmorType
 [Serializable]
 public struct DefenseStatChangeInstance : IEquatable<DefenseStatChangeInstance>
 {
-    public StatCalulation HealthChanges;
-    public StatCalulation PhysicalDefenseChanges;
-    public StatCalulation MagicalDefenseChanges;
-    public StatCalulation RangedDefenseChanges;
-    public StatCalulation TrueDefenseChanges;
-    public StatCalulation HPSChanges;
+    public StatChanger HealthChanges;
+    public StatChanger PhysicalDefenseChanges;
+    public StatChanger MagicalDefenseChanges;
+    public StatChanger RangedDefenseChanges;
+    public StatChanger TrueDefenseChanges;
+    public StatChanger HPSChanges;
 
     public bool Equals(DefenseStatChangeInstance other)
     {
@@ -64,41 +64,4 @@ public struct DefenseStatChangeInstance : IEquatable<DefenseStatChangeInstance>
         return result;
     }
 
-
-}
-[Serializable]
-public struct StatCalulation : IEquatable<StatCalulation>
-{
-    public float BasePercentChange;
-    public float BaseAdditionChange;
-    public float PerecentChange;
-    public float AddtionChange;
-
-    public bool Equals(StatCalulation other)
-    {
-        return other.BasePercentChange == this.BasePercentChange
-            && other.BaseAdditionChange == this.BaseAdditionChange
-            && other.PerecentChange == this.PerecentChange
-            && other.AddtionChange == this.AddtionChange;
-    }
-
-    public static bool operator ==(StatCalulation c1, StatCalulation c2)
-    {
-        return c1.Equals(c2);
-    }
-
-    public static bool operator !=(StatCalulation c1, StatCalulation c2)
-    {
-        return !c1.Equals(c2);
-    }
-
-    public static StatCalulation operator +(StatCalulation first, StatCalulation second)
-    {
-        StatCalulation result = new();
-        result.BasePercentChange = first.BasePercentChange + second.BasePercentChange;
-        result.BaseAdditionChange = first.BaseAdditionChange + second.BaseAdditionChange;
-        result.PerecentChange = first.PerecentChange + second.PerecentChange;
-        result.AddtionChange = first.AddtionChange + second.AddtionChange;
-        return result;
-    }
 }

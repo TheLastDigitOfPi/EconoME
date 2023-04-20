@@ -127,7 +127,7 @@ public class UIEventManager : MonoBehaviour
         if (HoldingItem)
         {
             transform.position = Mouse.current.position.ReadValue() + new Vector2(15, 15);
-            if (Input.GetMouseButtonDown(0))
+            if (Mouse.current.IsPressed())
             {
                 if (!MouseOverUI)
                     DropItem();

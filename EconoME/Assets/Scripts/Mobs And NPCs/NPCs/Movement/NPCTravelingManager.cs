@@ -46,11 +46,19 @@ public class NPCTravelingManager : MonoBehaviour
         _renderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
         _npc.OnStartTalkToPlayer += InterruptTravel;
         _npc.OnEndTalkToPlayer += EndTalkToPlayer;
     }
+
+    private void OnDisable()
+    {
+        
+        _npc.OnStartTalkToPlayer -= InterruptTravel;
+        _npc.OnEndTalkToPlayer -= EndTalkToPlayer;
+    }
+
     internal void StopTravel()
     {
         if (_reachedDestination)

@@ -25,7 +25,7 @@ public class PillarHandler : MonoBehaviour, IAmInteractable
 
         var tile = item as TileItem;
 
-        WorldTileManager.Instance.TryPlaceTile(tile, _neighborTilePosition);
+        WorldTileManager.Instance.TryPlaceTile(tile, _neighborTilePosition, out _);
         Debug.Log("Pillar clicked with tile");
         return true;
     }

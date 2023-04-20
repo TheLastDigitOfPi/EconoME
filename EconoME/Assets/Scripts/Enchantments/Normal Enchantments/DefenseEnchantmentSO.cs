@@ -16,7 +16,10 @@ public class DefenseEnchantment : ArmorEnchantment
     public override void OnEquip(EntityCombatController owner)
     {
         base.OnEquip(owner);
-        owner.AddStatChange(StatChanges);
+        if(owner is not IDefenseHolder)
+            return;
+        var defender = owner as IDefenseHolder;
+        defender.AddStatChange(StatChanges);
     }
 
     public DefenseEnchantment(DefenseStatChangeInstance changes)
@@ -32,7 +35,10 @@ public class DefenseEnchantment : ArmorEnchantment
 
     public override void OnUnequip()
     {
-        owner.RemoveStatChange(StatChanges);
+        if(owner is not IDefenseHolder)
+            return;
+        var defender = owner as IDefenseHolder;
+        defender.RemoveStatChange(StatChanges);
     }
 }
 

@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+using System;
 
 public class NPCDialogHandler : MonoBehaviour
 {
@@ -8,11 +11,19 @@ public class NPCDialogHandler : MonoBehaviour
      
      */
     [SerializeField] NPCInteractionSet PossibleInteractions;
-
-    public bool TryGetInteraction(NPCBase NPCData, out Interaction[] foundSet)
+    [SerializeField] List<NPCStatusInteraction> CompletedInteractions;
+    public bool TryGetInteraction(NPCBase NPCData, out NPCStatusInteraction foundInteraction)
     {
-        foundSet = null;
-        return false;
+        foundInteraction = PossibleInteractions.GetCurrentInteraction(NPCData.CurrentStatus, NPCData.CurrentStatus, CompletedInteractions);
+        return foundInteraction != null;
+    }
+
+    public bool TryRemoveInteraction(NPCStatusInteraction interaction)
+    {
+        if(!interaction.CanRemoveAfterUse)
+            return false;
+        CompletedInteractions.Add(interaction);
+        return true;
     }
 
 }

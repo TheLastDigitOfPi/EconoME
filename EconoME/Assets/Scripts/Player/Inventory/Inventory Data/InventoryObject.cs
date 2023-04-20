@@ -159,6 +159,16 @@ public class InventoryObject : ScriptableObject
     {
         Data.ItemSlots[slotNum].TryRemoveItem(out itemInSlot);
     }
+    /// <summary>
+    /// Removes all items form the inventory
+    /// </summary>
+    public void RemoveAllItems()
+    {
+        foreach (var slot in Data.ItemSlots)
+        {
+            slot.TryRemoveItem(out _);
+        }
+    }
 
     public void InitializeData()
     {

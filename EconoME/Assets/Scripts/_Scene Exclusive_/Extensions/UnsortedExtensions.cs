@@ -11,6 +11,23 @@ public static class UnsortedExtensions
         flag = !flag;
     }
 
+    public static TileBiome RandomBiome()
+    {
+        int randBiomeNum = Random.Range(0, 4);
+        switch (randBiomeNum)
+        {
+            case 0:
+                return TileBiome.Forest;
+            case 1:
+                return TileBiome.DarkForest;
+            case 2:
+                return TileBiome.Arctic;
+            case 3:
+                return TileBiome.Desert;
+            default:
+                return TileBiome.Forest;
+        }
+    }
     public static void ToggleActive(this GameObject gameObject)
     {
         gameObject.SetActive(!gameObject.activeSelf);

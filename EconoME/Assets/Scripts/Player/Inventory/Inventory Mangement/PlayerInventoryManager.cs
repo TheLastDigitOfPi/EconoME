@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System;
+
 public class PlayerInventoryManager : MonoBehaviour
 {
     [Space(10)]
@@ -16,6 +18,8 @@ public class PlayerInventoryManager : MonoBehaviour
     public InventorySlotHandler[] ResourceSlotsHandlers { get { return _resourceSlotHandlers; } }
     public InventorySlotHandler[] InventorySlotsHandlers { get { return _inventorySlotHandlers; } }
     public InventorySlotHandler[] BackpackHotBarSlotsHandlers { get { return _hotBarSlotHandlers; } }
+
+
     public InventorySlotHandler[] HotBarSlotsHandlers { get { return _bottomHotbarSlots; } }
     public InventorySlotHandler[] ArmorSlotsHandlers { get { return _armorSlotHandlers; } }
 
@@ -32,6 +36,21 @@ public class PlayerInventoryManager : MonoBehaviour
     
     [SerializeField] HashSet<InventoryObject> _activeInventories = new();
     [SerializeField] HashSet<InventoryObject> _defaultInventories = new();
+
+    
+    public static void RemoveAllItems()
+    {
+        foreach (var inventory in Instance._defaultInventories)
+        {
+            inventory.RemoveAllItems();
+        }
+
+        foreach (var inventory in Instance._activeInventories)
+        {
+            inventory.RemoveAllItems();
+        }
+    }
+
     private void Awake()
     {
         if (Instance != null)

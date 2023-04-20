@@ -17,7 +17,6 @@ public class HotBarHandler : MonoBehaviour
 
     //Local
     [SerializeField] InventoryObject HotBar;
-    [SerializeField] PlayerInput playerInput;
     InputAction _hotBar1;
     InputAction _hotBar2;
     InputAction _hotBar3;
@@ -39,13 +38,13 @@ public class HotBarHandler : MonoBehaviour
             return;
         }
         Instance = this;
-        _hotBar1 = playerInput.actions["Hotbar1"];
-        _hotBar2 = playerInput.actions["Hotbar2"];
-        _hotBar3 = playerInput.actions["Hotbar3"];
-        _hotBar4 = playerInput.actions["Hotbar4"];
-        _hotBar5 = playerInput.actions["Hotbar5"];
-        _hotBar6 = playerInput.actions["Hotbar6"];
-        _hotBar7 = playerInput.actions["Hotbar7"];
+        _hotBar1 = CustomInputManager.Instance.Hotbar1; 
+        _hotBar2 =CustomInputManager.Instance.Hotbar2;
+        _hotBar3 =CustomInputManager.Instance.Hotbar3;
+        _hotBar4 =CustomInputManager.Instance.Hotbar4;
+        _hotBar5 =CustomInputManager.Instance.Hotbar5;
+        _hotBar6 =CustomInputManager.Instance.Hotbar6;
+        _hotBar7 =CustomInputManager.Instance.Hotbar7;
     }
 
     #region Event Subscribing
@@ -96,8 +95,17 @@ public class HotBarHandler : MonoBehaviour
         var hotBarSlot = PlayerInventoryManager.Instance.HotBarSlotsHandlers[slotNum].ItemSlot;
         ToggleHotBarHighlight(slotNum, ToggleOn: true);
         if (hotBarSlot.HasItem)
+        {
             OnSelectItem?.Invoke(hotBarSlot.Item);
+            PlayerInventoryManager.Instance.HotBarSlotsHandlers[slotNum].ItemSlot.OnItemChange += DeselectCurrentSlot; ;
+        }
     }
+
+    private void DeselectCurrentSlot()
+    {
+        DeselectSlot(SelectedHotBarSlot);
+    }
+
     public static bool GetCurrentSelectedItem(out Item foundItem)
     {
         foundItem = null;
@@ -113,6 +121,7 @@ public class HotBarHandler : MonoBehaviour
 
     void SelectHotBarSlot(int newSelectedSlot)
     {
+        Debug.Log("Selecting Slot: " + newSelectedSlot);
         if(HeldItemHandler.Instance.UsingItem)
             return;
         //Return If we try to select a slot outside of the hotbar range

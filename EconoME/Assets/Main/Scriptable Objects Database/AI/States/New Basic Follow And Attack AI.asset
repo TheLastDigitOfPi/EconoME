@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d27dffb73269fdf4498714689552e03d, type: 3}
+  m_Name: New Basic Follow And Attack AI
+  m_EditorClassIdentifier: 
+  data:
+    rid: 8968770611644203063
+  references:
+    version: 2
+    RefIds:
+    - rid: 8968770611644203063
+      type: {class: BasicMobFollowAndAttackAI, ns: , asm: Assembly-CSharp}
+      data:
+        AICondition: {fileID: 11400000, guid: 1f68e40755f5d8e4cbd7eec532b33409, type: 2}
+        _playerPosition: {fileID: 11400000, guid: ee513706182c49346850608db9d1dc8b, type: 2}

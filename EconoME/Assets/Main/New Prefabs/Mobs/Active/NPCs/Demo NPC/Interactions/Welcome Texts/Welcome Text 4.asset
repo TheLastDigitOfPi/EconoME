@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d182ec664a354fc4284ab8b5592c7e69, type: 3}
+  m_Name: Welcome Text 4
+  m_EditorClassIdentifier: 
+  _id: 416a05c1-7ea0-465b-b93c-63acc4f9e5b2
+  Text: Open your inventory with tab to move them to your hotbar.
+  _icon: {fileID: 0}
+  TimePerCharacter: 0.02
+  titleName: 
+  onClose: []
+  <Skippable>k__BackingField: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563869a6545874a4385fc0624fb7489c, type: 3}
   m_Name: Bank
   m_EditorClassIdentifier: 
-  <IsUnlocked>k__BackingField: 1
+  <IsUnlocked>k__BackingField: 0
   TabSide: 1
   <TabSprite>k__BackingField: {fileID: 21300000, guid: d2c0dc76eca05bb4eb4f3fc4a37f258d, type: 3}
   ConnectedPage: {fileID: 0}

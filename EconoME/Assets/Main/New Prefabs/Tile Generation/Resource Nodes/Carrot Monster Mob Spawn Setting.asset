@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9948a26a99c524a9ece6517ef1e8c8, type: 3}
+  m_Name: Carrot Monster Mob Spawn Setting
+  m_EditorClassIdentifier: 
+  <objectPrefab>k__BackingField: {fileID: 1926693677, guid: fdfb56b6ed013b84bb3876826bcb8ff8, type: 3}
+  <ChanceOfSpawning>k__BackingField: 0
+  SortingType: 1
+  _biomesCheckList: 
+  _minimumTier: 0
