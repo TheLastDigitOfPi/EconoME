@@ -5,10 +5,10 @@ EconoMe is a game developed using the Unity engine. The goal of this project was
 ## Game Summary
 
 EconoMe is an open world 2D pixel art RPG that aims to allows players to expand the world to their heart's content.
-<br>The player starts in a small town where they can interact with NPCs and start to learn about the world they have just entered.
-<br>The name of the game EconoMe comes from the major feature of the game. Players can collect resources and either use them to craft new items or exchange them on the changing market.
-<br>Players can create pieces of land called tiles and place them in a resource world in order to get more and higher levels of resources.
-The game also features a combat system with enemies and bosses that can drop rare loot!
+<br><br>The player starts in a small town where they can interact with NPCs and start to learn about the world they have just entered.
+<br><br>The name of the game EconoMe comes from the major feature of the game. Players can collect resources and either use them to craft new items or exchange them on the changing market.
+<br><br>Players can create pieces of land called tiles and place them in a resource world in order to get more and higher levels of resources.
+<br><br>The game also features a combat system with enemies and bosses that can drop rare loot!
 
 ## Features
 
