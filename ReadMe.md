@@ -1,6 +1,14 @@
 # EconoMe
 
-EconoMe is a game developed using the Unity engine that simulates an economy. The goal of this project was to practice clean coding skills and problem-solving skills while implementing new features.
+EconoMe is a game developed using the Unity engine. The goal of this project was to practice clean coding skills and problem-solving skills while implementing new features.
+
+## Game Summary
+
+EconoMe is an open world 2D pixel art RPG that aims to allows players to expand the world to their heart's content.
+The player starts in a small town where they can interact with NPCs and start to learn about the world they have just entered.
+The name of the game EconoMe comes from the major feature of the game. Players can collect resources and either use them to craft new items or exchange them on the changing market.
+Players can create pieces of land called tiles and place them in a resource world in order to get more and higher levels of resources.
+The game also features a combat system with enemies and bosses that can drop rare loot!
 
 ## Features
 
@@ -10,9 +18,10 @@ EconoMe is a game developed using the Unity engine that simulates an economy. Th
 - Custom starting screen
 - World time cycle that determines the speed of the game
 
-For more details on these features and other accomplishments, please see the [Wiki](https://github.com/yourusername/yourprojectname/wiki).
+For more details on these features and other accomplishments, please see the [Wiki](https://github.com/TheLastDigitOfPi/EconoME/wiki).
 
 ## How to Play
+The game currently has an active demo that you can try out! Note that the demo does not include many of the developed features, but will be updated soon!
 
 1. Download and install the game from [insert link here].
 2. Launch the game and follow the instructions on the main menu to start playing.
@@ -20,11 +29,9 @@ For more details on these features and other accomplishments, please see the [Wi
 
 ## About the Project
 
-EconoMe was a challenging project that allowed me to hone in on my clean coding skills and problem-solving abilities. As the project grew larger, I had to manage connections between many features and ensure that each component of the game worked together seamlessly. In particular, implementing the procedural terrain generation and mob AI using state machines were complex tasks that required careful planning and testing.
+EconoMe was a challenging project that allowed me to hone in on my clean coding skills and problem-solving abilities. As the project grew larger, I had to manage connections between many features and ensure that each component of the game worked together seamlessly. In particular, implementing the procedural terrain generation and mob AI were complex tasks that required careful planning and testing.
 
-The extensive inventory system utilizing API connections was another challenging feature to implement, but it greatly enhanced the gameplay experience. Players can trade goods and services with each other using an in-game marketplace that connects to external APIs.
-
-Finally, the custom starting screen and world time cycle add to the immersion of the game and make it more enjoyable to play.
+The project still has much developement needed in order to create a fun and expansive gaming experience, so keep an eye out for updates!
 
 ## Contributions
 
