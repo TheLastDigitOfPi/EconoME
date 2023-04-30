@@ -23,7 +23,7 @@ For more details on these features and other accomplishments, please see the [Wi
 ## How to Play
 The game currently has an active demo that you can try out! Note that the demo does not include many of the developed features, but will be updated soon!
 
-1. Download and install the game from [insert link here].
+1. Download and install the game from [Here](https://drive.google.com/file/d/1dqGrSzzK6faunmvX9ZpU7hxR-OP3QmwY/view?usp=sharing).
 2. Launch the game and follow the instructions on the main menu to start playing.
 3. Enjoy the game!
 
