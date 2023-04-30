@@ -18,7 +18,7 @@ EconoMe is an open world 2D pixel art RPG that aims to allows players to expand 
 - Custom starting screen
 - World time cycle that determines the speed of the game
 
-For more details on these features and other accomplishments, please see the [Wiki](https://github.com/TheLastDigitOfPi/EconoME/wiki).
+For more details on these features and other accomplishments, please see the [Wiki](https://github.com/TheLastDigitOfPi/EconoME/wiki/EconoMe-Wiki).
 
 ## How to Play
 The game currently has an active demo that you can try out! Note that the demo does not include many of the developed features, but will be updated soon!
