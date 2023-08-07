@@ -24,7 +24,7 @@ For more details on these features and other accomplishments, please see the [Wi
 The game currently has an active demo that you can try out! Note that the demo does not include many of the developed features, but will be updated soon!
 
 1. Download and install the game from [Here](https://drive.google.com/file/d/1dqGrSzzK6faunmvX9ZpU7hxR-OP3QmwY/view?usp=sharing).
-2. The game will likely show up as a virus. This is due to the demo not having a large number of downloads and anti-virus softwares not being able to gaurentee its safe. Go through the achnoledgement steps and let your anti-virus know that it's ok.
+2. The game will likely show up as a virus. This is due to the demo not having a large number of downloads and anti-virus softwares not being able to gaurentee its safe. Go through the acknowledgment steps and let your anti-virus know that it's ok.
 3. Launch the game and follow the instructions on the main menu to start playing.
 4. Enjoy the game!
 
