@@ -32,7 +32,7 @@ The game currently has an active demo that you can try out! Note that the demo d
 
 EconoMe was a challenging project that allowed me to hone in on my clean coding skills and problem-solving abilities. As the project grew larger, I had to manage connections between many features and ensure that each component of the game worked together seamlessly. In particular, implementing the procedural terrain generation and mob AI were complex tasks that required careful planning and testing.
 
-The project still has much developement needed in order to create a fun and expansive gaming experience, so keep an eye out for updates!
+The project still has much development needed in order to create a fun and expansive gaming experience, so keep an eye out for updates!
 
 ## Contributions
 
